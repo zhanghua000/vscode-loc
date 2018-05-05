@@ -1,8 +1,8 @@
 {
-	"name": "vscode-insiders-language-pack-pt-BR",
-	"displayName": "Portuguese (Brazil) Language Pack for Visual Studio Code Insiders",
-	"description": "Insiders - Language pack extension for Portuguese (Brazil)",
-	"version": "1.23.0",
+	"name": "vscode-language-pack-pt-BR",
+	"displayName": "Portuguese (Brazil) Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Portuguese (Brazil)",
+	"version": "1.23.1",
 	"publisher": "MS-CEINTL",
 	"repository": {
 		"type": "git",
@@ -12,6 +12,7 @@
 	"engines": {
 		"vscode": "^1.23.0"
 	},
+	"icon": "languagepack.png",
 	"categories": [
 		"Language Packs"
 	],
@@ -79,12 +80,12 @@
 						"path": "./translations/extensions/go.i18n.json"
 					},
 					{
-						"id": "vscode.git",
-						"path": "./translations/extensions/git.i18n.json"
-					},
-					{
 						"id": "vscode.groovy",
 						"path": "./translations/extensions/groovy.i18n.json"
+					},
+					{
+						"id": "vscode.git",
+						"path": "./translations/extensions/git.i18n.json"
 					},
 					{
 						"id": "vscode.grunt",
@@ -95,12 +96,12 @@
 						"path": "./translations/extensions/gulp.i18n.json"
 					},
 					{
-						"id": "vscode.handlebars",
-						"path": "./translations/extensions/handlebars.i18n.json"
-					},
-					{
 						"id": "vscode.hlsl",
 						"path": "./translations/extensions/hlsl.i18n.json"
+					},
+					{
+						"id": "vscode.handlebars",
+						"path": "./translations/extensions/handlebars.i18n.json"
 					},
 					{
 						"id": "vscode.html-language-features",
@@ -111,16 +112,16 @@
 						"path": "./translations/extensions/html.i18n.json"
 					},
 					{
-						"id": "vscode.ini",
-						"path": "./translations/extensions/ini.i18n.json"
+						"id": "vscode.java",
+						"path": "./translations/extensions/java.i18n.json"
 					},
 					{
 						"id": "vscode.jake",
 						"path": "./translations/extensions/jake.i18n.json"
 					},
 					{
-						"id": "vscode.java",
-						"path": "./translations/extensions/java.i18n.json"
+						"id": "vscode.ini",
+						"path": "./translations/extensions/ini.i18n.json"
 					},
 					{
 						"id": "vscode.javascript",
@@ -163,20 +164,16 @@
 						"path": "./translations/extensions/merge-conflict.i18n.json"
 					},
 					{
-						"id": "vscode.npm",
-						"path": "./translations/extensions/npm.i18n.json"
-					},
-					{
 						"id": "vscode.objective-c",
 						"path": "./translations/extensions/objective-c.i18n.json"
 					},
 					{
-						"id": "vscode.perl",
-						"path": "./translations/extensions/perl.i18n.json"
+						"id": "vscode.npm",
+						"path": "./translations/extensions/npm.i18n.json"
 					},
 					{
-						"id": "vscode.powershell",
-						"path": "./translations/extensions/powershell.i18n.json"
+						"id": "vscode.perl",
+						"path": "./translations/extensions/perl.i18n.json"
 					},
 					{
 						"id": "vscode.php-language-features",
@@ -187,6 +184,10 @@
 						"path": "./translations/extensions/php.i18n.json"
 					},
 					{
+						"id": "vscode.powershell",
+						"path": "./translations/extensions/powershell.i18n.json"
+					},
+					{
 						"id": "vscode.pug",
 						"path": "./translations/extensions/pug.i18n.json"
 					},
@@ -195,12 +196,12 @@
 						"path": "./translations/extensions/python.i18n.json"
 					},
 					{
-						"id": "vscode.r",
-						"path": "./translations/extensions/r.i18n.json"
-					},
-					{
 						"id": "vscode.razor",
 						"path": "./translations/extensions/razor.i18n.json"
+					},
+					{
+						"id": "vscode.r",
+						"path": "./translations/extensions/r.i18n.json"
 					},
 					{
 						"id": "vscode.ruby",
@@ -255,16 +256,16 @@
 						"path": "./translations/extensions/theme-quietlight.i18n.json"
 					},
 					{
+						"id": "vscode.theme-solarized-dark",
+						"path": "./translations/extensions/theme-solarized-dark.i18n.json"
+					},
+					{
 						"id": "vscode.theme-seti",
 						"path": "./translations/extensions/theme-seti.i18n.json"
 					},
 					{
 						"id": "vscode.theme-red",
 						"path": "./translations/extensions/theme-red.i18n.json"
-					},
-					{
-						"id": "vscode.theme-solarized-dark",
-						"path": "./translations/extensions/theme-solarized-dark.i18n.json"
 					},
 					{
 						"id": "vscode.theme-solarized-light",
