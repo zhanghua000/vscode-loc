@@ -847,105 +847,6 @@
 		"vs/platform/extensionManagement/common/extensionEnablementService": {
 			"noWorkspace": "Çalışma alanı yok."
 		},
-		"vs/workbench/parts/cli/electron-browser/cli.contribution": {
-			"install": "'{0}' kabuk komutunu PATH'e yükle",
-			"not available": "Bu komut mevcut değil",
-			"successIn": "'{0}' kabuk komutu PATH'e başarıyla yüklendi.",
-			"ok": "Tamam",
-			"cancel2": "İptal",
-			"warnEscalation": "Code, şimdi kabuk komutunu yüklemek üzere yönetici ayrıcalıkları için 'osascript' ile izin isteyecektir.",
-			"cantCreateBinFolder": "'/usr/local/bin' oluşturulamadı.",
-			"aborted": "Durduruldu",
-			"uninstall": "'{0}' kabuk komutunu PATH'den kaldır",
-			"successFrom": "'{0}' kabuk komutu PATH'den başarıyla kaldırıldı.",
-			"shellCommand": "Kabuk Komutu"
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/accessibility": {
-			"emergencyConfOn": "Şu an `editor.accessibilitySupport` ayarı 'on' olarak değiştiriliyor.",
-			"openingDocs": "Şu an VS Code Erişilebilirlik belgeleri sayfası açılıyor.",
-			"introMsg": "VS Code'un erişilebilirlik seçeneklerini denediğiniz için teşekkür ederiz.",
-			"status": "Durum:",
-			"changeConfigToOnMac": "Düzenleyicinin kalıcı olarak bir Ekran Okuyucu ile kullanılmak üzere optimize edilmesini ayarlamak için Command+E tuşlarına basın.",
-			"changeConfigToOnWinLinux": "Düzenleyicinin kalıcı olarak bir Ekran Okuyucu ile kullanılmak üzere optimize edilmesini ayarlamak için Control+E tuşlarına basın.",
-			"auto_unknown": "Düzenleyici, bir Ekran Okuyucu'nun ne zaman bağlandığını algılamak için platform API'larını kullanmak üzere ayarlanmış, fakat geçerli çalışma zamanı bunu desteklemiyor.",
-			"auto_on": "Düzenleyici, bir Ekran Okuyucu'nun bağlandığını otomatik olarak algıladı.",
-			"auto_off": "Düzenleyici, bir Ekran Okuyucu'nun ne zaman bağlandığını otomatik olarak algılamak için yapılandırılmış, şu anki durum böyle değil.",
-			"configuredOn": "Düzenleyici kalıcı olarak bir Ekran Okuyucu ile kullanılmak üzere optimize edilmesi için yapılandırılmış - bunu, `editor.accessibilitySupport` ayarını düzenleyerek değiştirebilirsiniz.",
-			"configuredOff": "Düzenleyici hiçbir zaman bir Ekran Okuyucu ile kullanılmak üzere optimize edilmemesi için yapılandırılmış.",
-			"tabFocusModeOnMsg": "Geçerli düzenleyicide Tab tuşuna basmak odağı bir sonraki odaklanabilir ögeye kaydıracaktır. {0} tuşuna basarak bu davranışı açıp kapatın.",
-			"tabFocusModeOnMsgNoKb": "Geçerli düzenleyicide Tab tuşuna basmak odağı bir sonraki odaklanabilir ögeye kaydıracaktır. {0} komutu, şu an bir tuş bağı ile tetiklenemez.",
-			"tabFocusModeOffMsg": "Geçerli düzenleyicide Tab tuşuna basmak bir sekme karakteri ekleyecektir. {0} tuşuna basarak bu davranışı açıp kapatın.",
-			"tabFocusModeOffMsgNoKb": "Geçerli düzenleyicide Tab tuşuna basmak bir sekme karakteri ekleyecektir. {0} komutu, şu an bir tuş bağı ile tetiklenemez.",
-			"openDocMac": "Erişilebilirlik ile ilgili daha fazla VS Code bilgisi içeren bir tarayıcı penceresi açmak için Command+H tuşlarına basın.",
-			"openDocWinLinux": "Erişilebilirlik ile ilgili daha fazla VS Code bilgisi içeren bir tarayıcı penceresi açmak için Control+H tuşlarına basın.",
-			"outroMsg": "Escape veya Shift+Escape tuşlarına basarak bu ipucunu kapatabilir ve düzenleyiciye dönebilirsiniz.",
-			"ShowAccessibilityHelpAction": "Erişilebilirlik Yardımını Göster"
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/inspectKeybindings": {
-			"workbench.action.inspectKeyMap": "Geliştirici: Tuş Eşlemelerini Denetle"
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/textMate/inspectTMScopes": {
-			"inspectTMScopes": "Geliştirici: TM Kapsamlarını Denetle",
-			"inspectTMScopesWidget.loading": "Yükleniyor..."
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/toggleMinimap": {
-			"toggleMinimap": "Görünüm: Mini Haritayı Aç/Kapat"
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/toggleMultiCursorModifier": {
-			"toggleLocation": "Çoklu İmleç Değiştiricisini Aç/Kapat"
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/toggleRenderControlCharacter": {
-			"toggleRenderControlCharacters": "Görünüm: Kontrol Karakterlerini Aç/Kapat"
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/toggleRenderWhitespace": {
-			"toggleRenderWhitespace": "Görünüm: Boşlukları Görüntülemeyi Aç/Kapat"
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/toggleWordWrap": {
-			"toggle.wordwrap": "Görünüm: Sözcük Kaydırmasını Aç/Kapat",
-			"wordWrap.notInDiffEditor": "Diff düzenleyicisinde sözcük kaydırma açılıp kapatılamıyor",
-			"unwrapMinified": "Bu dosya için sonraki satıra kaydırmayı devre dışı bırak",
-			"wrapMinified": "Bu dosya için sonraki satıra kaydırmayı etkinleştir"
-		},
-		"vs/workbench/parts/codeEditor/electron-browser/languageConfiguration/languageConfigurationExtensionPoint": {
-			"parseErrors": "{0} için ayrıştırma hataları: {1}",
-			"schema.openBracket": "Açılış ayracı karakteri veya dize sırası.",
-			"schema.closeBracket": "Kapanış ayracı karakteri veya dize sırası.",
-			"schema.comments": "Yorum sembollerini tanımlar.",
-			"schema.blockComments": "Blok açıklamalarının nasıl işaretlendiğini tanımlar.",
-			"schema.blockComment.begin": "Blok açıklamasını başlatan karakter dizisi.",
-			"schema.blockComment.end": "Blok açıklamasını bitiren karakter dizisi.",
-			"schema.lineComment": "Satır açıklamasını başlatan karakter dizisi.",
-			"schema.brackets": "Girintiyi artıran veya azaltan ayraç sembollerini tanımlar.",
-			"schema.autoClosingPairs": "Ayraç çiftlerini tanımlar. Bir açılış ayracı girildiğinde, kapanış ayracı otomatik olarak eklenir.",
-			"schema.autoClosingPairs.notIn": "Otomatik çiftlerin devre dışı bırakıldığı bir kapsamlar listesi tanımlar.",
-			"schema.surroundingPairs": "Seçili bir dizeyi çevrelemek için kullanılabilecek ayraç çiftlerini tanımlar.",
-			"schema.wordPattern": "Dilin kelime tanımı.",
-			"schema.wordPattern.pattern": "Sözcükleri eşleştirmek için kullanılacak Düzenli İfade.",
-			"schema.wordPattern.flags": "Sözcükleri eşleştirmek için kullanılacak Düzenli İfade işaretleri.",
-			"schema.wordPattern.flags.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
-			"schema.indentationRules": "Dilin girintileme ayarları.",
-			"schema.indentationRules.increaseIndentPattern": "Bir satır bu kalıpla eşleşirse, ondan sonraki tüm satırlar (başka bir kuralla eşleşmedikçe) bir kez girintilenmelidir.",
-			"schema.indentationRules.increaseIndentPattern.pattern": "increaseIndentPattern için Düzenli İfade.",
-			"schema.indentationRules.increaseIndentPattern.flags": "increaseIndentPattern için Düzenli İfade işaretleri.",
-			"schema.indentationRules.increaseIndentPattern.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
-			"schema.indentationRules.decreaseIndentPattern": "Bir satır bu kalıpla eşleşirse, ondan sonraki tüm satırların (başka bir kuralla eşleşmedikçe) girintisi bir kez azaltılmalıdır.",
-			"schema.indentationRules.decreaseIndentPattern.pattern": "decreaseIndentPattern için Düzenli İfade.",
-			"schema.indentationRules.decreaseIndentPattern.flags": "decreaseIndentPattern için Düzenli İfade işaretleri.",
-			"schema.indentationRules.decreaseIndentPattern.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
-			"schema.indentationRules.indentNextLinePattern": "Bir satır bu kalıpla eşleşirse, ondan **sadece bir sonraki satır** bir kez girintilenmelidir.",
-			"schema.indentationRules.indentNextLinePattern.pattern": "indentNextLinePattern için Düzenli İfade.",
-			"schema.indentationRules.indentNextLinePattern.flags": "indentNextLinePattern için Düzenli İfade işaretleri.",
-			"schema.indentationRules.indentNextLinePattern.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
-			"schema.indentationRules.unIndentedLinePattern": "Bir satır bu kalıpla eşleşirse, o satırın girintisi değiştirilmemelidir ve diğer kurallara karşı değerlendirilmemelidir.",
-			"schema.indentationRules.unIndentedLinePattern.pattern": "unIndentedLinePattern için Düzenli İfade.",
-			"schema.indentationRules.unIndentedLinePattern.flags": "unIndentedLinePattern için Düzenli İfade işaretleri.",
-			"schema.indentationRules.unIndentedLinePattern.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
-			"schema.folding": "Dilin katlama ayarları.",
-			"schema.folding.offSide": "Bir dildeki bloklar girintilendirmeleriyle ifade edilirse, o dil için off-side kuralı uygulanır. Eğer ayarlanırsa, boş satırlar sonraki bloğa ait olur.",
-			"schema.folding.markers": "'#region' ve '#endregion' gibi dile özgü katlama işaretçileri. Başlangıç ve bitiş düzenli ifadeleri tüm satırlardaki içeriklere karşı test edilecektir ve verimli olacak şekilde tasarlanmalıdır",
-			"schema.folding.markers.start": "Başlangıç işaretçisi için Düzenli İfade kalıbı. Düzenli ifade '^' ile başlamalıdır.",
-			"schema.folding.markers.end": "Bitiş işaretçisi için Düzenli İfade kalıbı. Düzenli ifade '^' ile başlamalıdır."
-		},
 		"vs/code/electron-main/main": {
 			"secondInstanceNoResponse": "{0}'un başka bir örneği çalışıyor ancak yanıt vermiyor",
 			"secondInstanceNoResponseDetail": "Lütfen diğer tüm örnekleri kapatın ve tekrar deneyin.",
@@ -1250,6 +1151,105 @@
 		"vs/code/electron-main/window": {
 			"hiddenMenuBar": "Menü çubuğuna hâlâ Alt tuşuna basarak erişebilirsiniz."
 		},
+		"vs/workbench/parts/cli/electron-browser/cli.contribution": {
+			"install": "'{0}' kabuk komutunu PATH'e yükle",
+			"not available": "Bu komut mevcut değil",
+			"successIn": "'{0}' kabuk komutu PATH'e başarıyla yüklendi.",
+			"ok": "Tamam",
+			"cancel2": "İptal",
+			"warnEscalation": "Code, şimdi kabuk komutunu yüklemek üzere yönetici ayrıcalıkları için 'osascript' ile izin isteyecektir.",
+			"cantCreateBinFolder": "'/usr/local/bin' oluşturulamadı.",
+			"aborted": "Durduruldu",
+			"uninstall": "'{0}' kabuk komutunu PATH'den kaldır",
+			"successFrom": "'{0}' kabuk komutu PATH'den başarıyla kaldırıldı.",
+			"shellCommand": "Kabuk Komutu"
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/accessibility": {
+			"emergencyConfOn": "Şu an `editor.accessibilitySupport` ayarı 'on' olarak değiştiriliyor.",
+			"openingDocs": "Şu an VS Code Erişilebilirlik belgeleri sayfası açılıyor.",
+			"introMsg": "VS Code'un erişilebilirlik seçeneklerini denediğiniz için teşekkür ederiz.",
+			"status": "Durum:",
+			"changeConfigToOnMac": "Düzenleyicinin kalıcı olarak bir Ekran Okuyucu ile kullanılmak üzere optimize edilmesini ayarlamak için Command+E tuşlarına basın.",
+			"changeConfigToOnWinLinux": "Düzenleyicinin kalıcı olarak bir Ekran Okuyucu ile kullanılmak üzere optimize edilmesini ayarlamak için Control+E tuşlarına basın.",
+			"auto_unknown": "Düzenleyici, bir Ekran Okuyucu'nun ne zaman bağlandığını algılamak için platform API'larını kullanmak üzere ayarlanmış, fakat geçerli çalışma zamanı bunu desteklemiyor.",
+			"auto_on": "Düzenleyici, bir Ekran Okuyucu'nun bağlandığını otomatik olarak algıladı.",
+			"auto_off": "Düzenleyici, bir Ekran Okuyucu'nun ne zaman bağlandığını otomatik olarak algılamak için yapılandırılmış, şu anki durum böyle değil.",
+			"configuredOn": "Düzenleyici kalıcı olarak bir Ekran Okuyucu ile kullanılmak üzere optimize edilmesi için yapılandırılmış - bunu, `editor.accessibilitySupport` ayarını düzenleyerek değiştirebilirsiniz.",
+			"configuredOff": "Düzenleyici hiçbir zaman bir Ekran Okuyucu ile kullanılmak üzere optimize edilmemesi için yapılandırılmış.",
+			"tabFocusModeOnMsg": "Geçerli düzenleyicide Tab tuşuna basmak odağı bir sonraki odaklanabilir ögeye kaydıracaktır. {0} tuşuna basarak bu davranışı açıp kapatın.",
+			"tabFocusModeOnMsgNoKb": "Geçerli düzenleyicide Tab tuşuna basmak odağı bir sonraki odaklanabilir ögeye kaydıracaktır. {0} komutu, şu an bir tuş bağı ile tetiklenemez.",
+			"tabFocusModeOffMsg": "Geçerli düzenleyicide Tab tuşuna basmak bir sekme karakteri ekleyecektir. {0} tuşuna basarak bu davranışı açıp kapatın.",
+			"tabFocusModeOffMsgNoKb": "Geçerli düzenleyicide Tab tuşuna basmak bir sekme karakteri ekleyecektir. {0} komutu, şu an bir tuş bağı ile tetiklenemez.",
+			"openDocMac": "Erişilebilirlik ile ilgili daha fazla VS Code bilgisi içeren bir tarayıcı penceresi açmak için Command+H tuşlarına basın.",
+			"openDocWinLinux": "Erişilebilirlik ile ilgili daha fazla VS Code bilgisi içeren bir tarayıcı penceresi açmak için Control+H tuşlarına basın.",
+			"outroMsg": "Escape veya Shift+Escape tuşlarına basarak bu ipucunu kapatabilir ve düzenleyiciye dönebilirsiniz.",
+			"ShowAccessibilityHelpAction": "Erişilebilirlik Yardımını Göster"
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/inspectKeybindings": {
+			"workbench.action.inspectKeyMap": "Geliştirici: Tuş Eşlemelerini Denetle"
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/textMate/inspectTMScopes": {
+			"inspectTMScopes": "Geliştirici: TM Kapsamlarını Denetle",
+			"inspectTMScopesWidget.loading": "Yükleniyor..."
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/toggleMinimap": {
+			"toggleMinimap": "Görünüm: Mini Haritayı Aç/Kapat"
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/toggleMultiCursorModifier": {
+			"toggleLocation": "Çoklu İmleç Değiştiricisini Aç/Kapat"
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/toggleRenderControlCharacter": {
+			"toggleRenderControlCharacters": "Görünüm: Kontrol Karakterlerini Aç/Kapat"
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/toggleRenderWhitespace": {
+			"toggleRenderWhitespace": "Görünüm: Boşlukları Görüntülemeyi Aç/Kapat"
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/toggleWordWrap": {
+			"toggle.wordwrap": "Görünüm: Sözcük Kaydırmasını Aç/Kapat",
+			"wordWrap.notInDiffEditor": "Diff düzenleyicisinde sözcük kaydırma açılıp kapatılamıyor",
+			"unwrapMinified": "Bu dosya için sonraki satıra kaydırmayı devre dışı bırak",
+			"wrapMinified": "Bu dosya için sonraki satıra kaydırmayı etkinleştir"
+		},
+		"vs/workbench/parts/codeEditor/electron-browser/languageConfiguration/languageConfigurationExtensionPoint": {
+			"parseErrors": "{0} için ayrıştırma hataları: {1}",
+			"schema.openBracket": "Açılış ayracı karakteri veya dize sırası.",
+			"schema.closeBracket": "Kapanış ayracı karakteri veya dize sırası.",
+			"schema.comments": "Yorum sembollerini tanımlar.",
+			"schema.blockComments": "Blok açıklamalarının nasıl işaretlendiğini tanımlar.",
+			"schema.blockComment.begin": "Blok açıklamasını başlatan karakter dizisi.",
+			"schema.blockComment.end": "Blok açıklamasını bitiren karakter dizisi.",
+			"schema.lineComment": "Satır açıklamasını başlatan karakter dizisi.",
+			"schema.brackets": "Girintiyi artıran veya azaltan ayraç sembollerini tanımlar.",
+			"schema.autoClosingPairs": "Ayraç çiftlerini tanımlar. Bir açılış ayracı girildiğinde, kapanış ayracı otomatik olarak eklenir.",
+			"schema.autoClosingPairs.notIn": "Otomatik çiftlerin devre dışı bırakıldığı bir kapsamlar listesi tanımlar.",
+			"schema.surroundingPairs": "Seçili bir dizeyi çevrelemek için kullanılabilecek ayraç çiftlerini tanımlar.",
+			"schema.wordPattern": "Dilin kelime tanımı.",
+			"schema.wordPattern.pattern": "Sözcükleri eşleştirmek için kullanılacak Düzenli İfade.",
+			"schema.wordPattern.flags": "Sözcükleri eşleştirmek için kullanılacak Düzenli İfade işaretleri.",
+			"schema.wordPattern.flags.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
+			"schema.indentationRules": "Dilin girintileme ayarları.",
+			"schema.indentationRules.increaseIndentPattern": "Bir satır bu kalıpla eşleşirse, ondan sonraki tüm satırlar (başka bir kuralla eşleşmedikçe) bir kez girintilenmelidir.",
+			"schema.indentationRules.increaseIndentPattern.pattern": "increaseIndentPattern için Düzenli İfade.",
+			"schema.indentationRules.increaseIndentPattern.flags": "increaseIndentPattern için Düzenli İfade işaretleri.",
+			"schema.indentationRules.increaseIndentPattern.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
+			"schema.indentationRules.decreaseIndentPattern": "Bir satır bu kalıpla eşleşirse, ondan sonraki tüm satırların (başka bir kuralla eşleşmedikçe) girintisi bir kez azaltılmalıdır.",
+			"schema.indentationRules.decreaseIndentPattern.pattern": "decreaseIndentPattern için Düzenli İfade.",
+			"schema.indentationRules.decreaseIndentPattern.flags": "decreaseIndentPattern için Düzenli İfade işaretleri.",
+			"schema.indentationRules.decreaseIndentPattern.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
+			"schema.indentationRules.indentNextLinePattern": "Bir satır bu kalıpla eşleşirse, ondan **sadece bir sonraki satır** bir kez girintilenmelidir.",
+			"schema.indentationRules.indentNextLinePattern.pattern": "indentNextLinePattern için Düzenli İfade.",
+			"schema.indentationRules.indentNextLinePattern.flags": "indentNextLinePattern için Düzenli İfade işaretleri.",
+			"schema.indentationRules.indentNextLinePattern.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
+			"schema.indentationRules.unIndentedLinePattern": "Bir satır bu kalıpla eşleşirse, o satırın girintisi değiştirilmemelidir ve diğer kurallara karşı değerlendirilmemelidir.",
+			"schema.indentationRules.unIndentedLinePattern.pattern": "unIndentedLinePattern için Düzenli İfade.",
+			"schema.indentationRules.unIndentedLinePattern.flags": "unIndentedLinePattern için Düzenli İfade işaretleri.",
+			"schema.indentationRules.unIndentedLinePattern.errorMessage": "`/^([gimuy]+)$/` kalıbı ile eşleşmelidir.",
+			"schema.folding": "Dilin katlama ayarları.",
+			"schema.folding.offSide": "Bir dildeki bloklar girintilendirmeleriyle ifade edilirse, o dil için off-side kuralı uygulanır. Eğer ayarlanırsa, boş satırlar sonraki bloğa ait olur.",
+			"schema.folding.markers": "'#region' ve '#endregion' gibi dile özgü katlama işaretçileri. Başlangıç ve bitiş düzenli ifadeleri tüm satırlardaki içeriklere karşı test edilecektir ve verimli olacak şekilde tasarlanmalıdır",
+			"schema.folding.markers.start": "Başlangıç işaretçisi için Düzenli İfade kalıbı. Düzenli ifade '^' ile başlamalıdır.",
+			"schema.folding.markers.end": "Bitiş işaretçisi için Düzenli İfade kalıbı. Düzenli ifade '^' ile başlamalıdır."
+		},
 		"vs/workbench/parts/emmet/browser/actions/showEmmetCommands": {
 			"showEmmetCommands": "Emmet Komutlarını Göster"
 		},
@@ -1268,345 +1268,6 @@
 			"scopedConsoleActionMacLinux": "Terminalde Aç"
 		},
 		"vs/workbench/parts/execution/electron-browser/terminalService": {
-			"console.title": "VS Code Konsolu",
-			"mac.terminal.script.failed": "'{0}' betiği, {1} çıkış koduyla başarısız oldu",
-			"mac.terminal.type.not.supported": "'{0}' desteklenmiyor",
-			"press.any.key": "Devam etmek için bir tuşa basın ...",
-			"linux.term.failed": "'{0}', {1} çıkış koduyla başarısız oldu"
-		},
-		"vs/workbench/parts/debug/electron-browser/debug.contribution": {
-			"toggleDebugViewlet": "Hata Ayıklamayı Göster",
-			"toggleDebugPanel": "Hata Ayıklama Konsolu",
-			"debug": "Hata Ayıklama",
-			"debugPanel": "Hata Ayıklama Konsolu",
-			"variables": "Değişkenler",
-			"watch": "İzle",
-			"callStack": "Çağrı Yığını",
-			"breakpoints": "Kesme Noktaları",
-			"view": "Görüntüle",
-			"debugCategory": "Hata Ayıklama",
-			"debugCommands": "Hata Ayıklama Yapılandırması",
-			"debugConfigurationTitle": "Hata Ayıklama",
-			"allowBreakpointsEverywhere": "Herhangi bir dosyada kesme noktası ayarlamaya izin verir",
-			"openExplorerOnEnd": "Bir hata ayıklama oturumunun sonunda otomatik olarak gezgin görünümünü açın",
-			"inlineValues": "Hata ayıklama sırasında değişken değerlerini düzenleyicide satır içinde göster",
-			"hideActionBar": "Dolaştırılabilir hata ayıklama eylem çubuğunun gizlenip gizlenmeyeceğini denetler",
-			"never": "Hata ayıklamayı durum çubuğunda asla gösterme",
-			"always": "Hata ayıklamayı durum çubuğunda her zaman göster",
-			"onFirstSessionStart": "Hata ayıklamayı sadece ilk kez başladıktan sonra durum çubuğunda göster",
-			"showInStatusBar": "Hata ayıklama durum çubuğunun ne zaman görünür olacağını denetler",
-			"openDebug": "Hata ayıklama görünümünün, hata ayıklama oturumu başlangıcında açılıp açılmayacağını denetler.",
-			"launch": "Global hata ayıklama başlatma yapılandırması. Çalışma alanlarında paylaşılan 'launch.json'a alternatif olarak kullanılmalıdır"
-		},
-		"vs/workbench/parts/debug/browser/debugQuickOpen": {
-			"entryAriaLabel": "{0}, hata ayıklama",
-			"debugAriaLabel": "Çalıştırılacak bir başlatma yapılandırması adı girin.",
-			"addConfigTo": "Yapılandırma Ekle ({0})...",
-			"addConfiguration": "Yapı&&landırma Ekle...",
-			"noConfigurationsMatching": "Eşleyen hata ayıklama yapılandırması yok",
-			"noConfigurationsFound": "Hiçbir hata ayıklama yapılandırması bulunamadı. Lütfen bir 'launch.json' dosyası oluşturun."
-		},
-		"vs/workbench/parts/debug/electron-browser/repl": {
-			"replAriaLabel": "Oku Değerlendir Yaz Döngüsü Paneli",
-			"actions.repl.historyPrevious": "Önceki Geçmiş",
-			"actions.repl.historyNext": "Sonraki Geçmiş",
-			"actions.repl.acceptInput": "REPL Girdiyi Kabul Et",
-			"actions.repl.copyAll": "Hata Ayıklama: Konsol Tümünü Kopyala"
-		},
-		"vs/workbench/parts/debug/browser/debugEditorActions": {
-			"toggleBreakpointAction": "Hata Ayıklama: Kesme Noktası Ekle/Kaldır",
-			"conditionalBreakpointEditorAction": "Hata Ayıklama: Koşullu Kesme Noktası Ekle...",
-			"logPointEditorAction": "Hata Ayıklama: Günlük Noktası Ekle...",
-			"runToCursor": "İmlece Kadar Çalıştır",
-			"debugEvaluate": "Hata Ayıklama: Değerlendir",
-			"debugAddToWatch": "Hata Ayıklama: İzlemeye Ekle",
-			"showDebugHover": "Hata Ayıklama: Bağlantı Vurgusunu Göster"
-		},
-		"vs/workbench/parts/debug/browser/debugViewlet": {
-			"debugFocusVariablesView": "Değişkenlere Odakla",
-			"debugFocusWatchView": "İzlemeye Odakla",
-			"debugFocusCallStackView": "Çağrı Yığınına Odakla",
-			"debugFocusBreakpointsView": "Kesme Noktalarına Odakla"
-		},
-		"vs/workbench/parts/debug/electron-browser/variablesView": {
-			"variablesSection": "Değişkenler Bölümü",
-			"variablesAriaTreeLabel": "Hata Ayıklama Değişkenleri",
-			"variableValueAriaLabel": "Yeni değişken adını girin",
-			"variableScopeAriaLabel": "{0} kapsamı, değişkenler, hata ayıklama",
-			"variableAriaLabel": "{0} değeri {1}, değişkenler, hata ayıklama"
-		},
-		"vs/workbench/parts/debug/browser/breakpointsView": {
-			"logPoint": "Günlük Noktası",
-			"breakpoint": "Kesme Noktası",
-			"editBreakpoint": "Düzenle: {0}...",
-			"removeBreakpoint": "Kaldır: {0}",
-			"functionBreakpointsNotSupported": "Fonksiyon kesme noktaları bu hata ayıklama türü tarafından desteklenmiyor",
-			"functionBreakpointPlaceholder": "Mola verilecek fonksiyon",
-			"functionBreakPointInputAriaLabel": "Fonksiyon kesme noktasını girin",
-			"breakpointDisabledHover": "Devre dışı bırakılmış kesme noktası",
-			"breakpointUnverifieddHover": "Doğrulanmamış kesme noktası",
-			"functionBreakpointUnsupported": "Fonksiyon kesme noktaları bu hata ayıklama türü tarafından desteklenmiyor",
-			"breakpointDirtydHover": "Doğrulanmamış Kesme Noktası Dosya düzenlendi, lütfen hata ayıklama oturumunu yeniden başlatın.",
-			"logBreakpointUnsupported": "Günlük noktaları bu hata ayıklama türü tarafından desteklenmiyor",
-			"conditionalBreakpointUnsupported": "Koşullu kesme noktaları bu hata ayıklama türü tarafından desteklenmiyor",
-			"hitBreakpointUnsupported": "Koşullu kesme noktalarına isabet etme bu hata ayıklama türü tarafından desteklenmiyor"
-		},
-		"vs/workbench/parts/debug/electron-browser/watchExpressionsView": {
-			"expressionsSection": "İfadeler Bölümü",
-			"watchAriaTreeLabel": "Hata Ayıklama İzleme İfadeleri",
-			"watchExpressionPlaceholder": "İzlenecek ifade",
-			"watchExpressionInputAriaLabel": "İzleme ifadesi girin",
-			"watchExpressionAriaLabel": "{0} değeri {1}, izleme, hata ayıklama",
-			"watchVariableAriaLabel": "{0} değeri {1}, izleme, hata ayıklama"
-		},
-		"vs/workbench/parts/debug/electron-browser/callStackView": {
-			"callstackSection": "Çağrı Yığını Bölümü",
-			"debugStopped": "{0} Üzerinde Duraklatıldı",
-			"callStackAriaLabel": "Hata Ayıklama Çağrı Yığını",
-			"process": "İşlem",
-			"paused": "Duraklatıldı",
-			"running": "Çalışıyor",
-			"thread": "İş Parçacığı",
-			"pausedOn": "{0} Üzerinde Duraklatıldı",
-			"loadMoreStackFrames": "Daha Fazla Yığın Çerçevesi Yükleyin",
-			"threadAriaLabel": "{0} iş parçacığı, çağrı yığını, hata ayıklama",
-			"stackFrameAriaLabel": "Yığın Çerçevesi {0} satır {1} {2}, çağrı yığını, hata ayıklama"
-		},
-		"vs/workbench/parts/debug/common/debug": {
-			"internalConsoleOptions": "Dahili hata ayıklama konsolunun davranışlarını denetler."
-		},
-		"vs/workbench/parts/debug/browser/debugActionsWidget": {
-			"debugToolBarBackground": "Hata ayıklama araç çubuğu arka plan rengi.",
-			"debugToolBarBorder": "Hata ayıklama araç çubuğu kenarlık rengi."
-		},
-		"vs/workbench/parts/debug/browser/debugActions": {
-			"openLaunchJson": "{0} Dosyasını Aç",
-			"launchJsonNeedsConfigurtion": "'launch.json'u Yapılandır veya Düzelt",
-			"noFolderDebugConfig": "Gelişmiş hata ayıklama yapılandırması yapmak için lütfen ilk olarak bir klasör açın.",
-			"startDebug": "Hata Ayıklamaya Başla",
-			"startWithoutDebugging": "Hata Ayıklama Olmadan Başlat",
-			"selectAndStartDebugging": "Seç ve Hata Ayıklamaya Başla",
-			"restartDebug": "Yeniden Başlat",
-			"reconnectDebug": "Yeniden Bağlan",
-			"stepOverDebug": "Adım At",
-			"stepIntoDebug": "İçine Adımla",
-			"stepOutDebug": "Dışına Adımla",
-			"stopDebug": "Durdur",
-			"disconnectDebug": "Bağlantıyı Kes",
-			"continueDebug": "Devam Et",
-			"pauseDebug": "Duraklat",
-			"terminateThread": "İş Parçacığını Sonlandır",
-			"restartFrame": "Çerçeveyi Yeniden Başlat",
-			"removeBreakpoint": "Kesme Noktasını Kaldır",
-			"removeAllBreakpoints": "Tüm Kesme Noktalarını Kaldır",
-			"enableAllBreakpoints": "Tüm Kesme Noktalarını Etkinleştir",
-			"disableAllBreakpoints": "Tüm Kesme Noktalarını Devre Dışı Bırak",
-			"activateBreakpoints": "Kesme Noktalarını Etkinleştir",
-			"deactivateBreakpoints": "Kesme Noktalarını Devre Dışı Bırak",
-			"reapplyAllBreakpoints": "Tüm Kesme Noktalarını Yeniden Uygula",
-			"addFunctionBreakpoint": "Fonksiyon Kesme Noktası Ekle",
-			"setValue": "Değeri Ayarla",
-			"addWatchExpression": "İfade Ekle",
-			"editWatchExpression": "İfadeyi Düzenle",
-			"addToWatchExpressions": "İzlemeye Ekle",
-			"removeWatchExpression": "İfadeyi Kaldır",
-			"removeAllWatchExpressions": "Tüm İfadeleri Kaldır",
-			"clearRepl": "Konsolu Temizle",
-			"debugConsoleAction": "Hata Ayıklama Konsolu",
-			"unreadOutput": "Hata Ayıklama Konsolunda Yeni Çıktı",
-			"debugFocusConsole": "Hata Ayıklama Konsoluna Odakla",
-			"focusProcess": "İşleme Odakla",
-			"stepBackDebug": "Geri Adım At",
-			"reverseContinue": "Tersine Çevir"
-		},
-		"vs/workbench/parts/debug/electron-browser/debugService": {
-			"snapshotObj": "Bu nesne için sadece ilkel türler gösterilir.",
-			"debuggingPaused": "Hata ayıklama duraklatıldı, sebep {0}, {1} {2}",
-			"debuggingStarted": "Hata ayıklama başlatıldı.",
-			"debuggingStopped": "Hata ayıklama durduruldu.",
-			"breakpointAdded": "Kesme noktası eklendi, {0}. satır, {1} dosyası",
-			"breakpointRemoved": "Kesme noktası kaldırıldı, {0}. satır, {1} dosyası",
-			"compoundMustHaveConfigurations": "Bileşik, birden çok yapılandırmayı başlatmak için \"configurations\" özniteliği bulundurmalıdır.",
-			"noConfigurationNameInWorkspace": "Çalışma alanında '{0}' başlatma yapılandırması bulunamadı.",
-			"multipleConfigurationNamesInWorkspace": "Çalışma alanında birden fazla '{0}' başlatma yapılandırması var. Yapılandırmayı belirtmek için klasör adını kullanın.",
-			"noFolderWithName": "'{2}' bileşiğindeki '{1}' yapılandırması için '{0}' adlı klasör bulunamadı.",
-			"configMissing": "'launch.json' dosyasında '{0}' yapılandırması eksik.",
-			"launchJsonDoesNotExist": "'launch.json' mevcut değil.",
-			"debugRequestNotSupported": "Seçilen hata ayıklama yapılandırılmasındaki '{0}' özniteliği desteklenmeyen '{1}' değeri içeriyor.",
-			"debugRequesMissing": "'{0}' özniteliği seçilen hata ayıklama yapılandırılmasında eksik.",
-			"debugTypeNotSupported": "Yapılandırılan hata ayıklama türü '{0}', desteklenmiyor.",
-			"debugTypeMissing": "Seçilen başlatma yapılandırması için 'type' özelliği eksik.",
-			"debugAnyway": "Yine de Hata Ayıkla",
-			"preLaunchTaskErrors": "'{0}' ön başlatma görevi sırasında derleme hataları algılandı.",
-			"preLaunchTaskError": "'{0}' ön başlatma görevi sırasında derleme hatası algılandı.",
-			"preLaunchTaskExitCode": "'{0}' ön başlatma görevi {1} çıkış koduyla sonlandı.",
-			"showErrors": "Hataları Göster",
-			"noFolderWorkspaceDebugError": "Aktif dosyada hata ayıklama yapılamıyor. Lütfen, dosyanın diskte kayıtlı olduğundan ve bu dosya türü için hata ayıklama eklentinizin olduğundan emin olun.",
-			"cancel": "İptal",
-			"DebugTaskNotFound": "'{0}' görevi bulunamadı.",
-			"taskNotTracked": "'{0}' görevi izlenemez."
-		},
-		"vs/workbench/parts/debug/browser/debugContentProvider": {
-			"unable": "Hata ayıklama oturumu olmadan kaynak çözümlenemiyor",
-			"canNotResolveSource": "{0} kaynağı çözümlenemedi, hata ayıklama eklentisi yanıt vermedi."
-		},
-		"vs/workbench/parts/debug/browser/debugCommands": {
-			"noFolderDebugConfig": "Gelişmiş hata ayıklama yapılandırması yapmak için lütfen ilk olarak bir klasör açın.",
-			"columnBreakpoint": "Sütun Kesme Noktası",
-			"debug": "Hata Ayıklama",
-			"addColumnBreakpoint": "Sütun Kesme Noktası Ekle"
-		},
-		"vs/workbench/parts/debug/browser/statusbarColorProvider": {
-			"statusBarDebuggingBackground": "Bir programda hata ayıklama yapılırken durum çubuğu arka plan rengi. Durum çubuğu, pencerenin alt kısmında gösterilir.",
-			"statusBarDebuggingForeground": "Bir programda hata ayıklama yapılırken durum çubuğu ön plan rengi. Durum çubuğu, pencerenin alt kısmında gösterilir.",
-			"statusBarDebuggingBorder": "Bir programda hata ayıklama yapılırken, durum çubuğunu kenar çubuğundan ve düzenleyiciden ayıran kenarlık rengi. Durum çubuğu, pencerenin alt kısmında gösterilir."
-		},
-		"vs/workbench/parts/debug/browser/debugStatus": {
-			"selectAndStartDebug": "Seçin ve hata ayıklama yapılandırmasını başlatın"
-		},
-		"vs/workbench/parts/debug/electron-browser/debugEditorContribution": {
-			"logPoint": "Günlük Noktası",
-			"breakpoint": "Kesme Noktası",
-			"removeBreakpoint": "Kaldır: {0}",
-			"editBreakpoint": "Düzenle: {0}...",
-			"disableBreakpoint": "Devre Dışı Bırak: {0}",
-			"enableBreakpoint": "Etkinleştir: {0}",
-			"removeBreakpoints": "Kesme Noktalarını Kaldır",
-			"removeBreakpointOnColumn": "{0}. Sütundaki Kesme Noktasını Kaldır",
-			"removeLineBreakpoint": "Satır Kesme Noktasını Kaldır",
-			"editBreakpoints": "Kesme Noktalarını Düzenle",
-			"editBreakpointOnColumn": "{0}. Sütundaki Kesme Noktasını Düzenle",
-			"editLineBrekapoint": "Satır Kesme Noktasını Düzenle",
-			"enableDisableBreakpoints": "Kesme Noktalarını Etkinleştir/Devre Dışı Bırak",
-			"disableColumnBreakpoint": "{0}. Sütundaki Kesme Noktasını Devre Dışı Bırak",
-			"disableBreakpointOnLine": "Satır Kesme Noktasını Devre Dışı Bırak",
-			"enableBreakpoints": "{0}. Sütundaki Kesme Noktasını Etkinleştir",
-			"enableBreakpointOnLine": "Satır Kesme Noktasını Etkinleştir",
-			"addBreakpoint": "Kesme Noktası Ekle",
-			"addConditionalBreakpoint": "Koşullu Kesme Noktası Ekle...",
-			"addLogPoint": "Günlük Noktası Ekle...",
-			"breakpointHasCondition": "Bu {0}, kaldırıldığında kaybolacak bir {1}'e sahip. Bunun yerine {0}'i kaldırmayı düşünün.",
-			"message": "mesaj",
-			"condition": "koşul",
-			"removeLogPoint": "Kaldır: {0}",
-			"disableLogPoint": "Devre Dışı Bırak: {0}",
-			"cancel": "İptal",
-			"addConfiguration": "Yapılandırma Ekle..."
-		},
-		"vs/workbench/parts/debug/electron-browser/replViewer": {
-			"stateCapture": "Nesne durumu ilk değerlendirmeden alındı",
-			"replVariableAriaLabel": "{0} değişkeni, {1} değerine sahip, oku değerlendir yaz döngüsü, hata ayıklama",
-			"replExpressionAriaLabel": "{0} ifadesi, {1} değerine sahip, oku değerlendir yaz döngüsü, hata ayıklama",
-			"replValueOutputAriaLabel": "{0}, oku değerlendir yaz döngüsü, hata ayıklama",
-			"replRawObjectAriaLabel": "{0} repl değişkeni, {1} değerine sahip, oku değerlendir yaz döngüsü, hata ayıklama"
-		},
-		"vs/workbench/parts/debug/browser/debugActionItems": {
-			"noConfigurations": "Yapılandırma Yok",
-			"addConfigTo": "Yapılandırma Ekle ({0})...",
-			"addConfiguration": "Yapılandırma Ekle..."
-		},
-		"vs/workbench/parts/debug/common/debugModel": {
-			"notAvailable": "mevcut değil",
-			"startDebugFirst": "Lütfen değerlendirilecek bir hata ayıklama oturumu başlatın"
-		},
-		"vs/workbench/parts/debug/electron-browser/electronDebugActions": {
-			"copyValue": "Değeri Kopyala",
-			"copyAsExpression": "İfade Olarak Kopyala",
-			"copy": "Kopyala",
-			"copyAll": "Tümünü Kopyala",
-			"copyStackTrace": "Çağrı Yığınını Kopyala"
-		},
-		"vs/workbench/parts/debug/electron-browser/rawDebugSession": {
-			"moreInfo": "Daha Fazla Bilgi",
-			"debugAdapterCrash": "Hata ayıklama bağdaştırıcısı beklenmeyen biçimde sonlandırıldı"
-		},
-		"vs/workbench/parts/debug/electron-browser/debugConfigurationManager": {
-			"vscode.extension.contributes.debuggers": "Hata ayıklama bağdaştırıcılarına ekleme yapar.",
-			"vscode.extension.contributes.debuggers.type": "Bu hata ayıklama bağdaştırıcısnın benzersiz tanımlayıcısı.",
-			"vscode.extension.contributes.debuggers.label": "Bu hata ayıklama bağdaştırıcısnın görünen adı.",
-			"vscode.extension.contributes.debuggers.program": "Hata ayıklama bağdaştırıcı programının yolu. Yol, ya mutlak ya da eklenti klasörüne görelidir.",
-			"vscode.extension.contributes.debuggers.args": "Bağdaştırıcıya iletilecek ek argümanlar.",
-			"vscode.extension.contributes.debuggers.runtime": "Program özniteliğinin yürütülebilir olmadığı halde bir çalışma zamanını gerektirmesi durumu için isteğe bağlı çalışma zamanı.",
-			"vscode.extension.contributes.debuggers.runtimeArgs": "İsteğe bağlı çalışma zamanı argümanları.",
-			"vscode.extension.contributes.debuggers.variables": "`launch.json` dosyasındaki interaktif değişkenlerin (ör. ${action.pickProcess}) bir komuta eşlenmesi.",
-			"vscode.extension.contributes.debuggers.initialConfigurations": "İlk 'launch.json' dosyasının üretimi için yapılandırmalar.",
-			"vscode.extension.contributes.debuggers.languages": "Hata ayıklama eklentisinin, \"varsayılan hata ayıklayıcı\" olarak değerlendirilebileceği diller listesi.",
-			"vscode.extension.contributes.debuggers.adapterExecutableCommand": "Belirtilirse; VS Code, hata ayıklama bağdaştırıcısı yürütülebilir dosyasının yolunu ve ona gönderilecek argümanları belirlemek için bu komutu çağırır.",
-			"vscode.extension.contributes.debuggers.configurationSnippets": "'launch.json' dosyasına yeni yapılandırmalar ekleme parçacıkları.",
-			"vscode.extension.contributes.debuggers.configurationAttributes": "'launch.json' dosyasını doğrulayacak JSON şema yapılandırmaları.",
-			"vscode.extension.contributes.debuggers.windows": "Windows'a özel ayarlar.",
-			"vscode.extension.contributes.debuggers.windows.runtime": "Windows'da kullanılacak çalışma zamanı.",
-			"vscode.extension.contributes.debuggers.osx": "macOS'e özel ayarlar.",
-			"vscode.extension.contributes.debuggers.osx.runtime": "macOS'de kullanılacak çalışma zamanı.",
-			"vscode.extension.contributes.debuggers.linux": "Linux'a özel ayarlar.",
-			"vscode.extension.contributes.debuggers.linux.runtime": "Linux'da kullanılacak çalışma zamanı.",
-			"vscode.extension.contributes.breakpoints": "Kesme noktalarına ekleme yapar.",
-			"vscode.extension.contributes.breakpoints.language": "Bu dil için kesme noktalarını etkinleştir.",
-			"app.launch.json.title": "Başlat",
-			"app.launch.json.version": "Bu dosya biçiminin sürümü.",
-			"app.launch.json.configurations": "Yapılandırma listesi. IntelliSense kullanarak yeni yapılandırmalar ekleyin veya mevcut olanları düzenleyin.",
-			"app.launch.json.compounds": "Bileşikler listesi. Her bileşik, birlikte çalıştırılacak birden çok yapılandırmaya başvurur.",
-			"app.launch.json.compound.name": "Bileşiğin adı. Başlatma yapılandırması açılır kutu menüsünde görünür.",
-			"useUniqueNames": "Lütfen benzersiz yapılandırma adları kullanın.",
-			"app.launch.json.compound.folder": "Bileşiğin bulunduğu klasörün adı.",
-			"app.launch.json.compounds.configurations": "Bu bileşiğin parçası olarak başlatılacak yapılandırmaların adları.",
-			"debugNoType": "Hata ayıklayıcının 'type' ögesi atlanamaz ve 'dize' türünde olmalıdır.",
-			"selectDebug": "Ortam Seçin",
-			"DebugConfig.failed": " '.vscode' klasörü içinde 'launch.json' dosyası oluşturulamıyor ({0}).",
-			"workspace": "çalışma alanı",
-			"user settings": "kullanıcı ayarları"
-		},
-		"vs/workbench/parts/debug/common/debugSource": {
-			"unknownSource": "Bilinmeyen Kaynak"
-		},
-		"vs/workbench/parts/debug/browser/exceptionWidget": {
-			"debugExceptionWidgetBorder": "İstisna aracı kenarlık rengi.",
-			"debugExceptionWidgetBackground": "İstisna aracı arka plan rengi.",
-			"exceptionThrownWithId": "İstisna oluştu: {0}",
-			"exceptionThrown": "İstisna oluştu."
-		},
-		"vs/workbench/parts/debug/electron-browser/debugHover": {
-			"treeAriaLabel": "Hata Ayıklama Bağlantı Vurgusu"
-		},
-		"vs/workbench/parts/debug/electron-browser/breakpointWidget": {
-			"breakpointWidgetLogMessagePlaceholder": "Bu kesme noktası isabet aldığında günlüğe kaydedilecek mesaj. {} arasındaki ifadeler hesaplanmaktadır. Kabul etmek için 'Enter', iptal etmek için 'Esc' tuşuna basın.",
-			"breakpointWidgetHitCountPlaceholder": "İsabet sayısı koşulu sağlandığında mola ver. Kabul etmek için 'Enter', iptal etmek için 'Esc' tuşuna basın.",
-			"breakpointWidgetExpressionPlaceholder": "İfade değerlendirmesi doğru olduğunda mola ver. Kabul etmek için 'Enter', iptal etmek için 'Esc' tuşuna basın.",
-			"expression": "İfade",
-			"hitCount": "İsabet Sayısı",
-			"logMessage": "Günlük Mesajı"
-		},
-		"vs/workbench/parts/debug/browser/linkDetector": {
-			"fileLinkMac": "Takip etmek için tıklayın (Cmd + tıklama yana açar)",
-			"fileLink": "Takip etmek için tıklayın (Ctrl + tıklama yana açar)"
-		},
-		"vs/workbench/parts/debug/node/debugAdapter": {
-			"debugAdapterBinNotFound": "Hata ayıklama bağdaştırıcısı yürütülebilir dosyası '{0}', mevcut değil.",
-			"debugAdapterCannotDetermineExecutable": "Hata ayıklama bağdaştırıcısı yürütülebilir dosyası '{0}' belirlenemedi.",
-			"unableToLaunchDebugAdapter": "'{0}' tarafından hata ayıklama bağdaştırıcısı başlatılamadı.",
-			"unableToLaunchDebugAdapterNoArgs": "Hata ayıklama bağdaştırıcısı başlatılamıyor."
-		},
-		"vs/workbench/parts/debug/node/debugger": {
-			"launch.config.comment1": "Olası öznitelikler hakkında bilgi edinmek için IntelliSense kullanın.",
-			"launch.config.comment2": "Mevcut özniteliklerin açıklamalarını görmek için fare ile üzerine gelin.",
-			"launch.config.comment3": "Daha fazla bilgi için ziyaret edin: {0}",
-			"debugType": "Yapılandırma türü.",
-			"debugTypeNotRecognised": "Hata ayıklama türü tanınmıyor. Karşılık gelen hata ayıklama uzantısı yüklemiş olduğunuzdan ve etkinleştirildiğinden emin olun.",
-			"node2NotSupported": "\"node2\" artık desteklenmiyor, bunun yerine \"node\" kullanın ve \"protocol\" özniteliğini \"inspector\" olarak ayarlayın.",
-			"debugName": "Yapılandırmanın adı; başlatma yapılandırması açılır kutu menüsünde görünür.",
-			"debugRequest": "Yapılandırmanın istek türü. \"launch\" veya \"attach\" olabilir.",
-			"debugServer": "Sadece eklenti geliştirme hata ayıklaması için: eğer port belirtildiyse; Vs Code, bir hata ayıklama bağdaştırıcısına sunucu modunda bağlanmayı dener",
-			"debugPrelaunchTask": "Hata ayıklama oturumu başlamadan önce çalıştırılacak görev.",
-			"debugPostDebugTask": "Hata ayıklama oturumu sona erdikten sonra çalıştırılacak görev.",
-			"debugWindowsConfiguration": "Windows'a özel başlangıç yapılandırması öznitelikleri.",
-			"debugOSXConfiguration": "OS X'e özel başlangıç yapılandırması öznitelikleri.",
-			"debugLinuxConfiguration": "Linux'a özel başlangıç yapılandırması öznitelikleri.",
-			"deprecatedVariables": "'env.', 'config.' ve 'command.' kullanım dışıdır, bunların yerine 'env:', 'config:' ve 'command:' kulanın."
-		},
-		"vs/workbench/parts/debug/electron-browser/terminalSupport": {
-			"debug.terminal.title": "hata ayıklanan"
-		},
-		"vs/workbench/parts/debug/node/terminals": {
 			"console.title": "VS Code Konsolu",
 			"mac.terminal.script.failed": "'{0}' betiği, {1} çıkış koduyla başarısız oldu",
 			"mac.terminal.type.not.supported": "'{0}' desteklenmiyor",
@@ -2290,33 +1951,344 @@
 		"vs/workbench/browser/parts/editor/titleControl": {
 			"araLabelEditorActions": "Düzenleyici eylemleri"
 		},
-		"vs/workbench/parts/feedback/electron-browser/feedback.contribution": {
-			"workbenchConfigurationTitle": "Çalışma Ekranı",
-			"feedbackVisibility": "Çalışma ekranının altındaki durum çubuğunda bulunan Twitter geri bildiriminin (gülen yüz) görünürlüğünü denetler."
+		"vs/workbench/parts/debug/electron-browser/debug.contribution": {
+			"toggleDebugViewlet": "Hata Ayıklamayı Göster",
+			"toggleDebugPanel": "Hata Ayıklama Konsolu",
+			"debug": "Hata Ayıklama",
+			"debugPanel": "Hata Ayıklama Konsolu",
+			"variables": "Değişkenler",
+			"watch": "İzle",
+			"callStack": "Çağrı Yığını",
+			"breakpoints": "Kesme Noktaları",
+			"view": "Görüntüle",
+			"debugCategory": "Hata Ayıklama",
+			"debugCommands": "Hata Ayıklama Yapılandırması",
+			"debugConfigurationTitle": "Hata Ayıklama",
+			"allowBreakpointsEverywhere": "Herhangi bir dosyada kesme noktası ayarlamaya izin verir",
+			"openExplorerOnEnd": "Bir hata ayıklama oturumunun sonunda otomatik olarak gezgin görünümünü açın",
+			"inlineValues": "Hata ayıklama sırasında değişken değerlerini düzenleyicide satır içinde göster",
+			"hideActionBar": "Dolaştırılabilir hata ayıklama eylem çubuğunun gizlenip gizlenmeyeceğini denetler",
+			"never": "Hata ayıklamayı durum çubuğunda asla gösterme",
+			"always": "Hata ayıklamayı durum çubuğunda her zaman göster",
+			"onFirstSessionStart": "Hata ayıklamayı sadece ilk kez başladıktan sonra durum çubuğunda göster",
+			"showInStatusBar": "Hata ayıklama durum çubuğunun ne zaman görünür olacağını denetler",
+			"openDebug": "Hata ayıklama görünümünün, hata ayıklama oturumu başlangıcında açılıp açılmayacağını denetler.",
+			"launch": "Global hata ayıklama başlatma yapılandırması. Çalışma alanlarında paylaşılan 'launch.json'a alternatif olarak kullanılmalıdır"
 		},
-		"vs/workbench/parts/feedback/electron-browser/feedbackStatusbarItem": {
-			"hide": "Gizle"
+		"vs/workbench/parts/debug/browser/debugQuickOpen": {
+			"entryAriaLabel": "{0}, hata ayıklama",
+			"debugAriaLabel": "Çalıştırılacak bir başlatma yapılandırması adı girin.",
+			"addConfigTo": "Yapılandırma Ekle ({0})...",
+			"addConfiguration": "Yapı&&landırma Ekle...",
+			"noConfigurationsMatching": "Eşleyen hata ayıklama yapılandırması yok",
+			"noConfigurationsFound": "Hiçbir hata ayıklama yapılandırması bulunamadı. Lütfen bir 'launch.json' dosyası oluşturun."
 		},
-		"vs/workbench/parts/feedback/electron-browser/feedback": {
-			"sendFeedback": "Geri Bildirimi Tweet'le",
-			"label.sendASmile": "Geri bildiriminizi bize Tweet'leyin.",
-			"patchedVersion1": "Kurulumunuz bozuk.",
-			"patchedVersion2": "Eğer bir hata gönderiyorsanız bunu belirtin.",
-			"sentiment": "Deneyiminiz nasıldı?",
-			"smileCaption": "Mutlu",
-			"frownCaption": "Üzgün",
-			"other ways to contact us": "Bize ulaşmanın diğer yolları",
-			"submit a bug": "Bir hata gönder",
-			"request a missing feature": "Eksik bir özellik talebinde bulun",
-			"tell us why?": "Bize nedenini söyleyin:",
-			"commentsHeader": "Açıklamalar",
-			"showFeedback": "Durum Çubuğunda Geri Bildirim Gülen Yüzünü Göster",
-			"tweet": "Tweet'le",
-			"character left": "karakter kaldı",
-			"characters left": "karakter kaldı",
-			"feedbackSending": "Gönderiliyor",
-			"feedbackSent": "Teşekkürler",
-			"feedbackSendingError": "Yeniden dene"
+		"vs/workbench/parts/debug/electron-browser/repl": {
+			"replAriaLabel": "Oku Değerlendir Yaz Döngüsü Paneli",
+			"actions.repl.historyPrevious": "Önceki Geçmiş",
+			"actions.repl.historyNext": "Sonraki Geçmiş",
+			"actions.repl.acceptInput": "REPL Girdiyi Kabul Et",
+			"actions.repl.copyAll": "Hata Ayıklama: Konsol Tümünü Kopyala"
+		},
+		"vs/workbench/parts/debug/browser/debugEditorActions": {
+			"toggleBreakpointAction": "Hata Ayıklama: Kesme Noktası Ekle/Kaldır",
+			"conditionalBreakpointEditorAction": "Hata Ayıklama: Koşullu Kesme Noktası Ekle...",
+			"logPointEditorAction": "Hata Ayıklama: Günlük Noktası Ekle...",
+			"runToCursor": "İmlece Kadar Çalıştır",
+			"debugEvaluate": "Hata Ayıklama: Değerlendir",
+			"debugAddToWatch": "Hata Ayıklama: İzlemeye Ekle",
+			"showDebugHover": "Hata Ayıklama: Bağlantı Vurgusunu Göster"
+		},
+		"vs/workbench/parts/debug/browser/debugViewlet": {
+			"debugFocusVariablesView": "Değişkenlere Odakla",
+			"debugFocusWatchView": "İzlemeye Odakla",
+			"debugFocusCallStackView": "Çağrı Yığınına Odakla",
+			"debugFocusBreakpointsView": "Kesme Noktalarına Odakla"
+		},
+		"vs/workbench/parts/debug/electron-browser/variablesView": {
+			"variablesSection": "Değişkenler Bölümü",
+			"variablesAriaTreeLabel": "Hata Ayıklama Değişkenleri",
+			"variableValueAriaLabel": "Yeni değişken adını girin",
+			"variableScopeAriaLabel": "{0} kapsamı, değişkenler, hata ayıklama",
+			"variableAriaLabel": "{0} değeri {1}, değişkenler, hata ayıklama"
+		},
+		"vs/workbench/parts/debug/browser/breakpointsView": {
+			"logPoint": "Günlük Noktası",
+			"breakpoint": "Kesme Noktası",
+			"editBreakpoint": "Düzenle: {0}...",
+			"removeBreakpoint": "Kaldır: {0}",
+			"functionBreakpointsNotSupported": "Fonksiyon kesme noktaları bu hata ayıklama türü tarafından desteklenmiyor",
+			"functionBreakpointPlaceholder": "Mola verilecek fonksiyon",
+			"functionBreakPointInputAriaLabel": "Fonksiyon kesme noktasını girin",
+			"breakpointDisabledHover": "Devre dışı bırakılmış kesme noktası",
+			"breakpointUnverifieddHover": "Doğrulanmamış kesme noktası",
+			"functionBreakpointUnsupported": "Fonksiyon kesme noktaları bu hata ayıklama türü tarafından desteklenmiyor",
+			"breakpointDirtydHover": "Doğrulanmamış Kesme Noktası Dosya düzenlendi, lütfen hata ayıklama oturumunu yeniden başlatın.",
+			"logBreakpointUnsupported": "Günlük noktaları bu hata ayıklama türü tarafından desteklenmiyor",
+			"conditionalBreakpointUnsupported": "Koşullu kesme noktaları bu hata ayıklama türü tarafından desteklenmiyor",
+			"hitBreakpointUnsupported": "Koşullu kesme noktalarına isabet etme bu hata ayıklama türü tarafından desteklenmiyor"
+		},
+		"vs/workbench/parts/debug/electron-browser/watchExpressionsView": {
+			"expressionsSection": "İfadeler Bölümü",
+			"watchAriaTreeLabel": "Hata Ayıklama İzleme İfadeleri",
+			"watchExpressionPlaceholder": "İzlenecek ifade",
+			"watchExpressionInputAriaLabel": "İzleme ifadesi girin",
+			"watchExpressionAriaLabel": "{0} değeri {1}, izleme, hata ayıklama",
+			"watchVariableAriaLabel": "{0} değeri {1}, izleme, hata ayıklama"
+		},
+		"vs/workbench/parts/debug/electron-browser/callStackView": {
+			"callstackSection": "Çağrı Yığını Bölümü",
+			"debugStopped": "{0} Üzerinde Duraklatıldı",
+			"callStackAriaLabel": "Hata Ayıklama Çağrı Yığını",
+			"process": "İşlem",
+			"paused": "Duraklatıldı",
+			"running": "Çalışıyor",
+			"thread": "İş Parçacığı",
+			"pausedOn": "{0} Üzerinde Duraklatıldı",
+			"loadMoreStackFrames": "Daha Fazla Yığın Çerçevesi Yükleyin",
+			"threadAriaLabel": "{0} iş parçacığı, çağrı yığını, hata ayıklama",
+			"stackFrameAriaLabel": "Yığın Çerçevesi {0} satır {1} {2}, çağrı yığını, hata ayıklama"
+		},
+		"vs/workbench/parts/debug/common/debug": {
+			"internalConsoleOptions": "Dahili hata ayıklama konsolunun davranışlarını denetler."
+		},
+		"vs/workbench/parts/debug/browser/debugActionsWidget": {
+			"debugToolBarBackground": "Hata ayıklama araç çubuğu arka plan rengi.",
+			"debugToolBarBorder": "Hata ayıklama araç çubuğu kenarlık rengi."
+		},
+		"vs/workbench/parts/debug/browser/debugActions": {
+			"openLaunchJson": "{0} Dosyasını Aç",
+			"launchJsonNeedsConfigurtion": "'launch.json'u Yapılandır veya Düzelt",
+			"noFolderDebugConfig": "Gelişmiş hata ayıklama yapılandırması yapmak için lütfen ilk olarak bir klasör açın.",
+			"startDebug": "Hata Ayıklamaya Başla",
+			"startWithoutDebugging": "Hata Ayıklama Olmadan Başlat",
+			"selectAndStartDebugging": "Seç ve Hata Ayıklamaya Başla",
+			"restartDebug": "Yeniden Başlat",
+			"reconnectDebug": "Yeniden Bağlan",
+			"stepOverDebug": "Adım At",
+			"stepIntoDebug": "İçine Adımla",
+			"stepOutDebug": "Dışına Adımla",
+			"stopDebug": "Durdur",
+			"disconnectDebug": "Bağlantıyı Kes",
+			"continueDebug": "Devam Et",
+			"pauseDebug": "Duraklat",
+			"terminateThread": "İş Parçacığını Sonlandır",
+			"restartFrame": "Çerçeveyi Yeniden Başlat",
+			"removeBreakpoint": "Kesme Noktasını Kaldır",
+			"removeAllBreakpoints": "Tüm Kesme Noktalarını Kaldır",
+			"enableAllBreakpoints": "Tüm Kesme Noktalarını Etkinleştir",
+			"disableAllBreakpoints": "Tüm Kesme Noktalarını Devre Dışı Bırak",
+			"activateBreakpoints": "Kesme Noktalarını Etkinleştir",
+			"deactivateBreakpoints": "Kesme Noktalarını Devre Dışı Bırak",
+			"reapplyAllBreakpoints": "Tüm Kesme Noktalarını Yeniden Uygula",
+			"addFunctionBreakpoint": "Fonksiyon Kesme Noktası Ekle",
+			"setValue": "Değeri Ayarla",
+			"addWatchExpression": "İfade Ekle",
+			"editWatchExpression": "İfadeyi Düzenle",
+			"addToWatchExpressions": "İzlemeye Ekle",
+			"removeWatchExpression": "İfadeyi Kaldır",
+			"removeAllWatchExpressions": "Tüm İfadeleri Kaldır",
+			"clearRepl": "Konsolu Temizle",
+			"debugConsoleAction": "Hata Ayıklama Konsolu",
+			"unreadOutput": "Hata Ayıklama Konsolunda Yeni Çıktı",
+			"debugFocusConsole": "Hata Ayıklama Konsoluna Odakla",
+			"focusProcess": "İşleme Odakla",
+			"stepBackDebug": "Geri Adım At",
+			"reverseContinue": "Tersine Çevir"
+		},
+		"vs/workbench/parts/debug/electron-browser/debugService": {
+			"snapshotObj": "Bu nesne için sadece ilkel türler gösterilir.",
+			"debuggingPaused": "Hata ayıklama duraklatıldı, sebep {0}, {1} {2}",
+			"debuggingStarted": "Hata ayıklama başlatıldı.",
+			"debuggingStopped": "Hata ayıklama durduruldu.",
+			"breakpointAdded": "Kesme noktası eklendi, {0}. satır, {1} dosyası",
+			"breakpointRemoved": "Kesme noktası kaldırıldı, {0}. satır, {1} dosyası",
+			"compoundMustHaveConfigurations": "Bileşik, birden çok yapılandırmayı başlatmak için \"configurations\" özniteliği bulundurmalıdır.",
+			"noConfigurationNameInWorkspace": "Çalışma alanında '{0}' başlatma yapılandırması bulunamadı.",
+			"multipleConfigurationNamesInWorkspace": "Çalışma alanında birden fazla '{0}' başlatma yapılandırması var. Yapılandırmayı belirtmek için klasör adını kullanın.",
+			"noFolderWithName": "'{2}' bileşiğindeki '{1}' yapılandırması için '{0}' adlı klasör bulunamadı.",
+			"configMissing": "'launch.json' dosyasında '{0}' yapılandırması eksik.",
+			"launchJsonDoesNotExist": "'launch.json' mevcut değil.",
+			"debugRequestNotSupported": "Seçilen hata ayıklama yapılandırılmasındaki '{0}' özniteliği desteklenmeyen '{1}' değeri içeriyor.",
+			"debugRequesMissing": "'{0}' özniteliği seçilen hata ayıklama yapılandırılmasında eksik.",
+			"debugTypeNotSupported": "Yapılandırılan hata ayıklama türü '{0}', desteklenmiyor.",
+			"debugTypeMissing": "Seçilen başlatma yapılandırması için 'type' özelliği eksik.",
+			"debugAnyway": "Yine de Hata Ayıkla",
+			"preLaunchTaskErrors": "'{0}' ön başlatma görevi sırasında derleme hataları algılandı.",
+			"preLaunchTaskError": "'{0}' ön başlatma görevi sırasında derleme hatası algılandı.",
+			"preLaunchTaskExitCode": "'{0}' ön başlatma görevi {1} çıkış koduyla sonlandı.",
+			"showErrors": "Hataları Göster",
+			"noFolderWorkspaceDebugError": "Aktif dosyada hata ayıklama yapılamıyor. Lütfen, dosyanın diskte kayıtlı olduğundan ve bu dosya türü için hata ayıklama eklentinizin olduğundan emin olun.",
+			"cancel": "İptal",
+			"DebugTaskNotFound": "'{0}' görevi bulunamadı.",
+			"taskNotTracked": "'{0}' görevi izlenemez."
+		},
+		"vs/workbench/parts/debug/browser/debugContentProvider": {
+			"unable": "Hata ayıklama oturumu olmadan kaynak çözümlenemiyor",
+			"canNotResolveSource": "{0} kaynağı çözümlenemedi, hata ayıklama eklentisi yanıt vermedi."
+		},
+		"vs/workbench/parts/debug/browser/debugCommands": {
+			"noFolderDebugConfig": "Gelişmiş hata ayıklama yapılandırması yapmak için lütfen ilk olarak bir klasör açın.",
+			"columnBreakpoint": "Sütun Kesme Noktası",
+			"debug": "Hata Ayıklama",
+			"addColumnBreakpoint": "Sütun Kesme Noktası Ekle"
+		},
+		"vs/workbench/parts/debug/browser/statusbarColorProvider": {
+			"statusBarDebuggingBackground": "Bir programda hata ayıklama yapılırken durum çubuğu arka plan rengi. Durum çubuğu, pencerenin alt kısmında gösterilir.",
+			"statusBarDebuggingForeground": "Bir programda hata ayıklama yapılırken durum çubuğu ön plan rengi. Durum çubuğu, pencerenin alt kısmında gösterilir.",
+			"statusBarDebuggingBorder": "Bir programda hata ayıklama yapılırken, durum çubuğunu kenar çubuğundan ve düzenleyiciden ayıran kenarlık rengi. Durum çubuğu, pencerenin alt kısmında gösterilir."
+		},
+		"vs/workbench/parts/debug/browser/debugStatus": {
+			"selectAndStartDebug": "Seçin ve hata ayıklama yapılandırmasını başlatın"
+		},
+		"vs/workbench/parts/debug/electron-browser/debugEditorContribution": {
+			"logPoint": "Günlük Noktası",
+			"breakpoint": "Kesme Noktası",
+			"removeBreakpoint": "Kaldır: {0}",
+			"editBreakpoint": "Düzenle: {0}...",
+			"disableBreakpoint": "Devre Dışı Bırak: {0}",
+			"enableBreakpoint": "Etkinleştir: {0}",
+			"removeBreakpoints": "Kesme Noktalarını Kaldır",
+			"removeBreakpointOnColumn": "{0}. Sütundaki Kesme Noktasını Kaldır",
+			"removeLineBreakpoint": "Satır Kesme Noktasını Kaldır",
+			"editBreakpoints": "Kesme Noktalarını Düzenle",
+			"editBreakpointOnColumn": "{0}. Sütundaki Kesme Noktasını Düzenle",
+			"editLineBrekapoint": "Satır Kesme Noktasını Düzenle",
+			"enableDisableBreakpoints": "Kesme Noktalarını Etkinleştir/Devre Dışı Bırak",
+			"disableColumnBreakpoint": "{0}. Sütundaki Kesme Noktasını Devre Dışı Bırak",
+			"disableBreakpointOnLine": "Satır Kesme Noktasını Devre Dışı Bırak",
+			"enableBreakpoints": "{0}. Sütundaki Kesme Noktasını Etkinleştir",
+			"enableBreakpointOnLine": "Satır Kesme Noktasını Etkinleştir",
+			"addBreakpoint": "Kesme Noktası Ekle",
+			"addConditionalBreakpoint": "Koşullu Kesme Noktası Ekle...",
+			"addLogPoint": "Günlük Noktası Ekle...",
+			"breakpointHasCondition": "Bu {0}, kaldırıldığında kaybolacak bir {1}'e sahip. Bunun yerine {0}'i kaldırmayı düşünün.",
+			"message": "mesaj",
+			"condition": "koşul",
+			"removeLogPoint": "Kaldır: {0}",
+			"disableLogPoint": "Devre Dışı Bırak: {0}",
+			"cancel": "İptal",
+			"addConfiguration": "Yapılandırma Ekle..."
+		},
+		"vs/workbench/parts/debug/electron-browser/replViewer": {
+			"stateCapture": "Nesne durumu ilk değerlendirmeden alındı",
+			"replVariableAriaLabel": "{0} değişkeni, {1} değerine sahip, oku değerlendir yaz döngüsü, hata ayıklama",
+			"replExpressionAriaLabel": "{0} ifadesi, {1} değerine sahip, oku değerlendir yaz döngüsü, hata ayıklama",
+			"replValueOutputAriaLabel": "{0}, oku değerlendir yaz döngüsü, hata ayıklama",
+			"replRawObjectAriaLabel": "{0} repl değişkeni, {1} değerine sahip, oku değerlendir yaz döngüsü, hata ayıklama"
+		},
+		"vs/workbench/parts/debug/browser/debugActionItems": {
+			"noConfigurations": "Yapılandırma Yok",
+			"addConfigTo": "Yapılandırma Ekle ({0})...",
+			"addConfiguration": "Yapılandırma Ekle..."
+		},
+		"vs/workbench/parts/debug/common/debugModel": {
+			"notAvailable": "mevcut değil",
+			"startDebugFirst": "Lütfen değerlendirilecek bir hata ayıklama oturumu başlatın"
+		},
+		"vs/workbench/parts/debug/electron-browser/electronDebugActions": {
+			"copyValue": "Değeri Kopyala",
+			"copyAsExpression": "İfade Olarak Kopyala",
+			"copy": "Kopyala",
+			"copyAll": "Tümünü Kopyala",
+			"copyStackTrace": "Çağrı Yığınını Kopyala"
+		},
+		"vs/workbench/parts/debug/electron-browser/rawDebugSession": {
+			"moreInfo": "Daha Fazla Bilgi",
+			"debugAdapterCrash": "Hata ayıklama bağdaştırıcısı beklenmeyen biçimde sonlandırıldı"
+		},
+		"vs/workbench/parts/debug/electron-browser/debugConfigurationManager": {
+			"vscode.extension.contributes.debuggers": "Hata ayıklama bağdaştırıcılarına ekleme yapar.",
+			"vscode.extension.contributes.debuggers.type": "Bu hata ayıklama bağdaştırıcısnın benzersiz tanımlayıcısı.",
+			"vscode.extension.contributes.debuggers.label": "Bu hata ayıklama bağdaştırıcısnın görünen adı.",
+			"vscode.extension.contributes.debuggers.program": "Hata ayıklama bağdaştırıcı programının yolu. Yol, ya mutlak ya da eklenti klasörüne görelidir.",
+			"vscode.extension.contributes.debuggers.args": "Bağdaştırıcıya iletilecek ek argümanlar.",
+			"vscode.extension.contributes.debuggers.runtime": "Program özniteliğinin yürütülebilir olmadığı halde bir çalışma zamanını gerektirmesi durumu için isteğe bağlı çalışma zamanı.",
+			"vscode.extension.contributes.debuggers.runtimeArgs": "İsteğe bağlı çalışma zamanı argümanları.",
+			"vscode.extension.contributes.debuggers.variables": "`launch.json` dosyasındaki interaktif değişkenlerin (ör. ${action.pickProcess}) bir komuta eşlenmesi.",
+			"vscode.extension.contributes.debuggers.initialConfigurations": "İlk 'launch.json' dosyasının üretimi için yapılandırmalar.",
+			"vscode.extension.contributes.debuggers.languages": "Hata ayıklama eklentisinin, \"varsayılan hata ayıklayıcı\" olarak değerlendirilebileceği diller listesi.",
+			"vscode.extension.contributes.debuggers.adapterExecutableCommand": "Belirtilirse; VS Code, hata ayıklama bağdaştırıcısı yürütülebilir dosyasının yolunu ve ona gönderilecek argümanları belirlemek için bu komutu çağırır.",
+			"vscode.extension.contributes.debuggers.configurationSnippets": "'launch.json' dosyasına yeni yapılandırmalar ekleme parçacıkları.",
+			"vscode.extension.contributes.debuggers.configurationAttributes": "'launch.json' dosyasını doğrulayacak JSON şema yapılandırmaları.",
+			"vscode.extension.contributes.debuggers.windows": "Windows'a özel ayarlar.",
+			"vscode.extension.contributes.debuggers.windows.runtime": "Windows'da kullanılacak çalışma zamanı.",
+			"vscode.extension.contributes.debuggers.osx": "macOS'e özel ayarlar.",
+			"vscode.extension.contributes.debuggers.osx.runtime": "macOS'de kullanılacak çalışma zamanı.",
+			"vscode.extension.contributes.debuggers.linux": "Linux'a özel ayarlar.",
+			"vscode.extension.contributes.debuggers.linux.runtime": "Linux'da kullanılacak çalışma zamanı.",
+			"vscode.extension.contributes.breakpoints": "Kesme noktalarına ekleme yapar.",
+			"vscode.extension.contributes.breakpoints.language": "Bu dil için kesme noktalarını etkinleştir.",
+			"app.launch.json.title": "Başlat",
+			"app.launch.json.version": "Bu dosya biçiminin sürümü.",
+			"app.launch.json.configurations": "Yapılandırma listesi. IntelliSense kullanarak yeni yapılandırmalar ekleyin veya mevcut olanları düzenleyin.",
+			"app.launch.json.compounds": "Bileşikler listesi. Her bileşik, birlikte çalıştırılacak birden çok yapılandırmaya başvurur.",
+			"app.launch.json.compound.name": "Bileşiğin adı. Başlatma yapılandırması açılır kutu menüsünde görünür.",
+			"useUniqueNames": "Lütfen benzersiz yapılandırma adları kullanın.",
+			"app.launch.json.compound.folder": "Bileşiğin bulunduğu klasörün adı.",
+			"app.launch.json.compounds.configurations": "Bu bileşiğin parçası olarak başlatılacak yapılandırmaların adları.",
+			"debugNoType": "Hata ayıklayıcının 'type' ögesi atlanamaz ve 'dize' türünde olmalıdır.",
+			"selectDebug": "Ortam Seçin",
+			"DebugConfig.failed": " '.vscode' klasörü içinde 'launch.json' dosyası oluşturulamıyor ({0}).",
+			"workspace": "çalışma alanı",
+			"user settings": "kullanıcı ayarları"
+		},
+		"vs/workbench/parts/debug/common/debugSource": {
+			"unknownSource": "Bilinmeyen Kaynak"
+		},
+		"vs/workbench/parts/debug/browser/exceptionWidget": {
+			"debugExceptionWidgetBorder": "İstisna aracı kenarlık rengi.",
+			"debugExceptionWidgetBackground": "İstisna aracı arka plan rengi.",
+			"exceptionThrownWithId": "İstisna oluştu: {0}",
+			"exceptionThrown": "İstisna oluştu."
+		},
+		"vs/workbench/parts/debug/electron-browser/debugHover": {
+			"treeAriaLabel": "Hata Ayıklama Bağlantı Vurgusu"
+		},
+		"vs/workbench/parts/debug/electron-browser/breakpointWidget": {
+			"breakpointWidgetLogMessagePlaceholder": "Bu kesme noktası isabet aldığında günlüğe kaydedilecek mesaj. {} arasındaki ifadeler hesaplanmaktadır. Kabul etmek için 'Enter', iptal etmek için 'Esc' tuşuna basın.",
+			"breakpointWidgetHitCountPlaceholder": "İsabet sayısı koşulu sağlandığında mola ver. Kabul etmek için 'Enter', iptal etmek için 'Esc' tuşuna basın.",
+			"breakpointWidgetExpressionPlaceholder": "İfade değerlendirmesi doğru olduğunda mola ver. Kabul etmek için 'Enter', iptal etmek için 'Esc' tuşuna basın.",
+			"expression": "İfade",
+			"hitCount": "İsabet Sayısı",
+			"logMessage": "Günlük Mesajı"
+		},
+		"vs/workbench/parts/debug/browser/linkDetector": {
+			"fileLinkMac": "Takip etmek için tıklayın (Cmd + tıklama yana açar)",
+			"fileLink": "Takip etmek için tıklayın (Ctrl + tıklama yana açar)"
+		},
+		"vs/workbench/parts/debug/node/debugAdapter": {
+			"debugAdapterBinNotFound": "Hata ayıklama bağdaştırıcısı yürütülebilir dosyası '{0}', mevcut değil.",
+			"debugAdapterCannotDetermineExecutable": "Hata ayıklama bağdaştırıcısı yürütülebilir dosyası '{0}' belirlenemedi.",
+			"unableToLaunchDebugAdapter": "'{0}' tarafından hata ayıklama bağdaştırıcısı başlatılamadı.",
+			"unableToLaunchDebugAdapterNoArgs": "Hata ayıklama bağdaştırıcısı başlatılamıyor."
+		},
+		"vs/workbench/parts/debug/node/debugger": {
+			"launch.config.comment1": "Olası öznitelikler hakkında bilgi edinmek için IntelliSense kullanın.",
+			"launch.config.comment2": "Mevcut özniteliklerin açıklamalarını görmek için fare ile üzerine gelin.",
+			"launch.config.comment3": "Daha fazla bilgi için ziyaret edin: {0}",
+			"debugType": "Yapılandırma türü.",
+			"debugTypeNotRecognised": "Hata ayıklama türü tanınmıyor. Karşılık gelen hata ayıklama uzantısı yüklemiş olduğunuzdan ve etkinleştirildiğinden emin olun.",
+			"node2NotSupported": "\"node2\" artık desteklenmiyor, bunun yerine \"node\" kullanın ve \"protocol\" özniteliğini \"inspector\" olarak ayarlayın.",
+			"debugName": "Yapılandırmanın adı; başlatma yapılandırması açılır kutu menüsünde görünür.",
+			"debugRequest": "Yapılandırmanın istek türü. \"launch\" veya \"attach\" olabilir.",
+			"debugServer": "Sadece eklenti geliştirme hata ayıklaması için: eğer port belirtildiyse; Vs Code, bir hata ayıklama bağdaştırıcısına sunucu modunda bağlanmayı dener",
+			"debugPrelaunchTask": "Hata ayıklama oturumu başlamadan önce çalıştırılacak görev.",
+			"debugPostDebugTask": "Hata ayıklama oturumu sona erdikten sonra çalıştırılacak görev.",
+			"debugWindowsConfiguration": "Windows'a özel başlangıç yapılandırması öznitelikleri.",
+			"debugOSXConfiguration": "OS X'e özel başlangıç yapılandırması öznitelikleri.",
+			"debugLinuxConfiguration": "Linux'a özel başlangıç yapılandırması öznitelikleri.",
+			"deprecatedVariables": "'env.', 'config.' ve 'command.' kullanım dışıdır, bunların yerine 'env:', 'config:' ve 'command:' kulanın."
+		},
+		"vs/workbench/parts/debug/electron-browser/terminalSupport": {
+			"debug.terminal.title": "hata ayıklanan"
+		},
+		"vs/workbench/parts/debug/node/terminals": {
+			"console.title": "VS Code Konsolu",
+			"mac.terminal.script.failed": "'{0}' betiği, {1} çıkış koduyla başarısız oldu",
+			"mac.terminal.type.not.supported": "'{0}' desteklenmiyor",
+			"press.any.key": "Devam etmek için bir tuşa basın ...",
+			"linux.term.failed": "'{0}', {1} çıkış koduyla başarısız oldu"
 		},
 		"vs/workbench/parts/extensions/electron-browser/extensions.contribution": {
 			"extensionsCommands": "Eklentileri Yönet",
@@ -2569,6 +2541,34 @@
 		"vs/workbench/parts/extensions/browser/extensionsWidgets": {
 			"ratedByUsers": "{0} kullanıcı tarafından derecelendirildi",
 			"ratedBySingleUser": "1 kullanıcı tarafından derecelendirildi"
+		},
+		"vs/workbench/parts/feedback/electron-browser/feedback.contribution": {
+			"workbenchConfigurationTitle": "Çalışma Ekranı",
+			"feedbackVisibility": "Çalışma ekranının altındaki durum çubuğunda bulunan Twitter geri bildiriminin (gülen yüz) görünürlüğünü denetler."
+		},
+		"vs/workbench/parts/feedback/electron-browser/feedbackStatusbarItem": {
+			"hide": "Gizle"
+		},
+		"vs/workbench/parts/feedback/electron-browser/feedback": {
+			"sendFeedback": "Geri Bildirimi Tweet'le",
+			"label.sendASmile": "Geri bildiriminizi bize Tweet'leyin.",
+			"patchedVersion1": "Kurulumunuz bozuk.",
+			"patchedVersion2": "Eğer bir hata gönderiyorsanız bunu belirtin.",
+			"sentiment": "Deneyiminiz nasıldı?",
+			"smileCaption": "Mutlu",
+			"frownCaption": "Üzgün",
+			"other ways to contact us": "Bize ulaşmanın diğer yolları",
+			"submit a bug": "Bir hata gönder",
+			"request a missing feature": "Eksik bir özellik talebinde bulun",
+			"tell us why?": "Bize nedenini söyleyin:",
+			"commentsHeader": "Açıklamalar",
+			"showFeedback": "Durum Çubuğunda Geri Bildirim Gülen Yüzünü Göster",
+			"tweet": "Tweet'le",
+			"character left": "karakter kaldı",
+			"characters left": "karakter kaldı",
+			"feedbackSending": "Gönderiliyor",
+			"feedbackSent": "Teşekkürler",
+			"feedbackSendingError": "Yeniden dene"
 		},
 		"vs/workbench/parts/html/electron-browser/html.contribution": {
 			"html.editor.label": "Html Önizlemesi"
@@ -3169,6 +3169,49 @@
 		"vs/workbench/parts/scm/electron-browser/scmActivity": {
 			"scmPendingChangesBadge": "{0} bekleyen değişiklik"
 		},
+		"vs/workbench/parts/snippets/electron-browser/snippets.contribution": {
+			"snippetSchema.json.default": "Boş parçacık",
+			"snippetSchema.json": "Kullanıcı parçacığı yapılandırması",
+			"snippetSchema.json.prefix": "Parçacığı IntelliSense'de seçerken kullanılacak ön ek",
+			"snippetSchema.json.body": "Parçacık içeriği. İmleç konumlarını tanımlamak için '$1', '${1:varsayilanMetin}' kullanın, en son imleç konumu için '$0' kullanın. Değişken değerlerini '${degiskenAdi}' ve '${degiskenAdi:varsayilanMetin}' ile ekleyin, ör. 'Bu bir dosyadır: $TM_FILENAME'.",
+			"snippetSchema.json.description": "Parçacık açıklaması.",
+			"snippetSchema.json.scope": "Bu parçacığın uygulanacağı dillerin bir listesi, ör: 'typescript,javascript'."
+		},
+		"vs/workbench/parts/snippets/electron-browser/insertSnippet": {
+			"snippet.suggestions.label": "Parçacık Ekle",
+			"sep.userSnippet": "Kullanıcı Parçacıkları",
+			"sep.extSnippet": "Eklenti Parçacıkları"
+		},
+		"vs/workbench/parts/snippets/electron-browser/snippetsService": {
+			"invalid.path.0": "`contributes.{0}.path` ögesinde dize bekleniyor. Sağlanan değer: {1}",
+			"invalid.language.0": "Dil atlanırken `contributes.{0}.path`in değeri bir `.code-snippets` dosyası olmalıdır. Belirtilen değer {1}",
+			"invalid.language": "`contributes.{0}.language` ögesinde bilinmeyen dil. Sağlanan değer: {1}",
+			"invalid.path.1": "`contributes.{0}.path` ögesinin ({1}) eklentinin klasöründe ({2}) yer alması bekleniyor. Bu, eklentiyi taşınamaz yapabilir.",
+			"vscode.extension.contributes.snippets": "Parçacıklara ekleme yapar.",
+			"vscode.extension.contributes.snippets-language": "Bu parçacığın ekleneceği dilin tanımlayıcısı.",
+			"vscode.extension.contributes.snippets-path": "Parçacıklar dosyasının yolu. Yol, eklenti klasörüne görecelidir ve genellikle './snippets/' ile başlar.",
+			"badVariableUse": "'{0}' eklentisindeki bir veya daha çok parçacık yüksek olasılıkla parçacık değişkenleri ile parçacık yer tutucularını karıştırıyor (daha fazla bilgi için https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax adresini ziyaret edin).",
+			"badFile": "Parçacık dosyası \"{0}\" okunamadı.",
+			"detail.snippet": "{0} ({1})",
+			"snippetSuggest.longLabel": "{0}, {1}"
+		},
+		"vs/workbench/parts/snippets/electron-browser/configureSnippets": {
+			"global.scope": "(global)",
+			"global.1": "({0})",
+			"new.global": "Yeni Global Parçacıklar dosyası...",
+			"group.global": "Mevcut Parçacıklar",
+			"new.global.sep": "Yeni Parçacıklar",
+			"openSnippet.pickLanguage": "Parçacıklar Dosyası Seç veya Parçacık Oluştur",
+			"openSnippet.label": "Kullanıcı Parçacıklarını Yapılandır",
+			"preferences": "Tercihler"
+		},
+		"vs/workbench/parts/snippets/electron-browser/tabCompletion": {
+			"tabCompletion": "Ön ekleri eşleştiğinde parçacıkları ekleyin. 'quickSuggestions' etkinleştirilmediği zaman en iyi şekilde çalışır."
+		},
+		"vs/workbench/parts/snippets/electron-browser/snippetsFile": {
+			"source.snippetGlobal": "Global Kullanıcı Parçacığı",
+			"source.snippet": "Kullanıcı Parçacığı"
+		},
 		"vs/workbench/parts/search/electron-browser/search.contribution": {
 			"search": "Ara",
 			"copyMatchLabel": "Kopyala",
@@ -3305,49 +3348,6 @@
 		},
 		"vs/workbench/parts/search/browser/replaceService": {
 			"fileReplaceChanges": "{0} ↔ {1} (Değiştirme Önizlemesi)"
-		},
-		"vs/workbench/parts/snippets/electron-browser/snippets.contribution": {
-			"snippetSchema.json.default": "Boş parçacık",
-			"snippetSchema.json": "Kullanıcı parçacığı yapılandırması",
-			"snippetSchema.json.prefix": "Parçacığı IntelliSense'de seçerken kullanılacak ön ek",
-			"snippetSchema.json.body": "Parçacık içeriği. İmleç konumlarını tanımlamak için '$1', '${1:varsayilanMetin}' kullanın, en son imleç konumu için '$0' kullanın. Değişken değerlerini '${degiskenAdi}' ve '${degiskenAdi:varsayilanMetin}' ile ekleyin, ör. 'Bu bir dosyadır: $TM_FILENAME'.",
-			"snippetSchema.json.description": "Parçacık açıklaması.",
-			"snippetSchema.json.scope": "Bu parçacığın uygulanacağı dillerin bir listesi, ör: 'typescript,javascript'."
-		},
-		"vs/workbench/parts/snippets/electron-browser/insertSnippet": {
-			"snippet.suggestions.label": "Parçacık Ekle",
-			"sep.userSnippet": "Kullanıcı Parçacıkları",
-			"sep.extSnippet": "Eklenti Parçacıkları"
-		},
-		"vs/workbench/parts/snippets/electron-browser/snippetsService": {
-			"invalid.path.0": "`contributes.{0}.path` ögesinde dize bekleniyor. Sağlanan değer: {1}",
-			"invalid.language.0": "Dil atlanırken `contributes.{0}.path`in değeri bir `.code-snippets` dosyası olmalıdır. Belirtilen değer {1}",
-			"invalid.language": "`contributes.{0}.language` ögesinde bilinmeyen dil. Sağlanan değer: {1}",
-			"invalid.path.1": "`contributes.{0}.path` ögesinin ({1}) eklentinin klasöründe ({2}) yer alması bekleniyor. Bu, eklentiyi taşınamaz yapabilir.",
-			"vscode.extension.contributes.snippets": "Parçacıklara ekleme yapar.",
-			"vscode.extension.contributes.snippets-language": "Bu parçacığın ekleneceği dilin tanımlayıcısı.",
-			"vscode.extension.contributes.snippets-path": "Parçacıklar dosyasının yolu. Yol, eklenti klasörüne görecelidir ve genellikle './snippets/' ile başlar.",
-			"badVariableUse": "'{0}' eklentisindeki bir veya daha çok parçacık yüksek olasılıkla parçacık değişkenleri ile parçacık yer tutucularını karıştırıyor (daha fazla bilgi için https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax adresini ziyaret edin).",
-			"badFile": "Parçacık dosyası \"{0}\" okunamadı.",
-			"detail.snippet": "{0} ({1})",
-			"snippetSuggest.longLabel": "{0}, {1}"
-		},
-		"vs/workbench/parts/snippets/electron-browser/configureSnippets": {
-			"global.scope": "(global)",
-			"global.1": "({0})",
-			"new.global": "Yeni Global Parçacıklar dosyası...",
-			"group.global": "Mevcut Parçacıklar",
-			"new.global.sep": "Yeni Parçacıklar",
-			"openSnippet.pickLanguage": "Parçacıklar Dosyası Seç veya Parçacık Oluştur",
-			"openSnippet.label": "Kullanıcı Parçacıklarını Yapılandır",
-			"preferences": "Tercihler"
-		},
-		"vs/workbench/parts/snippets/electron-browser/tabCompletion": {
-			"tabCompletion": "Ön ekleri eşleştiğinde parçacıkları ekleyin. 'quickSuggestions' etkinleştirilmediği zaman en iyi şekilde çalışır."
-		},
-		"vs/workbench/parts/snippets/electron-browser/snippetsFile": {
-			"source.snippetGlobal": "Global Kullanıcı Parçacığı",
-			"source.snippet": "Kullanıcı Parçacığı"
 		},
 		"vs/workbench/parts/surveys/electron-browser/nps.contribution": {
 			"surveyQuestion": "Hızlı bir geri bildirim anketine katılmak ister misiniz?",
@@ -3992,19 +3992,6 @@
 			"workspaceTarget": "Çalışma Alanı Ayarları",
 			"folderTarget": "Klasör Ayarları"
 		},
-		"vs/workbench/services/configurationResolver/node/variableResolver": {
-			"missingEnvVarName": "Hiçbir ortam değişkeni adı belirtilmediği için '{0}' çözümlenemiyor.",
-			"configNotFound": "'{1}' ayarı bulunamadığı için '{0}' çözümlenemiyor.",
-			"configNoString": "'{1}' yapılandırılmış bir değer olduğu için '{0}' çözümlenemiyor.",
-			"missingConfigName": "Hiçbir ayar adı belirtilmediği için '{0}' çözümlenemiyor.",
-			"noValueForCommand": "Komut değer içermediği için '{0}' çözümlenemiyor.",
-			"canNotFindFolder": "'{0}' çözümlenemiyor. '{1}' klasörü yok.",
-			"canNotResolveWorkspaceFolderMultiRoot": "'{0}', birden çok klasörlü çalışma alanında çözümlenemiyor. ':' ve bir çalışma alanı klasörü adı kullanarak bu değişkeni test edin.",
-			"canNotResolveWorkspaceFolder": "'{0}' çözümlenemiyor. Lütfen bir klasör açın.",
-			"canNotResolveFile": "'{0}' çözümlenemiyor. Lütfen bir düzenleyici açın.",
-			"canNotResolveLineNumber": "'{0}' çözümlenemiyor. Lütfen aktif düzenleyicide bir satırın seçili olduğundan emin olun.",
-			"canNotResolveSelectedText": "'{0}' çözümlenemiyor. Lütfen aktif düzenleyicide seçili metin olduğundan emin olun."
-		},
 		"vs/workbench/parts/welcome/page/electron-browser/welcomePage.contribution": {
 			"workbenchConfigurationTitle": "Çalışma Ekranı",
 			"workbench.startupEditor.none": "Bir düzenleyici olmadan başlayın.",
@@ -4117,6 +4104,19 @@
 			"welcomePage.interfaceOverviewDescription": "Kullanıcı arayüzünün ana bileşenlerini vurgulayan bir kaplamayı görüntüleyin",
 			"welcomePage.interactivePlayground": "İnteraktif oyun alanı",
 			"welcomePage.interactivePlaygroundDescription": "Başlıca düzenleyici özelliklerini kısa örneklerle deneyin"
+		},
+		"vs/workbench/services/configurationResolver/node/variableResolver": {
+			"missingEnvVarName": "Hiçbir ortam değişkeni adı belirtilmediği için '{0}' çözümlenemiyor.",
+			"configNotFound": "'{1}' ayarı bulunamadığı için '{0}' çözümlenemiyor.",
+			"configNoString": "'{1}' yapılandırılmış bir değer olduğu için '{0}' çözümlenemiyor.",
+			"missingConfigName": "Hiçbir ayar adı belirtilmediği için '{0}' çözümlenemiyor.",
+			"noValueForCommand": "Komut değer içermediği için '{0}' çözümlenemiyor.",
+			"canNotFindFolder": "'{0}' çözümlenemiyor. '{1}' klasörü yok.",
+			"canNotResolveWorkspaceFolderMultiRoot": "'{0}', birden çok klasörlü çalışma alanında çözümlenemiyor. ':' ve bir çalışma alanı klasörü adı kullanarak bu değişkeni test edin.",
+			"canNotResolveWorkspaceFolder": "'{0}' çözümlenemiyor. Lütfen bir klasör açın.",
+			"canNotResolveFile": "'{0}' çözümlenemiyor. Lütfen bir düzenleyici açın.",
+			"canNotResolveLineNumber": "'{0}' çözümlenemiyor. Lütfen aktif düzenleyicide bir satırın seçili olduğundan emin olun.",
+			"canNotResolveSelectedText": "'{0}' çözümlenemiyor. Lütfen aktif düzenleyicide seçili metin olduğundan emin olun."
 		},
 		"vs/workbench/services/crashReporter/electron-browser/crashReporterService": {
 			"telemetryConfigurationTitle": "Telemetri",
@@ -4309,25 +4309,6 @@
 		"vs/workbench/services/textfile/common/textFileService": {
 			"files.backup.failSave": "Kaydedilmemiş değişiklikler içeren dosyalar yedekleme konumuna yazılamadı. (Hata: {0}). Önce dosyalarınızı kaydetmeyi deneyin ve ardından kapatın."
 		},
-		"vs/workbench/services/textMate/electron-browser/TMSyntax": {
-			"invalid.language": "`contributes.{0}.language` ögesinde bilinmeyen dil. Sağlanan değer: {1}",
-			"invalid.scopeName": "`contributes.{0}.scopeName` ögesinde dize bekleniyor. Sağlanan değer: {1}",
-			"invalid.path.0": "`contributes.{0}.path` ögesinde dize bekleniyor. Sağlanan değer: {1}",
-			"invalid.injectTo": "`contributes.{0}.injectTo` ögesinde geçersiz değer. Dil kapsam adlarından oluşan bir dizi olmalıdır. Sağlanan değer: {1}",
-			"invalid.embeddedLanguages": "`contributes.{0}.embeddedLanguages` ögesinde geçersiz değer. Kapsam adından dile kadar olan bir nesne haritası olmalıdır. Sağlanan değer: {1}",
-			"invalid.tokenTypes": "`contributes.{0}.tokenTypes` ögesinde geçersiz değer. Kapsam adından anahtar türüne kadar olan bir nesne haritası olmalıdır. Sağlanan değer: {1}",
-			"invalid.path.1": "`contributes.{0}.path` ögesinin ({1}) eklentinin klasöründe ({2}) yer alması bekleniyor. Bu, eklentiyi taşınamaz yapabilir.",
-			"no-tm-grammar": "Bu dil için kayıtlı bir TM Grameri yok."
-		},
-		"vs/workbench/services/textMate/electron-browser/TMGrammars": {
-			"vscode.extension.contributes.grammars": "textmate tokenizerlere ekleme yapar.",
-			"vscode.extension.contributes.grammars.language": "Bu söz diziminin ekleneceği dil tanımlayıcısı.",
-			"vscode.extension.contributes.grammars.scopeName": "tmLanguage dosyası tarafından kullanılan Textmate kapsam adı.",
-			"vscode.extension.contributes.grammars.path": "tmLanguage dosyasının yolu. Yol, eklenti klasörüne görecelidir ve genellikle './syntaxes/' ile başlar.",
-			"vscode.extension.contributes.grammars.embeddedLanguages": "Bu dil bilgisinin gömülü dilleri içermesi durumundaki bir dil id'sinin kapsam adı haritası.",
-			"vscode.extension.contributes.grammars.tokenTypes": "Kapsam adından anahtar türüne kadar olan bir harita.",
-			"vscode.extension.contributes.grammars.injectTo": "Bu dil bilgisinin yerleştirileceği dil kapsam adları listesi."
-		},
 		"vs/workbench/services/themes/common/colorExtensionPoint": {
 			"contributes.color": "Eklenti tarafından tanımlanan tema olarak kullanılabilir renklere ekleme yapar",
 			"contributes.color.id": "Tema olarak kullanılabilir rengin tanımlayıcısı",
@@ -4436,6 +4417,25 @@
 		},
 		"vs/workbench/services/themes/electron-browser/fileIconThemeData": {
 			"error.cannotparseicontheme": "Dosya simgeleri dosyasını ayrıştırma sorunları: {0}"
+		},
+		"vs/workbench/services/textMate/electron-browser/TMSyntax": {
+			"invalid.language": "`contributes.{0}.language` ögesinde bilinmeyen dil. Sağlanan değer: {1}",
+			"invalid.scopeName": "`contributes.{0}.scopeName` ögesinde dize bekleniyor. Sağlanan değer: {1}",
+			"invalid.path.0": "`contributes.{0}.path` ögesinde dize bekleniyor. Sağlanan değer: {1}",
+			"invalid.injectTo": "`contributes.{0}.injectTo` ögesinde geçersiz değer. Dil kapsam adlarından oluşan bir dizi olmalıdır. Sağlanan değer: {1}",
+			"invalid.embeddedLanguages": "`contributes.{0}.embeddedLanguages` ögesinde geçersiz değer. Kapsam adından dile kadar olan bir nesne haritası olmalıdır. Sağlanan değer: {1}",
+			"invalid.tokenTypes": "`contributes.{0}.tokenTypes` ögesinde geçersiz değer. Kapsam adından anahtar türüne kadar olan bir nesne haritası olmalıdır. Sağlanan değer: {1}",
+			"invalid.path.1": "`contributes.{0}.path` ögesinin ({1}) eklentinin klasöründe ({2}) yer alması bekleniyor. Bu, eklentiyi taşınamaz yapabilir.",
+			"no-tm-grammar": "Bu dil için kayıtlı bir TM Grameri yok."
+		},
+		"vs/workbench/services/textMate/electron-browser/TMGrammars": {
+			"vscode.extension.contributes.grammars": "textmate tokenizerlere ekleme yapar.",
+			"vscode.extension.contributes.grammars.language": "Bu söz diziminin ekleneceği dil tanımlayıcısı.",
+			"vscode.extension.contributes.grammars.scopeName": "tmLanguage dosyası tarafından kullanılan Textmate kapsam adı.",
+			"vscode.extension.contributes.grammars.path": "tmLanguage dosyasının yolu. Yol, eklenti klasörüne görecelidir ve genellikle './syntaxes/' ile başlar.",
+			"vscode.extension.contributes.grammars.embeddedLanguages": "Bu dil bilgisinin gömülü dilleri içermesi durumundaki bir dil id'sinin kapsam adı haritası.",
+			"vscode.extension.contributes.grammars.tokenTypes": "Kapsam adından anahtar türüne kadar olan bir harita.",
+			"vscode.extension.contributes.grammars.injectTo": "Bu dil bilgisinin yerleştirileceği dil kapsam adları listesi."
 		},
 		"vs/workbench/services/workspace/node/workspaceEditingService": {
 			"errorInvalidTaskConfiguration": "Çalışma alanı yapılandırma dosyasına yazılamıyor. Lütfen dosyadaki hata/uyarıları düzeltmek için dosyayı açın ve tekrar deneyin.",
