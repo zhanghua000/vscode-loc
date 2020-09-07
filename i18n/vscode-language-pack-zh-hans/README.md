@@ -1,6 +1,6 @@
 #  适用于 VS Code 的中文（简体）语言包
 
-此中文（简体）语言包为 VS Code 提供本地化界面。
+此中文（简体）语言包为 VS Code 提供本地化界面。 ![构建状态](https://travis-ci.org/zhanghua000/vscode-loc.svg?branch=master)
 
 ## 使用方法
 
