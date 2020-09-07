@@ -3,7 +3,7 @@
 	"displayName": "Chinese (Simplified) Language Pack for Visual Studio Codium",
 	"description": "Language pack extension for Chinese (Simplified)",
 	"version": "1.49.0",
-	"publisher": "zhanghua000",
+	"publisher": "zhanghua",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/zhanghua000/vscode-loc"
