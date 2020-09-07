@@ -1,0 +1,19 @@
+language: node_js
+node_js: 
+    - '6'
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install
+before_script:
+  - npm install --global ovsx
+script:
+  - cd ./i18n/vscode-language-pack-zh-hans
+  - ovsx publish
+after_script:
+branches:
+  only:
+    - master
+env:
+ global:
