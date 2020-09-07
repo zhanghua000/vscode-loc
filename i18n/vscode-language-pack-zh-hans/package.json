@@ -1,12 +1,12 @@
 ﻿{
-	"name": "vscode-language-pack-zh-hans",
-	"displayName": "Chinese (Simplified) Language Pack for Visual Studio Code",
+	"name": "vscode-language-pack-zh-cn",
+	"displayName": "Chinese (Simplified) Language Pack for Visual Studio Codium",
 	"description": "Language pack extension for Chinese (Simplified)",
 	"version": "1.49.0",
-	"publisher": "MS-CEINTL",
+	"publisher": "zhanghua000",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
+		"url": "https://github.com/zhanghua000/vscode-loc"
 	},
 	"license": "SEE MIT LICENSE IN LICENSE.md",
 	"engines": {
