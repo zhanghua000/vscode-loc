@@ -1,0 +1,23 @@
+language: node_js
+node_js: 
+    - '10'
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install
+before_script:
+  - npm install --global ovsx
+script:
+  - cd ./i18n/vscode-language-pack-zh-hans
+  - sed "2s/vscode-language-pack-zh-hans/vscodium-language-pack-zh-cn/" -i package.json
+  - sed "3s/Code/Codium/" -i package.json
+  - sed "6s/MS-CEINTL/zhanghua/" -i package.json
+  - sed "9s_https://github.com/Microsoft/vscode-loc_https://github.com/zhanghua000/vscode-loc_" -i package.json
+  - ovsx publish
+after_script:
+branches:
+  only:
+    - master
+env:
+ global:
