@@ -178,6 +178,8 @@
 			"submenu.stash": "Accantona",
 			"colors.added": "Colore delle risorse aggiunte.",
 			"colors.modified": "Colore delle risorse modificate.",
+			"colors.stageModified": "Colore per le risorse modificate che sono state preparate per il commit.",
+			"colors.stageDeleted": "Colore per le risorse eliminate che sono state preparate per il commit.",
 			"colors.deleted": "Colore delle risorse eliminate.",
 			"colors.untracked": "Colore delle risorse non tracciate.",
 			"colors.ignored": "Colore delle risorse ignorate.",

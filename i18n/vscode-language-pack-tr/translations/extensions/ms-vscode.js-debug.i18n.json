@@ -51,7 +51,7 @@
 			"chrome.launch.label": "Chrome: Başlat",
 			"configuration.autoAttachMode": "`#debug.node.autoAttach#` açık olduğunda hangi işlemlerin otomatik olarak ekleneceğini veya hatalarının ayıklanacağını yapılandırır. `--inspect` bayrağıyla başlatılan düğüm işlemi bu ayardan bağımsız olarak her zaman eklenir.",
 			"configuration.autoAttachMode.always": "Terminalde başlatılan her Node.js işlemine otomatik olarak ekleyin.",
-			"configuration.autoAttachMode.disabled": "Auto attach is disabled and not shown in status bar.",
+			"configuration.autoAttachMode.disabled": "Otomatik ekleme devre dışı bırakıldığından durum çubuğunda gösterilemiyor.",
 			"configuration.autoAttachMode.explicit": "Yalnızca `--inspect` verildiğinde otomatik ekleyin.",
 			"configuration.autoAttachMode.smart": "node_modules klasöründe olmayan betikleri çalıştırırken otomatik olarak ekleyin.",
 			"configuration.autoAttachSmartPatterns": "\"Akıllı\" `#debug.javascript.autoAttachFilter#` moduna iliştirilmeyi algılama için glob desenlerini yapılandırır. `$KNOWN_TOOLS$`, ortak test ve kod çalıştıranlar adları listesiyle değiştirilir. [VS Code belgelerinde daha fazla bilgi edinin](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach-smart-patterns).",
@@ -63,6 +63,7 @@
 			"configuration.pickAndAttachOptions": "`Debug: Attach to Node.js Process` komutu aracılığıyla bir işlemde hata ayıklarken kullanılan varsayılan seçenekler",
 			"configuration.suggestPrettyPrinting": "İçine girdiğinizde küçültülmüş görünen düzgün yazdırma JavaScript kodunun önerilip önerilmeyeceğini belirtir.",
 			"configuration.terminalOptions": "JavaScript hata ayıklama terminali ve npm betikleri için varsayılan başlatma seçenekleri.",
+			"configuration.unmapMissingSources": "Özgün dosyanın okunamadığı, kaynağa eşlenmiş dosyanın eşlemesinin otomatik olarak kaldırılıp kaldırılmayacağını yapılandırır. Bu false ise (varsayılan) bir istem görüntülenir.",
 			"configuration.usePreview": "Node.js ve Chrome için önizlemedeki yeni JavaScript hata ayıklayıcısını kullanın.",
 			"customDescriptionGenerator.description": "Hata ayıklayıcısının nesneler (yerel değişkenler vb.) için gösterdiği metinsel açıklamayı özelleştirin. Örnekler:\r\n      1. this.toString () // tüm nesneleri yazdırmak için toString çağırır\r\n      2. this.customDescription ? this.customDescription() : defaultValue // Varsa customDescription metodunu kullanın. Yoksa defaultValue döndürün\r\n      3. işlev (def) { return this.customDescription ? this.customDescription() : def } // Varsa customDescription metodunu kullanın. Yoksa defaultValue döndürün\r\n      ",
 			"debug.npm.edit": "package.json dosyasını düzenle",
@@ -75,7 +76,7 @@
 			"debug.terminal.program.description": "Başlatılan terminalde çalıştırılacak komut. Bir komut sağlanmazsa terminal bir program başlatmadan açılır.",
 			"debug.terminal.snippet.label": "Hata ayıklama terminalinde \"npm start\" çalıştırın",
 			"debug.terminal.toggleAuto": "Terminal Node.js Otomatik Eklemeyi Aç/Kapat",
-			"debug.terminal.welcome": "[JavaScript Hata Ayıklama Terminali](komut:extension.pwa-node-debug.createDebuggerTerminal)\r\n\r\nKomut satırında çalıştırılan Node.js işlemlerinde hata ayıklamak için JavaScript Hata Ayıklama Terminalini kullanabilirsiniz.\r\n\r\n[Hata Ayıklama URL'si](command:extension.js-debug.debugLink)",
+			"debug.terminal.welcome": "[JavaScript Hata Ayıklama Terminali](command:extension.pwa-node-debug.createDebuggerTerminal)\r\n\r\nKomut satırında çalıştırılan Node.js işlemlerinde hata ayıklamak için JavaScript Hata Ayıklama Terminalini kullanabilirsiniz.\r\n\r\n[Hata Ayıklama URL'si](command:extension.js-debug.debugLink)",
 			"debugLink.label": "Bağlantıyı Aç",
 			"edge.address.description": "Web görünümlerinde hata ayıklarken web görünümünün dinlediği IP adresi veya konak adı. Ayarlanmazsa otomatik olarak bulunur.",
 			"edge.attach.description": "Edge'in zaten hata ayıklama modunda bulunan bir örneğine ekleyin",
@@ -167,7 +168,7 @@
 			"node.sourceMaps.description": "(Varsa) JavaScript kaynak eşlemelerini kullanın.",
 			"node.stopOnEntry.description": "Başlatıldıktan sonra programı otomatik olarak durdurun.",
 			"node.timeout.description": "Node.js'ye bağlanmak için bu kadar milisaniye boyunca yeniden dene. Varsayılan: 10.000 ms.",
-			"node.versionHint.descriotion": "Otomatik sürüm algılamasının çalışmadığı durumlarda belirli davranışları devre dışı bırakmak veya etkinleştirmek için kullanılabilen ve şu an çalışmakta olan düğüm sürümünü açık olarak belirtmenize olanak tanır.",
+			"node.versionHint.description": "Otomatik sürüm algılamasının çalışmadığı durumlarda belirli davranışları devre dışı bırakmak veya etkinleştirmek için kullanılabilen ve şu an çalışmakta olan düğüm sürümünü açık olarak belirtmenize olanak tanır.",
 			"node.websocket.address.description": "Eklenecek tam WebSocket adresi. Belirtilmezse adres ve bağlantı noktasından bulunur.",
 			"outFiles.description": "Kaynak eşlemeleri etkinse bu glob desenleri, oluşturulan JavaScript dosyalarını belirtir. Bir desen `!` ile başlarsa dosyalar hariç tutulur. Belirtilmezse, oluşturulan kodun, kaynağıyla aynı dizinde olması beklenir.",
 			"pretty.print.script": "Hata ayıklama için düzgün yazdırma",
@@ -265,13 +266,13 @@
 			"error.threadNotPaused": "İş parçacığı duraklatılmadı",
 			"error.threadNotPausedOnException": "İş parçacığı özel durumda duraklatılmadı",
 			"error.evaluateDidFail": "Değerlendirilemiyor",
+			"pause.breakpoint": "Kesme noktasında duraklatıldı",
+			"pause.default": "Duraklatıldı",
 			"pause.assert": "Onayda duraklatıldı",
 			"pause.debugCommand": "debug() çağrısında duraklatıldı",
 			"pause.DomBreakpoint": "DOM kesme noktasında duraklatıldı",
 			"pause.exception": "Özel durumda duraklatıldı",
 			"pause.promiseRejection": "Promise reddetmesinde duraklatıldı",
-			"pause.breakpoint": "Kesme noktasında duraklatıldı",
-			"pause.default": "Duraklatıldı",
 			"pause.instrumentation": "İzleme kesme noktasında duraklatıldı",
 			"pause.xhr": "XMLHttpRequest veya fetch üzerinde duraklatıldı",
 			"pause.oom": "Bellek Yetersiz özel durumu oluşmadan önce duraklatıldı",
@@ -324,6 +325,15 @@
 			"debug.npm.parseError": "{0} okunamadı: {1}",
 			"debug.npm.noScripts": "package.json dosyanızda npm betiği bulunamadı",
 			"debug.npm.notFound.open": "package.json dosyasını düzenle"
+		},
+		"/src/ui/debugTerminalUI": {
+			"terminal.cwdpick": "Yeni terminal için geçerli çalışma dizinini seçin"
+		},
+		"/src/ui/disableSourceMapUI": {
+			"always": "Her Zaman",
+			"yes": "Evet",
+			"disableSourceMapUi.msg": "Bu, bir kaynak eşlemesi tarafından başvurulan eksik bir dosya yoludur. Bunun yerine derlenen sürümde hata ayıklamak istiyor musunuz?",
+			"no": "Hayır"
 		},
 		"/src/ui/experimentEnlist": {
 			"experimentEnlist": "\"debug.javascript.usePreview\" ayarını kullanarak yeni hata ayıklayıcısını kapatabilirsiniz. Lütfen karşılaştığınız sorunları bildirin. Denediğiniz için teşekkür ederiz!"

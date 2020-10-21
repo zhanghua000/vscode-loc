@@ -63,6 +63,7 @@
 			"configuration.pickAndAttachOptions": "Options par défaut utilisées pour le débogage d'un processus via la commande Déboguer : attacher au processus Node.js",
 			"configuration.suggestPrettyPrinting": "Indique s'il faut suggérer l'impression en mode Pretty du code JavaScript qui semble minifié lors d'un pas à pas détaillé.",
 			"configuration.terminalOptions": "Options de lancement par défaut pour le terminal de débogage JavaScript et les scripts npm.",
+			"configuration.unmapMissingSources": "Configure le démappage automatique ou non du fichier faisant l'objet d'un mappage de source quand le fichier d'origine ne peut pas être lu. Si la valeur est false (par défaut), une invite s'affiche.",
 			"configuration.usePreview": "Utilisez le nouveau débogueur JavaScript en préversion pour Node.js et Chrome.",
 			"customDescriptionGenerator.description": "Personnalisez la description textuelle que le débogueur affiche pour les objets (variables locales, etc.). Exemples :\r\n      1. this.toString() // va appeler toString pour afficher tous les objets\r\n      2. this.customDescription ? this.customDescription() : defaultValue // Utiliser la méthode customDescription, si elle est disponible. Sinon, retourner defaultValue\r\n      3. function (def) { return this.customDescription ? this.customDescription() : def } // Utiliser la méthode customDescription, si elle est disponible. Sinon, retourner defaultValue\r\n      ",
 			"debug.npm.edit": "Modifier package.json",
@@ -167,7 +168,7 @@
 			"node.sourceMaps.description": "Utilisez des mappages de sources JavaScript (le cas échéant).",
 			"node.stopOnEntry.description": "Arrêtez automatiquement le programme après le lancement.",
 			"node.timeout.description": "Réessayez de vous connecter à Node.js pendant le nombre de millisecondes spécifié. La valeur par défaut est 10 000 ms.",
-			"node.versionHint.descriotion": "Vous permet de spécifier explicitement la version de Node en cours d'exécution, ce qui peut être utile pour désactiver ou activer certains comportements dans les cas où la détection automatique de version ne fonctionne pas.",
+			"node.versionHint.description": "Vous permet de spécifier explicitement la version de Node en cours d'exécution, ce qui peut être utile pour désactiver ou activer certains comportements dans les cas où la détection automatique de version ne fonctionne pas.",
 			"node.websocket.address.description": "Adresse WebSocket exacte à laquelle effectuer l'attachement. Si elle n'est pas spécifiée, elle est découverte à partir de l'adresse et du port.",
 			"outFiles.description": "Si les mappages de sources sont activés, ces modèles Glob spécifient les fichiers JavaScript générés. Si un modèle commence par '!', les fichiers sont exclus. En l'absence de spécification, le code généré est censé se trouver dans le même répertoire que sa source.",
 			"pretty.print.script": "Impression automatique pour le débogage",
@@ -265,13 +266,13 @@
 			"error.threadNotPaused": "Le thread n'est pas interrompu",
 			"error.threadNotPausedOnException": "Le thread n'est pas interrompu en cas d'exception",
 			"error.evaluateDidFail": "Impossible d'évaluer",
+			"pause.breakpoint": "Interruption d'exécution liée à un point d'arrêt",
+			"pause.default": "Interruption d'exécution",
 			"pause.assert": "Interruption d'exécution liée à une assertion",
 			"pause.debugCommand": "Interruption d'exécution liée à un appel de debug()",
 			"pause.DomBreakpoint": "Interruption d'exécution liée à un point d'arrêt DOM",
 			"pause.exception": "Interruption d'exécution liée à une exception",
 			"pause.promiseRejection": "En pause sur un rejet de promesse",
-			"pause.breakpoint": "Interruption d'exécution liée à un point d'arrêt",
-			"pause.default": "Interruption d'exécution",
 			"pause.instrumentation": "Interruption d'exécution liée à un point d'arrêt d'instrumentation",
 			"pause.xhr": "Interruption d'exécution liée à XMLHttpRequest ou fetch",
 			"pause.oom": "Interruption d'exécution avant une exception pour mémoire insuffisante",
@@ -324,6 +325,15 @@
 			"debug.npm.parseError": "Impossible de lire {0} : {1}",
 			"debug.npm.noScripts": "Aucun script npm dans votre package.json",
 			"debug.npm.notFound.open": "Modifier package.json"
+		},
+		"/src/ui/debugTerminalUI": {
+			"terminal.cwdpick": "Sélectionner le répertoire de travail actuel pour le nouveau terminal"
+		},
+		"/src/ui/disableSourceMapUI": {
+			"always": "Toujours",
+			"yes": "Oui",
+			"disableSourceMapUi.msg": "Il s'agit d'un chemin de fichier manquant référencé par un mappage de source. Voulez-vous déboguer la version compilée à la place ?",
+			"no": "Non"
 		},
 		"/src/ui/experimentEnlist": {
 			"experimentEnlist": "Vous pouvez désactiver le nouveau débogueur à l'aide du paramètre \"debug.javascript.usePreview\". N'hésitez pas à signaler tous les problèmes que vous rencontrez. Merci pour votre participation à cet essai !"

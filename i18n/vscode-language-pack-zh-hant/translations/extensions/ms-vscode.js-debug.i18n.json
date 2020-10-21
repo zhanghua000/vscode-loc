@@ -63,6 +63,7 @@
 			"configuration.pickAndAttachOptions": "透過 `Debug: Attach to Node.js Process` 命令偵錯處理序時所用的預設選項",
 			"configuration.suggestPrettyPrinting": "是否要在您進入時建議看起來已縮小的美化顯示 JavaScript 程式碼。",
 			"configuration.terminalOptions": "JavaScript 偵錯終端機和 npm 指令碼的預設啟動選項。",
+			"configuration.unmapMissingSources": "設定無法讀取原始檔案的 sourcemap 檔案是否將自動取消對應。如果為 false (預設)，系統會顯示提示。",
 			"configuration.usePreview": "使用 Node.js 和 Chrome 適用的全新預覽版 JavaScript 偵錯工具。",
 			"customDescriptionGenerator.description": "自訂偵錯工具為物件 (例如區域變數等...) 所顯示的文字描述。範例:\r\n      1. this.toString() // 會呼叫 toString 列印所有物件\r\n      2. this.customDescription ? this.customDescription() : defaultValue // 使用 customDescription 方法 (如果有的話)，如果沒有則傳回 defaultValue\r\n      3. 函式 (def) { return this.customDescription ? this.customDescription() : def } // 使用 customDescription 方法 (如果有的話)，如果沒有則傳回 defaultValue\r\n      ",
 			"debug.npm.edit": "編輯 package.json",
@@ -167,7 +168,7 @@
 			"node.sourceMaps.description": "使用 JavaScript 來源對應 (如果有)。",
 			"node.stopOnEntry.description": "啟動後自動停止程式。",
 			"node.timeout.description": "重試連線到 Node.js 的毫秒數。預設值為 10000 毫秒。",
-			"node.versionHint.descriotion": "允許您明確指定正在執行的節點版本，以在無法自動偵測版本時，用以停用或啟用特定行為。",
+			"node.versionHint.description": "允許您明確指定正在執行的節點版本，以在無法自動偵測版本時，用以停用或啟用特定行為。",
 			"node.websocket.address.description": "要附加至的確切 WebSocket 位址。若未指定，則會從位址和連接埠進行探索。",
 			"outFiles.description": "若已啟用來源對應，則這些 glob 模式會指定產生的 JavaScript 檔案。若模式的開頭為 `!` ，即會排除檔案。若未指定，則產生的程式碼應與其來源位於相同的目錄中。",
 			"pretty.print.script": "偵錯的美化顯示",
@@ -265,13 +266,13 @@
 			"error.threadNotPaused": "執行緒未暫停",
 			"error.threadNotPausedOnException": "執行緒未在發生例外狀況時暫停",
 			"error.evaluateDidFail": "無法評估",
+			"pause.breakpoint": "已在中斷點時暫停",
+			"pause.default": "已暫停",
 			"pause.assert": "已在判斷提示時暫停",
 			"pause.debugCommand": "已在呼叫 debug() 時暫停",
 			"pause.DomBreakpoint": "已在 DOM 中斷點時暫停",
 			"pause.exception": "已在發生例外狀況時暫停",
 			"pause.promiseRejection": "已因拒絕承諾而暫停",
-			"pause.breakpoint": "已在中斷點時暫停",
-			"pause.default": "已暫停",
 			"pause.instrumentation": "已在檢測中斷點時暫停",
 			"pause.xhr": "已在 XMLHttpRequest 或擷取時暫停",
 			"pause.oom": "已在發生記憶體不足例外狀況之前暫停",
@@ -324,6 +325,15 @@
 			"debug.npm.parseError": "無法讀取 {0}: {1}",
 			"debug.npm.noScripts": "未在您的 package.json 找到 npm 指令碼",
 			"debug.npm.notFound.open": "編輯 package.json"
+		},
+		"/src/ui/debugTerminalUI": {
+			"terminal.cwdpick": "為新的終端機選擇目前的工作目錄"
+		},
+		"/src/ui/disableSourceMapUI": {
+			"always": "永遠",
+			"yes": "是",
+			"disableSourceMapUi.msg": "此為 sourcemap 所參考的遺失檔案路徑。您要改為對已編譯的版本進行偵錯嗎?",
+			"no": "否"
 		},
 		"/src/ui/experimentEnlist": {
 			"experimentEnlist": "您可以使用 \"debug.javascript.usePreview\" 設定，關閉新的偵錯工具。請回報發生的所有問題。感謝您試用本產品!"
