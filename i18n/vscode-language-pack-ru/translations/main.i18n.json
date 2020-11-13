@@ -40,6 +40,9 @@
 			"date.fromNow.years.singular": "{0} г.",
 			"date.fromNow.years.plural": "{0} лет"
 		},
+		"vs/base/common/actions": {
+			"submenu.empty": "(пусто)"
+		},
 		"vs/base/node/processes": {
 			"TaskRunner.UNC": "Не удается выполнить команду оболочки на диске UNC."
 		},
@@ -106,14 +109,19 @@
 			"empty": "Элементы не найдены",
 			"found": "Сопоставлено элементов: {0} из {1}"
 		},
+		"vs/base/browser/ui/tree/treeDefaults": {
+			"collapse all": "Свернуть все"
+		},
 		"vs/base/browser/ui/toolbar/toolbar": {
 			"moreActions": "Дополнительные действия..."
 		},
 		"vs/base/browser/ui/splitview/paneview": {
 			"viewSection": "Секция {0}"
 		},
-		"vs/base/browser/ui/tree/treeDefaults": {
-			"collapse all": "Свернуть все"
+		"vs/base/browser/ui/inputbox/inputBox": {
+			"alertErrorMessage": "Ошибка: {0}",
+			"alertWarningMessage": "Предупреждение: {0}",
+			"alertInfoMessage": "Информация: {0}"
 		},
 		"vs/base/parts/quickinput/browser/quickInput": {
 			"quickInput.back": "Назад",
@@ -126,11 +134,6 @@
 			"ok": "OK",
 			"custom": "Другой",
 			"quickInput.backWithKeybinding": "Назад ({0})"
-		},
-		"vs/base/browser/ui/inputbox/inputBox": {
-			"alertErrorMessage": "Ошибка: {0}",
-			"alertWarningMessage": "Предупреждение: {0}",
-			"alertInfoMessage": "Информация: {0}"
 		},
 		"vs/base/browser/ui/findinput/findInput": {
 			"defaultLabel": "входные данные"
@@ -237,7 +240,8 @@
 			"suggest.shareSuggestSelections": "Определяет, используются ли сохраненные варианты выбора предложений совместно несколькими рабочими областями и окнами (требуется \"#editor.suggestSelection#\").",
 			"suggest.snippetsPreventQuickSuggestions": "Определяет, запрещает ли активный фрагмент кода экспресс-предложения.",
 			"suggest.showIcons": "Указывает, нужно ли отображать значки в предложениях.",
-			"suggest.maxVisibleSuggestions": "Определяет, сколько предложений IntelliSense будет показано до отображения полосы прокрутки (максимум 15).",
+			"suggest.showStatusBar": "Определяет видимость строки состояния в нижней части виджета предложений.",
+			"suggest.maxVisibleSuggestions.dep": "Этот параметр является нерекомендуемым. Теперь размер мини-приложения предложений можно изменить.",
 			"deprecated": "Этот параметр устарел. Используйте вместо него отдельные параметры, например, 'editor.suggest.showKeywords' или 'editor.suggest.showSnippets'.",
 			"editor.suggest.showMethods": "Когда параметр включен, в IntelliSense отображаются предложения \"method\".",
 			"editor.suggest.showFunctions": "Когда параметр включен, в IntelliSense отображаются предложения \"function\".",
@@ -267,11 +271,10 @@
 			"editor.suggest.showSnippets": "Когда параметр включен, в IntelliSense отображаются предложения \"snippet\".",
 			"editor.suggest.showUsers": "Во включенном состоянии IntelliSense показывает предложения типа \"пользователи\".",
 			"editor.suggest.showIssues": "Во включенном состоянии IntelliSense отображает предложения типа \"проблемы\".",
-			"editor.suggest.statusBar.visible": "Определяет видимость строки состояния в нижней части виджета предложений.",
 			"acceptSuggestionOnCommitCharacter": "Определяет, будут ли предложения приниматься при вводе символов фиксации. Например, в JavaScript точка с запятой (\";\") может быть символом фиксации, при вводе которого предложение принимается.",
 			"acceptSuggestionOnEnterSmart": "Принимать предложение при нажатии клавиши ВВОД только в том случае, если оно изменяет текст.",
 			"acceptSuggestionOnEnter": "Определяет, будут ли предложения приниматься клавишей ВВОД в дополнение к клавише TAB. Это помогает избежать неоднозначности между вставкой новых строк и принятием предложений.",
-			"accessibilityPageSize": "Задает количество строк в редакторе, которые могут быть прочитаны средством чтения с экрана. Предупреждение: из-за технических ограничений этот число не может превышать значение по умолчанию.",
+			"accessibilityPageSize": "Задает количество строк в редакторе, которые могут быть прочитаны средством чтения с экрана. Предупреждение: из-за технических ограничений это число не может превышать значение по умолчанию.",
 			"editorViewAccessibleLabel": "Содержимое редактора",
 			"editor.autoClosingBrackets.languageDefined": "Использовать конфигурации языка для автоматического закрытия скобок.",
 			"editor.autoClosingBrackets.beforeWhitespace": "Автоматически закрывать скобки только в том случае, если курсор находится слева от пробела.",
@@ -375,9 +378,9 @@
 			"tabCompletion.off": "Отключить дополнение по TAB.",
 			"tabCompletion.onlySnippets": "Вставка дополнений по TAB при совпадении их префиксов. Функция работает оптимально, если параметр \"quickSuggestions\" отключен.",
 			"tabCompletion": "Включает дополнения по TAB.",
+			"unusualLineTerminators.auto": "Необычные символы завершения строки автоматически удаляются.",
 			"unusualLineTerminators.off": "Необычные символы завершения строки игнорируются.",
 			"unusualLineTerminators.prompt": "Для необычных символов завершения строки запрашивается удаление.",
-			"unusualLineTerminators.auto": "Необычные символы завершения строки автоматически удаляются.",
 			"unusualLineTerminators": "Удалите необычные символы завершения строки, которые могут вызвать проблемы.",
 			"useTabStops": "Вставка и удаление пробелов после позиции табуляции",
 			"wordSeparators": "Символы, которые будут использоваться как разделители слов при выполнении навигации или других операций, связанных со словами.",
@@ -428,11 +431,11 @@
 		"vs/editor/common/model/editStack": {
 			"edit": "Ввод"
 		},
-		"vs/editor/browser/widget/codeEditorWidget": {
-			"cursors.maximum": "Количество курсоров ограничено {0}."
-		},
 		"vs/editor/browser/controller/coreCommands": {
 			"stickydesc": "Размещать на конце даже для более длинных строк"
+		},
+		"vs/editor/browser/widget/codeEditorWidget": {
+			"cursors.maximum": "Количество курсоров ограничено {0}."
 		},
 		"vs/editor/browser/widget/diffEditorWidget": {
 			"diff.tooLarge": "Нельзя сравнить файлы, потому что один из файлов слишком большой."
@@ -534,12 +537,6 @@
 			"selectFromAnchorToCursor": "Выделить текст от начальной точки выделения до курсора",
 			"cancelSelectionAnchor": "Отменить начальную точку выделения"
 		},
-		"vs/editor/contrib/bracketMatching/bracketMatching": {
-			"overviewRulerBracketMatchForeground": "Цвет метки линейки в окне просмотра для пар скобок.",
-			"smartSelect.jumpBracket": "Перейти к скобке",
-			"smartSelect.selectToBracket": "Выбрать скобку",
-			"miGoToBracket": "Перейти к &&скобке"
-		},
 		"vs/editor/contrib/caretOperations/caretOperations": {
 			"caret.moveLeft": "Переместить выделенный текст влево",
 			"caret.moveRight": "Переместить выделенный текст вправо"
@@ -557,6 +554,12 @@
 			"comment.line.remove": "Раскомментировать строку",
 			"comment.block": "Закомментировать или раскомментировать блок",
 			"miToggleBlockComment": "Переключить комментарий &&блока"
+		},
+		"vs/editor/contrib/bracketMatching/bracketMatching": {
+			"overviewRulerBracketMatchForeground": "Цвет метки линейки в окне просмотра для пар скобок.",
+			"smartSelect.jumpBracket": "Перейти к скобке",
+			"smartSelect.selectToBracket": "Выбрать скобку",
+			"miGoToBracket": "Перейти к &&скобке"
 		},
 		"vs/editor/contrib/contextmenu/contextmenu": {
 			"action.showContextMenu.label": "Показать контекстное меню редактора"
@@ -648,10 +651,6 @@
 			"markerAction.previousInFiles.label": "Перейти к предыдущей проблеме в файлах (ошибки, предупреждения, информационные сообщения)",
 			"miGotoPreviousProblem": "Предыдущая &&проблема"
 		},
-		"vs/editor/contrib/hover/hover": {
-			"showHover": "Показать при наведении",
-			"showDefinitionPreviewHover": "Отображать предварительный просмотр определения при наведении курсора мыши"
-		},
 		"vs/editor/contrib/indentation/indentation": {
 			"indentationToSpaces": "Преобразовать отступ в пробелы",
 			"indentationToTabs": "Преобразовать отступ в шаги табуляции",
@@ -663,9 +662,20 @@
 			"editor.reindentlines": "Повторно расставить отступы строк",
 			"editor.reindentselectedlines": "Повторно расставить отступы для выбранных строк"
 		},
-		"vs/editor/contrib/inPlaceReplace/inPlaceReplace": {
-			"InPlaceReplaceAction.previous.label": "Заменить предыдущим значением",
-			"InPlaceReplaceAction.next.label": "Заменить следующим значением"
+		"vs/editor/contrib/hover/hover": {
+			"showHover": "Показать при наведении",
+			"showDefinitionPreviewHover": "Отображать предварительный просмотр определения при наведении курсора мыши"
+		},
+		"vs/editor/contrib/links/links": {
+			"links.navigate.executeCmd": "Выполнить команду",
+			"links.navigate.follow": "перейти по ссылке",
+			"links.navigate.kb.meta.mac": "Кнопка OPTION и щелчок левой кнопкой мыши",
+			"links.navigate.kb.meta": "Кнопка CTRL и щелчок левой кнопкой мыши",
+			"links.navigate.kb.alt.mac": "Кнопка OPTION и щелчок левой кнопкой мыши",
+			"links.navigate.kb.alt": "Кнопка ALT и щелчок левой кнопкой мыши",
+			"invalid.url": "Не удалось открыть ссылку, так как она имеет неправильный формат: {0}",
+			"missing.url": "Не удалось открыть ссылку, у нее отсутствует целевой объект.",
+			"label": "Открыть ссылку"
 		},
 		"vs/editor/contrib/linesOperations/linesOperations": {
 			"lines.copyUp": "Копировать строку сверху",
@@ -694,17 +704,6 @@
 			"editor.transformToLowercase": "Преобразовать в нижний регистр",
 			"editor.transformToTitlecase": "Преобразовать в заглавные буквы"
 		},
-		"vs/editor/contrib/links/links": {
-			"links.navigate.executeCmd": "Выполнить команду",
-			"links.navigate.follow": "перейти по ссылке",
-			"links.navigate.kb.meta.mac": "Кнопка OPTION и щелчок левой кнопкой мыши",
-			"links.navigate.kb.meta": "Кнопка CTRL и щелчок левой кнопкой мыши",
-			"links.navigate.kb.alt.mac": "Кнопка OPTION и щелчок левой кнопкой мыши",
-			"links.navigate.kb.alt": "Кнопка ALT и щелчок левой кнопкой мыши",
-			"invalid.url": "Не удалось открыть ссылку, так как она имеет неправильный формат: {0}",
-			"missing.url": "Не удалось открыть ссылку, у нее отсутствует целевой объект.",
-			"label": "Открыть ссылку"
-		},
 		"vs/editor/contrib/multicursor/multicursor": {
 			"mutlicursor.insertAbove": "Добавить курсор выше",
 			"miInsertCursorAbove": "Добавить курсор &&выше",
@@ -724,12 +723,12 @@
 			"miSelectHighlights": "Выбрать все &&вхождения",
 			"changeAll.label": "Изменить все вхождения"
 		},
+		"vs/editor/contrib/inPlaceReplace/inPlaceReplace": {
+			"InPlaceReplaceAction.previous.label": "Заменить предыдущим значением",
+			"InPlaceReplaceAction.next.label": "Заменить следующим значением"
+		},
 		"vs/editor/contrib/parameterHints/parameterHints": {
 			"parameterHints.trigger.label": "Переключить подсказки к параметрам"
-		},
-		"vs/editor/contrib/rename/onTypeRename": {
-			"onTypeRename.label": "На символе переименования типа",
-			"editorOnTypeRenameBackground": "Цвет фона при автоматическом переименовании типа редактором."
 		},
 		"vs/editor/contrib/rename/rename": {
 			"no result": "Результаты отсутствуют.",
@@ -745,17 +744,21 @@
 		"vs/editor/contrib/smartSelect/smartSelect": {
 			"smartSelect.expand": "Развернуть выбранный фрагмент",
 			"miSmartSelectGrow": "&&Развернуть выделение",
+			"selectLeadingAndTrailingWhitespace": "Должны ли всегда быть выбраны начальный и конечный пробелы.",
 			"smartSelect.shrink": "Уменьшить выделенный фрагмент",
 			"miSmartSelectShrink": "&&Сжать выделение"
 		},
 		"vs/editor/contrib/suggest/suggestController": {
 			"aria.alert.snippet": "Принятие \"{0}\" привело к внесению дополнительных правок ({1})",
 			"suggest.trigger.label": "Переключить предложение",
-			"accept.accept": "{0} для вставки",
-			"accept.insert": "{0} для вставки",
-			"accept.replace": "{0} для замены",
+			"accept.insert": "Вставить",
+			"accept.replace": "Заменить",
 			"detail.more": "показать меньше",
 			"detail.less": "показать больше"
+		},
+		"vs/editor/contrib/rename/onTypeRename": {
+			"onTypeRename.label": "На символе переименования типа",
+			"editorOnTypeRenameBackground": "Цвет фона при автоматическом переименовании типа редактором."
 		},
 		"vs/editor/contrib/tokenization/tokenization": {
 			"forceRetokenize": "Разработчик: принудительная повторная установка токенов"
@@ -918,9 +921,6 @@
 			"editorSuggestWidgetForeground": "Цвет переднего плана мини-приложения предложений.",
 			"editorSuggestWidgetSelectedBackground": "Фоновый цвет выбранной записи в мини-приложении предложений.",
 			"editorSuggestWidgetHighlightForeground": "Цвет выделения соответствия в мини-приложении предложений.",
-			"readMore": "Показать больше ({0})",
-			"readLess": "Показать меньше ({0})",
-			"loading": "Загрузка...",
 			"suggestWidget.loading": "Загрузка...",
 			"suggestWidget.noSuggestions": "Предложения отсутствуют.",
 			"ariaCurrenttSuggestionReadDetails": "{0}, документы: {1}",
@@ -1070,6 +1070,16 @@
 			"noResults": "Результаты отсутствуют",
 			"peekView.alternateTitle": "Ссылки"
 		},
+		"vs/editor/contrib/suggest/suggestWidgetDetails": {
+			"details.close": "Закрыть",
+			"loading": "Загрузка..."
+		},
+		"vs/editor/contrib/suggest/suggestWidgetStatus": {
+			"ddd": "{0} ({1})"
+		},
+		"vs/editor/contrib/suggest/suggestWidgetRenderer": {
+			"readMore": "Подробнее"
+		},
 		"vs/editor/contrib/codeAction/lightBulbWidget": {
 			"prefferedQuickFixWithKb": "Отображение исправлений. Доступно предпочитаемое исправление ({0})",
 			"quickFixWithKb": "Показать исправления ({0})",
@@ -1096,22 +1106,6 @@
 			"proxySupport": "Используйте поддержку прокси-сервера для расширений.",
 			"systemCertificates": "Определяет, нужно ли загружать сертификаты ЦС из ОС. (В Windows и macOS после отключения этой функции требуется перезагрузить окно.)"
 		},
-		"vs/platform/files/node/diskFileSystemProvider": {
-			"fileExists": "Файл уже существует.",
-			"fileNotExists": "Файл не существует",
-			"moveError": "Не удалось переместить \"{0}\" в \"{1}\" ({2}).",
-			"copyError": "Не удалось скопировать \"{0}\" в \"{1}\" ({2}).",
-			"fileCopyErrorPathCase": "'Файл не может быть скопирован по тому же пути с другим регистром пути",
-			"fileCopyErrorExists": "Файл в целевом расположении уже существует"
-		},
-		"vs/platform/files/common/files": {
-			"unknownError": "Неизвестная ошибка",
-			"sizeB": "{0} Б",
-			"sizeKB": "{0} КБ",
-			"sizeMB": "{0} МБ",
-			"sizeGB": "{0} ГБ",
-			"sizeTB": "{0} ТБ"
-		},
 		"vs/platform/files/common/fileService": {
 			"invalidPath": "Не удалось разрешить поставщик файловой системы с относительным путем к файлу \"{0}\"",
 			"noProviderFound": "Не найден поставщик файловой системы для ресурса \"{0}\"",
@@ -1133,6 +1127,22 @@
 			"deleteFailedNotFound": "Не удалось удалить несуществующий файл \"{0}\"",
 			"deleteFailedNonEmptyFolder": "Не удалось удалить непустую папку \"{0}\".",
 			"err.readonly": "Не удается изменить файл \"{0}\", доступный только для чтения"
+		},
+		"vs/platform/files/node/diskFileSystemProvider": {
+			"fileExists": "Файл уже существует.",
+			"fileNotExists": "Файл не существует",
+			"moveError": "Не удалось переместить \"{0}\" в \"{1}\" ({2}).",
+			"copyError": "Не удалось скопировать \"{0}\" в \"{1}\" ({2}).",
+			"fileCopyErrorPathCase": "'Файл не может быть скопирован по тому же пути с другим регистром пути",
+			"fileCopyErrorExists": "Файл в целевом расположении уже существует"
+		},
+		"vs/platform/files/common/files": {
+			"unknownError": "Неизвестная ошибка",
+			"sizeB": "{0} Б",
+			"sizeKB": "{0} КБ",
+			"sizeMB": "{0} МБ",
+			"sizeGB": "{0} ГБ",
+			"sizeTB": "{0} ТБ"
 		},
 		"vs/platform/update/common/update.config.contribution": {
 			"updateConfigurationTitle": "Обновить",
@@ -1214,7 +1224,8 @@
 		},
 		"vs/platform/telemetry/common/telemetryService": {
 			"telemetryConfigurationTitle": "Телеметрия",
-			"telemetry.enableTelemetry": "Разрешить отправку сведений об использовании и ошибках в веб-службу Майкрософт."
+			"telemetry.enableTelemetry": "Разрешить отправку сведений об использовании и ошибках в веб-службу Майкрософт.",
+			"telemetry.enableTelemetryMd": "Разрешить отправку сведений об использовании и ошибках в веб-службу Майкрософт. Прочтите наше заявление о конфиденциальности [здесь]({0})."
 		},
 		"vs/platform/extensionManagement/node/extensionManagementUtil": {
 			"invalidManifest": "Недопустимый VSIX: файл package.json не является файлом JSON."
@@ -1235,6 +1246,13 @@
 		"vs/platform/userDataSync/common/userDataSyncMachines": {
 			"error incompatible": "Не удается прочитать данные о компьютерах, так как текущая версия является несовместимой. Обновите {0} и повторите попытку."
 		},
+		"vs/platform/userDataSync/common/userDataAutoSyncService": {
+			"default service changed": "Не удается выполнить синхронизацию, так как служба по умолчанию изменена.",
+			"service changed": "Не удается выполнить синхронизацию, так как служба синхронизации была изменена.",
+			"turned off": "Не удается синхронизировать, так как синхронизация отключена в облаке",
+			"session expired": "Не удается синхронизировать, так как истек срок действия текущего сеанса",
+			"turned off machine": "Не удается выполнить синхронизацию, так как синхронизация этого компьютера с другого компьютера отключена."
+		},
 		"vs/platform/workspaces/common/workspaces": {
 			"codeWorkspace": "Рабочая область кода"
 		},
@@ -1245,13 +1263,6 @@
 		"vs/platform/dialogs/common/dialogs": {
 			"moreFile": "...1 дополнительный файл не показан",
 			"moreFiles": "...не показано дополнительных файлов: {0}"
-		},
-		"vs/platform/userDataSync/common/userDataAutoSyncService": {
-			"default service changed": "Не удается выполнить синхронизацию, так как служба по умолчанию изменена.",
-			"service changed": "Не удается выполнить синхронизацию, так как служба синхронизации была изменена.",
-			"turned off": "Не удается синхронизировать, так как синхронизация отключена в облаке",
-			"session expired": "Не удается синхронизировать, так как истек срок действия текущего сеанса",
-			"turned off machine": "Не удается выполнить синхронизацию, так как синхронизация этого компьютера с другого компьютера отключена."
 		},
 		"vs/platform/theme/common/colorRegistry": {
 			"foreground": "Общий цвет переднего плана. Этот цвет используется, только если его не переопределит компонент.",
@@ -1413,12 +1424,12 @@
 			"problemsInfoIconForeground": "Цвет, используемый для информационного значка, указывающего на наличие проблем.",
 			"chartsForeground": "Цвет переднего плана на диаграммах.",
 			"chartsLines": "Цвет горизонтальных линий на диаграммах.",
-			"chartsRed": "Диаграммы, где используется красный цвет.",
-			"chartsBlue": "Диаграммы, где используется синий цвет.",
-			"chartsYellow": "Диаграммы, где используется желтый цвет.",
-			"chartsOrange": "Диаграммы, где используется оранжевый цвет.",
-			"chartsGreen": "Диаграммы, где используется зеленый цвет.",
-			"chartsPurple": "Диаграммы, где используется фиолетовый цвет."
+			"chartsRed": "Красный цвет, используемый в визуализациях диаграмм.",
+			"chartsBlue": "Синий цвет, используемый в визуализациях диаграмм.",
+			"chartsYellow": "Желтый цвет, используемый в визуализациях диаграмм.",
+			"chartsOrange": "Оранжевый цвет, используемый в визуализациях диаграмм.",
+			"chartsGreen": "Зеленый цвет, используемый в визуализациях диаграмм.",
+			"chartsPurple": "Лиловый цвет, используемый в визуализациях диаграмм."
 		},
 		"vs/platform/configuration/common/configurationRegistry": {
 			"defaultLanguageConfigurationOverrides.title": "Переопределения конфигурации языка по умолчанию",
@@ -1897,9 +1908,13 @@
 			"alreadyInstalled": "Расширение \"{0}\" уже установлено.",
 			"forceUpdate": "Расширение \"{0}\" версии {1} уже установлено, но в Marketplace доступна более новая версия {2}. Чтобы обновить расширение до более новой версии, используйте параметр \"--force\".",
 			"updateMessage": "Обновление расширения \"{0}\" до версии {1}",
-			"forceDowngrade": "Уже установлена более новая версия {1} расширения \"{0}\". Используйте параметр \"--force\", чтобы перейти на использование более ранней версии.",
+			"installing builtin ": "Установка встроенного расширения \"{0}\" версии {1}…",
 			"installing": "Установка расширения \"{0}\" версии {1}...",
 			"successInstall": "Расширение \"{0}\" версии {1} успешно установлено.",
+			"cancelInstall": "Установка расширения '{0}' отменена.",
+			"forceDowngrade": "Уже установлена более новая версия {1} расширения \"{0}\". Используйте параметр \"--force\", чтобы перейти на использование более ранней версии.",
+			"builtin": "Расширение \"{0}\" является встроенным и не может быть установлено.",
+			"forceUninstall": "Расширение \"{0}\" помечено пользователем как встроенное расширение. Используйте параметр \"--force\", чтобы удалить его.",
 			"uninstalling": "Удаление {0}...",
 			"successUninstall": "Расширение \"{0}\" успешно удалено."
 		},
@@ -2030,6 +2045,7 @@
 			"window.nativeTabs": "Включает вкладки окна macOS Sierra. Обратите внимание, что для применения этих изменений потребуется полная перезагрузка, и что для всех внутренних вкладок будет отключен пользовательский стиль заголовка, если он был настроен.",
 			"window.nativeFullScreen": "Определяет, следует ли использовать собственный полноэкранный режим в macOS. Отключите этот параметр, чтобы в macOS не создавалось новое пространство при переходе в полноэкранный режим.",
 			"window.clickThroughInactive": "Если этот параметр включен, то при щелчке в неактивном окне будут активированы как оно, так и элемент управления, на котором находился курсор мыши в момент щелчка, если этот элемент управления должен активироваться по щелчку мыши. Если этот параметр отключен, то при щелчке в любом месте неактивного окна будет активировано только окно, и для активации элемента управления на нем будет нужно щелкнуть еще раз.",
+			"window.enableExperimentalProxyLoginDialog": "Включает новое диалоговое окно входа для проверки подлинности прокси-сервера. Для вступления в силу требуется перезагрузка.",
 			"telemetryConfigurationTitle": "Телеметрия",
 			"telemetry.enableCrashReporting": "Разрешить отправку отчетов о сбоях в веб-службу Майкрософт. \r\nДля применения этого параметра требуется перезапуск.",
 			"keyboardConfigurationTitle": "Клавиатура",
@@ -2053,6 +2069,13 @@
 			"loaderErrorNative": "Не удалось загрузить требуемый файл. Перезапустите приложение, чтобы повторить попытку. Дополнительные сведения: {0}."
 		},
 		"vs/workbench/electron-sandbox/window": {
+			"proxyAuthRequired": "Требуется проверка подлинности прокси-сервера",
+			"loginButton": "&&Вход",
+			"cancelButton": "&&Отмена",
+			"username": "Имя пользователя",
+			"password": "Пароль",
+			"proxyDetail": "Прокси-сервер \"{0}\" требует имя пользователя и пароль.",
+			"rememberCredentials": "Запомнить мои учетные данные",
 			"runningAsRoot": "Не рекомендуется запускать {0} с правами привилегированного пользователя.",
 			"mPreferences": "Параметры"
 		},
@@ -2100,11 +2123,11 @@
 			"panelActiveTitleBorder": "Цвет границ для заголовка активной панели. Панели отображаются под областью редактора и содержат такие представления, как окно вывода и встроенный терминал.",
 			"panelInputBorder": "Граница поля ввода для входных данных на панели.",
 			"panelDragAndDropBorder": "Цвет обратной связи при перетаскивании для заголовков панелей. Панели отображаются под областью редактора и содержат представления, такие как выходные данные и встроенный терминал.",
-			"panelSectionDragAndDropBackground": "Цвет обратной связи при перетаскивании для элементов панели действий. Цвет должен иметь прозрачность, чтобы разделы панели оставались видимыми. Панели отображаются под областью редактора и содержат представления, такие как выходные данные и встроенный терминал.",
-			"panelSectionHeaderBackground": "Цвет фона для заголовка раздела панели. Панели отображаются под областью редактора и содержат представления, такие как выходные данные и встроенный терминал.",
-			"panelSectionHeaderForeground": "Цвет переднего плана для заголовка раздела панели. Панели отображаются под областью редактора и содержат представления, такие как выходные данные и встроенный терминал.",
-			"panelSectionHeaderBorder": "Цвет границы для заголовка раздела панели, используемый при вертикальном размещении нескольких представлений на панели. Панели отображаются под областью редактора и содержат такие представления, как выходные данные и встроенный терминал.",
-			"panelSectionBorder": "Цвет границы раздела панели, используемый при горизонтальном размещении нескольких представлений на панели. Панели отображаются под областью редактора и содержат такие представления, как выходные данные и встроенный терминал.",
+			"panelSectionDragAndDropBackground": "Цвет активных разделов панели при перетаскивании. Он должен иметь прозрачность, чтобы разделы оставались видимыми. Панели находятся под областью редактора и содержат различные представления, например область вывода и встроенный терминал. Вложенные представления называются разделами панели.",
+			"panelSectionHeaderBackground": "Цвет фона для заголовка разделов панели. Панели находятся под областью редактора и содержат различные представления, например область вывода и встроенный терминал. Вложенные представления называются разделами панели.",
+			"panelSectionHeaderForeground": "Основной цвет заголовка разделов панели. Панели находятся под областью редактора и содержат различные представления, например область вывода и встроенный терминал. Вложенные представления называются разделами панели.",
+			"panelSectionHeaderBorder": "Цвет границы заголовка разделов панели с вертикально размещенными вложенными представлениями. Панели находятся под областью редактора и содержат различные представления, например область вывода и встроенный терминал. Вложенные представления называются разделами панели.",
+			"panelSectionBorder": "Цвет границы разделов панели с горизонтально размещенными вложенными представлениями. Панели находятся под областью редактора и содержат различные представления, например область вывода и встроенный терминал. Вложенные представления называются разделами панели.",
 			"statusBarForeground": "Цвет переднего плана строки состояния, когда открыта рабочая область. Строка состояния отображается в нижней части окна.",
 			"statusBarNoFolderForeground": "Цвет переднего плана строки состояния, если папка не открыта. Строка состояния отображается в нижней части окна.",
 			"statusBarBackground": "Цвет фона строки состояния, когда открыта рабочая область. Строка состояния отображается в нижней части окна.",
@@ -2134,10 +2157,10 @@
 			"sideBarForeground": "Цвет переднего плана боковой панели. Боковая панель — это контейнер для таких представлений, как проводник и поиск.",
 			"sideBarBorder": "Цвет границы боковой панели со стороны редактора. Боковая панель — это контейнер для таких представлений, как проводник и поиск.",
 			"sideBarTitleForeground": "Цвет переднего плана заголовка боковой панели. Боковая панель — это контейнер для таких представлений, как проводник и поиск.",
-			"sideBarDragAndDropBackground": "Цвет элементов боковой панели при перетаскивании. Цвет должен обладать прозрачностью, чтобы содержимое элементов боковой панели оставалось видимым. Боковая панель предоставляет собой контейнер для таких представлений как проводник и поиск.",
-			"sideBarSectionHeaderBackground": "Цвет фона для заголовка раздела боковой панели. Боковая панель — это контейнер для таких представлений, как проводник и поиск.",
-			"sideBarSectionHeaderForeground": "Цвет переднего плана для заголовка раздела боковой панели. Боковая панель — это контейнер для таких представлений, как проводник и поиск.",
-			"sideBarSectionHeaderBorder": "Цвет границы для заголовка раздела боковой панели. Боковая панель — это контейнер для таких представлений, как проводник и поиск.",
+			"sideBarDragAndDropBackground": "Цвет активных разделов боковой панели при перетаскивании. Он должен иметь прозрачность, чтобы разделы оставались видимыми. Боковая панель содержит такие представления, как обозреватель и поиск. Вложенные представления называются разделами боковой панели.",
+			"sideBarSectionHeaderBackground": "Цвет фона для заголовка разделов боковой панели. Боковая панель содержит такие представления, как обозреватель и поиск. Вложенные представления называются разделами боковой панели.",
+			"sideBarSectionHeaderForeground": "Основной цвет заголовка разделов боковой панели. Боковая панель содержит такие представления, как обозреватель и поиск. Вложенные представления называются разделами боковой панели.",
+			"sideBarSectionHeaderBorder": "Цвет границы заголовка разделов боковой панели. Боковая панель содержит такие представления, как обозреватель и поиск. Вложенные представления называются разделами боковой панели.",
 			"titleBarActiveForeground": "Цвет переднего плана панели заголовка, если окно активно.",
 			"titleBarInactiveForeground": "Цвет переднего плана панели заголовка, если окно неактивно.",
 			"titleBarActiveBackground": "Цвет фона панели заголовка, если окно активно.",
@@ -2196,7 +2219,7 @@
 			"workbench.editor.pinnedTabSizing.normal": "Закрепленная вкладка наследует вид незакрепленных вкладок.",
 			"workbench.editor.pinnedTabSizing.compact": "Закрепленная вкладка будет отображаться в компактном виде (только значок или первая буква имени редактора).",
 			"workbench.editor.pinnedTabSizing.shrink": "Закрепленная вкладка сжимается до компактного фиксированного размера, в котором отображаются части имени редактора.",
-			"pinnedTabSizing": "Управляет выбором размера для закрепленных вкладок редактора. Закрепленные вкладки располагаются в начале всех открытых вкладок и обычно не закрываются до тех пор, пока не будут откреплены. Это значение игнорируется, если параметр \"#workbench.editor.showTabs#\" имеет значение \"false\".",
+			"pinnedTabSizing": "Определяет размер закрепленных вкладок редактора. Они располагаются первыми среди всех открытых вкладок и обычно не закрываются, пока не будут откреплены. Это значение игнорируется, если \"#workbench.editor.showTabs#\" имеет значение \"false\".",
 			"workbench.editor.splitSizingDistribute": "Разделяет группы редакторов на равные части.",
 			"workbench.editor.splitSizingSplit": "Разделяет активную группу редакторов на равные части.",
 			"splitSizing": "Определяет размер групп редакторов при их разделении.",
@@ -2277,6 +2300,10 @@
 			"window.openFoldersInNewWindow.off": "Папки будут заменять последнее активное окно.",
 			"window.openFoldersInNewWindow.default": "Папки будут открываться в новом окне, если папка не выбрана в приложении (например, в меню \"Файл\").",
 			"openFoldersInNewWindow": "Управляет тем, должны ли папки открываться в новом окне или заменять последнее активное окно.\r\nОбратите внимание, что в некоторых случаях этот параметр игнорируется (например, при использовании параметров командной строки --new-window или --reuse-window).",
+			"window.confirmBeforeClose.always": "Попытка всегда запрашивать подтверждение. Однако браузеры все равно могут закрывать окна и вкладки без него.",
+			"window.confirmBeforeClose.keyboardOnly": "Запрос подтверждения только при обнаружении сочетания клавиш. Учтите, что в некоторых случаях обнаружение невозможно.",
+			"window.confirmBeforeClose.never": "Никогда не запрашивать в явном виде подтверждение, если нет угрозы потери данных.",
+			"confirmBeforeCloseWeb": "Определяет, отображать ли диалоговое окно подтверждения перед закрытием вкладки или окна браузера. Однако даже при включении этой функции браузеры могут закрывать окна и вкладки без подтверждения, поэтому рассматривайте ее лишь как подсказку, которая выдается не всегда.",
 			"zenModeConfigurationTitle": "Режим Zen",
 			"zenMode.fullScreen": "Определяет, будет ли рабочее пространство переключаться в полноэкранный режим при включении режима Zen.",
 			"zenMode.centerLayout": "Определяет, будет ли выполняться выравнивание по центру при включении режима Zen. ",
@@ -2369,7 +2396,11 @@
 			"resetFocusedViewLocation": "Сброс расположения представления с фокусом",
 			"resetFocusedView.error.noFocusedView": "Сейчас никакое из представлений не находится в фокусе.",
 			"increaseViewSize": "Увеличить размер текущего представления",
-			"decreaseViewSize": "Уменьшить размер текущего представления"
+			"increaseEditorWidth": "Увеличить ширину редактора",
+			"increaseEditorHeight": "Увеличить высоту редактора",
+			"decreaseViewSize": "Уменьшить размер текущего представления",
+			"decreaseEditorWidth": "Уменьшить ширину редактора",
+			"decreaseEditorHeight": "Уменьшить высоту редактора"
 		},
 		"vs/workbench/browser/actions/navigationActions": {
 			"navigateLeft": "Перейти к представлению слева",
@@ -2397,7 +2428,9 @@
 			"reloadWindow": "Перезагрузить окно",
 			"about": "О программе",
 			"newWindow": "Новое окно",
+			"blur": "Удалить фокус клавиатуры из фокусируемого элемента",
 			"file": "Файл",
+			"miConfirmClose": "Подтвердить перед закрытием",
 			"miNewWindow": "&&Новое окно",
 			"miOpenRecent": "Открыть &&последние",
 			"miMore": "&&Дополнительно...",
@@ -2556,7 +2589,7 @@
 			"vscode.extension.contributes.view.initialState.visible": "Начальное состояние представления по умолчанию. В большинстве контейнеров представление будет развернуто, однако в некоторых встроенных контейнерах (explorer, scm и debug) все представления отображаются свернутыми независимо от значения параметра \"visibility\".",
 			"vscode.extension.contributes.view.initialState.hidden": "Представление не будет отображаться в контейнере представлений, но будет доступно для обнаружения с помощью меню представлений и других точек входа представлений и может быть отображено пользователем.",
 			"vscode.extension.contributes.view.initialState.collapsed": "Представление будет отображаться в контейнере представлений, но будет свернуто.",
-			"vscode.extension.contributes.view.group": "Вложенная группа в мини-приложении",
+			"vscode.extension.contributes.view.group": "Вложенная группа во вьюлете",
 			"vscode.extension.contributes.view.remoteName": "Имя удаленного типа, связанного с этим представлением",
 			"vscode.extension.contributes.views": "Добавляет представления в редактор",
 			"views.explorer": "Добавляет представления в контейнер обозревателя на панели действий",
@@ -2591,7 +2624,8 @@
 			"homeIndicator": "Главная",
 			"home": "Главная",
 			"manage": "Управление",
-			"accounts": "Учетные записи"
+			"accounts": "Учетные записи",
+			"focusActivityBar": "Фокусировка панели действий"
 		},
 		"vs/workbench/browser/parts/sidebar/sidebarPart": {
 			"focusSideBar": "Перевести фокус на боковую панель"
@@ -3388,14 +3422,14 @@
 			"removeOptimizations": "Принудительно включить функции",
 			"reopenFilePrompt": "Откройте файл повторно, чтобы изменение этого параметра вступило в силу."
 		},
+		"vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens": {
+			"inspectEditorTokens": "Разработчик: проверка токенов редактора и областей",
+			"inspectTMScopesWidget.loading": "Загрузка..."
+		},
 		"vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess": {
 			"gotoLineQuickAccessPlaceholder": "Введите номер строки и опционально столбец для перехода (например, 42:5 для строки 42 и столбца 5).",
 			"gotoLineQuickAccess": "Перейти к строке/столбцу",
 			"gotoLine": "Перейти к строке/столбцу..."
-		},
-		"vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens": {
-			"inspectEditorTokens": "Разработчик: проверка токенов редактора и областей",
-			"inspectTMScopesWidget.loading": "Загрузка..."
 		},
 		"vs/workbench/contrib/codeEditor/browser/saveParticipants": {
 			"formatting": "Выполняется форматировщик \"{0}\" ([настроить](command:workbench.action.openSettings?%5B%22editor.formatOnSave%22%5D)).",
@@ -3635,7 +3669,7 @@
 			"focusedStackFrameLineHighlight": "Цвет фона для выделения строки в кадре стека, на котором находится фокус."
 		},
 		"vs/workbench/contrib/debug/browser/repl": {
-			"workbench.debug.filter.placeholder": "Фильтр (например, text, !exclude)",
+			"workbench.debug.filter.placeholder": "Фильтр (например: text, !exclude)",
 			"debugConsole": "Консоль отладки",
 			"copy": "Копирование",
 			"copyAll": "Копировать все",
@@ -3682,18 +3716,18 @@
 			"breakpoint": "Точка останова"
 		},
 		"vs/workbench/contrib/debug/browser/callStackView": {
+			"running": "Выполняется",
 			"showMoreStackFrames2": "Показать больше кадров стека",
 			"session": "Сеанс",
-			"running": "Выполняется",
 			"thread": "Поток",
 			"restartFrame": "Перезапустить кадр",
 			"loadAllStackFrames": "Загрузить все кадры стека",
 			"showMoreAndOrigin": "Показать еще {0}: {1}",
 			"showMoreStackFrames": "Загрузить дополнительные кадры стека ({0})",
 			"callStackAriaLabel": "Отладка стека вызовов",
-			"threadAriaLabel": "Поток {0} {1}",
+			"threadAriaLabel": "Поток \"{0}\": {1}",
 			"stackFrameAriaLabel": "Кадр стека {0}, строка {1}, {2}",
-			"sessionLabel": "Сеанс {0}: {1}"
+			"sessionLabel": "Сеанс \"{0}\": {1}"
 		},
 		"vs/workbench/contrib/debug/browser/debugActions": {
 			"openLaunchJson": "Открыть {0}",
@@ -3744,11 +3778,11 @@
 			"debugRequesMissing": "В выбранной конфигурации отладки отсутствует атрибут '{0}'.",
 			"debugTypeNotSupported": "Настроенный тип отладки \"{0}\" не поддерживается.",
 			"debugTypeMissing": "Отсутствует свойство \"type\" для выбранной конфигурации запуска.",
-			"installAdditionalDebuggers": "Установить расширение {0}",
+			"installAdditionalDebuggers": "Установка расширения {0}",
 			"noFolderWorkspaceDebugError": "Отладка активного файла невозможна. Убедитесь, что файл сохранен и у вас установлено расширение отладки для него.",
 			"debugAdapterCrash": "Процесс адаптера отладки неожиданно завершился ({0})",
 			"cancel": "Отмена",
-			"debuggingPaused": "{1}:{2}, отладка приостановлена {0}, {3}",
+			"debuggingPaused": "{0}:{1} — отладка приостановлена. Причина: {2}, {3}.",
 			"breakpointAdded": "Добавлена точка останова, строка {0}, файл {1}.",
 			"breakpointRemoved": "Удалена точка останова, строка {0}, файл {1}"
 		},
@@ -4017,8 +4051,8 @@
 			"debugExtensionHost": "Запустить отладку узла расширения",
 			"restart1": "Профилирование расширений",
 			"restart2": "Для профилирования расширений требуется перезапуск. Вы хотите перезапустить \"{0}\" сейчас?",
-			"restart3": "Перезапустить",
-			"cancel": "Отмена",
+			"restart3": "&&Перезапустить",
+			"cancel": "&&Отмена",
 			"debugExtensionHost.launch.name": "Подключить узел расширения",
 			"extensionHostProfileStart": "Запустить профиль узла расширения",
 			"stopExtensionHostProfileStart": "Остановить профиль узла расширения",
@@ -4032,8 +4066,8 @@
 			"status.profiler": "Профилировщик расширений",
 			"restart1": "Профилирование расширений",
 			"restart2": "Для профилирования расширений требуется перезапуск. Вы хотите перезапустить \"{0}\" сейчас?",
-			"restart3": "Перезапустить",
-			"cancel": "Отмена"
+			"restart3": "&&Перезапустить",
+			"cancel": "&&Отмена"
 		},
 		"vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsInput": {
 			"extensionsInputName": "Выполняющиеся расширения"
@@ -4048,6 +4082,7 @@
 		"vs/workbench/contrib/extensions/browser/extensions.contribution": {
 			"manageExtensionsQuickAccessPlaceholder": "Нажмите клавишу ВВОД для управления расширениями.",
 			"manageExtensionsHelp": "Управление расширениями",
+			"installVSIX": "Установка VSIX для расширений",
 			"extension": "Расширение",
 			"extensions": "Расширения",
 			"extensionsConfigurationTitle": "Расширения",
@@ -4061,10 +4096,14 @@
 			"workbench.extensions.installExtension.description": "Установить данное расширение",
 			"workbench.extensions.installExtension.arg.name": "Идентификатор расширения или URI ресурса VSIX",
 			"notFound": "Расширение \"{0}\" не найдено.",
+			"InstallVSIXAction.successReload": "Перезагрузите Visual Studio Code, чтобы завершить установку расширения {0}.",
+			"InstallVSIXAction.success": "Установка расширения {0} завершена.",
+			"InstallVSIXAction.reloadNow": "Перезагрузить",
 			"workbench.extensions.uninstallExtension.description": "Удалить указанное расширение",
 			"workbench.extensions.uninstallExtension.arg.name": "Идентификатор удаляемого расширения",
 			"id required": "Требуется идентификатор расширения.",
 			"notInstalled": "Расширение \"{0}\" не установлено. Убедитесь, что используется полный идентификатор расширения, включая издателя, например: ms-vscode.csharp.",
+			"builtin": "Расширение \"{0}\" является встроенным и не может быть установлено.",
 			"workbench.extensions.search.description": "Поиск конкретного расширения",
 			"workbench.extensions.search.arg.name": "Запрос для использования при поиске",
 			"miOpenKeymapExtensions": "&&Раскладки клавиатуры",
@@ -4141,86 +4180,6 @@
 		"vs/workbench/contrib/extensions/common/extensionsInput": {
 			"extensionsInputName": "Расширение: {0}"
 		},
-		"vs/workbench/contrib/extensions/browser/extensionEditor": {
-			"name": "Имя расширения",
-			"extension id": "Идентификатор расширений",
-			"preview": "Предварительная версия",
-			"builtin": "Встроенное",
-			"publisher": "Имя издателя",
-			"install count": "Число установок",
-			"rating": "Оценка",
-			"repository": "Репозиторий",
-			"license": "Лицензия",
-			"version": "Версия",
-			"details": "Подробные сведения",
-			"detailstooltip": "Сведения о расширении, полученные из файла 'README.md' расширения",
-			"contributions": "Вклады",
-			"contributionstooltip": "Выводит список изменений в VS Code для этого расширения",
-			"changelog": "Журнал изменений",
-			"changelogtooltip": "История обновления расширения, полученная из файла 'CHANGELOG.md' расширения",
-			"dependencies": "Зависимости",
-			"dependenciestooltip": "Выводит список расширений, от которых зависит это расширение",
-			"recommendationHasBeenIgnored": "Вы отключили получение рекомендаций для этого расширения.",
-			"noReadme": "Файл сведений недоступен.",
-			"extension pack": "Пакет расширений ({0})",
-			"noChangelog": "Журнал изменений недоступен.",
-			"noContributions": "Нет публикаций",
-			"noDependencies": "Нет зависимостей",
-			"settings": "Параметры ({0})",
-			"setting name": "Имя",
-			"description": "Описание",
-			"default": "По умолчанию",
-			"debuggers": "Отладчики ({0})",
-			"debugger name": "Имя",
-			"debugger type": "Тип",
-			"viewContainers": "Просмотреть контейнеры ({0})",
-			"view container id": "Идентификатор",
-			"view container title": "Название",
-			"view container location": "Где",
-			"views": "Представления ({0})",
-			"view id": "Идентификатор",
-			"view name": "Имя",
-			"view location": "Где",
-			"localizations": "Локализации ({0})",
-			"localizations language id": "Идентификатор языка",
-			"localizations language name": "Название языка",
-			"localizations localized language name": "Название языка (локализованное)",
-			"customEditors": "Специализированные редакторы ({0})",
-			"customEditors view type": "Тип представления",
-			"customEditors priority": "Приоритет",
-			"customEditors filenamePattern": "Шаблон имени файла",
-			"codeActions": "Действия кода ({0})",
-			"codeActions.title": "Название",
-			"codeActions.kind": "Тип",
-			"codeActions.description": "Описание",
-			"codeActions.languages": "Языки",
-			"authentication": "Проверка подлинности ({0})",
-			"authentication.label": "Метка",
-			"authentication.id": "Идентификатор",
-			"colorThemes": "Цветовые темы ({0})",
-			"iconThemes": "Темы значков ({0})",
-			"colors": "Цвета ({0})",
-			"colorId": "Идентификатор",
-			"defaultDark": "Темная по умолчанию",
-			"defaultLight": "Светлая по умолчанию",
-			"defaultHC": "С высоким контрастом по умолчанию",
-			"JSON Validation": "Проверка JSON ({0})",
-			"fileMatch": "Сопоставление файла",
-			"schema": "Схема",
-			"commands": "Команды ({0})",
-			"command name": "Имя",
-			"keyboard shortcuts": "Сочетания клавиш",
-			"menuContexts": "Контексты меню",
-			"languages": "Языки ({0})",
-			"language id": "Идентификатор",
-			"language name": "Имя",
-			"file extensions": "Расширения файлов",
-			"grammar": "Грамматика",
-			"snippets": "Фрагменты кода",
-			"find": "Найти",
-			"find next": "Найти далее",
-			"find previous": "Найти ранее"
-		},
 		"vs/workbench/contrib/extensions/browser/extensionsActions": {
 			"download": "Скачать вручную",
 			"install vsix": "После скачивания установите загруженный VSIX '{0}' вручную.",
@@ -4233,14 +4192,18 @@
 			"noOfHoursAgo": "{0} часов назад",
 			"one hour ago": "1 час назад",
 			"just now": "Только сейчас",
-			"install": "Установить",
-			"installing": "Идет установка",
-			"locally": "Локально",
 			"installExtensionStart": "Установка расширения {0} запущено. Сейчас будет открыт редактор с дополнительными сведениями об этом расширении",
 			"installExtensionComplete": "Установка расширения {0} завершена.",
 			"failedToInstall": "Не удалось установить \"{0}\".",
-			"Install on Server": "Установить в {0}",
+			"install": "Установить",
+			"install and do no sync": "Установить (без синхронизации)",
+			"install locally and do not sync": "Установить локально (без синхронизации)",
 			"install locally": "Установить локально",
+			"install on remote and do not sync": "Установить на экземпляре {0} (без синхронизации)",
+			"install on remote": "Установить на экземпляре {0}",
+			"install everywhere tooltip": "Установить это расширение на всех синхронизируемых экземплярах ({0})",
+			"installing": "Идет установка",
+			"Install on Server": "Установить в {0}",
 			"uninstallAction": "Удалить",
 			"Uninstalling": "Идет удаление",
 			"uninstallExtensionStart": "Удаление расширения {0} запущено.",
@@ -4351,13 +4314,11 @@
 			"installVSIX": "Установка из VSIX...",
 			"installFromVSIX": "Установить из VSIX",
 			"installButton": "&&Установить",
-			"InstallVSIXAction.successReload": "Перезагрузите Visual Studio Code, чтобы завершить установку расширения {0}.",
-			"InstallVSIXAction.success": "Установка расширения {0} завершена.",
-			"InstallVSIXAction.reloadNow": "Перезагрузить",
 			"reinstall": "Переустановить расширение...",
 			"selectExtensionToReinstall": "Выберите расширение для повторной установки",
 			"ReinstallAction.successReload": "Перезагрузите Visual Studio Code, чтобы завершить переустановку расширения {0}.",
 			"ReinstallAction.success": "Переустановка расширения {0} завершена.",
+			"InstallVSIXAction.reloadNow": "Перезагрузить",
 			"install previous version": "Установить определенную версию расширения...",
 			"selectExtension": "Выберите расширение",
 			"InstallAnotherVersionExtensionAction.successReload": "Перезагрузите Visual Studio Code, чтобы завершить установку расширения {0}.",
@@ -4373,6 +4334,86 @@
 			"extensionButtonProminentBackground": "Цвет фона кнопок, соответствующих основным действиям расширения (например, кнопка \"Установить\").",
 			"extensionButtonProminentForeground": "Цвет переднего плана кнопок, соответствующих основным действиям расширения (например, кнопка \"Установить\").",
 			"extensionButtonProminentHoverBackground": "Цвет фона кнопок, соответствующих основным действиям расширения, при наведении мыши (например, кнопка \"Установить\")."
+		},
+		"vs/workbench/contrib/extensions/browser/extensionEditor": {
+			"name": "Имя расширения",
+			"extension id": "Идентификатор расширений",
+			"preview": "Предварительная версия",
+			"builtin": "Встроенное",
+			"publisher": "Имя издателя",
+			"install count": "Число установок",
+			"rating": "Оценка",
+			"repository": "Репозиторий",
+			"license": "Лицензия",
+			"version": "Версия",
+			"details": "Подробные сведения",
+			"detailstooltip": "Сведения о расширении, полученные из файла 'README.md' расширения",
+			"contributions": "Вклады",
+			"contributionstooltip": "Выводит список изменений в VS Code для этого расширения",
+			"changelog": "Журнал изменений",
+			"changelogtooltip": "История обновления расширения, полученная из файла 'CHANGELOG.md' расширения",
+			"dependencies": "Зависимости",
+			"dependenciestooltip": "Выводит список расширений, от которых зависит это расширение",
+			"recommendationHasBeenIgnored": "Вы отключили получение рекомендаций для этого расширения.",
+			"noReadme": "Файл сведений недоступен.",
+			"extension pack": "Пакет расширений ({0})",
+			"noChangelog": "Журнал изменений недоступен.",
+			"noContributions": "Нет публикаций",
+			"noDependencies": "Нет зависимостей",
+			"settings": "Параметры ({0})",
+			"setting name": "Имя",
+			"description": "Описание",
+			"default": "По умолчанию",
+			"debuggers": "Отладчики ({0})",
+			"debugger name": "Имя",
+			"debugger type": "Тип",
+			"viewContainers": "Просмотреть контейнеры ({0})",
+			"view container id": "Идентификатор",
+			"view container title": "Название",
+			"view container location": "Где",
+			"views": "Представления ({0})",
+			"view id": "Идентификатор",
+			"view name": "Имя",
+			"view location": "Где",
+			"localizations": "Локализации ({0})",
+			"localizations language id": "Идентификатор языка",
+			"localizations language name": "Название языка",
+			"localizations localized language name": "Название языка (локализованное)",
+			"customEditors": "Специализированные редакторы ({0})",
+			"customEditors view type": "Тип представления",
+			"customEditors priority": "Приоритет",
+			"customEditors filenamePattern": "Шаблон имени файла",
+			"codeActions": "Действия кода ({0})",
+			"codeActions.title": "Название",
+			"codeActions.kind": "Тип",
+			"codeActions.description": "Описание",
+			"codeActions.languages": "Языки",
+			"authentication": "Проверка подлинности ({0})",
+			"authentication.label": "Метка",
+			"authentication.id": "Идентификатор",
+			"colorThemes": "Цветовые темы ({0})",
+			"iconThemes": "Темы значков ({0})",
+			"colors": "Цвета ({0})",
+			"colorId": "Идентификатор",
+			"defaultDark": "Темная по умолчанию",
+			"defaultLight": "Светлая по умолчанию",
+			"defaultHC": "С высоким контрастом по умолчанию",
+			"JSON Validation": "Проверка JSON ({0})",
+			"fileMatch": "Сопоставление файла",
+			"schema": "Схема",
+			"commands": "Команды ({0})",
+			"command name": "Имя",
+			"keyboard shortcuts": "Сочетания клавиш",
+			"menuContexts": "Контексты меню",
+			"languages": "Языки ({0})",
+			"language id": "Идентификатор",
+			"language name": "Имя",
+			"file extensions": "Расширения файлов",
+			"grammar": "Грамматика",
+			"snippets": "Фрагменты кода",
+			"find": "Найти",
+			"find next": "Найти далее",
+			"find previous": "Найти ранее"
 		},
 		"vs/workbench/contrib/extensions/common/extensionsFileTemplate": {
 			"app.extensions.json.title": "Расширения",
@@ -4422,6 +4463,7 @@
 			"no": "Нет",
 			"workspaceRecommended": "Вы хотите установить рекомендуемые расширения для этого репозитория?",
 			"install": "Установить",
+			"install and do no sync": "Установить (не синхронизировать)",
 			"show recommendations": "Показать рекомендации"
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsViews": {
@@ -4446,11 +4488,11 @@
 			"extension-arialabel": "{0}, {1}, {2}, нажмите клавишу ВВОД для получения сведений о расширении.",
 			"extensions": "Расширения"
 		},
-		"vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations": {
-			"dynamicWorkspaceRecommendation": "Это расширение может вас заинтересовать, так как оно популярно среди пользователей репозитория {0}."
-		},
 		"vs/workbench/contrib/extensions/browser/exeBasedRecommendations": {
 			"exeBasedRecommendation": "Это расширение является рекомендуемым, так как установлено {0}."
+		},
+		"vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations": {
+			"dynamicWorkspaceRecommendation": "Это расширение может вас заинтересовать, так как оно популярно среди пользователей репозитория {0}."
 		},
 		"vs/workbench/contrib/extensions/browser/workspaceRecommendations": {
 			"workspaceRecommendation": "Это расширение рекомендовано пользователями текущей рабочей области."
@@ -4609,11 +4651,11 @@
 			"files.saveConflictResolution": "Конфликт сохранения может возникнуть, когда на диск сохраняется файл, который одновременно был изменен другой программой. Чтобы предотвратить потерю данных, пользователю предлагается сравнить изменения в редакторе с версией на диске. Этот параметр следует изменять только в том случае, если вы часто сталкиваетесь с ошибками при конфликтах сохранения, так как неосмотрительное его использование может привести к потере данных.",
 			"files.simpleDialog.enable": "Включает простое диалоговое окно файлов, которое заменяет собой системное диалоговое окно файлов.",
 			"formatOnSave": "Форматирование файла при сохранении. Модуль форматирования должен быть доступен, файл не должен сохраняться по истечении времени задержки, и работа редактора не должна завершаться.",
-			"everything": "Форматировать весь файл.",
-			"modification": "Применить формат к изменениям (требуется система управления версиями).",
+			"everything": "Форматирование всего файла.",
+			"modification": "Форматирование изменений (требуется система управления версиями).",
 			"formatOnSaveMode": "Определяет, применяется ли формат при сохранении ко всему файлу или только к изменениям в файле. Этот параметр применяется только в том случае, если параметр \"#editor.formatOnSave#\" имеет значение \"true\".",
 			"explorerConfigurationTitle": "Проводник",
-			"openEditorsVisible": "Число редакторов, отображаемых на панели \"Открытые редакторы\".",
+			"openEditorsVisible": "Число редакторов, отображаемых в области \"Открытые редакторы\". Если это значение равно 0, она не отображается.",
 			"autoReveal.on": "Файлы будут отображаться и будут выбраны.",
 			"autoReveal.off": "Файлы не будут отображаться и не будут выбраны.",
 			"autoReveal.focusNoScroll": "Файлы не будут прокручиваться в представлении, но на них будет оставаться фокус.",
@@ -4665,7 +4707,7 @@
 			"delete": "Удалить",
 			"copyFile": "Копирование",
 			"pasteFile": "Вставить",
-			"download": "Загрузка",
+			"download": "Скачивание…",
 			"createNewFile": "Создать файл",
 			"createNewFolder": "Новая папка",
 			"deleteButtonLabelRecycleBin": "&&Переместить в корзину",
@@ -4718,6 +4760,10 @@
 			"compareWithClipboard": "Сравнить активный файл с буфером обмена",
 			"clipboardComparisonLabel": "Буфер обмена ↔ {0}",
 			"retry": "Повторить",
+			"downloadingFiles": "Идет скачивание",
+			"downloadProgressSmallMany": "Файлов: {0} из {1} ({2}/с)",
+			"downloadProgressLarge": "{0} ({1} из {2}, {3}/с)",
+			"downloadButton": "Скачать",
 			"downloadFolder": "Скачать папку",
 			"downloadFile": "Скачать файл",
 			"fileIsAncestor": "Файл для вставки является предком папки назначения",
@@ -4789,8 +4835,9 @@
 			"replaceButtonLabel": "&&Заменить",
 			"confirmManyOverwrites": "В папке назначения уже существуют следующие файлы и (или) папки ({0}). Вы хотите заменить их?",
 			"uploadingFiles": "Отправка.",
-			"uploadProgress": "Файлов: {0} из {1} ({2}/с)",
-			"uploadProgressDetail": "{0} ({1} из {2}, {3}/с)",
+			"copyingFiles": "Копирование",
+			"uploadProgressSmallMany": "Файлов: {0} из {1} ({2}/с)",
+			"uploadProgressLarge": "{0} ({1} из {2}, {3}/с)",
 			"copyFolders": "&&Копировать папки",
 			"copyFolder": "&&Копировать папку",
 			"cancel": "Отмена",
@@ -4871,9 +4918,9 @@
 		"vs/workbench/contrib/logs/common/logs.contribution": {
 			"userDataSyncLog": "Синхронизация параметров",
 			"rendererLog": "Окно",
+			"telemetryLog": "Телеметрия",
 			"mainLog": "Главный",
-			"sharedLog": "Коллективная",
-			"telemetryLog": "Телеметрия"
+			"sharedLog": "Коллективная"
 		},
 		"vs/workbench/contrib/logs/electron-sandbox/logsActions": {
 			"openLogsFolder": "Открыть папку журналов",
@@ -5089,7 +5136,8 @@
 		"vs/workbench/contrib/notebook/browser/diff/notebookDiffActions": {
 			"notebook.diff.switchToText": "Открыть редактор текстовых несовпадений",
 			"notebook.diff.cell.revertMetadata": "Отменить изменения метаданных",
-			"notebook.diff.cell.revertOutputs": "Отменить изменения выходных данных"
+			"notebook.diff.cell.revertOutputs": "Отменить изменения выходных данных",
+			"notebook.diff.cell.revertInput": "Отменить ввод"
 		},
 		"vs/workbench/contrib/notebook/browser/extensionPoint": {
 			"contributes.notebook.provider": "Добавляет поставщика документов для записной книжки.",
@@ -5129,7 +5177,7 @@
 			"notebookStatusErrorIcon.foreground": "Цвет значка ошибки для ячеек записной книжки в строке состояния ячейки.",
 			"notebookStatusRunningIcon.foreground": "Цвет значка выполнения для ячеек записной книжки в строке состояния ячейки.",
 			"notebook.outputContainerBackgroundColor": "Цвет фона для контейнера выходных данных записной книжки.",
-			"notebook.cellToolbarSeparator": "Цвет разделителя на нижней панели инструментов в ячейке",
+			"notebook.cellToolbarSeparator": "Цвет разделителя панели инструментов внизу ячейки",
 			"focusedCellBackground": "Цвет фона ячейки, когда на ячейке находится фокус.",
 			"notebook.cellHoverBackground": "Цвет фона ячейки при наведении курсора мыши на ячейку.",
 			"notebook.focusedCellBorder": "Цвет верхней и нижней границ ячейки, когда на ячейке находится фокус.",
@@ -5151,9 +5199,9 @@
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/codeCell": {
 			"mimeTypePicker": "Выберите другой выходной тип MIME; доступные типы MIME: {0}",
-			"builtinRenderInfo": "встроенный",
 			"curruentActiveMimeType": "Сейчас активно",
-			"promptChooseMimeType.placeHolder": "Выберите выходной тип MIME для отрисовки текущих выходных данных"
+			"promptChooseMimeType.placeHolder": "Выберите выходной тип MIME для отрисовки текущих выходных данных",
+			"builtinRenderInfo": "встроенный"
 		},
 		"vs/workbench/contrib/outline/browser/outline.contribution": {
 			"name": "Структура",
@@ -5233,16 +5281,23 @@
 		"vs/workbench/contrib/performance/electron-browser/startupProfiler": {
 			"prof.message": "Профили успешно созданы.",
 			"prof.detail": "Создайте запрос и вручную прикрепите следующие файлы:\r\n{0}",
-			"prof.restartAndFileIssue": "Создать проблему и выполнить перезапуск",
-			"prof.restart": "Перезапустить",
+			"prof.restartAndFileIssue": "&&Создать проблему и выполнить перезапуск",
+			"prof.restart": "&&Перезапустить",
 			"prof.thanks": "Спасибо за помощь.",
-			"prof.detail.restart": "Для продолжения работы с '{0}' необходимо еще раз перезагрузить систему. Благодарим вас за участие."
+			"prof.detail.restart": "Для продолжения работы с '{0}' необходимо еще раз перезагрузить систему. Благодарим вас за участие.",
+			"prof.restart.button": "&&Перезапустить"
 		},
 		"vs/workbench/contrib/performance/browser/performance.contribution": {
 			"show.label": "Производительность при запуске"
 		},
 		"vs/workbench/contrib/performance/browser/perfviewEditor": {
 			"name": "Производительность при запуске"
+		},
+		"vs/workbench/contrib/preferences/browser/keybindingsEditorContribution": {
+			"defineKeybinding.start": "Определить назначение клавиш",
+			"defineKeybinding.kbLayoutErrorMessage": "Вы не сможете нажать это сочетание клавиш в текущей раскладке клавиатуры.",
+			"defineKeybinding.kbLayoutLocalAndUSMessage": "**{0}** для текущей раскладки клавиатуры (**{1}** для стандартной раскладки клавиатуры \"Английский, США\")",
+			"defineKeybinding.kbLayoutLocalMessage": "**{0}** для текущей раскладки клавиатуры."
 		},
 		"vs/workbench/contrib/preferences/browser/preferences.contribution": {
 			"defaultPreferencesEditor": "Редактор настроек по умолчанию",
@@ -5284,11 +5339,16 @@
 			"clear": "Очистить результаты поиска",
 			"miPreferences": "&&Настройки"
 		},
-		"vs/workbench/contrib/preferences/browser/keybindingsEditorContribution": {
-			"defineKeybinding.start": "Определить назначение клавиш",
-			"defineKeybinding.kbLayoutErrorMessage": "Вы не сможете нажать это сочетание клавиш в текущей раскладке клавиатуры.",
-			"defineKeybinding.kbLayoutLocalAndUSMessage": "**{0}** для текущей раскладки клавиатуры (**{1}** для стандартной раскладки клавиатуры \"Английский, США\")",
-			"defineKeybinding.kbLayoutLocalMessage": "**{0}** для текущей раскладки клавиатуры."
+		"vs/workbench/contrib/preferences/browser/keybindingWidgets": {
+			"defineKeybinding.initial": "Нажмите нужное сочетание клавиш, а затем клавишу ВВОД.",
+			"defineKeybinding.oneExists": "Это сочетание клавиш назначено одной имеющейся команде",
+			"defineKeybinding.existing": "Это сочетание клавиш назначено нескольким имеющимся командам ({0})",
+			"defineKeybinding.chordsTo": "Аккорд для"
+		},
+		"vs/workbench/contrib/preferences/browser/preferencesActions": {
+			"configureLanguageBasedSettings": "Настроить параметры языка...",
+			"languageDescriptionConfigured": "({0})",
+			"pickLanguage": "Выбрать язык"
 		},
 		"vs/workbench/contrib/preferences/browser/keybindingsEditor": {
 			"recordKeysLabel": "Запись ключей",
@@ -5324,11 +5384,6 @@
 			"noKeybinding": "Нет назначенных настраиваемых сочетаний клавиш.",
 			"noWhen": "Нет контекста \"Когда\"."
 		},
-		"vs/workbench/contrib/preferences/browser/preferencesActions": {
-			"configureLanguageBasedSettings": "Настроить параметры языка...",
-			"languageDescriptionConfigured": "({0})",
-			"pickLanguage": "Выбрать язык"
-		},
 		"vs/workbench/contrib/preferences/browser/preferencesEditor": {
 			"SearchSettingsWidget.AriaLabel": "Параметры поиска",
 			"SearchSettingsWidget.Placeholder": "Параметры поиска",
@@ -5362,12 +5417,6 @@
 			"settingsSearchTocBehavior.hide": "Скрыть содержание при поиске.",
 			"settingsSearchTocBehavior.filter": "Отфильтровать содержание, оставив только категории с соответствующими параметрами. При щелчке по категории будут показаны результаты только для этой категории.",
 			"settingsSearchTocBehavior": "Управляет поведением содержания редактора параметров при поиске."
-		},
-		"vs/workbench/contrib/preferences/browser/keybindingWidgets": {
-			"defineKeybinding.initial": "Нажмите нужное сочетание клавиш, а затем клавишу ВВОД.",
-			"defineKeybinding.oneExists": "Это сочетание клавиш назначено одной имеющейся команде",
-			"defineKeybinding.existing": "Это сочетание клавиш назначено нескольким имеющимся командам ({0})",
-			"defineKeybinding.chordsTo": "Аккорд для"
 		},
 		"vs/workbench/contrib/preferences/browser/preferencesWidgets": {
 			"defaultSettings": "Для переопределения поместите ваши параметры в редактор справа.",
@@ -5457,10 +5506,6 @@
 			"remote": "Удаленный",
 			"user": "Пользователь"
 		},
-		"vs/workbench/contrib/preferences/browser/tocTree": {
-			"settingsTOC": "Содержание по параметрам",
-			"groupRowAriaLabel": "{0}, группа"
-		},
 		"vs/workbench/contrib/preferences/browser/settingsWidgets": {
 			"headerForeground": "Цвет переднего плана для заголовка раздела или активного заголовка.",
 			"modifiedItemForeground": "Цвет индикатора измененного параметра.",
@@ -5503,6 +5548,10 @@
 			"objectKeyHeader": "Элемент",
 			"objectValueHeader": "Значение"
 		},
+		"vs/workbench/contrib/preferences/browser/tocTree": {
+			"settingsTOC": "Содержание по параметрам",
+			"groupRowAriaLabel": "{0}, группа"
+		},
 		"vs/workbench/contrib/quickaccess/browser/quickAccess.contribution": {
 			"helpQuickAccessPlaceholder": "Введите \"{0}\" для получения справки по действиям, которые вы можете выполнить здесь.",
 			"helpQuickAccess": "Показать всех поставщиков быстрого доступа",
@@ -5543,8 +5592,7 @@
 		},
 		"vs/workbench/contrib/remote/electron-sandbox/remote.contribution": {
 			"remote": "Удаленный",
-			"remote.downloadExtensionsLocally": "Когда включенные расширения загружаются локально и устанавливаются удаленно.",
-			"remote.restoreForwardedPorts": "Восстанавливает порты, переадресованные в рабочей области."
+			"remote.downloadExtensionsLocally": "Когда включенные расширения загружаются локально и устанавливаются удаленно."
 		},
 		"vs/workbench/contrib/remote/common/remote.contribution": {
 			"remoteExtensionLog": "Удаленный сервер",
@@ -5552,7 +5600,9 @@
 			"workspace": "Тип расширения рабочей области. В удаленном окне такие расширения включены, только если они доступны в удаленном репозитории.",
 			"web": "Расширение типа рабочего веб-процесса, которое может выполняться в хост-процессе для таких расширений",
 			"remote": "Удаленный",
-			"remote.extensionKind": "Переопределите тип расширения. Расширения пользовательского интерфейса устанавливаются и выполняются на локальном компьютере, а расширения рабочей области выполняются на удаленном компьютере. Перезаписывая стандартный тип расширения с помощью этого параметра, вы указываете, что расширение следует установить и включить локально либо удаленно."
+			"remote.extensionKind": "Переопределите тип расширения. Расширения пользовательского интерфейса устанавливаются и выполняются на локальном компьютере, а расширения рабочей области выполняются на удаленном компьютере. Перезаписывая стандартный тип расширения с помощью этого параметра, вы указываете, что расширение следует установить и включить локально либо удаленно.",
+			"remote.restoreForwardedPorts": "Восстанавливает порты, переадресованные в рабочей области.",
+			"remote.autoForwardPorts": "Если этот параметр включен, URL-адреса с портами (например, \"http://127.0.0.1:3000\"), которые выводятся на терминалы, автоматически перенаправляются."
 		},
 		"vs/workbench/contrib/remote/browser/remote": {
 			"RemoteHelpInformationExtPoint": "Предоставляет справочную информацию для удаленного объекта",
@@ -5577,8 +5627,15 @@
 			"connectionLost": "Соединение потеряно",
 			"reconnectionRunning": "Попытка повторного подключения...",
 			"reconnectionPermanentFailure": "Не удается подключиться повторно. Перезагрузите окно.",
-			"cancel": "Отмена",
-			"remote.tunnelsView.automaticForward": "Порты {0} с удаленного ресурса перенаправлены на локальный ресурс {1}.",
+			"cancel": "Отмена"
+		},
+		"vs/workbench/contrib/remote/browser/remoteExplorer": {
+			"status.forwardedPorts": "Переадресованные порты",
+			"remote.forwardedPorts.statusbarTextNone": "Нет доступных портов.",
+			"remote.forwardedPorts.statusbarTextSingle": "Доступен 1 порт",
+			"remote.forwardedPorts.statusbarTextMultiple": "Доступные порты: {0}",
+			"remote.forwardedPorts.statusbarTooltip": "Доступные порты: {0}",
+			"remote.tunnelsView.automaticForward": "Служба, выполняющаяся на порте {0}, доступна.",
 			"remote.tunnelsView.showView": "Показать перенаправленные порты"
 		},
 		"vs/workbench/contrib/remote/browser/explorerViewItems": {
@@ -5606,12 +5663,10 @@
 			"remote.tunnelsView.candidates": "Не переадресовано",
 			"remote.tunnelsView.input": "Нажмите Enter для подтверждения или Esc для отмены.",
 			"remote.tunnelsView.forwardedPortLabel0": "{0}",
-			"remote.tunnelsView.forwardedPortLabel2": "{0}:{1} → {2}",
-			"remote.tunnelsView.forwardedPortLabel3": "{0} → {1}",
-			"remote.tunnelsView.forwardedPortLabel4": "{0}:{1}",
-			"remote.tunnelsView.forwardedPortLabel5": "{0}",
-			"remote.tunnelsView.forwardedPortDescription0": "{0} на {1}",
-			"remote.tunnel": "Переадресованные порты",
+			"remote.tunnelsView.forwardedPortLabel1": "{0} → {1}",
+			"remote.tunnelsView.forwardedPortLabel2": "{0}",
+			"remote.tunnelsView.forwardedPortDescription0": "{0} → {1}",
+			"remote.tunnel": "Порты",
 			"remote.tunnel.ariaLabelForwarded": "Удаленный порт {0}:{1} переадресован на локальный адрес {2}",
 			"remote.tunnel.ariaLabelCandidate": "Удаленный порт {0}:{1} не переадресован",
 			"tunnelView": "Туннельное представление",
@@ -5672,6 +5727,8 @@
 			"providersVisible": "Определяет число репозиториев, отображаемых в разделе \"Репозитории системы управления версиями\". Задайте значение \"0\", чтобы размеры представления можно было изменить вручную.",
 			"miViewSCM": "Д&&испетчер служб",
 			"scm accept": "SCM: Принять входные данные",
+			"scm view next commit": "Система управления версиями: просмотр следующей фиксации",
+			"scm view previous commit": "Система управления версиями: просмотр предыдущей фиксации",
 			"open in terminal": "Открыть в терминале"
 		},
 		"vs/workbench/contrib/scm/browser/dirtydiffDecorator": {
@@ -5730,8 +5787,8 @@
 			"findInWorkspace": "Найти в рабочей области...",
 			"showTriggerActions": "Перейти к символу в рабочей области...",
 			"name": "Поиск",
-			"findInFiles.description": "Открыть представление поиска",
-			"findInFiles.args": "Набор параметров для представления поиска",
+			"findInFiles.description": "Открыть вьюлет поиска",
+			"findInFiles.args": "Набор параметров для вьюлета поиска",
 			"findInFiles": "Найти в файлах",
 			"miFindInFiles": "Найти &&в файлах",
 			"miReplaceInFiles": "Заменить &&в файлах",
@@ -5856,10 +5913,10 @@
 			"search.action.replaceAll.disabled.label": "Заменить все (отправить поиск для включения)",
 			"search.action.replaceAll.enabled.label": "Заменить все",
 			"search.replace.toggle.button.title": "Переключение замены",
-			"label.Search": "Поиск: введите условие поиска и нажмите клавишу ВВОД, чтобы выполнить поиск, или ESCAPE для отмены",
+			"label.Search": "Поиск: введите условие поиска и нажмите клавишу ВВОД, чтобы выполнить поиск.",
 			"search.placeHolder": "Поиск",
 			"showContext": "Показать контекст",
-			"label.Replace": "Замена: введите термин для замены и нажмите ВВОД для просмотра или ESC для отмены",
+			"label.Replace": "Замена: введите термин для замены и нажмите клавишу ВВОД для просмотра.",
 			"search.replace.placeHolder": "Заменить"
 		},
 		"vs/workbench/contrib/search/browser/symbolsQuickAccess": {
@@ -5913,9 +5970,6 @@
 			"search.rerunSearchInEditor": "Повторить поиск",
 			"search.action.focusQueryEditorWidget": "Перевести фокус в поле ввода редактора поиска"
 		},
-		"vs/workbench/contrib/searchEditor/browser/searchEditorActions": {
-			"search.openNewEditor": "Открыть новый редактор поиска"
-		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditor": {
 			"moreSearch": "Переключить сведения о поиске",
 			"searchScope.includes": "включаемые файлы",
@@ -5926,6 +5980,9 @@
 			"searchResultItem": "Совпало {0} на {1} в файле {2}",
 			"searchEditor": "Поиск",
 			"textInputBoxBorder": "Граница для поля ввода текста в редакторе Поиска."
+		},
+		"vs/workbench/contrib/searchEditor/browser/searchEditorActions": {
+			"search.openNewEditor": "Открыть новый редактор поиска"
 		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditorInput": {
 			"searchTitle.withQuery": "Поиск: {0}",
@@ -5993,15 +6050,15 @@
 			"detail.snippet": "{0} ({1})",
 			"snippetSuggest.longLabel": "{0}, {1}"
 		},
-		"vs/workbench/contrib/surveys/browser/languageSurveys.contribution": {
-			"helpUs": "Помогите нам улучшить поддержку {0}",
-			"takeShortSurvey": "Пройдите краткий опрос",
-			"remindLater": "Напомнить позже",
-			"neverAgain": "Больше не показывать"
-		},
 		"vs/workbench/contrib/surveys/browser/nps.contribution": {
 			"surveyQuestion": "Вас не затруднит пройти краткий опрос?",
 			"takeSurvey": "Пройти опрос",
+			"remindLater": "Напомнить позже",
+			"neverAgain": "Больше не показывать"
+		},
+		"vs/workbench/contrib/surveys/browser/languageSurveys.contribution": {
+			"helpUs": "Помогите нам улучшить поддержку {0}",
+			"takeShortSurvey": "Пройдите краткий опрос",
 			"remindLater": "Напомнить позже",
 			"neverAgain": "Больше не показывать"
 		},
@@ -6295,7 +6352,7 @@
 		"vs/workbench/contrib/tasks/common/jsonSchema_v1": {
 			"JsonSchema.version.deprecated": "Версия задачи 0.1.0 является устаревшей. Используйте версию 2.0.0",
 			"JsonSchema.version": "Номер версии конфигурации",
-			"JsonSchema._runner": "Средство запуска завершило работу. Используйте официальное свойство средства запуска",
+			"JsonSchema._runner": "Средство выполнения переведено на новую версию. Используйте свойство официального средства выполнения.",
 			"JsonSchema.runner": "Определяет, следует ли запустить задачу в качестве процесса с отображением выходных данных задачи в окне вывода или в терминале.",
 			"JsonSchema.windows": "Конфигурация команды для Windows",
 			"JsonSchema.mac": "Конфигурация команды для Mac",
@@ -6481,6 +6538,10 @@
 			"terminal.integrated.unicodeVersion.eleven": "Версия 11 Юникода, эта версия обеспечивает улучшенную поддержку современных систем, использующих современные версии Юникода.",
 			"terminal.integrated.unicodeVersion": "Определяет, какую версию Юникода использовать для вычисления ширины символов в терминале. Если вы столкнетесь с тем, что эмодзи или другие широкие символы не занимают надлежащее место либо клавиша BACKSPACE удаляет слишком мало или слишком много данных, можете попробовать настроить этот параметр.",
 			"terminal.integrated.experimentalLinkProvider": "Экспериментальный параметр, который предназначен для улучшения обнаружения ссылок в терминале, расширяя возможности обнаружения ссылок и позволяя обнаруживать общие ссылки в редакторе. Сейчас он поддерживает только веб-ссылки.",
+			"terminal.integrated.localEchoLatencyThreshold": "Экспериментальная функция. Задержка сети в миллисекундах, при которой локальные изменения будут выводиться на терминал, не дожидаясь подтверждения сервера. При значении \"0\" локальный вывод всегда включен, при \"-1\" — отключен.",
+			"terminal.integrated.localEchoStyle": "Экспериментальная функция. Стиль локального вывода текста в терминале: начертание шрифта или цвет RGB.",
+			"terminal.integrated.serverSpawn": "Экспериментальная функция: порождать удаленные терминалы от процесса удаленного агента, а не от удаленного узла расширения",
+			"terminal.integrated.enablePersistentSessions": "Экспериментальная функция. Сохранение сеансов терминала для рабочей области при перезагрузке окна. Сейчас это поддерживается только в удаленных рабочих областях VS Code.",
 			"terminal.integrated.shell.linux": "Путь к оболочке, используемой терминалом в Linux (значение по умолчанию: {0}). [См. дополнительные сведения о настройке оболочки](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
 			"terminal.integrated.shell.linux.noDefault": "Путь к оболочке, используемой терминалом в Linux. [См. дополнительные сведения о настройке оболочки](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
 			"terminal.integrated.shell.osx": "Путь к оболочке, используемой терминалом в macOS (значение по умолчанию: {0}). [См. дополнительные сведения о настройке оболочки](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
@@ -6504,6 +6565,9 @@
 			"terminal.useMonospace": "Использовать моноширинные шрифты",
 			"terminal.monospaceOnly": "Терминал поддерживает только моноширинные шрифты. Не забудьте перезапустить VS Code, если этот шрифт был установлен недавно."
 		},
+		"vs/workbench/contrib/terminal/browser/remoteTerminalService": {
+			"terminal.integrated.starting": "Запуск…"
+		},
 		"vs/workbench/contrib/terminal/node/terminalProcess": {
 			"launchFail.cwdNotDirectory": "Начальный каталог (cwd) \"{0}\" не является каталогом.",
 			"launchFail.cwdDoesNotExist": "Начальный каталог (cwd) \"{0}\" не существует.",
@@ -6512,6 +6576,15 @@
 		},
 		"vs/workbench/contrib/terminal/electron-browser/terminalRemote": {
 			"workbench.action.terminal.newLocal": "Создание нового интегрированного терминала (локального)"
+		},
+		"vs/workbench/contrib/terminal/common/terminalColorRegistry": {
+			"terminal.background": "Цвет фона терминала. С его помощью можно указать цвет терминала, отличный от цвета панели.",
+			"terminal.foreground": "Цвет переднего плана терминала.",
+			"terminalCursor.foreground": "Цвет переднего плана курсора терминала.",
+			"terminalCursor.background": "Цвет фона курсора терминала. Позволяет выбрать цвет символа, который перекрывается блочным курсором.",
+			"terminal.selectionBackground": "Цвет фона выделения терминала.",
+			"terminal.border": "Цвет границы, которая отделяет области в терминале. По умолчанию используется panel.border.",
+			"terminal.ansiColor": "Цвет ANSI \"{0}\" в терминале."
 		},
 		"vs/workbench/contrib/terminal/browser/terminalActions": {
 			"workbench.action.terminal.newWorkspacePlaceholder": "Выбрать текущий рабочий каталог для нового терминала",
@@ -6561,6 +6634,7 @@
 			"workbench.action.terminal.rename.prompt": "Введите название терминала",
 			"workbench.action.terminal.focusFind": "Выделить поиск",
 			"workbench.action.terminal.hideFind": "Скрыть поиск",
+			"workbench.action.terminal.attachToRemote": "Присоединение к сеансу",
 			"quickAccessTerminal": "Переключить активный терминал",
 			"workbench.action.terminal.scrollToPreviousCommand": "Перейти к предыдущей команде",
 			"workbench.action.terminal.scrollToNextCommand": "Перейти к следующей команде",
@@ -6584,26 +6658,12 @@
 			"workbench.action.terminal.relaunch": "Перезапустить активный терминал",
 			"workbench.action.terminal.showEnvironmentInformation": "Показать сведения о среде"
 		},
-		"vs/workbench/contrib/terminal/common/terminalColorRegistry": {
-			"terminal.background": "Цвет фона терминала. С его помощью можно указать цвет терминала, отличный от цвета панели.",
-			"terminal.foreground": "Цвет переднего плана терминала.",
-			"terminalCursor.foreground": "Цвет переднего плана курсора терминала.",
-			"terminalCursor.background": "Цвет фона курсора терминала. Позволяет выбрать цвет символа, который перекрывается блочным курсором.",
-			"terminal.selectionBackground": "Цвет фона выделения терминала.",
-			"terminal.border": "Цвет границы, которая отделяет области в терминале. По умолчанию используется panel.border.",
-			"terminal.ansiColor": "Цвет ANSI \"{0}\" в терминале."
-		},
 		"vs/workbench/contrib/terminal/common/terminalMenu": {
 			"miToggleIntegratedTerminal": "&&Терминал",
 			"miNewTerminal": "&&Создать терминал",
 			"miSplitTerminal": "&&Разделить терминал",
 			"miRunActiveFile": "Запустить &&активный файл",
 			"miRunSelectedText": "Запустить &&выбранный текст"
-		},
-		"vs/workbench/contrib/terminal/browser/terminalQuickAccess": {
-			"renameTerminal": "Переименовать терминал",
-			"killTerminal": "Завершить экземпляр терминала",
-			"workbench.action.terminal.newplus": "Создать встроенный терминал"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalService": {
 			"workbench.action.terminal.allowWorkspaceShell": "Разрешить настройку оболочки в рабочей области",
@@ -6612,12 +6672,20 @@
 			"terminalService.terminalCloseConfirmationPlural": "Есть несколько активных сеансов терминала ({0}), завершить их?",
 			"terminal.integrated.chooseWindowsShell": "Выберите предпочитаемую оболочку терминала. Ее можно позже изменить в параметрах"
 		},
+		"vs/workbench/contrib/terminal/browser/terminalQuickAccess": {
+			"renameTerminal": "Переименовать терминал",
+			"killTerminal": "Завершить экземпляр терминала",
+			"workbench.action.terminal.newplus": "Создать встроенный терминал"
+		},
 		"vs/workbench/contrib/terminal/browser/terminalConfigHelper": {
 			"terminal.integrated.allowWorkspaceShell": "Вы разрешаете этой рабочей области изменять вашу оболочку терминала? {0}",
 			"allow": "Разрешить",
 			"disallow": "Запретить",
 			"useWslExtension.title": "Для открытия терминала в WSL рекомендуется использовать расширение \"{0}\".",
 			"install": "Установить"
+		},
+		"vs/workbench/contrib/terminal/browser/terminalTab": {
+			"terminal.integrated.starting": "Запуск…"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalInstance": {
 			"terminal.integrated.a11yPromptLabel": "Ввод терминала",
@@ -6646,14 +6714,14 @@
 		"vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider": {
 			"searchWorkspace": "Поиск рабочей области"
 		},
+		"vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy": {
+			"terminal.integrated.starting": "Запуск..."
+		},
 		"vs/workbench/contrib/terminal/browser/environmentVariableInfo": {
 			"extensionEnvironmentContributionChanges": "Расширения стремятся внести следующие изменения в среду терминала:",
 			"extensionEnvironmentContributionRemoval": "Расширения стремятся удалить существующие изменения из среды терминала:",
 			"relaunchTerminalLabel": "Перезапустить терминал",
 			"extensionEnvironmentContributionInfo": "Расширения внесли изменения в среду этого терминала"
-		},
-		"vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy": {
-			"terminal.integrated.starting": "Запуск..."
 		},
 		"vs/workbench/contrib/terminal/browser/links/terminalLink": {
 			"openFile": "Открыть файл в редакторе",
@@ -6747,6 +6815,7 @@
 		"vs/workbench/contrib/url/browser/trustedDomains": {
 			"trustedDomain.manageTrustedDomain": "Управление доверенными доменами",
 			"trustedDomain.trustDomain": "Доверять домену {0}",
+			"trustedDomain.trustAllPorts": "Доверять домену {0} на всех портах",
 			"trustedDomain.trustSubDomain": "Доверять домену {0} и всем его поддоменам",
 			"trustedDomain.trustAllDomains": "Доверять всем доменам (при этом отключается защита ссылок)",
 			"trustedDomain.manageTrustedDomains": "Управление доверенными доменами",
@@ -6818,7 +6887,7 @@
 			"configure sync placeholder": "Выберите компоненты для синхронизации",
 			"turn off sync confirmation": "Вы хотите отключить синхронизацию?",
 			"turn off sync detail": "Синхронизация ваших параметров, настраиваемых сочетаний клавиш, расширений, фрагментов кода и состояния пользовательского интерфейса будет прекращена.",
-			"turn off": "Отключить",
+			"turn off": "&&Отключить",
 			"turn off sync everywhere": "Отключение синхронизации всех устройств и очистка данных из облака.",
 			"leftResourceName": "{0} (удаленный)",
 			"merges": "{0} (слияния)",
@@ -6840,6 +6909,8 @@
 			"turn off failed": "Ошибка при отключении синхронизации: {0}",
 			"show sync log title": "{0}: показать журнал",
 			"accept merges": "Принять слияния",
+			"accept remote button": "Принять &&удаленный",
+			"accept merges button": "Принять &&слияния",
 			"Sync accept remote": "{0}: {1}",
 			"Sync accept merges": "{0}: {1}",
 			"confirm replace and overwrite local": "Вы хотите принять удаленный {0} и заменить локальный {1}?",
@@ -6868,7 +6939,7 @@
 			"no machines": "Компьютеры отсутствуют",
 			"not found": "не найден компьютер с идентификатором {0}",
 			"turn off sync on machine": "Вы действительно хотите отключить синхронизацию для {0}?",
-			"turn off": "Отключить",
+			"turn off": "&&Отключить",
 			"placeholder": "Введите имя компьютера",
 			"valid message": "Имя компьютера должно быть уникальным и непустым."
 		},
@@ -7003,9 +7074,9 @@
 			"ViewsWelcomeExtensionPoint.proposedAPI": "Для вклада viewsWelcome в \"{0}\" требуется включить \"enableProposedApi\"."
 		},
 		"vs/workbench/contrib/welcome/common/viewsWelcomeExtensionPoint": {
-			"contributes.viewsWelcome": "Добавленное приветственное содержимое для представлений. Приветственное содержимое будет отрисовываться в представлениях, где нет значимого содержимого для отображения, например, в проводнике, когда не открыто ни одной папки. Такое содержимое удобно использовать в качестве встроенной в продукт документации, чтобы стимулировать пользователей использовать определенные функции еще до их выхода. Хорошим примером является кнопка \"Клонировать репозиторий\" в приветственном представлении проводника.",
+			"contributes.viewsWelcome": "Добавлено приветственное содержимое для представлений. Оно будет показано в представлениях на основе дерева, в которых отсутствует осмысленное содержимое для отображения, например в проводнике, когда не открыто ни одной папки. Такое содержимое удобно использовать для отображения документации в составе продукта, чтобы стимулировать пользователей задействовать определенные функции еще до их выхода. Хорошим примером является кнопка \"Клонировать репозиторий\" в приветственном представлении проводника.",
 			"contributes.viewsWelcome.view": "Добавлено приветственное содержимое для конкретного представления.",
-			"contributes.viewsWelcome.view.view": "Идентификатор целевого представления для этого приветственного содержимого.",
+			"contributes.viewsWelcome.view.view": "Идентификатор целевого представления для этого приветственного содержимого. Поддерживаются только представления на основе дерева.",
 			"contributes.viewsWelcome.view.contents": "Приветственное содержимое, которое нужно отобразить. Формат содержимого представляет подмножество Markdown с поддержкой одних ссылок.",
 			"contributes.viewsWelcome.view.when": "Условие, по которому нужно отобразить приветственное содержимое.",
 			"contributes.viewsWelcome.view.group": "Группа, которой принадлежит это приветственное содержимое."
@@ -7055,6 +7126,13 @@
 			"welcomePage.interfaceOverviewDescription": "Используйте визуальное наложение с выделением основных компонентов пользовательского интерфейса.",
 			"welcomePage.interactivePlayground": "Интерактивная тестовая площадка",
 			"welcomePage.interactivePlaygroundDescription": "Познакомьтесь с основными функциями редактора с помощью короткого пошагового руководства"
+		},
+		"vs/workbench/contrib/workspaces/browser/workspaces.contribution": {
+			"workspaceFound": "Эта папка содержит файл рабочей области \"{0}\". Вы хотите открыть его? [Дополнительные сведения] ({1}) о файлах рабочей области. ",
+			"openWorkspace": "Открыть рабочую область",
+			"workspacesFound": "Эта папка содержит несколько файлов рабочей области. Вы хотите открыть один из этих файлов? [Дополнительные сведения] ({0}) о файлах рабочей области.",
+			"selectWorkspace": "Выберите рабочую область",
+			"selectToOpen": "Выберите рабочую область, которую необходимо открыть"
 		},
 		"vs/workbench/services/authentication/browser/authenticationService": {
 			"authentication.id": "Идентификатор поставщика проверки подлинности.",
@@ -7233,7 +7311,9 @@
 		"vs/workbench/services/extensionManagement/common/webExtensionsScannerService": {
 			"cannot be installed": "Не удается установить \"{0}\", так как это расширение не является веб-расширением."
 		},
-		"vs/workbench/services/extensionManagement/common/extensionEnablementService": {
+		"vs/workbench/services/extensionManagement/browser/extensionEnablementService": {
+			"extensionsDisabled": "Все установленные расширения временно отключены. Обновите окно, чтобы вернуться к предыдущему состоянию.",
+			"Reload": "Перезагрузить",
 			"cannot disable language pack extension": "Не удается включить или отключить расширение {0}, так как оно предоставляет языковые пакеты.",
 			"cannot disable auth extension": "Не удается включить или отключить расширение {0}, так как от него зависит синхронизация параметров.",
 			"noWorkspace": "Нет рабочей области.",
@@ -7245,11 +7325,16 @@
 			"multipleDependentsError": "Не удается удалить расширение \"{0}\". От него зависят расширения \"{1}\", \"{2}\" и другие.",
 			"Manifest is not found": "Сбой установки расширения {0}: манифест не найден.",
 			"cannot be installed": "Не удается установить \"{0}\", так как для этого расширения определен запрет на выполнение на удаленном сервере.",
-			"cannot be installed on web": "Не удается установить расширение \"{0}\", так как для этого расширения запрещен запуск на веб-сервере."
+			"cannot be installed on web": "Не удается установить расширение \"{0}\", так как для этого расширения запрещен запуск на веб-сервере.",
+			"install extension": "Установить расширение",
+			"install extensions": "Установить расширения",
+			"install": "Установить",
+			"install and do no sync": "Установить (не синхронизировать)",
+			"cancel": "Отмена",
+			"install single extension": "Вы хотите установить и синхронизировать расширение \"{0}\" на своих устройствах?",
+			"install multiple extensions": "Вы хотите установить и синхронизировать расширения на своих устройствах?"
 		},
 		"vs/workbench/services/extensions/electron-browser/extensionService": {
-			"extensionsDisabled": "Все установленные расширения временно отключены. Обновите окно, чтобы вернуться к предыдущему состоянию.",
-			"Reload": "Перезагрузить",
 			"extensionService.versionMismatchCrash": "Не удается запустить расширение узла из-за несоответствия версий.",
 			"relaunch": "Перезапустить VS Code",
 			"extensionService.crash": "Хост-процесс для расширений неожиданно завершил работу.",
@@ -7354,6 +7439,7 @@
 			"vscode.extension.icon": "Путь к значку размером 128 x 128 пикселей."
 		},
 		"vs/workbench/services/extensions/node/extensionPoints": {
+			"jsonParseInvalidType": "Недопустимый файл манифеста {0}: не является объектом JSON.",
 			"jsonParseFail": "Не удалось проанализировать {0}: [{1}, {2}] {3}.",
 			"fileReadFail": "Не удается прочитать файл {0}: {1}.",
 			"jsonsParseReportErrors": "Не удалось проанализировать {0}: {1}.",
@@ -7607,7 +7693,7 @@
 			"error.invalidformat": "Недопустимый формат тем JSON: ожидается объект.",
 			"error.invalidformat.colors": "Ошибка при анализе файла цветовой темы: {0}. Свойство 'colors' не имеет тип 'object'.",
 			"error.invalidformat.tokenColors": "Ошибка при анализе файла цветовой темы: {0}. Свойство 'tokenColors' должно содержать массив цветов или путь к файлу темы TextMate",
-			"error.invalidformat.semanticTokenColors": "Проблема при анализе файла цветовой темы: {0}. Свойство \"semanticTokenColors\" содержит недопустимый селектор",
+			"error.invalidformat.semanticTokenColors": "Проблема при анализе файла цветовой темы: {0}. Свойство \"semanticTokenColors\" содержит недопустимый селектор.",
 			"error.plist.invalidformat": "Ошибка при анализе файла tmTheme: {0}. 'settings' не является массивом.",
 			"error.cannotparse": "Ошибка при анализе файла tmTheme: {0}",
 			"error.cannotload": "Ошибка при загрузке файла tmTheme {0}: {1}"
@@ -7688,7 +7774,7 @@
 			"colorTheme": "Указывает цветовую тему, используемую на рабочем месте.",
 			"colorThemeError": "Тема неизвестна или не установлена.",
 			"preferredDarkColorTheme": "Определяет предпочтительную цветовую тему для темного внешнего вида ОС, когда включен \"#{0}#\".",
-			"preferredLightColorTheme": "Определяет предпочтительную цветовую тему для светлого внешнего вида ОС, когда включен \"#{0}#\".",
+			"preferredLightColorTheme": "Определяет предпочтительную цветовую тему для светлого внешнего вида ОС, когда включен параметр \"#{0}#\".",
 			"preferredHCColorTheme": "Определяет предпочтительную цветовую тему, используемую в высококонтрастном режиме, когда включен \"#{0}#\".",
 			"detectColorScheme": "Если параметр задан, выполняется автоматическое переключение на предпочтительную цветовую тему в зависимости от внешнего вида ОС.",
 			"workbenchColors": "Переопределяет цвета из выбранной цветовой темы.",
@@ -7754,8 +7840,8 @@
 			"sync turned on": "{0} включена",
 			"sync in progress": "Идет включение синхронизации параметров. Вы хотите отменить его?",
 			"settings sync": "Синхронизация параметров",
-			"yes": "Да",
-			"no": "Нет",
+			"yes": "&&Да",
+			"no": "&&Нет",
 			"turning on": "Включение…",
 			"syncing resource": "Синхронизация {0}…",
 			"conflicts detected": "Обнаружены конфликты",
@@ -7768,7 +7854,7 @@
 			"first time sync detail": "Похоже, последняя синхронизация выполнялась с другого компьютера.\r\nХотите выполнить слияние или замену на данные из облака?",
 			"reset": "Данные в облаке будут очищены, и синхронизация на всех устройствах будет остановлена.",
 			"reset title": "Очистка",
-			"reset button": "Сброс",
+			"resetButton": "&&Сброс",
 			"choose account placeholder": "Выберите учетную запись для входа",
 			"signed in": "Вход выполнен",
 			"last used": "Последнее использование с синхронизацией",

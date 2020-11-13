@@ -40,6 +40,9 @@
 			"date.fromNow.years.singular": "{0} rok",
 			"date.fromNow.years.plural": "{0} roky"
 		},
+		"vs/base/common/actions": {
+			"submenu.empty": "(prázdné)"
+		},
 		"vs/base/node/processes": {
 			"TaskRunner.UNC": "Nelze provést příkaz shellu na jednotce UNC."
 		},
@@ -106,14 +109,19 @@
 			"empty": "Nebyly nalezeny žádné elementy.",
 			"found": "Shoda s {0} z {1} elementů"
 		},
+		"vs/base/browser/ui/tree/treeDefaults": {
+			"collapse all": "Sbalit vše"
+		},
 		"vs/base/browser/ui/toolbar/toolbar": {
 			"moreActions": "Další akce..."
 		},
 		"vs/base/browser/ui/splitview/paneview": {
 			"viewSection": "Oddíl {0}"
 		},
-		"vs/base/browser/ui/tree/treeDefaults": {
-			"collapse all": "Sbalit vše"
+		"vs/base/browser/ui/inputbox/inputBox": {
+			"alertErrorMessage": "Chyba: {0}",
+			"alertWarningMessage": "Upozornění: {0}",
+			"alertInfoMessage": "Informace: {0}"
 		},
 		"vs/base/parts/quickinput/browser/quickInput": {
 			"quickInput.back": "Zpět",
@@ -126,11 +134,6 @@
 			"ok": "OK",
 			"custom": "Vlastní",
 			"quickInput.backWithKeybinding": "Zpět ({0})"
-		},
-		"vs/base/browser/ui/inputbox/inputBox": {
-			"alertErrorMessage": "Chyba: {0}",
-			"alertWarningMessage": "Upozornění: {0}",
-			"alertInfoMessage": "Informace: {0}"
 		},
 		"vs/base/browser/ui/findinput/findInput": {
 			"defaultLabel": "vstup"
@@ -237,7 +240,8 @@
 			"suggest.shareSuggestSelections": "Určuje, jestli se mají zapamatované výběry návrhů sdílet mezi více pracovními prostory a okny (vyžaduje #editor.suggestSelection#).",
 			"suggest.snippetsPreventQuickSuggestions": "Určuje, jestli má aktivní fragment kódu zakazovat rychlé návrhy.",
 			"suggest.showIcons": "Určuje, jestli mají být v návrzích zobrazené nebo skryté ikony.",
-			"suggest.maxVisibleSuggestions": "Určuje, kolik návrhů IntelliSense zobrazí, než se zobrazí posuvník (max. 15).",
+			"suggest.showStatusBar": "Určuje viditelnost stavového řádku v dolní části widgetu návrhů.",
+			"suggest.maxVisibleSuggestions.dep": "Toto nastavení je zastaralé. Velikost widgetu pro návrhy se teď dá měnit.",
 			"deprecated": "Toto nastavení je zastaralé. Místo něj prosím použijte samostatné nastavení, například editor.suggest.showKeywords nebo editor.suggest.showSnippets.",
 			"editor.suggest.showMethods": "Pokud je povoleno, technologie IntelliSense zobrazí návrhy pro „method“.",
 			"editor.suggest.showFunctions": "Pokud je povoleno, technologie IntelliSense zobrazí návrhy pro „function“.",
@@ -267,7 +271,6 @@
 			"editor.suggest.showSnippets": "Pokud je povoleno, technologie IntelliSense zobrazí návrhy pro „snippet“.",
 			"editor.suggest.showUsers": "Pokud je povoleno, technologie IntelliSense zobrazí návrhy pro „user“.",
 			"editor.suggest.showIssues": "Pokud je povoleno, technologie IntelliSense zobrazí návrhy pro „issues“.",
-			"editor.suggest.statusBar.visible": "Určuje viditelnost stavového řádku v dolní části widgetu návrhů.",
 			"acceptSuggestionOnCommitCharacter": "Určuje, jestli se mají návrhy přijímat po stisknutí potvrzovacích znaků. Například v jazyce JavaScript může být potvrzovacím znakem středník (;), který návrh přijme a napíše tento znak.",
 			"acceptSuggestionOnEnterSmart": "Přijmout návrh pomocí klávesy Enter, pouze pokud jde o návrh změny v textu",
 			"acceptSuggestionOnEnter": "Určuje, jestli se mají návrhy přijímat po stisknutí klávesy Enter (navíc ke klávese Tab). Pomáhá vyhnout se nejednoznačnosti mezi vkládáním nových řádků nebo přijímáním návrhů.",
@@ -375,9 +378,9 @@
 			"tabCompletion.off": "Zakáže dokončování pomocí tabulátoru.",
 			"tabCompletion.onlySnippets": "Dokončovat fragmenty kódu pomocí tabulátoru, pokud se shodují jejich předpony. Tato funkce funguje nejlépe, pokud není povolena možnost quickSuggestions.",
 			"tabCompletion": "Povolí dokončování pomocí tabulátoru.",
+			"unusualLineTerminators.auto": "Neobvyklé ukončovací znaky řádku se automaticky odeberou.",
 			"unusualLineTerminators.off": "Neobvyklé ukončovací znaky řádku jsou ignorovány.",
 			"unusualLineTerminators.prompt": "U neobvyklých ukončovacích znaků řádku se zobrazí dotaz na jejich odebrání.",
-			"unusualLineTerminators.auto": "Neobvyklé ukončovací znaky řádku se automaticky odeberou.",
 			"unusualLineTerminators": "Odebírat neobvyklé ukončovací znaky řádku, které by mohly způsobovat problémy",
 			"useTabStops": "Vkládání a odstraňování prázdných znaků se řídí zarážkami tabulátoru.",
 			"wordSeparators": "Znaky, které se použijí jako oddělovače slov při navigaci nebo operacích v textu",
@@ -428,11 +431,11 @@
 		"vs/editor/common/model/editStack": {
 			"edit": "Psaní"
 		},
-		"vs/editor/browser/widget/codeEditorWidget": {
-			"cursors.maximum": "Počet kurzorů je omezen na {0}."
-		},
 		"vs/editor/browser/controller/coreCommands": {
 			"stickydesc": "Umístit na konec i u delších řádků"
+		},
+		"vs/editor/browser/widget/codeEditorWidget": {
+			"cursors.maximum": "Počet kurzorů je omezen na {0}."
 		},
 		"vs/editor/browser/widget/diffEditorWidget": {
 			"diff.tooLarge": "Nelze porovnat soubory, protože jeden soubor je příliš velký."
@@ -534,12 +537,6 @@
 			"selectFromAnchorToCursor": "Vybrat od ukotvení po kurzor",
 			"cancelSelectionAnchor": "Zrušit ukotvení výběru"
 		},
-		"vs/editor/contrib/bracketMatching/bracketMatching": {
-			"overviewRulerBracketMatchForeground": "Barva značky přehledového pravítka pro odpovídající hranaté závorky",
-			"smartSelect.jumpBracket": "Přejít na hranatou závorku",
-			"smartSelect.selectToBracket": "Vybrat po hranatou závorku",
-			"miGoToBracket": "Přejít na hranatou &&závorku"
-		},
 		"vs/editor/contrib/caretOperations/caretOperations": {
 			"caret.moveLeft": "Přesunout vybraný text doleva",
 			"caret.moveRight": "Přesunout vybraný text doprava"
@@ -557,6 +554,12 @@
 			"comment.line.remove": "Odebrat řádkový komentář",
 			"comment.block": "Přepnout komentář k bloku",
 			"miToggleBlockComment": "Přepnout komentář k &&bloku"
+		},
+		"vs/editor/contrib/bracketMatching/bracketMatching": {
+			"overviewRulerBracketMatchForeground": "Barva značky přehledového pravítka pro odpovídající hranaté závorky",
+			"smartSelect.jumpBracket": "Přejít na hranatou závorku",
+			"smartSelect.selectToBracket": "Vybrat po hranatou závorku",
+			"miGoToBracket": "Přejít na hranatou &&závorku"
 		},
 		"vs/editor/contrib/contextmenu/contextmenu": {
 			"action.showContextMenu.label": "Zobrazit místní nabídku editoru"
@@ -648,10 +651,6 @@
 			"markerAction.previousInFiles.label": "Přejít na předchozí problém v souborech (chyba, upozornění, informace)",
 			"miGotoPreviousProblem": "Předchozí &&problém"
 		},
-		"vs/editor/contrib/hover/hover": {
-			"showHover": "Zobrazit informace po umístění ukazatele myši",
-			"showDefinitionPreviewHover": "Zobrazit náhled definice při umístění ukazatele myši"
-		},
 		"vs/editor/contrib/indentation/indentation": {
 			"indentationToSpaces": "Převést odsazení na mezery",
 			"indentationToTabs": "Převést odsazení na tabulátory",
@@ -663,9 +662,20 @@
 			"editor.reindentlines": "Znovu odsadit řádky",
 			"editor.reindentselectedlines": "Znovu odsadit vybrané řádky"
 		},
-		"vs/editor/contrib/inPlaceReplace/inPlaceReplace": {
-			"InPlaceReplaceAction.previous.label": "Nahradit předchozí hodnotou",
-			"InPlaceReplaceAction.next.label": "Nahradit další hodnotou"
+		"vs/editor/contrib/hover/hover": {
+			"showHover": "Zobrazit informace po umístění ukazatele myši",
+			"showDefinitionPreviewHover": "Zobrazit náhled definice při umístění ukazatele myši"
+		},
+		"vs/editor/contrib/links/links": {
+			"links.navigate.executeCmd": "Provést příkaz",
+			"links.navigate.follow": "Přejít na odkaz",
+			"links.navigate.kb.meta.mac": "cmd + kliknutí",
+			"links.navigate.kb.meta": "ctrl + kliknutí",
+			"links.navigate.kb.alt.mac": "option + kliknutí",
+			"links.navigate.kb.alt": "alt + kliknutí",
+			"invalid.url": "Tento odkaz se nepovedlo otevřít, protože není správně vytvořen: {0}.",
+			"missing.url": "Tento odkaz se nepovedlo otevřít, protože chybí jeho cíl.",
+			"label": "Otevřít odkaz"
 		},
 		"vs/editor/contrib/linesOperations/linesOperations": {
 			"lines.copyUp": "Kopírovat řádek nahoru",
@@ -694,17 +704,6 @@
 			"editor.transformToLowercase": "Převést na malá písmena",
 			"editor.transformToTitlecase": "Převést na všechna první velká"
 		},
-		"vs/editor/contrib/links/links": {
-			"links.navigate.executeCmd": "Provést příkaz",
-			"links.navigate.follow": "Přejít na odkaz",
-			"links.navigate.kb.meta.mac": "cmd + kliknutí",
-			"links.navigate.kb.meta": "ctrl + kliknutí",
-			"links.navigate.kb.alt.mac": "option + kliknutí",
-			"links.navigate.kb.alt": "alt + kliknutí",
-			"invalid.url": "Tento odkaz se nepovedlo otevřít, protože není správně vytvořen: {0}.",
-			"missing.url": "Tento odkaz se nepovedlo otevřít, protože chybí jeho cíl.",
-			"label": "Otevřít odkaz"
-		},
 		"vs/editor/contrib/multicursor/multicursor": {
 			"mutlicursor.insertAbove": "Přidat kurzor nad",
 			"miInsertCursorAbove": "&&Přidat kurzor nad",
@@ -724,12 +723,12 @@
 			"miSelectHighlights": "Vybrat všechny &&výskyty",
 			"changeAll.label": "Změnit všechny výskyty"
 		},
+		"vs/editor/contrib/inPlaceReplace/inPlaceReplace": {
+			"InPlaceReplaceAction.previous.label": "Nahradit předchozí hodnotou",
+			"InPlaceReplaceAction.next.label": "Nahradit další hodnotou"
+		},
 		"vs/editor/contrib/parameterHints/parameterHints": {
 			"parameterHints.trigger.label": "Aktivovat tipy k parametrům"
-		},
-		"vs/editor/contrib/rename/onTypeRename": {
-			"onTypeRename.label": "Symbol přejmenování při psaní",
-			"editorOnTypeRenameBackground": "Barva pozadí při automatickém přejmenovávání při psaní v editoru"
 		},
 		"vs/editor/contrib/rename/rename": {
 			"no result": "Žádný výsledek",
@@ -745,17 +744,21 @@
 		"vs/editor/contrib/smartSelect/smartSelect": {
 			"smartSelect.expand": "Rozbalit výběr",
 			"miSmartSelectGrow": "&&Rozbalit výběr",
+			"selectLeadingAndTrailingWhitespace": "Určuje, jestli se vždy mají vybrat prázdné znaky na začátku a na konci.",
 			"smartSelect.shrink": "Zmenšit výběr",
 			"miSmartSelectShrink": "&&Zmenšit výběr"
 		},
 		"vs/editor/contrib/suggest/suggestController": {
 			"aria.alert.snippet": "Přijetím {0} došlo k dalším {1} úpravám.",
 			"suggest.trigger.label": "Aktivovat návrh",
-			"accept.accept": "{0} pro vložení",
-			"accept.insert": "{0} pro vložení",
-			"accept.replace": "{0} pro nahrazení",
+			"accept.insert": "Vložit",
+			"accept.replace": "Nahradit",
 			"detail.more": "zobrazit méně",
 			"detail.less": "zobrazit více"
+		},
+		"vs/editor/contrib/rename/onTypeRename": {
+			"onTypeRename.label": "Symbol přejmenování při psaní",
+			"editorOnTypeRenameBackground": "Barva pozadí při automatickém přejmenovávání při psaní v editoru"
 		},
 		"vs/editor/contrib/tokenization/tokenization": {
 			"forceRetokenize": "Vývojář: vynutit retokenizaci"
@@ -918,9 +921,6 @@
 			"editorSuggestWidgetForeground": "Barva popředí widgetu návrhů",
 			"editorSuggestWidgetSelectedBackground": "Barva pozadí vybrané položky ve widgetu návrhů",
 			"editorSuggestWidgetHighlightForeground": "Barva zvýraznění shody ve widgetu návrhů",
-			"readMore": "Zobrazit více ({0})",
-			"readLess": "Zobrazit méně ({0})",
-			"loading": "Načítání...",
 			"suggestWidget.loading": "Načítání...",
 			"suggestWidget.noSuggestions": "Žádné návrhy",
 			"ariaCurrenttSuggestionReadDetails": "{0}, dokumenty: {1}",
@@ -1070,6 +1070,16 @@
 			"noResults": "Žádné výsledky",
 			"peekView.alternateTitle": "Odkazy"
 		},
+		"vs/editor/contrib/suggest/suggestWidgetDetails": {
+			"details.close": "Zavřít",
+			"loading": "Načítání..."
+		},
+		"vs/editor/contrib/suggest/suggestWidgetStatus": {
+			"ddd": "{0} ({1})"
+		},
+		"vs/editor/contrib/suggest/suggestWidgetRenderer": {
+			"readMore": "Další informace"
+		},
 		"vs/editor/contrib/codeAction/lightBulbWidget": {
 			"prefferedQuickFixWithKb": "Zobrazit opravy. K dispozici je upřednostňovaná oprava ({0})",
 			"quickFixWithKb": "Zobrazit opravy ({0})",
@@ -1096,22 +1106,6 @@
 			"proxySupport": "Umožňuje pro rozšíření používat podporu proxy serveru.",
 			"systemCertificates": "Určuje, jestli mají být certifikáty certifikační autority načítány z operačního systému. (V systému Windows a macOS se po vypnutí tohoto nastavení vyžaduje opětovné načtení okna.)"
 		},
-		"vs/platform/files/node/diskFileSystemProvider": {
-			"fileExists": "Soubor už existuje.",
-			"fileNotExists": "Soubor neexistuje",
-			"moveError": "{0} nelze přesunout do {1} ({2}).",
-			"copyError": "{0} nelze zkopírovat do {1} ({2}).",
-			"fileCopyErrorPathCase": "Soubor nelze kopírovat do stejné cesty lišící se v názvu pouze velikostí písmen.",
-			"fileCopyErrorExists": "Soubor už v cíli existuje."
-		},
-		"vs/platform/files/common/files": {
-			"unknownError": "Neznámá chyba",
-			"sizeB": "{0} B",
-			"sizeKB": "{0} kB",
-			"sizeMB": "{0} MB",
-			"sizeGB": "{0} GB",
-			"sizeTB": "{0} TB"
-		},
 		"vs/platform/files/common/fileService": {
 			"invalidPath": "Nepovedlo se rozpoznat zprostředkovatele systému souborů s relativní cestou k souboru {0}.",
 			"noProviderFound": "Pro prostředek {0} nebyl nalezen žádný zprostředkovatel systému souborů.",
@@ -1133,6 +1127,22 @@
 			"deleteFailedNotFound": "Nelze odstranit soubor {0}, který neexistuje.",
 			"deleteFailedNonEmptyFolder": "Nelze odstranit složku {0}, která není prázdná.",
 			"err.readonly": "Nelze upravit soubor {0}, který je jen pro čtení."
+		},
+		"vs/platform/files/node/diskFileSystemProvider": {
+			"fileExists": "Soubor už existuje.",
+			"fileNotExists": "Soubor neexistuje",
+			"moveError": "{0} nelze přesunout do {1} ({2}).",
+			"copyError": "{0} nelze zkopírovat do {1} ({2}).",
+			"fileCopyErrorPathCase": "Soubor nelze kopírovat do stejné cesty lišící se v názvu pouze velikostí písmen.",
+			"fileCopyErrorExists": "Soubor už v cíli existuje."
+		},
+		"vs/platform/files/common/files": {
+			"unknownError": "Neznámá chyba",
+			"sizeB": "{0} B",
+			"sizeKB": "{0} kB",
+			"sizeMB": "{0} MB",
+			"sizeGB": "{0} GB",
+			"sizeTB": "{0} TB"
 		},
 		"vs/platform/update/common/update.config.contribution": {
 			"updateConfigurationTitle": "Aktualizace",
@@ -1214,7 +1224,8 @@
 		},
 		"vs/platform/telemetry/common/telemetryService": {
 			"telemetryConfigurationTitle": "Telemetrie",
-			"telemetry.enableTelemetry": "Povolit odesílání chyb a dat o využití online službě Microsoftu"
+			"telemetry.enableTelemetry": "Povolit odesílání chyb a dat o využití online službě Microsoftu",
+			"telemetry.enableTelemetryMd": "Povolte odesílání chyb a dat o využití online službě Microsoftu. Přečtěte si naše prohlášení o zásadách osobních údajů, které najdete [tady]({0})."
 		},
 		"vs/platform/extensionManagement/node/extensionManagementUtil": {
 			"invalidManifest": "Neplatný balíček VSIX: package.json není soubor JSON."
@@ -1235,6 +1246,13 @@
 		"vs/platform/userDataSync/common/userDataSyncMachines": {
 			"error incompatible": "Nelze číst data počítačů, protože aktuální verze není kompatibilní. Aktualizujte prosím {0} a zkuste to znovu."
 		},
+		"vs/platform/userDataSync/common/userDataAutoSyncService": {
+			"default service changed": "Nelze provést synchronizaci, protože se změnila výchozí služba.",
+			"service changed": "Nelze provést synchronizaci, protože se změnila synchronizační služba.",
+			"turned off": "Nelze provést synchronizaci, protože je vypnutá synchronizace v cloudu.",
+			"session expired": "Nelze provést synchronizaci, protože vypršela platnost aktuální relace.",
+			"turned off machine": "Nelze provést synchronizaci, protože synchronizace je v tomto počítači vypnuta z jiného počítače."
+		},
 		"vs/platform/workspaces/common/workspaces": {
 			"codeWorkspace": "Pracovní prostor Code"
 		},
@@ -1245,13 +1263,6 @@
 		"vs/platform/dialogs/common/dialogs": {
 			"moreFile": "...nezobrazuje se 1 další soubor",
 			"moreFiles": "...nezobrazuje se několik dalších souborů (celkem {0})"
-		},
-		"vs/platform/userDataSync/common/userDataAutoSyncService": {
-			"default service changed": "Nelze provést synchronizaci, protože se změnila výchozí služba.",
-			"service changed": "Nelze provést synchronizaci, protože se změnila synchronizační služba.",
-			"turned off": "Nelze provést synchronizaci, protože je vypnutá synchronizace v cloudu.",
-			"session expired": "Nelze provést synchronizaci, protože vypršela platnost aktuální relace.",
-			"turned off machine": "Nelze provést synchronizaci, protože synchronizace je v tomto počítači vypnuta z jiného počítače."
 		},
 		"vs/platform/theme/common/colorRegistry": {
 			"foreground": "Celková barva popředí. Tato barva se používá pouze v případě, že není přepsána některou komponentou.",
@@ -1413,12 +1424,12 @@
 			"problemsInfoIconForeground": "Barva, která se používá pro ikonu problémů na úrovni informací",
 			"chartsForeground": "Barva popředí použitá v grafech",
 			"chartsLines": "Barva použitá pro vodorovné čáry v grafech",
-			"chartsRed": "Červená barva použitá v grafech",
-			"chartsBlue": "Modrá barva použitá v grafech",
-			"chartsYellow": "Žlutá barva použitá v grafech",
-			"chartsOrange": "Oranžová barva použitá v grafech",
-			"chartsGreen": "Zelená barva použitá v grafech",
-			"chartsPurple": "Nachová barva použitá v grafech"
+			"chartsRed": "Červená barva používaná ve vizualizacích grafů",
+			"chartsBlue": "Modrá barva používaná ve vizualizacích grafů",
+			"chartsYellow": "Žlutá barva používaná ve vizualizacích grafů",
+			"chartsOrange": "Oranžová barva používaná ve vizualizacích grafů",
+			"chartsGreen": "Zelená barva používaná ve vizualizacích grafů",
+			"chartsPurple": "Fialová barva používaná ve vizualizacích grafů"
 		},
 		"vs/platform/configuration/common/configurationRegistry": {
 			"defaultLanguageConfigurationOverrides.title": "Potlačení výchozí konfigurace jazyka",
@@ -1630,6 +1641,238 @@
 			"morecCommands": "další příkazy",
 			"canNotRun": "Výsledkem příkazu {0} je chyba ({1})."
 		},
+		"win32/i18n/Default": {
+			"SetupAppTitle": "Instalační program",
+			"SetupWindowTitle": "Instalační program – %1",
+			"UninstallAppTitle": "Odinstalovat",
+			"UninstallAppFullTitle": "Odinstalace %1",
+			"InformationTitle": "Informace",
+			"ConfirmTitle": "Potvrdit",
+			"ErrorTitle": "Chyba",
+			"SetupLdrStartupMessage": "Tímto nainstalujete aplikaci %1. Chcete pokračovat?",
+			"LdrCannotCreateTemp": "Nelze vytvořit dočasný soubor. Instalace byla přerušena.",
+			"LdrCannotExecTemp": "Nelze spustit soubor v dočasném adresáři. Instalace byla přerušena.",
+			"LastErrorMessage": "%1.%n%nChyba %2: %3",
+			"SetupFileMissing": "V instalačním adresáři chybí soubor %1. Opravte prosím problém nebo získejte novou kopii programu.",
+			"SetupFileCorrupt": "Soubory instalačního programu jsou poškozené. Získejte prosím novou kopii programu.",
+			"SetupFileCorruptOrWrongVer": "Soubory instalačního programu jsou poškozené nebo nejsou kompatibilní s touto verzí instalačního programu. Opravte prosím problém nebo získejte novou kopii programu.",
+			"InvalidParameter": "Na příkazovém řádku byl předán neplatný parametr:%n%n%1",
+			"SetupAlreadyRunning": "Instalace je už spuštěná.",
+			"WindowsVersionNotSupported": "Tato aplikace nepodporuje verzi systému Windows, která se používá na vašem počítači.",
+			"WindowsServicePackRequired": "Tato aplikace vyžaduje %1 Service Pack %2 nebo novější.",
+			"NotOnThisPlatform": "Tuto aplikaci nebude možné spustit na této platformě: %1.",
+			"OnlyOnThisPlatform": "Tuto aplikaci je nutné spouštět na této platformě: %1.",
+			"OnlyOnTheseArchitectures": "Tuto aplikaci lze nainstalovat pouze do verzí systému Windows určených pro následující architektury procesorů:%n%n%1",
+			"MissingWOW64APIs": "Verze systému Windows, kterou používáte, nezahrnuje funkce vyžadované instalačním programem k provedení 64bitové instalace. Pokud chcete tento problém vyřešit, nainstalujte si prosím Service Pack %1.",
+			"WinVersionTooLowError": "Tato aplikace vyžaduje systém %1 verze %2 nebo novější.",
+			"WinVersionTooHighError": "Tuto aplikaci nelze nainstalovat do systému %1 verze %2 nebo novější.",
+			"AdminPrivilegesRequired": "Při instalaci této aplikace musíte být přihlášeni jako správce.",
+			"PowerUserPrivilegesRequired": "Při instalaci této aplikace musíte být přihlášeni jako správce nebo jako člen skupiny Power Users.",
+			"SetupAppRunningError": "Instalační program zjistil, že aplikace %1 je aktuálně spuštěná.%n%nZavřete teď prosím všechny její instance a potom pokračujte kliknutím na OK. Kliknutím na Zrušit akci zrušíte.",
+			"UninstallAppRunningError": "Při odinstalaci se zjistilo, že aplikace %1 je aktuálně spuštěná.%n%nZavřete teď prosím všechny její instance a potom pokračujte kliknutím na OK. Kliknutím na Zrušit akci zrušíte.",
+			"ErrorCreatingDir": "Instalačnímu programu se nepovedlo vytvořit adresář %1.",
+			"ErrorTooManyFilesInDir": "Soubor v adresáři %1 nelze vytvořit, protože adresář obsahuje příliš mnoho souborů.",
+			"ExitSetupTitle": "Ukončit instalaci",
+			"ExitSetupMessage": "Instalace nebyla dokončena. Pokud ji teď ukončíte, aplikace se nenainstaluje.%n%nPokud budete chtít instalaci dokončit, můžete kdykoli později spustit znovu instalační program.%n%nChcete instalaci ukončit?",
+			"AboutSetupMenuItem": "&O instalačním programu...",
+			"AboutSetupTitle": "O instalačním programu",
+			"AboutSetupMessage": "%1 verze %2%n%3%n%n%1 domovská stránka:%n%4",
+			"ButtonBack": "< &Zpět",
+			"ButtonNext": "&Další >",
+			"ButtonInstall": "&Nainstalovat",
+			"ButtonOK": "OK",
+			"ButtonCancel": "Zrušit",
+			"ButtonYes": "&Ano",
+			"ButtonYesToAll": "Ano pro &všechny",
+			"ButtonNo": "&Ne",
+			"ButtonNoToAll": "&Ne pro všechny",
+			"ButtonFinish": "&Dokončit",
+			"ButtonBrowse": "&Procházet...",
+			"ButtonWizardBrowse": "P&rocházet...",
+			"ButtonNewFolder": "Vytvořit &novou složku",
+			"SelectLanguageTitle": "Vybrat jazyk instalace",
+			"SelectLanguageLabel": "Vyberte jazyk, který má být použit během instalace:",
+			"ClickNext": "Pokračujte kliknutím na Další. Zvolením možnosti Zrušit instalační program ukončíte.",
+			"BrowseDialogTitle": "Najít složku",
+			"BrowseDialogLabel": "Vyberte složku z níže uvedeného seznamu a klikněte na OK.",
+			"NewFolderName": "Nová složka",
+			"WelcomeLabel1": "Vítá vás průvodce instalací aplikace [name]",
+			"WelcomeLabel2": "Tímto se do počítače nainstaluje aplikace [name/ver].%n%nPřed pokračováním doporučujeme zavřít všechny ostatní aplikace.",
+			"WizardPassword": "Heslo",
+			"PasswordLabel1": "Tato instalace je chráněna heslem.",
+			"PasswordLabel3": "Zadejte prosím heslo a pokračujte kliknutím na Další. V heslech se rozlišují malá a velká písmena.",
+			"PasswordEditLabel": "&Heslo:",
+			"IncorrectPassword": "Heslo, které jste zadali, není správné. Zkuste to prosím znovu.",
+			"WizardLicense": "Licenční smlouva",
+			"LicenseLabel": "Než budete pokračovat, přečtěte si prosím následující důležité informace",
+			"LicenseLabel3": "Přečtěte si prosím následující licenční smlouvu. Před pokračováním v instalaci musíte vyjádřit souhlas s jejími podmínkami.",
+			"LicenseAccepted": "&Souhlasím s podmínkami smlouvy",
+			"LicenseNotAccepted": "&Nesouhlasím s podmínkami smlouvy",
+			"WizardInfoBefore": "Informace",
+			"InfoBeforeLabel": "Než budete pokračovat, přečtěte si prosím následující důležité informace",
+			"InfoBeforeClickLabel": "Až budete připraveni pokračovat v instalaci, klikněte na Další.",
+			"WizardInfoAfter": "Informace",
+			"InfoAfterLabel": "Než budete pokračovat, přečtěte si prosím následující důležité informace",
+			"InfoAfterClickLabel": "Až budete připraveni pokračovat v instalaci, klikněte na Další.",
+			"WizardUserInfo": "Informace o uživateli",
+			"UserInfoDesc": "Zadejte prosím svoje informace.",
+			"UserInfoName": "&Uživatelské jméno:",
+			"UserInfoOrg": "&Organizace:",
+			"UserInfoSerial": "&Sériové číslo:",
+			"UserInfoNameRequired": "Je nutné zadat jméno.",
+			"WizardSelectDir": "Vybrat cílové umístění",
+			"SelectDirDesc": "Kam se má aplikace [name] nainstalovat?",
+			"SelectDirLabel3": "Instalační program nainstaluje aplikaci [name] do následující složky.",
+			"SelectDirBrowseLabel": "Pokračujte kliknutím na Další. Pokud chcete vybrat jinou složku, klikněte na Procházet.",
+			"DiskSpaceMBLabel": "Je vyžadováno minimálně [mb] MB volného místa na disku.",
+			"CannotInstallToNetworkDrive": "Instalační program nemůže provést instalaci na síťovou jednotku.",
+			"CannotInstallToUNCPath": "Instalační program nemůže provést instalaci do cesty UNC.",
+			"InvalidPath": "Musíte zadat úplnou cestu s písmenem jednotky, příklad:%n%nC:\\APP%n%nnebo cesta UNC ve formátu:%n%n\\\\server\\sdílená_složka",
+			"InvalidDrive": "Jednotka nebo sdílená složka UNC, kterou jste vybrali, neexistuje nebo k ní nelze získat přístup. Vyberte prosím jiné umístění.",
+			"DiskSpaceWarningTitle": "Nedostatek místa na disku",
+			"DiskSpaceWarning": "Instalace vyžaduje minimálně %1 kB volného místa, ale na vybrané jednotce je k dispozici pouze %2 kB. %n%nChcete přesto pokračovat?",
+			"DirNameTooLong": "Název složky nebo cesta ke složce jsou příliš dlouhé.",
+			"InvalidDirName": "Název složky není platný.",
+			"BadDirName32": "Názvy složek nesmí obsahovat žádný z následujících znaků:%n%n%1",
+			"DirExistsTitle": "Složka existuje",
+			"DirExists": "Složka:%n%n%1%n%nuž existuje. Chcete přesto provést instalaci do této složky?",
+			"DirDoesntExistTitle": "Složka neexistuje.",
+			"DirDoesntExist": "Složka:%n%n%1%n%neexistuje. Chcete ji vytvořit?",
+			"WizardSelectComponents": "Vybrat součásti",
+			"SelectComponentsDesc": "Které součásti mají být nainstalovány?",
+			"SelectComponentsLabel2": "Vyberte součásti, které chcete nainstalovat. Zrušte zaškrtnutí součástí, které nechcete nainstalovat. Až budete připraveni pokračovat, klikněte na Další.",
+			"FullInstallation": "Úplná instalace",
+			"CompactInstallation": "Kompaktní instalace",
+			"CustomInstallation": "Vlastní instalace",
+			"NoUninstallWarningTitle": "Existující součásti",
+			"NoUninstallWarning": "Instalační program zjistil, že v počítači jsou již nainstalovány následující součásti:%n%n%1%n%nPokud zrušíte výběr těchto součástí, neodinstalují se.%n%nChcete přesto pokračovat?",
+			"ComponentSize1": "%1 kB",
+			"ComponentSize2": "%1 MB",
+			"ComponentsDiskSpaceMBLabel": "Aktuální výběr vyžaduje minimálně [mb] MB volného místa na disku.",
+			"WizardSelectTasks": "Vybrat další úlohy",
+			"SelectTasksDesc": "Jaké další úlohy se mají provést?",
+			"SelectTasksLabel2": "Vyberte další úlohy, které má instalační program provést během instalace aplikace [name], a potom klikněte na Další.",
+			"WizardSelectProgramGroup": "Vybrat složku nabídky Start",
+			"SelectStartMenuFolderDesc": "Kam má instalační program umístit zástupce aplikace?",
+			"SelectStartMenuFolderLabel3": "Instalační program vytvoří zástupce aplikace v následující složce nabídky Start.",
+			"SelectStartMenuFolderBrowseLabel": "Pokračujte kliknutím na Další. Pokud chcete vybrat jinou složku, klikněte na Procházet.",
+			"MustEnterGroupName": "Musíte zadat název složky.",
+			"GroupNameTooLong": "Název složky nebo cesta ke složce jsou příliš dlouhé.",
+			"InvalidGroupName": "Název složky není platný.",
+			"BadGroupName": "Název složky nesmí obsahovat žádný z následujících znaků:%n%n%1",
+			"NoProgramGroupCheck2": "&Nevytvářet složku v nabídce Start",
+			"WizardReady": "Připraveno k instalaci",
+			"ReadyLabel1": "Instalační program je nyní připraven začít instalovat aplikaci [name] do počítače.",
+			"ReadyLabel2a": "Pokud chcete pokračovat v instalaci, klikněte na Nainstalovat. Pokud chcete zkontrolovat nebo změnit některá nastavení, klikněte na Zpět.",
+			"ReadyLabel2b": "Pokud chcete pokračovat v instalaci, klikněte na Nainstalovat.",
+			"ReadyMemoUserInfo": "Informace o uživateli:",
+			"ReadyMemoDir": "Cílové umístění:",
+			"ReadyMemoType": "Typ instalace:",
+			"ReadyMemoComponents": "Vybrané součásti:",
+			"ReadyMemoGroup": "Složka nabídky Start:",
+			"ReadyMemoTasks": "Další úlohy:",
+			"WizardPreparing": "Připravuje se instalace.",
+			"PreparingDesc": "Instalační program připravuje instalaci aplikace [name] do vašeho počítače.",
+			"PreviousInstallNotCompleted": "Nebyla dokončena instalace nebo odinstalace předchozí aplikace. K dokončení této instalace bude nutné restartovat počítač.%n%nPo restartování počítače spusťte instalační program znovu a dokončete instalaci aplikace [name].",
+			"CannotContinue": "Instalační program nemůže pokračovat. Kliknutím na Zrušit instalační program ukončíte.",
+			"ApplicationsFound": "Následující aplikace používají soubory, které musí instalační program aktualizovat. Doporučuje se, abyste instalačnímu programu povolili tyto aplikace automaticky zavřít.",
+			"ApplicationsFound2": "Následující aplikace používají soubory, které musí instalační program aktualizovat. Doporučuje se, abyste instalačnímu programu povolili tyto aplikace automaticky zavřít. Po dokončení instalace se instalační program pokusí aplikace restartovat.",
+			"CloseApplications": "&Automaticky zavřít aplikace",
+			"DontCloseApplications": "&Nezavírat aplikace",
+			"ErrorCloseApplications": "Instalační program nemohl automaticky zavřít všechny aplikace. Před pokračováním doporučujeme zavřít všechny aplikace používající soubory, které musí instalační program aktualizovat.",
+			"WizardInstalling": "Probíhá instalace.",
+			"InstallingLabel": "Počkejte prosím, než instalační program do počítače nainstaluje aplikaci [name].",
+			"FinishedHeadingLabel": "Dokončení průvodce instalací aplikace [name]",
+			"FinishedLabelNoIcons": "Instalační program dokončil instalaci aplikace [name] na vašem počítači.",
+			"FinishedLabel": "Instalační program dokončil instalaci aplikace [name] na vašem počítači. Aplikaci můžete spustit tak, že vyberete nainstalované ikony.",
+			"ClickFinish": "Kliknutím na tlačítko Dokončit ukončíte instalační program.",
+			"FinishedRestartLabel": "Aby bylo možné dokončit instalaci aplikace [name], musí instalační program restartovat počítač. Chcete teď počítač restartovat?",
+			"FinishedRestartMessage": "Aby bylo možné dokončit instalaci aplikace [name], musí instalační program restartovat počítač.%n%nChcete teď počítač restartovat?",
+			"ShowReadmeCheck": "Ano, chci si prohlédnout soubor README",
+			"YesRadio": "&Ano, chci teď restartovat počítač",
+			"NoRadio": "&Ne, počítač restartuji později",
+			"RunEntryExec": "Spustit: %1",
+			"RunEntryShellExec": "Zobrazit: %1",
+			"ChangeDiskTitle": "Instalační program potřebuje další disk",
+			"SelectDiskLabel2": "Vložte prosím disk %1 a klikněte na OK.%n%nPokud se soubory na tomto disku nacházejí v jiné složce než v té, která je zobrazena níže, zadejte správnou cestu nebo klikněte na Procházet.",
+			"PathLabel": "&Cesta:",
+			"FileNotInDir2": "Soubor %1 nebyl v umístění %2 nalezen. Vložte prosím správný disk nebo vyberte jinou složku.",
+			"SelectDirectoryLabel": "Zadejte prosím umístění dalšího disku.",
+			"SetupAborted": "Instalace nebyla dokončena.%n%nOpravte prosím problém a spusťte instalační program znovu.",
+			"EntryAbortRetryIgnore": "Pokud to chcete zkusit znovu, klikněte na Zkusit znovu. Pokud chcete přesto pokračovat, zvolte Ignorovat. Zvolením možnosti Přerušit instalaci zrušíte.",
+			"StatusClosingApplications": "Zavírají se aplikace...",
+			"StatusCreateDirs": "Vytvářejí se adresáře...",
+			"StatusExtractFiles": "Extrahují se soubory...",
+			"StatusCreateIcons": "Vytvářejí se zástupci...",
+			"StatusCreateIniEntries": "Vytvářejí se položky INI...",
+			"StatusCreateRegistryEntries": "Vytvářejí se položky registru...",
+			"StatusRegisterFiles": "Registrují se soubory...",
+			"StatusSavingUninstall": "Ukládají se odinstalační informace...",
+			"StatusRunProgram": "Dokončuje se instalace...",
+			"StatusRestartingApplications": "Restartují se aplikace...",
+			"StatusRollback": "Vracení změn...",
+			"ErrorInternal2": "Vnitřní chyba: %1",
+			"ErrorFunctionFailedNoCode": "Selhalo: %1",
+			"ErrorFunctionFailed": "Selhalo: %1; kód: %2",
+			"ErrorFunctionFailedWithMessage": "Selhalo: %1; kód: %2.%n%3",
+			"ErrorExecutingProgram": "Nelze provést soubor:%n%1",
+			"ErrorRegOpenKey": "Chyba při otevírání klíče registru:%n%1\\%2",
+			"ErrorRegCreateKey": "Chyba při vytváření klíče registru:%n%1\\%2",
+			"ErrorRegWriteKey": "Chyba při zápisu do klíče registru:%n%1\\%2",
+			"ErrorIniEntry": "Při vytváření položky INI v souboru %1 došlo k chybě.",
+			"FileAbortRetryIgnore": "Pokud to chcete zkusit znovu, klikněte na Zkusit znovu. Pokud chcete tento soubor přeskočit (nedoporučuje se), klikněte na Ignorovat. Pokud chcete instalaci zrušit, klikněte na Přerušit.",
+			"FileAbortRetryIgnore2": "Pokud to chcete zkusit znovu, klikněte na Zkusit znovu. Pokud chcete přesto pokračovat (nedoporučuje se), klikněte na Ignorovat. Pokud chcete instalaci zrušit, klikněte na Přerušit.",
+			"SourceIsCorrupted": "Zdrojový soubor je poškozený.",
+			"SourceDoesntExist": "Zdrojový soubor %1 neexistuje.",
+			"ExistingFileReadOnly": "Existující soubor je označen jako jen pro čtení.%n%nPokud chcete odebrat atribut jen pro čtení a zkusit to znovu, klikněte na Zkusit znovu. Pokud chcete tento soubor přeskočit, klikněte na Ignorovat. Pokud chcete instalaci zrušit, klikněte na Přerušit.",
+			"ErrorReadingExistingDest": "Při pokusu o čtení existujícího souboru došlo k chybě:",
+			"FileExists": "Soubor už existuje.%n%nChcete, aby ho instalační program přepsal?",
+			"ExistingFileNewer": "Existující soubor je novější než soubor, který se instalační program pokouší nainstalovat. Doporučujeme zachovat existující soubor.%n%nChcete zachovat existující soubor?",
+			"ErrorChangingAttr": "Při pokusu o změnu atributů existujícího souboru došlo k chybě:",
+			"ErrorCreatingTemp": "Při pokusu o vytvoření souboru v cílovém adresáři došlo k chybě:",
+			"ErrorReadingSource": "Při pokusu o čtení zdrojového souboru došlo k chybě:",
+			"ErrorCopying": "Při pokusu o zkopírování souboru došlo k chybě:",
+			"ErrorReplacingExistingFile": "Při pokusu o nahrazení existujícího souboru došlo k chybě:",
+			"ErrorRestartReplace": "Selhání RestartReplace:",
+			"ErrorRenamingTemp": "Při pokusu o přejmenování souboru v cílovém adresáři došlo k chybě:",
+			"ErrorRegisterServer": "Nepovedlo se zaregistrovat DLL/OCX: %1.",
+			"ErrorRegSvr32Failed": "Selhání RegSvr32 s ukončovacím kódem %1",
+			"ErrorRegisterTypeLib": "Nepovedlo se zaregistrovat knihovnu typů: %1.",
+			"ErrorOpeningReadme": "Při pokusu o otevření souboru README došlo k chybě.",
+			"ErrorRestartingComputer": "Instalačnímu programu se nepovedlo restartovat počítač. Proveďte to prosím ručně.",
+			"UninstallNotFound": "Soubor %1 neexistuje. Nelze provést odinstalaci.",
+			"UninstallOpenError": "Soubor %1 se nepovedlo otevřít. Nelze provést odinstalaci.",
+			"UninstallUnsupportedVer": "Soubor protokolu odinstalace %1 je ve formátu, který tato verze odinstalačního programu nerozpoznala. Nelze provést odinstalaci.",
+			"UninstallUnknownEntry": "V protokolu odinstalace byla zjištěna neznámá položka (%1).",
+			"ConfirmUninstall": "Opravdu chcete úplně odebrat %1? Rozšíření a nastavení se neodeberou.",
+			"UninstallOnlyOnWin64": "Tuto instalaci lze odinstalovat pouze v 64bitovém systému Windows.",
+			"OnlyAdminCanUninstall": "Tuto instalaci může odinstalovat pouze uživatel s oprávněními správce.",
+			"UninstallStatusLabel": "Počkejte prosím, než se aplikace %1 odebere z počítače.",
+			"UninstalledAll": "Aplikace %1 byla úspěšně odebrána z počítače.",
+			"UninstalledMost": "Odinstalace aplikace %1 byla dokončena.%n%nNěkteré prvky se nepovedlo odebrat. Můžete je odebrat ručně.",
+			"UninstalledAndNeedsRestart": "Aby bylo možné dokončit odinstalaci aplikace %1, je nutné restartovat počítač.%n%nChcete ho teď restartovat?",
+			"UninstallDataCorrupted": "Soubor %1 je poškozený. Nelze provést odinstalaci.",
+			"ConfirmDeleteSharedFileTitle": "Chcete odebrat sdílený soubor?",
+			"ConfirmDeleteSharedFile2": "Systém indikuje, že následující sdílený soubor již není používán žádnými aplikacemi. Chcete, aby se při odinstalaci tento sdílený soubor odebral?%n%nPokud některá aplikace tento soubor stále používá a soubor bude odebrán, nemusí pak aplikace fungovat správně. Pokud si nejste jisti, zvolte Ne. Ponechání souboru v systému nebude mít žádný negativní dopad.",
+			"SharedFileNameLabel": "Název souboru:",
+			"SharedFileLocationLabel": "Umístění:",
+			"WizardUninstalling": "Stav odinstalace",
+			"StatusUninstalling": "Odinstalovává se: %1...",
+			"ShutdownBlockReasonInstallingApp": "Instaluje se: %1.",
+			"ShutdownBlockReasonUninstallingApp": "Odinstalovává se: %1.",
+			"NameAndVersion": "%1 verze %2",
+			"AdditionalIcons": "Další ikony:",
+			"CreateDesktopIcon": "Vytvořit ikonu na &ploše",
+			"CreateQuickLaunchIcon": "Vytvořit ikonu &Snadné spuštění",
+			"ProgramOnTheWeb": "%1 na webu",
+			"UninstallProgram": "Odinstalovat aplikaci %1",
+			"LaunchProgram": "Spustit aplikaci %1",
+			"AssocFileExtension": "&Přidružit aplikaci %1 k příponě souborů %2",
+			"AssocingFileExtension": "%1 se přidružuje k příponě souborů %2...",
+			"AutoStartProgramGroupDescription": "Po spuštění:",
+			"AutoStartProgram": "Automaticky spustit %1",
+			"AddonHostProgramNotFound": "%1 se ve složce, kterou jste vybrali, nepovedlo najít.%n%nChcete přesto pokračovat?"
+		},
 		"win32/i18n/messages": {
 			"FinishedLabel": "Instalační program dokončil instalaci aplikace [name] do vašeho počítače. Aplikaci můžete spustit pomocí nainstalovaných zástupců.",
 			"ConfirmUninstall": "Opravdu chcete úplně odebrat %1 i se všemi součástmi?",
@@ -1665,9 +1908,13 @@
 			"alreadyInstalled": "Rozšíření {0} už je nainstalované.",
 			"forceUpdate": "Je už nainstalované rozšíření {0} verze {1}, ale na Marketplace je k dispozici novější verze ({2}). Pokud chcete upgradovat na novější verzi, použijte parametr --force.",
 			"updateMessage": "Rozšíření {0} se aktualizuje na verzi {1}.",
-			"forceDowngrade": "Je už nainstalovaná novější verze rozšíření {0} (verze {1}). Pokud chcete downgradovat na starší verzi, použijte možnost --force.",
+			"installing builtin ": "Instaluje se integrované rozšíření {0} verze {1}...",
 			"installing": "Instaluje se rozšíření {0} verze {1}...",
 			"successInstall": "Rozšíření {0} verze {1} bylo úspěšně nainstalováno.",
+			"cancelInstall": "Byla zrušena instalace rozšíření {0}.",
+			"forceDowngrade": "Je už nainstalovaná novější verze rozšíření {0} (verze {1}). Pokud chcete downgradovat na starší verzi, použijte možnost --force.",
+			"builtin": "Rozšíření {0} je integrované a nedá se nainstalovat.",
+			"forceUninstall": "Uživatel označil rozšíření {0} jako integrované. Pokud ho chcete odinstalovat, použijte prosím možnost --force.",
 			"uninstalling": "Odinstalovává se {0}...",
 			"successUninstall": "Rozšíření {0} bylo úspěšně odinstalováno!"
 		},
@@ -1798,6 +2045,7 @@
 			"window.nativeTabs": "Povolí karty oken ve stylu panelů oken z operačního systému macOS Sierra. Poznámka: K provedení těchto změn bude nutné úplné restartování. Nativní karty zakážou vlastní styl záhlaví okna (pokud je nakonfigurovaný).",
 			"window.nativeFullScreen": "Určuje, jestli má být pro macOS použito nativní zobrazení v režimu na celou obrazovku. Zakázáním této možnosti zabráníte systému macOS ve vytvoření nové plochy při přepnutí do režimu zobrazení na celou obrazovku.",
 			"window.clickThroughInactive": "Pokud je povoleno, kliknutím na neaktivní okno se aktivuje jak okno, tak i prvek, na kterém je ukazatel myši, pokud je na něj možné kliknout. Pokud je zakázáno, kliknutím kamkoli v neaktivním okně se aktivuje pouze okno a daný prvek pak bude nutné aktivovat dalším kliknutím.",
+			"window.enableExperimentalProxyLoginDialog": "Povolí nový dialog přihlášení pro ověřování proxy. Vyžaduje restart, aby se změna projevila.",
 			"telemetryConfigurationTitle": "Telemetrie",
 			"telemetry.enableCrashReporting": "Povolí odesílání zpráv o chybovém ukončení online službě Microsoftu. \r\nTato možnost se projeví až po restartování.",
 			"keyboardConfigurationTitle": "Klávesnice",
@@ -1821,6 +2069,13 @@
 			"loaderErrorNative": "Požadovaný soubor se nepovedlo načíst. Pokud to chcete zkusit znovu, restartujte prosím aplikaci. Podrobnosti: {0}"
 		},
 		"vs/workbench/electron-sandbox/window": {
+			"proxyAuthRequired": "Vyžadováno ověření proxy serveru",
+			"loginButton": "Přih&&lásit se",
+			"cancelButton": "&&Zrušit",
+			"username": "Uživatelské jméno",
+			"password": "Heslo",
+			"proxyDetail": "Proxy {0} vyžaduje uživatelské jméno a heslo.",
+			"rememberCredentials": "Zapamatovat přihlašovací údaje",
 			"runningAsRoot": "Nedoporučuje se spouštět {0} jako uživatel root.",
 			"mPreferences": "Předvolby"
 		},
@@ -1868,11 +2123,11 @@
 			"panelActiveTitleBorder": "Barva ohraničení názvu aktivního panelu. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál.",
 			"panelInputBorder": "Ohraničení vstupního pole pro vstupy na panelu",
 			"panelDragAndDropBorder": "Barva zpětné vazby při přetahování myší pro názvy panelů. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál.",
-			"panelSectionDragAndDropBackground": "Barva zpětné vazby při přetahování myší pro oddíly panelu. Barva by měla být průhledná, aby byly oddíly panelu stále viditelné. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál.",
-			"panelSectionHeaderBackground": "Barva pozadí záhlaví oddílu panelu. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál.",
-			"panelSectionHeaderForeground": "Barva popředí záhlaví oddílu panelu. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál.",
-			"panelSectionHeaderBorder": "Barva ohraničení záhlaví oddílu panelu použitá, když je na panelu na sebe svisle naskládáno více zobrazení. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál.",
-			"panelSectionBorder": "Barva ohraničení oddílu panelu použitá, když je na panelu na sebe vodorovně naskládáno více zobrazení. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál.",
+			"panelSectionDragAndDropBackground": "Barva zpětné vazby při přetahování myší pro oddíly panelu. Barva by měla být průhledná, aby byly oddíly panelu stále viditelné. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál. Části panelu jsou zobrazení, která jsou do panelů vnořená.",
+			"panelSectionHeaderBackground": "Barva pozadí záhlaví oddílu panelu. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál. Části panelu jsou zobrazení, která jsou do panelů vnořená.",
+			"panelSectionHeaderForeground": "Barva popředí záhlaví oddílu panelu. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál. Části panelu jsou zobrazení, která jsou do panelů vnořená.",
+			"panelSectionHeaderBorder": "Barva ohraničení záhlaví oddílu panelu použitá, když je na panelu na sebe svisle naskládáno více zobrazení. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál. Části panelu jsou zobrazení, která jsou do panelů vnořená.",
+			"panelSectionBorder": "Barva ohraničení oddílu panelu použitá, když je na panelu na sebe vodorovně naskládáno více zobrazení. Panely se zobrazují pod oblastí editorů a obsahují zobrazení, jako je výstup a integrovaný terminál. Části panelu jsou zobrazení, která jsou do panelů vnořená.",
 			"statusBarForeground": "Barva popředí stavového řádku, když je otevřený pracovní prostor. Stavový řádek se zobrazuje v dolní části okna.",
 			"statusBarNoFolderForeground": "Barva popředí stavového řádku v případě, že není otevřená žádná složka. Stavový řádek se zobrazuje v dolní části okna.",
 			"statusBarBackground": "Barva pozadí stavového řádku, když je otevřený pracovní prostor. Stavový řádek se zobrazuje v dolní části okna.",
@@ -1902,10 +2157,10 @@
 			"sideBarForeground": "Barva popředí postranního panelu. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání.",
 			"sideBarBorder": "Barva ohraničení postranního panelu na straně oddělující tento panel od editoru. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání.",
 			"sideBarTitleForeground": "Barva popředí názvu postranního panelu. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání.",
-			"sideBarDragAndDropBackground": "Barva zpětné vazby při přetahování myší pro oddíly postranního panelu. Barva by měla být průhledná, aby byly oddíly postranního panelu stále viditelné. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání.",
-			"sideBarSectionHeaderBackground": "Barva pozadí záhlaví oddílu postranního panelu. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání.",
-			"sideBarSectionHeaderForeground": "Barva popředí záhlaví oddílu postranního panelu. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání.",
-			"sideBarSectionHeaderBorder": "Barva ohraničení záhlaví oddílu postranního panelu. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání.",
+			"sideBarDragAndDropBackground": "Barva zpětné vazby při přetahování myší pro oddíly postranního panelu. Barva by měla být průhledná, aby byly oddíly postranního panelu stále viditelné. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání. Části postranního panelu jsou zobrazení, která jsou do postranního panelu vnořená.",
+			"sideBarSectionHeaderBackground": "Barva pozadí záhlaví oddílu postranního panelu. Postranní panel je kontejner pro zobrazení, jako jsou průzkumník a vyhledávání. Části postranního panelu jsou zobrazení, která jsou do postranního panelu vnořená.",
+			"sideBarSectionHeaderForeground": "Barva popředí záhlaví oddílu postranního panelu. Postranní panel je kontejner pro zobrazení, jako jsou průzkumník a vyhledávání. Části postranního panelu jsou zobrazení, která jsou do postranního panelu vnořená.",
+			"sideBarSectionHeaderBorder": "Barva ohraničení záhlaví oddílu postranního panelu. Postranní panel je kontejner pro zobrazení, jako jsou průzkumník a vyhledávání. Části postranního panelu jsou zobrazení, která jsou do postranního panelu vnořená.",
 			"titleBarActiveForeground": "Popředí záhlaví okna, když je okno aktivní",
 			"titleBarInactiveForeground": "Popředí záhlaví okna, když je okno neaktivní",
 			"titleBarActiveBackground": "Pozadí záhlaví okna, když je okno aktivní",
@@ -2045,6 +2300,10 @@
 			"window.openFoldersInNewWindow.off": "Složky nahradí poslední aktivní okno.",
 			"window.openFoldersInNewWindow.default": "Složky se otevřou v novém okně, pokud nebudou vybrány z aplikace (například prostřednictvím nabídky Soubor).",
 			"openFoldersInNewWindow": "Určuje, jestli se mají složky otevírat v novém okně nebo jestli se má nahradit obsah posledního aktivního okna.\r\nPoznámka: Přesto mohou existovat případy, kdy bude toto nastavení ignorováno (například při použití parametru příkazového řádku --new-window nebo --reuse-window).",
+			"window.confirmBeforeClose.always": "Umožňuje vždy se pokusit zeptat na potvrzení. Poznámka: Prohlížeče stále budou mít možnost zavřít kartu nebo okno bez potvrzení.",
+			"window.confirmBeforeClose.keyboardOnly": "Umožňuje požádat o potvrzení jen v případě, že se zjistí klávesová zkratka. Poznámka: V některých případech nemusí být zjišťování možné.",
+			"window.confirmBeforeClose.never": "Nikdy explicitně nežádat o potvrzení, dokud nehrozí ztráta dat",
+			"confirmBeforeCloseWeb": "Určuje, jestli se před zavřením karty nebo okna prohlížeče má zobrazovat dialog pro potvrzení. Poznámka: I když se tato možnost povolí, prohlížeče stále budou mít možnost zavřít kartu nebo okno bez potvrzení a toto nastavení je pouze náznak, který nemusí fungovat ve všech případech.",
 			"zenModeConfigurationTitle": "Režim Zen",
 			"zenMode.fullScreen": "Určuje, jestli se při zapnutí režimu Zen také přepne pracovní plocha do režimu zobrazení na celou obrazovku.",
 			"zenMode.centerLayout": "Určuje, jestli se při zapnutí režimu Zen také zarovná rozložení na střed.",
@@ -2137,7 +2396,11 @@
 			"resetFocusedViewLocation": "Obnovit umístění zobrazení s fokusem",
 			"resetFocusedView.error.noFocusedView": "V tuto chvíli nemá fokus žádné zobrazení.",
 			"increaseViewSize": "Zvětšit aktuální velikost zobrazení",
-			"decreaseViewSize": "Zmenšit aktuální velikost zobrazení"
+			"increaseEditorWidth": "Zvýšit šířku editoru",
+			"increaseEditorHeight": "Zvýšit výšku editoru",
+			"decreaseViewSize": "Zmenšit aktuální velikost zobrazení",
+			"decreaseEditorWidth": "Snížit šířku editoru",
+			"decreaseEditorHeight": "Snížit výšku editoru"
 		},
 		"vs/workbench/browser/actions/navigationActions": {
 			"navigateLeft": "Přejít na zobrazení nalevo",
@@ -2165,7 +2428,9 @@
 			"reloadWindow": "Znovu načíst okno",
 			"about": "Informace",
 			"newWindow": "Nové okno",
+			"blur": "Odebrat kurzor klávesnice z prvku s fokusem",
 			"file": "Soubor",
+			"miConfirmClose": "Před zavřením potvrdit",
 			"miNewWindow": "Nové &&okno",
 			"miOpenRecent": "Otevřít &&nedávné",
 			"miMore": "&&Více...",
@@ -2359,7 +2624,8 @@
 			"homeIndicator": "Domů",
 			"home": "Domů",
 			"manage": "Spravovat",
-			"accounts": "Účty"
+			"accounts": "Účty",
+			"focusActivityBar": "Nastavit fokus na panel aktivity"
 		},
 		"vs/workbench/browser/parts/sidebar/sidebarPart": {
 			"focusSideBar": "Přepnout fokus na postranní panel"
@@ -3156,14 +3422,14 @@
 			"removeOptimizations": "Vynuceně povolit funkce",
 			"reopenFilePrompt": "Toto nastavení se projeví po opětovném otevření souboru."
 		},
+		"vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens": {
+			"inspectEditorTokens": "Vývojář: zkontrolovat tokeny a obory editoru",
+			"inspectTMScopesWidget.loading": "Načítání..."
+		},
 		"vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess": {
 			"gotoLineQuickAccessPlaceholder": "Zadejte číslo řádku a volitelně i sloupec, na které se má přejít (například 42:5 pro řádek 42 a sloupec 5).",
 			"gotoLineQuickAccess": "Přejít na řádek/sloupec",
 			"gotoLine": "Přejít na řádek/sloupec..."
-		},
-		"vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens": {
-			"inspectEditorTokens": "Vývojář: zkontrolovat tokeny a obory editoru",
-			"inspectTMScopesWidget.loading": "Načítání..."
 		},
 		"vs/workbench/contrib/codeEditor/browser/saveParticipants": {
 			"formatting": "Spouští se formátovací modul {0} ([nakonfigurovat](command:workbench.action.openSettings?%5B%22editor.formatOnSave%22%5D)).",
@@ -3450,9 +3716,9 @@
 			"breakpoint": "Zarážka"
 		},
 		"vs/workbench/contrib/debug/browser/callStackView": {
+			"running": "Spuštěné",
 			"showMoreStackFrames2": "Zobrazit další bloky zásobníku",
 			"session": "Relace",
-			"running": "Spuštěné",
 			"thread": "Vlákno",
 			"restartFrame": "Restartovat rámec",
 			"loadAllStackFrames": "Načíst všechny bloky zásobníku",
@@ -3516,7 +3782,7 @@
 			"noFolderWorkspaceDebugError": "Aktivní soubor nelze ladit. Ujistěte se, že je soubor uložen a máte pro tento typ souboru nainstalované rozšíření ladění.",
 			"debugAdapterCrash": "Proces adaptéru ladění byl neočekávaně ukončen ({0}).",
 			"cancel": "Zrušit",
-			"debuggingPaused": "{1}:{2}, ladění pozastaveno {0}, {3}",
+			"debuggingPaused": "{0}:{1}, ladění se pozastavilo {2}, {3}",
 			"breakpointAdded": "Přidala se zarážka, řádek {0}, soubor {1}.",
 			"breakpointRemoved": "Odebrala se zarážka, řádek {0}, soubor {1}."
 		},
@@ -3785,8 +4051,8 @@
 			"debugExtensionHost": "Spustit hostitele rozšíření ladění",
 			"restart1": "Profilovat rozšíření",
 			"restart2": "Aby bylo možné profilovat rozšíření, je nutný restart. Chcete teď {0} restartovat?",
-			"restart3": "Restartovat",
-			"cancel": "Zrušit",
+			"restart3": "&&Restartovat",
+			"cancel": "&&Zrušit",
 			"debugExtensionHost.launch.name": "Připojit hostitele rozšíření",
 			"extensionHostProfileStart": "Spustit profil hostitele rozšíření",
 			"stopExtensionHostProfileStart": "Zastavit profil hostitele rozšíření",
@@ -3800,8 +4066,8 @@
 			"status.profiler": "Profiler rozšíření",
 			"restart1": "Profilovat rozšíření",
 			"restart2": "Aby bylo možné profilovat rozšíření, je nutný restart. Chcete teď {0} restartovat?",
-			"restart3": "Restartovat",
-			"cancel": "Zrušit"
+			"restart3": "&&Restartovat",
+			"cancel": "&&Zrušit"
 		},
 		"vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsInput": {
 			"extensionsInputName": "Spuštěná rozšíření"
@@ -3816,6 +4082,7 @@
 		"vs/workbench/contrib/extensions/browser/extensions.contribution": {
 			"manageExtensionsQuickAccessPlaceholder": "Pokud chcete spravovat rozšíření, stiskněte Enter.",
 			"manageExtensionsHelp": "Správa rozšíření",
+			"installVSIX": "Nainstalovat VSIX rozšíření",
 			"extension": "Rozšíření",
 			"extensions": "Rozšíření",
 			"extensionsConfigurationTitle": "Rozšíření",
@@ -3829,10 +4096,14 @@
 			"workbench.extensions.installExtension.description": "Nainstalovat dané rozšíření",
 			"workbench.extensions.installExtension.arg.name": "ID rozšíření nebo identifikátor URI prostředku VSIX",
 			"notFound": "Rozšíření {0} nebylo nalezeno.",
+			"InstallVSIXAction.successReload": "Restartujte prosím Visual Studio Code, aby bylo možné dokončit instalaci rozšíření {0}.",
+			"InstallVSIXAction.success": "Dokončila se instalace rozšíření {0}.",
+			"InstallVSIXAction.reloadNow": "Znovu načíst",
 			"workbench.extensions.uninstallExtension.description": "Odinstalovat dané rozšíření",
 			"workbench.extensions.uninstallExtension.arg.name": "ID rozšíření, které má být odinstalováno",
 			"id required": "Je vyžadováno ID rozšíření.",
 			"notInstalled": "Rozšíření {0} není nainstalované. Zkontrolujte, že používáte úplné ID rozšíření, včetně vydavatele, například ms-dotnettools.csharp.",
+			"builtin": "Rozšíření {0} je integrované a nedá se nainstalovat.",
 			"workbench.extensions.search.description": "Vyhledat konkrétní řešení",
 			"workbench.extensions.search.arg.name": "Dotaz, který se má použít ve vyhledávání",
 			"miOpenKeymapExtensions": "&&Mapování kláves",
@@ -3909,86 +4180,6 @@
 		"vs/workbench/contrib/extensions/common/extensionsInput": {
 			"extensionsInputName": "Rozšíření: {0}"
 		},
-		"vs/workbench/contrib/extensions/browser/extensionEditor": {
-			"name": "Název rozšíření",
-			"extension id": "Identifikátor rozšíření",
-			"preview": "Preview",
-			"builtin": "Integrovaný",
-			"publisher": "Název vydavatele",
-			"install count": "Počet instalací",
-			"rating": "Hodnocení",
-			"repository": "Úložiště",
-			"license": "Licence",
-			"version": "Verze",
-			"details": "Podrobnosti",
-			"detailstooltip": "Podrobnosti o rozšíření získané ze souboru README.md rozšíření",
-			"contributions": "Přidané funkce",
-			"contributionstooltip": "Vypíše, co konkrétně toto rozšíření přidává do VS Code.",
-			"changelog": "Protokol změn",
-			"changelogtooltip": "Historie aktualizací rozšíření získaná ze souboru CHANGELOG.md rozšíření",
-			"dependencies": "Závislosti",
-			"dependenciestooltip": "Zobrazí seznam rozšíření, na kterých je toto rozšíření závislé.",
-			"recommendationHasBeenIgnored": "Rozhodli jste, že nechcete dostávat doporučení pro toto rozšíření.",
-			"noReadme": "K dispozici není žádný soubor README.",
-			"extension pack": "Sada rozšíření ({0})",
-			"noChangelog": "Není k dispozici žádný protokol změn.",
-			"noContributions": "Žádné přidané funkce",
-			"noDependencies": "Žádné závislosti",
-			"settings": "Nastavení ({0})",
-			"setting name": "Název",
-			"description": "Popis",
-			"default": "Výchozí",
-			"debuggers": "Ladicí programy ({0})",
-			"debugger name": "Název",
-			"debugger type": "Typ",
-			"viewContainers": "Zobrazit kontejnery ({0})",
-			"view container id": "ID",
-			"view container title": "Název",
-			"view container location": "Kde",
-			"views": "Zobrazení ({0})",
-			"view id": "ID",
-			"view name": "Název",
-			"view location": "Kde",
-			"localizations": "Lokalizace ({0})",
-			"localizations language id": "ID jazyka",
-			"localizations language name": "Název jazyka",
-			"localizations localized language name": "Název jazyka (lokalizovaný)",
-			"customEditors": "Vlastní editory ({0})",
-			"customEditors view type": "Typ zobrazení",
-			"customEditors priority": "Priorita",
-			"customEditors filenamePattern": "Vzor názvu souboru",
-			"codeActions": "Akce kódu ({0})",
-			"codeActions.title": "Název",
-			"codeActions.kind": "Typ",
-			"codeActions.description": "Popis",
-			"codeActions.languages": "Jazyky",
-			"authentication": "Ověřování ({0})",
-			"authentication.label": "Popisek",
-			"authentication.id": "ID",
-			"colorThemes": "Barevné motivy ({0})",
-			"iconThemes": "Motivy ikon souboru ({0})",
-			"colors": "Barvy ({0})",
-			"colorId": "ID",
-			"defaultDark": "Tmavý (výchozí)",
-			"defaultLight": "Světlý (výchozí)",
-			"defaultHC": "Vysoký kontrast (výchozí)",
-			"JSON Validation": "Ověření JSON ({0})",
-			"fileMatch": "Shoda souboru",
-			"schema": "Schéma",
-			"commands": "Příkazy ({0})",
-			"command name": "Název",
-			"keyboard shortcuts": "Klávesové zkratky",
-			"menuContexts": "Kontexty nabídek",
-			"languages": "Jazyky ({0})",
-			"language id": "ID",
-			"language name": "Název",
-			"file extensions": "Přípony souborů",
-			"grammar": "Gramatika",
-			"snippets": "Fragmenty kódu",
-			"find": "Najít",
-			"find next": "Najít další",
-			"find previous": "Najít předchozí"
-		},
 		"vs/workbench/contrib/extensions/browser/extensionsActions": {
 			"download": "Stáhnout ručně",
 			"install vsix": "Po stažení prosím nainstalujte stažený soubor VSIX {0} ručně.",
@@ -4001,14 +4192,18 @@
 			"noOfHoursAgo": "Před {0} hodinami",
 			"one hour ago": "Před 1 hodinou",
 			"just now": "Právě teď",
-			"install": "Nainstalovat",
-			"installing": "Probíhá instalace.",
-			"locally": "Místně",
 			"installExtensionStart": "Byla zahájena instalace rozšíření {0}. Nyní se otevře editor s dalšími informacemi o tomto rozšíření.",
 			"installExtensionComplete": "Instalace rozšíření {0} byla dokončena.",
 			"failedToInstall": "Rozšíření {0} se nepovedlo nainstalovat.",
-			"Install on Server": "Nainstalovat na server {0}",
+			"install": "Nainstalovat",
+			"install and do no sync": "Nainstalovat (nesynchronizovat)",
+			"install locally and do not sync": "Nainstalovat místně (nesynchronizovat)",
 			"install locally": "Nainstalovat místně",
+			"install on remote and do not sync": "Nainstalovat na {0} (nesynchronizovat)",
+			"install on remote": "Nainstalovat na {0}",
+			"install everywhere tooltip": "Nainstalovat toto rozšíření do všech synchronizovaných instancí {0}",
+			"installing": "Probíhá instalace.",
+			"Install on Server": "Nainstalovat na server {0}",
 			"uninstallAction": "Odinstalovat",
 			"Uninstalling": "Probíhá odinstalace.",
 			"uninstallExtensionStart": "Byla zahájena odinstalace rozšíření {0}.",
@@ -4119,13 +4314,11 @@
 			"installVSIX": "Nainstalovat z VSIX...",
 			"installFromVSIX": "Nainstalovat z VSIX",
 			"installButton": "&&Nainstalovat",
-			"InstallVSIXAction.successReload": "Restartujte prosím Visual Studio Code, aby bylo možné dokončit instalaci rozšíření {0}.",
-			"InstallVSIXAction.success": "Dokončila se instalace rozšíření {0}.",
-			"InstallVSIXAction.reloadNow": "Znovu načíst",
 			"reinstall": "Přeinstalovat rozšíření...",
 			"selectExtensionToReinstall": "Vyberte rozšíření, které chcete přeinstalovat.",
 			"ReinstallAction.successReload": "Restartujte prosím Visual Studio Code, aby bylo možné dokončit instalaci rozšíření {0}.",
 			"ReinstallAction.success": "Přeinstalace rozšíření {0} byla dokončena.",
+			"InstallVSIXAction.reloadNow": "Znovu načíst",
 			"install previous version": "Nainstalovat konkrétní verzi rozšíření...",
 			"selectExtension": "Vybrat rozšíření",
 			"InstallAnotherVersionExtensionAction.successReload": "Restartujte prosím Visual Studio Code, aby bylo možné dokončit instalaci rozšíření {0}.",
@@ -4141,6 +4334,86 @@
 			"extensionButtonProminentBackground": "Barva pozadí tlačítka pro výrazné rozšíření akcí (např. tlačítko Nainstalovat)",
 			"extensionButtonProminentForeground": "Barva popředí tlačítka pro výrazné rozšíření akcí (např. tlačítko Nainstalovat)",
 			"extensionButtonProminentHoverBackground": "Barva pozadí tlačítka po umístění ukazatele myši pro výrazné rozšíření akcí (např. tlačítko Nainstalovat)"
+		},
+		"vs/workbench/contrib/extensions/browser/extensionEditor": {
+			"name": "Název rozšíření",
+			"extension id": "Identifikátor rozšíření",
+			"preview": "Preview",
+			"builtin": "Integrovaný",
+			"publisher": "Název vydavatele",
+			"install count": "Počet instalací",
+			"rating": "Hodnocení",
+			"repository": "Úložiště",
+			"license": "Licence",
+			"version": "Verze",
+			"details": "Podrobnosti",
+			"detailstooltip": "Podrobnosti o rozšíření získané ze souboru README.md rozšíření",
+			"contributions": "Přidané funkce",
+			"contributionstooltip": "Vypíše, co konkrétně toto rozšíření přidává do VS Code.",
+			"changelog": "Protokol změn",
+			"changelogtooltip": "Historie aktualizací rozšíření získaná ze souboru CHANGELOG.md rozšíření",
+			"dependencies": "Závislosti",
+			"dependenciestooltip": "Zobrazí seznam rozšíření, na kterých je toto rozšíření závislé.",
+			"recommendationHasBeenIgnored": "Rozhodli jste, že nechcete dostávat doporučení pro toto rozšíření.",
+			"noReadme": "K dispozici není žádný soubor README.",
+			"extension pack": "Sada rozšíření ({0})",
+			"noChangelog": "Není k dispozici žádný protokol změn.",
+			"noContributions": "Žádné přidané funkce",
+			"noDependencies": "Žádné závislosti",
+			"settings": "Nastavení ({0})",
+			"setting name": "Název",
+			"description": "Popis",
+			"default": "Výchozí",
+			"debuggers": "Ladicí programy ({0})",
+			"debugger name": "Název",
+			"debugger type": "Typ",
+			"viewContainers": "Zobrazit kontejnery ({0})",
+			"view container id": "ID",
+			"view container title": "Název",
+			"view container location": "Kde",
+			"views": "Zobrazení ({0})",
+			"view id": "ID",
+			"view name": "Název",
+			"view location": "Kde",
+			"localizations": "Lokalizace ({0})",
+			"localizations language id": "ID jazyka",
+			"localizations language name": "Název jazyka",
+			"localizations localized language name": "Název jazyka (lokalizovaný)",
+			"customEditors": "Vlastní editory ({0})",
+			"customEditors view type": "Typ zobrazení",
+			"customEditors priority": "Priorita",
+			"customEditors filenamePattern": "Vzor názvu souboru",
+			"codeActions": "Akce kódu ({0})",
+			"codeActions.title": "Název",
+			"codeActions.kind": "Typ",
+			"codeActions.description": "Popis",
+			"codeActions.languages": "Jazyky",
+			"authentication": "Ověřování ({0})",
+			"authentication.label": "Popisek",
+			"authentication.id": "ID",
+			"colorThemes": "Barevné motivy ({0})",
+			"iconThemes": "Motivy ikon souboru ({0})",
+			"colors": "Barvy ({0})",
+			"colorId": "ID",
+			"defaultDark": "Tmavý (výchozí)",
+			"defaultLight": "Světlý (výchozí)",
+			"defaultHC": "Vysoký kontrast (výchozí)",
+			"JSON Validation": "Ověření JSON ({0})",
+			"fileMatch": "Shoda souboru",
+			"schema": "Schéma",
+			"commands": "Příkazy ({0})",
+			"command name": "Název",
+			"keyboard shortcuts": "Klávesové zkratky",
+			"menuContexts": "Kontexty nabídek",
+			"languages": "Jazyky ({0})",
+			"language id": "ID",
+			"language name": "Název",
+			"file extensions": "Přípony souborů",
+			"grammar": "Gramatika",
+			"snippets": "Fragmenty kódu",
+			"find": "Najít",
+			"find next": "Najít další",
+			"find previous": "Najít předchozí"
 		},
 		"vs/workbench/contrib/extensions/common/extensionsFileTemplate": {
 			"app.extensions.json.title": "Rozšíření",
@@ -4190,6 +4463,7 @@
 			"no": "Ne",
 			"workspaceRecommended": "Chcete nainstalovat doporučená rozšíření pro toto úložiště?",
 			"install": "Nainstalovat",
+			"install and do no sync": "Nainstalovat (nesynchronizovat)",
 			"show recommendations": "Zobrazení doporučení"
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsViews": {
@@ -4214,11 +4488,11 @@
 			"extension-arialabel": "{0}, {1}, {2}. Stisknutím klávesy Enter zobrazíte podrobnosti o rozšíření.",
 			"extensions": "Rozšíření"
 		},
-		"vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations": {
-			"dynamicWorkspaceRecommendation": "Toto rozšíření by vás mohlo zajímat, protože je oblíbené mezi uživateli úložiště {0}."
-		},
 		"vs/workbench/contrib/extensions/browser/exeBasedRecommendations": {
 			"exeBasedRecommendation": "Toto rozšíření se doporučuje, protože máte nainstalováno následující: {0}."
+		},
+		"vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations": {
+			"dynamicWorkspaceRecommendation": "Toto rozšíření by vás mohlo zajímat, protože je oblíbené mezi uživateli úložiště {0}."
 		},
 		"vs/workbench/contrib/extensions/browser/workspaceRecommendations": {
 			"workspaceRecommendation": "Toto rozšíření doporučují uživatelé aktuálního pracovního prostoru."
@@ -4381,7 +4655,7 @@
 			"modification": "Naformátovat úpravy (vyžaduje správu zdrojového kódu)",
 			"formatOnSaveMode": "Určuje, jestli formátování při uložení naformátuje celý soubor nebo pouze úpravy. Platí pouze v případě, že nastavení #editor.formatOnSave# má hodnotu true.",
 			"explorerConfigurationTitle": "Průzkumník souborů",
-			"openEditorsVisible": "Počet editorů zobrazených v podokně Otevřené editory",
+			"openEditorsVisible": "Počet editorů zobrazených v podokně Otevřené editory. Když se tato hodnota nastaví na 0, podokno Otevřené editory se skryje.",
 			"autoReveal.on": "Soubory budou zobrazeny a vybrány.",
 			"autoReveal.off": "Soubory nebudou zobrazeny a vybrány.",
 			"autoReveal.focusNoScroll": "Soubory nebudou posunuty do zobrazení, ale zůstane na nich fokus.",
@@ -4433,7 +4707,7 @@
 			"delete": "Odstranit",
 			"copyFile": "Kopírovat",
 			"pasteFile": "Vložit",
-			"download": "Stáhnout",
+			"download": "Stáhnout...",
 			"createNewFile": "Nový soubor",
 			"createNewFolder": "Nová složka",
 			"deleteButtonLabelRecycleBin": "&&Přesunout do koše",
@@ -4486,6 +4760,10 @@
 			"compareWithClipboard": "Porovnat aktivní soubor se schránkou",
 			"clipboardComparisonLabel": "Schránka ↔ {0}",
 			"retry": "Zkusit znovu",
+			"downloadingFiles": "Stahování",
+			"downloadProgressSmallMany": "{0} z {1} souborů ({2}/s)",
+			"downloadProgressLarge": "{0} ({1} z {2}, {3}/s)",
+			"downloadButton": "Stáhnout",
 			"downloadFolder": "Stáhnout složku",
 			"downloadFile": "Stáhnout soubor",
 			"fileIsAncestor": "Soubor, který se má vložit, je nadřazený prvek cílové složky.",
@@ -4557,8 +4835,9 @@
 			"replaceButtonLabel": "&&Nahradit",
 			"confirmManyOverwrites": "Následující soubory a složky (celkem {0}) už v cílové složce existují. Chcete je nahradit?",
 			"uploadingFiles": "Nahrávání",
-			"uploadProgress": "{0} z {1} souborů ({2}/s)",
-			"uploadProgressDetail": "{0} ({1} z {2}, {3}/s)",
+			"copyingFiles": "Kopírování",
+			"uploadProgressSmallMany": "{0} z {1} souborů ({2}/s)",
+			"uploadProgressLarge": "{0} ({1} z {2}, {3}/s)",
 			"copyFolders": "&&Kopírovat složky",
 			"copyFolder": "&&Kopírovat složku",
 			"cancel": "Zrušit",
@@ -4639,9 +4918,9 @@
 		"vs/workbench/contrib/logs/common/logs.contribution": {
 			"userDataSyncLog": "Synchronizace nastavení",
 			"rendererLog": "Okno",
+			"telemetryLog": "Telemetrie",
 			"mainLog": "Hlavní",
-			"sharedLog": "Sdíleno",
-			"telemetryLog": "Telemetrie"
+			"sharedLog": "Sdíleno"
 		},
 		"vs/workbench/contrib/logs/electron-sandbox/logsActions": {
 			"openLogsFolder": "Otevřít složku s logy",
@@ -4857,7 +5136,8 @@
 		"vs/workbench/contrib/notebook/browser/diff/notebookDiffActions": {
 			"notebook.diff.switchToText": "Otevřít editor rozdílů v textu",
 			"notebook.diff.cell.revertMetadata": "Obnovit metadata",
-			"notebook.diff.cell.revertOutputs": "Obnovit výstupy"
+			"notebook.diff.cell.revertOutputs": "Obnovit výstupy",
+			"notebook.diff.cell.revertInput": "Vrátit vstup"
 		},
 		"vs/workbench/contrib/notebook/browser/extensionPoint": {
 			"contributes.notebook.provider": "Přidává zprostředkovatele dokumentu poznámkového bloku.",
@@ -4919,9 +5199,9 @@
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/codeCell": {
 			"mimeTypePicker": "Zvolte jiný typ mimetype výstupu, dostupné typy mimetype: {0}",
-			"builtinRenderInfo": "integrované",
 			"curruentActiveMimeType": "Aktuálně aktivní",
-			"promptChooseMimeType.placeHolder": "Vyberte typ mimetype výstupu, který se má vykreslit pro aktuální výstup."
+			"promptChooseMimeType.placeHolder": "Vyberte typ mimetype výstupu, který se má vykreslit pro aktuální výstup.",
+			"builtinRenderInfo": "integrované"
 		},
 		"vs/workbench/contrib/outline/browser/outline.contribution": {
 			"name": "Osnova",
@@ -5001,16 +5281,23 @@
 		"vs/workbench/contrib/performance/electron-browser/startupProfiler": {
 			"prof.message": "Profily se úspěšně vytvořily.",
 			"prof.detail": "Vytvořte prosím problém a připojte ručně následující soubory:\r\n{0}",
-			"prof.restartAndFileIssue": "Vytvořit problém a restartovat",
-			"prof.restart": "Restartovat",
+			"prof.restartAndFileIssue": "&&Vytvořit problém a restartovat",
+			"prof.restart": "&&Restartovat",
 			"prof.thanks": "Děkujeme vám za pomoc.",
-			"prof.detail.restart": "Aby bylo možné dál používat {0}, je nutné znovu provést restart. Ještě jednou vám děkujeme za váš příspěvek."
+			"prof.detail.restart": "Aby bylo možné dál používat {0}, je nutné znovu provést restart. Ještě jednou vám děkujeme za váš příspěvek.",
+			"prof.restart.button": "&&Restartovat"
 		},
 		"vs/workbench/contrib/performance/browser/performance.contribution": {
 			"show.label": "Výkon při spuštění"
 		},
 		"vs/workbench/contrib/performance/browser/perfviewEditor": {
 			"name": "Výkon při spuštění"
+		},
+		"vs/workbench/contrib/preferences/browser/keybindingsEditorContribution": {
+			"defineKeybinding.start": "Definovat klávesovou zkratku",
+			"defineKeybinding.kbLayoutErrorMessage": "V aktuálním rozložení klávesnice nebudete moct tuto klávesovou zkratku stisknout.",
+			"defineKeybinding.kbLayoutLocalAndUSMessage": "**{0}** pro aktuální rozložení klávesnice (**{1}** pro standardní rozložení klávesnice jazyka angličtina, USA)",
+			"defineKeybinding.kbLayoutLocalMessage": "**{0}** pro aktuální rozložení klávesnice"
 		},
 		"vs/workbench/contrib/preferences/browser/preferences.contribution": {
 			"defaultPreferencesEditor": "Editor výchozích předvoleb",
@@ -5052,11 +5339,16 @@
 			"clear": "Vymazat výsledky vyhledávání",
 			"miPreferences": "&&Předvolby"
 		},
-		"vs/workbench/contrib/preferences/browser/keybindingsEditorContribution": {
-			"defineKeybinding.start": "Definovat klávesovou zkratku",
-			"defineKeybinding.kbLayoutErrorMessage": "V aktuálním rozložení klávesnice nebudete moct tuto klávesovou zkratku stisknout.",
-			"defineKeybinding.kbLayoutLocalAndUSMessage": "**{0}** pro aktuální rozložení klávesnice (**{1}** pro standardní rozložení klávesnice jazyka angličtina, USA)",
-			"defineKeybinding.kbLayoutLocalMessage": "**{0}** pro aktuální rozložení klávesnice"
+		"vs/workbench/contrib/preferences/browser/keybindingWidgets": {
+			"defineKeybinding.initial": "Stiskněte požadovanou kombinaci kláves a pak stiskněte ENTER.",
+			"defineKeybinding.oneExists": "Tuto klávesovou zkratku má 1 existující příkaz.",
+			"defineKeybinding.existing": "Tuto klávesovou zkratku má tento počet existujících příkazů: {0}.",
+			"defineKeybinding.chordsTo": "klávesový akord pro"
+		},
+		"vs/workbench/contrib/preferences/browser/preferencesActions": {
+			"configureLanguageBasedSettings": "Konfigurovat nastavení specifické pro jazyk...",
+			"languageDescriptionConfigured": "({0})",
+			"pickLanguage": "Vybrat jazyk"
 		},
 		"vs/workbench/contrib/preferences/browser/keybindingsEditor": {
 			"recordKeysLabel": "Zaznamenat klávesové zkratky",
@@ -5092,11 +5384,6 @@
 			"noKeybinding": "Nejsou přiřazeny žádné klávesové zkratky.",
 			"noWhen": "Žádný kontext výrazu Kdy"
 		},
-		"vs/workbench/contrib/preferences/browser/preferencesActions": {
-			"configureLanguageBasedSettings": "Konfigurovat nastavení specifické pro jazyk...",
-			"languageDescriptionConfigured": "({0})",
-			"pickLanguage": "Vybrat jazyk"
-		},
 		"vs/workbench/contrib/preferences/browser/preferencesEditor": {
 			"SearchSettingsWidget.AriaLabel": "Nastavení vyhledávání",
 			"SearchSettingsWidget.Placeholder": "Nastavení hledání",
@@ -5130,12 +5417,6 @@
 			"settingsSearchTocBehavior.hide": "Skrýt obsah při vyhledávání",
 			"settingsSearchTocBehavior.filter": "Vyfiltruje obsah pouze na kategorie s odpovídajícím nastavením. Kliknutím na kategorii se vyfiltrují výsledky z dané kategorie.",
 			"settingsSearchTocBehavior": "Určuje chování obsahu editoru nastavení při vyhledávání."
-		},
-		"vs/workbench/contrib/preferences/browser/keybindingWidgets": {
-			"defineKeybinding.initial": "Stiskněte požadovanou kombinaci kláves a pak stiskněte ENTER.",
-			"defineKeybinding.oneExists": "Tuto klávesovou zkratku má 1 existující příkaz.",
-			"defineKeybinding.existing": "Tuto klávesovou zkratku má tento počet existujících příkazů: {0}.",
-			"defineKeybinding.chordsTo": "klávesový akord pro"
 		},
 		"vs/workbench/contrib/preferences/browser/preferencesWidgets": {
 			"defaultSettings": "Pokud chcete nastavení přepsat, umístěte svoje nastavení do editoru vpravo.",
@@ -5225,10 +5506,6 @@
 			"remote": "Vzdálené",
 			"user": "Uživatel"
 		},
-		"vs/workbench/contrib/preferences/browser/tocTree": {
-			"settingsTOC": "Obsah nastavení",
-			"groupRowAriaLabel": "{0}, skupina"
-		},
 		"vs/workbench/contrib/preferences/browser/settingsWidgets": {
 			"headerForeground": "Barva popředí záhlaví oddílu nebo aktivního názvu",
 			"modifiedItemForeground": "Barva indikátoru změněného nastavení",
@@ -5271,6 +5548,10 @@
 			"objectKeyHeader": "Položka",
 			"objectValueHeader": "Hodnota"
 		},
+		"vs/workbench/contrib/preferences/browser/tocTree": {
+			"settingsTOC": "Obsah nastavení",
+			"groupRowAriaLabel": "{0}, skupina"
+		},
 		"vs/workbench/contrib/quickaccess/browser/quickAccess.contribution": {
 			"helpQuickAccessPlaceholder": "Pokud potřebujete nápovědu k akcím, které tady můžete provést, zadejte {0}.",
 			"helpQuickAccess": "Zobrazit všechny zprostředkovatele rychlého přístupu",
@@ -5311,8 +5592,7 @@
 		},
 		"vs/workbench/contrib/remote/electron-sandbox/remote.contribution": {
 			"remote": "Vzdálené",
-			"remote.downloadExtensionsLocally": "Pokud je povoleno, rozšíření jsou stažena místně a nainstalována na vzdáleném hostiteli.",
-			"remote.restoreForwardedPorts": "Obnoví porty, které jste přesměrovali v pracovním prostoru."
+			"remote.downloadExtensionsLocally": "Pokud je povoleno, rozšíření jsou stažena místně a nainstalována na vzdáleném hostiteli."
 		},
 		"vs/workbench/contrib/remote/common/remote.contribution": {
 			"remoteExtensionLog": "Vzdálený server",
@@ -5320,7 +5600,9 @@
 			"workspace": "Typ rozšíření pracovního prostoru. Ve vzdáleném okně jsou tato rozšíření povolena pouze v případě, že jsou k dispozici vzdáleně.",
 			"web": "Typ rozšíření webového pracovního procesu. Takové rozšíření je možné provést v hostiteli rozšíření webového pracovního procesu.",
 			"remote": "Vzdálené",
-			"remote.extensionKind": "Umožňuje přepsat typ rozšíření. Rozšíření ui se nainstalují a spouštějí v místním počítači, zatímco rozšíření workspace se spouštějí na vzdáleném počítači. Přepsáním výchozího typu rozšíření pomocí tohoto nastavení určíte, jestli se má toto rozšíření nainstalovat a povolit místně nebo vzdáleně."
+			"remote.extensionKind": "Umožňuje přepsat typ rozšíření. Rozšíření ui se nainstalují a spouštějí v místním počítači, zatímco rozšíření workspace se spouštějí na vzdáleném počítači. Přepsáním výchozího typu rozšíření pomocí tohoto nastavení určíte, jestli se má toto rozšíření nainstalovat a povolit místně nebo vzdáleně.",
+			"remote.restoreForwardedPorts": "Restores the ports you forwarded in a workspace.",
+			"remote.autoForwardPorts": "Když se tato možnost povolí, adresy URL s porty (např. http://127.0.0.1:3000), které se vypíšou do terminálů, se automaticky přesměrují."
 		},
 		"vs/workbench/contrib/remote/browser/remote": {
 			"RemoteHelpInformationExtPoint": "Přidává informace nápovědy pro vzdálené připojení.",
@@ -5345,8 +5627,15 @@
 			"connectionLost": "Připojení bylo ztraceno.",
 			"reconnectionRunning": "Probíhá pokus o opětovné připojení...",
 			"reconnectionPermanentFailure": "Nelze se znovu připojit. Načtěte prosím okno znovu.",
-			"cancel": "Zrušit",
-			"remote.tunnelsView.automaticForward": "{0} ze vzdáleného hostitele se přesměrovalo místně do {1}.",
+			"cancel": "Zrušit"
+		},
+		"vs/workbench/contrib/remote/browser/remoteExplorer": {
+			"status.forwardedPorts": "Přesměrované porty",
+			"remote.forwardedPorts.statusbarTextNone": "Nejsou k dispozici žádné porty.",
+			"remote.forwardedPorts.statusbarTextSingle": "Počet dostupných portů: 1",
+			"remote.forwardedPorts.statusbarTextMultiple": "Počet dostupných portů: {0}",
+			"remote.forwardedPorts.statusbarTooltip": "Dostupné porty: {0}",
+			"remote.tunnelsView.automaticForward": "Vaše služba, která běží na portu {0}, je k dispozici.",
 			"remote.tunnelsView.showView": "Zobrazit přesměrované porty"
 		},
 		"vs/workbench/contrib/remote/browser/explorerViewItems": {
@@ -5374,12 +5663,10 @@
 			"remote.tunnelsView.candidates": "Nepřesměrováno",
 			"remote.tunnelsView.input": "Potvrdíte stisknutím klávesy Enter. Zrušíte klávesou Esc.",
 			"remote.tunnelsView.forwardedPortLabel0": "{0}",
-			"remote.tunnelsView.forwardedPortLabel2": "{0}:{1} → {2}",
-			"remote.tunnelsView.forwardedPortLabel3": "{0} → {1}",
-			"remote.tunnelsView.forwardedPortLabel4": "{0}:{1}",
-			"remote.tunnelsView.forwardedPortLabel5": "{0}",
-			"remote.tunnelsView.forwardedPortDescription0": "{0} – {1}",
-			"remote.tunnel": "Přesměrované porty",
+			"remote.tunnelsView.forwardedPortLabel1": "{0} → {1}",
+			"remote.tunnelsView.forwardedPortLabel2": "{0}",
+			"remote.tunnelsView.forwardedPortDescription0": "{0} → {1}",
+			"remote.tunnel": "Porty",
 			"remote.tunnel.ariaLabelForwarded": "Vzdálený port {0}:{1} je přesměrován na místní adresu {2}.",
 			"remote.tunnel.ariaLabelCandidate": "Vzdálený port {0}:{1} není přesměrován.",
 			"tunnelView": "Zobrazení tunelového připojení",
@@ -5440,6 +5727,8 @@
 			"providersVisible": "Určuje počet úložišť zobrazených v části Úložiště správy zdrojového kódu. Pokud chcete velikost zobrazení měnit ručně, nastavte hodnotu 0.",
 			"miViewSCM": "S&&CM",
 			"scm accept": "SCM: přijmout vstup",
+			"scm view next commit": "SCM: Zobrazit další potvrzení",
+			"scm view previous commit": "SCM: Zobrazit předchozí potvrzení",
 			"open in terminal": "Otevřít v terminálu"
 		},
 		"vs/workbench/contrib/scm/browser/dirtydiffDecorator": {
@@ -5624,10 +5913,10 @@
 			"search.action.replaceAll.disabled.label": "Nahradit vše (povolíte odesláním vyhledávání)",
 			"search.action.replaceAll.enabled.label": "Nahradit vše",
 			"search.replace.toggle.button.title": "Přepnout nahrazení",
-			"label.Search": "Hledat: Zadejte hledaný termín a stisknutím klávesy Enter spusťte vyhledávání. Zrušení je možné provést klávesou Esc.",
+			"label.Search": "Hledat: Zadejte hledaný termín. Stisknutím klávesy Enter pak spustíte vyhledávání",
 			"search.placeHolder": "Hledat",
 			"showContext": "Zobrazit kontext",
-			"label.Replace": "Nahradit: Zadejte text, který chcete nahradit. Stisknutím klávesy Enter pak zobrazíte náhled. Zrušení je možné provést klávesou Esc.",
+			"label.Replace": "Nahradit: Zadejte text, který chcete nahradit. Stisknutím klávesy Enter pak zobrazíte náhled",
 			"search.replace.placeHolder": "Nahradit"
 		},
 		"vs/workbench/contrib/search/browser/symbolsQuickAccess": {
@@ -5681,9 +5970,6 @@
 			"search.rerunSearchInEditor": "Znovu vyhledat",
 			"search.action.focusQueryEditorWidget": "Přepnout fokus na vstup v editoru vyhledávání"
 		},
-		"vs/workbench/contrib/searchEditor/browser/searchEditorActions": {
-			"search.openNewEditor": "Otevřít nový editor vyhledávání"
-		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditor": {
 			"moreSearch": "Přepnout podrobnosti vyhledávání",
 			"searchScope.includes": "soubory, které se mají zahrnout",
@@ -5694,6 +5980,9 @@
 			"searchResultItem": "Nalezené shody: {0} v {1} v souboru {2}",
 			"searchEditor": "Hledat",
 			"textInputBoxBorder": "Ohraničení textového vstupního pole editoru vyhledávání"
+		},
+		"vs/workbench/contrib/searchEditor/browser/searchEditorActions": {
+			"search.openNewEditor": "Otevřít nový editor vyhledávání"
 		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditorInput": {
 			"searchTitle.withQuery": "Hledat: {0}",
@@ -5761,15 +6050,15 @@
 			"detail.snippet": "{0} ({1})",
 			"snippetSuggest.longLabel": "{0}, {1}"
 		},
-		"vs/workbench/contrib/surveys/browser/languageSurveys.contribution": {
-			"helpUs": "Pomozte nám zdokonalit naši podporu pro {0}.",
-			"takeShortSurvey": "Vyplňte krátký dotazník",
-			"remindLater": "Připomenout později",
-			"neverAgain": "Znovu nezobrazovat"
-		},
 		"vs/workbench/contrib/surveys/browser/nps.contribution": {
 			"surveyQuestion": "Máte chvilku na rychlý průzkum názorů?",
 			"takeSurvey": "Vyplnit průzkum",
+			"remindLater": "Připomenout později",
+			"neverAgain": "Znovu nezobrazovat"
+		},
+		"vs/workbench/contrib/surveys/browser/languageSurveys.contribution": {
+			"helpUs": "Pomozte nám zdokonalit naši podporu pro {0}.",
+			"takeShortSurvey": "Vyplňte krátký dotazník",
 			"remindLater": "Připomenout později",
 			"neverAgain": "Znovu nezobrazovat"
 		},
@@ -6249,6 +6538,10 @@
 			"terminal.integrated.unicodeVersion.eleven": "Unicode verze 11. Tato verze poskytuje vylepšenou podporu v moderních systémech, které používají moderní verze Unicode.",
 			"terminal.integrated.unicodeVersion": "Určuje, jaká verze Unicode se má používat k vyhodnocování šířky znaků v terminálu. Pokud zjistíte, že emoji nebo jiné široké znaky nezabírají správné místo nebo že klávesa Backspace odstraňuje příliš málo nebo příliš mnoho dat, můžete zkusit toto nastavení upravit.",
 			"terminal.integrated.experimentalLinkProvider": "Experimentální nastavení pro zlepšení detekce odkazů v terminálu zlepšením detekce odkazů a povolením detekce sdílených odkazů pomocí editoru. Momentálně jsou podporovány pouze webové odkazy.",
+			"terminal.integrated.localEchoLatencyThreshold": "Experimentální: Doba prodlevy sítě v milisekundách, kdy se místní úpravy budou vypisovat v terminálu, aniž by se čekalo na potvrzení serveru. Když se nastaví na 0, místní výpis bude vždy zapnutý. Hodnota -1 ho zakáže.",
+			"terminal.integrated.localEchoStyle": "Experimentální: Styl terminálu místně vypisovaného textu, tedy buď styl písma, nebo barva RGB",
+			"terminal.integrated.serverSpawn": "Experimentální: Vygenerovat vzdálené terminály z procesu vzdáleného agenta namísto vzdáleného hostitele rozšíření",
+			"terminal.integrated.enablePersistentSessions": "Experimentální: Trvale uchovat relace terminálu pro pracovní prostor mezi novými načteními okna. Aktuálně se podporuje jen ve vzdálených pracovních prostorech VS Code.",
 			"terminal.integrated.shell.linux": "Cesta k prostředí, které terminál používá v systému Linux (výchozí: {0}). [Přečtěte si další informace o konfigurování prostředí](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
 			"terminal.integrated.shell.linux.noDefault": "Cesta k prostředí, které terminál používá v systému Linux. [Přečtěte si další informace o konfigurování prostředí](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
 			"terminal.integrated.shell.osx": "Cesta k prostředí, které terminál používá v systému macOS (výchozí: {0}). [Přečtěte si další informace o konfigurování prostředí](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
@@ -6272,6 +6565,9 @@
 			"terminal.useMonospace": "Použít neproporcionální (monospace)",
 			"terminal.monospaceOnly": "Terminál podporuje pouze neproporcionální písma. Pokud se jedná o nově nainstalované písmo, nezapomeňte VS Code restartovat."
 		},
+		"vs/workbench/contrib/terminal/browser/remoteTerminalService": {
+			"terminal.integrated.starting": "Spouštění..."
+		},
 		"vs/workbench/contrib/terminal/node/terminalProcess": {
 			"launchFail.cwdNotDirectory": "Počáteční adresář (cwd) {0} není adresář.",
 			"launchFail.cwdDoesNotExist": "Počáteční adresář (cwd) {0} neexistuje.",
@@ -6280,6 +6576,15 @@
 		},
 		"vs/workbench/contrib/terminal/electron-browser/terminalRemote": {
 			"workbench.action.terminal.newLocal": "Vytvořit nový integrovaný terminál (místní)"
+		},
+		"vs/workbench/contrib/terminal/common/terminalColorRegistry": {
+			"terminal.background": "Barva pozadí terminálu, která umožňuje pro terminál použít jinou barvu než pro panel.",
+			"terminal.foreground": "Barva popředí terminálu",
+			"terminalCursor.foreground": "Barva popředí kurzoru terminálu",
+			"terminalCursor.background": "Barva pozadí kurzoru terminálu. Umožňuje přizpůsobit barvu znaku, který je překrýván kurzorem bloku.",
+			"terminal.selectionBackground": "Barva pozadí výběru terminálu",
+			"terminal.border": "Barva ohraničení, která odděluje rozdělená podokna v rámci terminálu. Výchozí hodnotou tohoto nastavení je panel.border.",
+			"terminal.ansiColor": "Barva ANSI {0} v terminálu"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalActions": {
 			"workbench.action.terminal.newWorkspacePlaceholder": "Vyberte aktuální pracovní adresář pro nový terminál.",
@@ -6329,6 +6634,7 @@
 			"workbench.action.terminal.rename.prompt": "Zadejte název terminálu.",
 			"workbench.action.terminal.focusFind": "Přepnout fokus na hledání",
 			"workbench.action.terminal.hideFind": "Skrýt hledání",
+			"workbench.action.terminal.attachToRemote": "Připojit k relaci",
 			"quickAccessTerminal": "Přepnout aktivní terminál",
 			"workbench.action.terminal.scrollToPreviousCommand": "Posunout na předchozí příkaz",
 			"workbench.action.terminal.scrollToNextCommand": "Posunout na další příkaz",
@@ -6352,26 +6658,12 @@
 			"workbench.action.terminal.relaunch": "Znovu spustit aktivní terminál",
 			"workbench.action.terminal.showEnvironmentInformation": "Zobrazit informace o prostředí"
 		},
-		"vs/workbench/contrib/terminal/common/terminalColorRegistry": {
-			"terminal.background": "Barva pozadí terminálu, která umožňuje pro terminál použít jinou barvu než pro panel.",
-			"terminal.foreground": "Barva popředí terminálu",
-			"terminalCursor.foreground": "Barva popředí kurzoru terminálu",
-			"terminalCursor.background": "Barva pozadí kurzoru terminálu. Umožňuje přizpůsobit barvu znaku, který je překrýván kurzorem bloku.",
-			"terminal.selectionBackground": "Barva pozadí výběru terminálu",
-			"terminal.border": "Barva ohraničení, která odděluje rozdělená podokna v rámci terminálu. Výchozí hodnotou tohoto nastavení je panel.border.",
-			"terminal.ansiColor": "Barva ANSI {0} v terminálu"
-		},
 		"vs/workbench/contrib/terminal/common/terminalMenu": {
 			"miToggleIntegratedTerminal": "&&Terminál",
 			"miNewTerminal": "&&Nový terminál",
 			"miSplitTerminal": "&&Rozdělit terminál",
 			"miRunActiveFile": "Spustit &&aktivní soubor",
 			"miRunSelectedText": "Spustit &&vybraný text"
-		},
-		"vs/workbench/contrib/terminal/browser/terminalQuickAccess": {
-			"renameTerminal": "Přejmenovat terminál",
-			"killTerminal": "Ukončit instanci terminálu",
-			"workbench.action.terminal.newplus": "Vytvořit nový integrovaný terminál"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalService": {
 			"workbench.action.terminal.allowWorkspaceShell": "Povolit konfiguraci prostředí pracovního prostoru",
@@ -6380,12 +6672,20 @@
 			"terminalService.terminalCloseConfirmationPlural": "Běží aktivní relace terminálu (celkem {0}). Chcete je ukončit?",
 			"terminal.integrated.chooseWindowsShell": "Vyberte upřednostňované prostředí terminálu. Můžete ho později změnit v nastavení."
 		},
+		"vs/workbench/contrib/terminal/browser/terminalQuickAccess": {
+			"renameTerminal": "Přejmenovat terminál",
+			"killTerminal": "Ukončit instanci terminálu",
+			"workbench.action.terminal.newplus": "Vytvořit nový integrovaný terminál"
+		},
 		"vs/workbench/contrib/terminal/browser/terminalConfigHelper": {
 			"terminal.integrated.allowWorkspaceShell": "Chcete tomuto pracovnímu prostoru povolit úpravy vašeho prostředí terminálu? {0}",
 			"allow": "Povolit",
 			"disallow": "Nepovolit",
 			"useWslExtension.title": "Pro otevření terminálu ve WSL se doporučuje rozšíření {0}.",
 			"install": "Nainstalovat"
+		},
+		"vs/workbench/contrib/terminal/browser/terminalTab": {
+			"terminal.integrated.starting": "Spouštění..."
 		},
 		"vs/workbench/contrib/terminal/browser/terminalInstance": {
 			"terminal.integrated.a11yPromptLabel": "Vstup terminálu",
@@ -6414,14 +6714,14 @@
 		"vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider": {
 			"searchWorkspace": "Prohledat pracovní prostor"
 		},
+		"vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy": {
+			"terminal.integrated.starting": "Spouštění..."
+		},
 		"vs/workbench/contrib/terminal/browser/environmentVariableInfo": {
 			"extensionEnvironmentContributionChanges": "Rozšíření chtějí v prostředí terminálu provést následující změny:",
 			"extensionEnvironmentContributionRemoval": "Rozšíření chtějí z prostředí terminálu odebrat tyto existující změny:",
 			"relaunchTerminalLabel": "Znovu spustit terminál",
 			"extensionEnvironmentContributionInfo": "Rozšíření v tomto prostředí terminálu provedla změny."
-		},
-		"vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy": {
-			"terminal.integrated.starting": "Spouštění..."
 		},
 		"vs/workbench/contrib/terminal/browser/links/terminalLink": {
 			"openFile": "Otevřít soubor v editoru",
@@ -6515,6 +6815,7 @@
 		"vs/workbench/contrib/url/browser/trustedDomains": {
 			"trustedDomain.manageTrustedDomain": "Spravovat důvěryhodné domény",
 			"trustedDomain.trustDomain": "Považovat doménu {0} za důvěryhodnou",
+			"trustedDomain.trustAllPorts": "Důvěřovat {0} na všech portech",
 			"trustedDomain.trustSubDomain": "Považovat doménu {0} a všechny její subdomény za důvěryhodné",
 			"trustedDomain.trustAllDomains": "Považovat všechny domény za důvěryhodné (zakáže ochranu propojení)",
 			"trustedDomain.manageTrustedDomains": "Spravovat důvěryhodné domény",
@@ -6586,7 +6887,7 @@
 			"configure sync placeholder": "Zvolte, co se má synchronizovat",
 			"turn off sync confirmation": "Chcete vypnout synchronizaci?",
 			"turn off sync detail": "Vaše nastavení, klávesové zkratky, rozšíření, fragmenty kódu a stav uživatelského rozhraní už se nebudou synchronizovat.",
-			"turn off": "Vypnout",
+			"turn off": "Vypnou&&t",
 			"turn off sync everywhere": "Vypnout synchronizaci na všech vašich zařízeních a vymazat data z cloudu.",
 			"leftResourceName": "{0} (vzdálené)",
 			"merges": "{0} (sloučení)",
@@ -6608,6 +6909,8 @@
 			"turn off failed": "Chyba při vypínání synchronizace: {0}",
 			"show sync log title": "{0}: Zobrazit protokol",
 			"accept merges": "Přijmout sloučení",
+			"accept remote button": "Přijmout &&vzdálené",
+			"accept merges button": "Přij&&mout sloučení",
 			"Sync accept remote": "{0}: {1}",
 			"Sync accept merges": "{0}: {1}",
 			"confirm replace and overwrite local": "Chcete přijmout vzdálená data ({0}) a nahradit místní data ({1})?",
@@ -6636,7 +6939,7 @@
 			"no machines": "Žádné počítače",
 			"not found": "nenašel se počítač s ID: {0}",
 			"turn off sync on machine": "Opravdu chcete vypnout synchronizaci pro {0}?",
-			"turn off": "Vypnout",
+			"turn off": "Vypnou&&t",
 			"placeholder": "Zadejte název počítače.",
 			"valid message": "Název počítače musí být jedinečný a nesmí být prázdný."
 		},
@@ -6771,9 +7074,9 @@
 			"ViewsWelcomeExtensionPoint.proposedAPI": "Příspěvek viewsWelcome v {0} vyžaduje, aby byla povolena možnost enableProposedApi."
 		},
 		"vs/workbench/contrib/welcome/common/viewsWelcomeExtensionPoint": {
-			"contributes.viewsWelcome": "Přidaný uvítací obsah pro zobrazení. Uvítací obsah se vykreslí v zobrazeních, kde není žádný smysluplný obsah, který by bylo možné zobrazit, například v Průzkumníkovi souborů, když nejsou otevřené žádné složky. Tento obsah je užitečný jako integrovaná dokumentace k produktu, která má uživatele motivovat k používání určitých funkcí ještě před jejich oficiálním vydáním (například tlačítko Klonovat úložiště v uvítacím zobrazení Průzkumníka souborů).",
+			"contributes.viewsWelcome": "Přidaný uvítací obsah pro zobrazení. Uvítací obsah se vykreslí ve stromových zobrazeních, kde není žádný smysluplný obsah, který by bylo možné zobrazit, například v Průzkumníkovi souborů, když nejsou otevřené žádné složky. Tento obsah je užitečný jako integrovaná dokumentace k produktu, která má uživatele motivovat k používání určitých funkcí ještě před jejich oficiálním vydáním (například tlačítko Klonovat úložiště v uvítacím zobrazení Průzkumníka souborů).",
 			"contributes.viewsWelcome.view": "Přidaný uvítací obsah pro konkrétní zobrazení",
-			"contributes.viewsWelcome.view.view": "Identifikátor cílového zobrazení pro tento uvítací obsah",
+			"contributes.viewsWelcome.view.view": "Cílový identifikátor zobrazení pro tento uvítací obsah. Podporují se jen stromová zobrazení.",
 			"contributes.viewsWelcome.view.contents": "Uvítací obsah, který se má zobrazit. Formát obsahu je podmnožinou Markdownu s podporou pouze pro odkazy.",
 			"contributes.viewsWelcome.view.when": "Podmínka, kdy se má zobrazit uvítací obsah",
 			"contributes.viewsWelcome.view.group": "Skupina, do které patří tento uvítací obsah"
@@ -6823,6 +7126,13 @@
 			"welcomePage.interfaceOverviewDescription": "Zobrazení překryvné grafické vrstvy se zvýrazněnými hlavními součástmi uživatelského rozhraní",
 			"welcomePage.interactivePlayground": "Interaktivní testovací prostředí",
 			"welcomePage.interactivePlaygroundDescription": "Vyzkoušejte základní funkce editoru v krátkém návodu."
+		},
+		"vs/workbench/contrib/workspaces/browser/workspaces.contribution": {
+			"workspaceFound": "Tato složka obsahuje soubor pracovního prostoru {0}. Chcete ho otevřít? [Další informace]({1}) o souborech pracovních prostorů.",
+			"openWorkspace": "Otevřít pracovní prostor",
+			"workspacesFound": "Tato složka obsahuje více souborů pracovních prostorů. Chcete jeden z nich otevřít? [Další informace] ({0}) o souborech pracovních prostorů",
+			"selectWorkspace": "Vybrat pracovní prostor",
+			"selectToOpen": "Vyberte pracovní prostor, který chcete otevřít."
 		},
 		"vs/workbench/services/authentication/browser/authenticationService": {
 			"authentication.id": "ID zprostředkovatele ověřování",
@@ -7001,7 +7311,9 @@
 		"vs/workbench/services/extensionManagement/common/webExtensionsScannerService": {
 			"cannot be installed": "{0} nelze nainstalovat, protože toto rozšíření není webové rozšíření."
 		},
-		"vs/workbench/services/extensionManagement/common/extensionEnablementService": {
+		"vs/workbench/services/extensionManagement/browser/extensionEnablementService": {
+			"extensionsDisabled": "Všechna nainstalovaná rozšíření jsou dočasně zakázána. Opětovným načtením okna se vrátíte do předchozího stavu.",
+			"Reload": "Znovu načíst",
 			"cannot disable language pack extension": "Nelze změnit povolení u rozšíření {0}, protože přispívá k jazykovým sadám.",
 			"cannot disable auth extension": "Nelze změnit povolení u rozšíření {0}, protože na něm závisí synchronizace nastavení.",
 			"noWorkspace": "Žádný pracovní prostor",
@@ -7013,11 +7325,16 @@
 			"multipleDependentsError": "Rozšíření {0} nelze odinstalovat. Závisí na něm rozšíření {1}, {2} a další rozšíření.",
 			"Manifest is not found": "Instalace rozšíření {0} selhala: Manifest nebyl nalezen.",
 			"cannot be installed": "{0} nelze nainstalovat, protože pro toto rozšíření je definováno, že se nedá spustit na vzdáleném serveru.",
-			"cannot be installed on web": "{0} nelze nainstalovat, protože pro toto rozšíření je definováno, že se nedá spustit na webovém serveru."
+			"cannot be installed on web": "{0} nelze nainstalovat, protože pro toto rozšíření je definováno, že se nedá spustit na webovém serveru.",
+			"install extension": "Nainstalovat rozšíření",
+			"install extensions": "Nainstalovat rozšíření",
+			"install": "Nainstalovat",
+			"install and do no sync": "Nainstalovat (nesynchronizovat)",
+			"cancel": "Zrušit",
+			"install single extension": "Chcete nainstalovat a synchronizovat rozšíření {0} mezi zařízeními?",
+			"install multiple extensions": "Chcete nainstalovat a synchronizovat rozšíření mezi zařízeními?"
 		},
 		"vs/workbench/services/extensions/electron-browser/extensionService": {
-			"extensionsDisabled": "Všechna nainstalovaná rozšíření jsou dočasně zakázána. Opětovným načtením okna se vrátíte do předchozího stavu.",
-			"Reload": "Znovu načíst",
 			"extensionService.versionMismatchCrash": "Nelze spustit hostitele rozšíření: neshoda verzí.",
 			"relaunch": "Znovu spustit VS Code",
 			"extensionService.crash": "Hostitel rozšíření byl neočekávaně ukončen.",
@@ -7122,6 +7439,7 @@
 			"vscode.extension.icon": "Cesta k ikoně o velikosti 128×128 pixelů"
 		},
 		"vs/workbench/services/extensions/node/extensionPoints": {
+			"jsonParseInvalidType": "Neplatný soubor manifestu {0}: Není to objekt JSON.",
 			"jsonParseFail": "Nepovedlo se parsovat {0}: [{1}, {2}] {3}.",
 			"fileReadFail": "Nelze číst soubor {0}: {1}.",
 			"jsonsParseReportErrors": "Nepovedlo se parsovat {0}: {1}.",
@@ -7522,8 +7840,8 @@
 			"sync turned on": "{0} je zapnuto",
 			"sync in progress": "Zapíná se synchronizace nastavení. Chcete to zrušit?",
 			"settings sync": "Synchronizace nastavení",
-			"yes": "Ano",
-			"no": "Ne",
+			"yes": "&&Ano",
+			"no": "&&Ne",
 			"turning on": "Zapínání...",
 			"syncing resource": "Synchronizuje se {0}...",
 			"conflicts detected": "Zjištěny konflikty",
@@ -7536,7 +7854,7 @@
 			"first time sync detail": "Vypadá to, že jste poslední synchronizaci prováděli z jiného počítače.\r\nChcete data sloučit nebo je chcete nahradit daty z cloudu?",
 			"reset": "Vymažete tím svá cloudová data a zastavíte synchronizaci na všech svých zařízeních.",
 			"reset title": "Vymazat",
-			"reset button": "Resetovat",
+			"resetButton": "&&Resetovat",
 			"choose account placeholder": "Vyberte účet pro přihlášení.",
 			"signed in": "Uživatel přihlášen",
 			"last used": "Naposledy použito se synchronizací",
@@ -7570,238 +7888,6 @@
 			"errorInvalidTaskConfiguration": "Do souboru konfigurace pracovního prostoru nelze zapisovat. Otevřete prosím soubor, opravte v něm chyby/upozornění a zkuste to znovu.",
 			"errorWorkspaceConfigurationFileDirty": "Do souboru konfigurace pracovního prostoru nelze zapisovat, protože soubor obsahuje neuložené změny. Uložte ho prosím a zkuste to znovu.",
 			"openWorkspaceConfigurationFile": "Otevřít konfiguraci pracovního prostoru"
-		},
-		"win32/i18n/Default": {
-			"SetupAppTitle": "Instalační program",
-			"SetupWindowTitle": "Instalační program – %1",
-			"UninstallAppTitle": "Odinstalovat",
-			"UninstallAppFullTitle": "Odinstalace %1",
-			"InformationTitle": "Informace",
-			"ConfirmTitle": "Potvrdit",
-			"ErrorTitle": "Chyba",
-			"SetupLdrStartupMessage": "Tímto nainstalujete aplikaci %1. Chcete pokračovat?",
-			"LdrCannotCreateTemp": "Nelze vytvořit dočasný soubor. Instalace byla přerušena.",
-			"LdrCannotExecTemp": "Nelze spustit soubor v dočasném adresáři. Instalace byla přerušena.",
-			"LastErrorMessage": "%1.%n%nChyba %2: %3",
-			"SetupFileMissing": "V instalačním adresáři chybí soubor %1. Opravte prosím problém nebo získejte novou kopii programu.",
-			"SetupFileCorrupt": "Soubory instalačního programu jsou poškozené. Získejte prosím novou kopii programu.",
-			"SetupFileCorruptOrWrongVer": "Soubory instalačního programu jsou poškozené nebo nejsou kompatibilní s touto verzí instalačního programu. Opravte prosím problém nebo získejte novou kopii programu.",
-			"InvalidParameter": "Na příkazovém řádku byl předán neplatný parametr:%n%n%1",
-			"SetupAlreadyRunning": "Instalace je už spuštěná.",
-			"WindowsVersionNotSupported": "Tato aplikace nepodporuje verzi systému Windows, která se používá na vašem počítači.",
-			"WindowsServicePackRequired": "Tato aplikace vyžaduje %1 Service Pack %2 nebo novější.",
-			"NotOnThisPlatform": "Tuto aplikaci nebude možné spustit na této platformě: %1.",
-			"OnlyOnThisPlatform": "Tuto aplikaci je nutné spouštět na této platformě: %1.",
-			"OnlyOnTheseArchitectures": "Tuto aplikaci lze nainstalovat pouze do verzí systému Windows určených pro následující architektury procesorů:%n%n%1",
-			"MissingWOW64APIs": "Verze systému Windows, kterou používáte, nezahrnuje funkce vyžadované instalačním programem k provedení 64bitové instalace. Pokud chcete tento problém vyřešit, nainstalujte si prosím Service Pack %1.",
-			"WinVersionTooLowError": "Tato aplikace vyžaduje systém %1 verze %2 nebo novější.",
-			"WinVersionTooHighError": "Tuto aplikaci nelze nainstalovat do systému %1 verze %2 nebo novější.",
-			"AdminPrivilegesRequired": "Při instalaci této aplikace musíte být přihlášeni jako správce.",
-			"PowerUserPrivilegesRequired": "Při instalaci této aplikace musíte být přihlášeni jako správce nebo jako člen skupiny Power Users.",
-			"SetupAppRunningError": "Instalační program zjistil, že aplikace %1 je aktuálně spuštěná.%n%nZavřete teď prosím všechny její instance a potom pokračujte kliknutím na OK. Kliknutím na Zrušit akci zrušíte.",
-			"UninstallAppRunningError": "Při odinstalaci se zjistilo, že aplikace %1 je aktuálně spuštěná.%n%nZavřete teď prosím všechny její instance a potom pokračujte kliknutím na OK. Kliknutím na Zrušit akci zrušíte.",
-			"ErrorCreatingDir": "Instalačnímu programu se nepovedlo vytvořit adresář %1.",
-			"ErrorTooManyFilesInDir": "Soubor v adresáři %1 nelze vytvořit, protože adresář obsahuje příliš mnoho souborů.",
-			"ExitSetupTitle": "Ukončit instalaci",
-			"ExitSetupMessage": "Instalace nebyla dokončena. Pokud ji teď ukončíte, aplikace se nenainstaluje.%n%nPokud budete chtít instalaci dokončit, můžete kdykoli později spustit znovu instalační program.%n%nChcete instalaci ukončit?",
-			"AboutSetupMenuItem": "&O instalačním programu...",
-			"AboutSetupTitle": "O instalačním programu",
-			"AboutSetupMessage": "%1 verze %2%n%3%n%n%1 domovská stránka:%n%4",
-			"ButtonBack": "< &Zpět",
-			"ButtonNext": "&Další >",
-			"ButtonInstall": "&Nainstalovat",
-			"ButtonOK": "OK",
-			"ButtonCancel": "Zrušit",
-			"ButtonYes": "&Ano",
-			"ButtonYesToAll": "Ano pro &všechny",
-			"ButtonNo": "&Ne",
-			"ButtonNoToAll": "&Ne pro všechny",
-			"ButtonFinish": "&Dokončit",
-			"ButtonBrowse": "&Procházet...",
-			"ButtonWizardBrowse": "P&rocházet...",
-			"ButtonNewFolder": "Vytvořit &novou složku",
-			"SelectLanguageTitle": "Vybrat jazyk instalace",
-			"SelectLanguageLabel": "Vyberte jazyk, který má být použit během instalace:",
-			"ClickNext": "Pokračujte kliknutím na Další. Zvolením možnosti Zrušit instalační program ukončíte.",
-			"BrowseDialogTitle": "Najít složku",
-			"BrowseDialogLabel": "Vyberte složku z níže uvedeného seznamu a klikněte na OK.",
-			"NewFolderName": "Nová složka",
-			"WelcomeLabel1": "Vítá vás průvodce instalací aplikace [name]",
-			"WelcomeLabel2": "Tímto se do počítače nainstaluje aplikace [name/ver].%n%nPřed pokračováním doporučujeme zavřít všechny ostatní aplikace.",
-			"WizardPassword": "Heslo",
-			"PasswordLabel1": "Tato instalace je chráněna heslem.",
-			"PasswordLabel3": "Zadejte prosím heslo a pokračujte kliknutím na Další. V heslech se rozlišují malá a velká písmena.",
-			"PasswordEditLabel": "&Heslo:",
-			"IncorrectPassword": "Heslo, které jste zadali, není správné. Zkuste to prosím znovu.",
-			"WizardLicense": "Licenční smlouva",
-			"LicenseLabel": "Než budete pokračovat, přečtěte si prosím následující důležité informace",
-			"LicenseLabel3": "Přečtěte si prosím následující licenční smlouvu. Před pokračováním v instalaci musíte vyjádřit souhlas s jejími podmínkami.",
-			"LicenseAccepted": "&Souhlasím s podmínkami smlouvy",
-			"LicenseNotAccepted": "&Nesouhlasím s podmínkami smlouvy",
-			"WizardInfoBefore": "Informace",
-			"InfoBeforeLabel": "Než budete pokračovat, přečtěte si prosím následující důležité informace",
-			"InfoBeforeClickLabel": "Až budete připraveni pokračovat v instalaci, klikněte na Další.",
-			"WizardInfoAfter": "Informace",
-			"InfoAfterLabel": "Než budete pokračovat, přečtěte si prosím následující důležité informace",
-			"InfoAfterClickLabel": "Až budete připraveni pokračovat v instalaci, klikněte na Další.",
-			"WizardUserInfo": "Informace o uživateli",
-			"UserInfoDesc": "Zadejte prosím svoje informace.",
-			"UserInfoName": "&Uživatelské jméno:",
-			"UserInfoOrg": "&Organizace:",
-			"UserInfoSerial": "&Sériové číslo:",
-			"UserInfoNameRequired": "Je nutné zadat jméno.",
-			"WizardSelectDir": "Vybrat cílové umístění",
-			"SelectDirDesc": "Kam se má aplikace [name] nainstalovat?",
-			"SelectDirLabel3": "Instalační program nainstaluje aplikaci [name] do následující složky.",
-			"SelectDirBrowseLabel": "Pokračujte kliknutím na Další. Pokud chcete vybrat jinou složku, klikněte na Procházet.",
-			"DiskSpaceMBLabel": "Je vyžadováno minimálně [mb] MB volného místa na disku.",
-			"CannotInstallToNetworkDrive": "Instalační program nemůže provést instalaci na síťovou jednotku.",
-			"CannotInstallToUNCPath": "Instalační program nemůže provést instalaci do cesty UNC.",
-			"InvalidPath": "Musíte zadat úplnou cestu s písmenem jednotky, příklad:%n%nC:\\APP%n%nnebo cesta UNC ve formátu:%n%n\\\\server\\sdílená_složka",
-			"InvalidDrive": "Jednotka nebo sdílená složka UNC, kterou jste vybrali, neexistuje nebo k ní nelze získat přístup. Vyberte prosím jiné umístění.",
-			"DiskSpaceWarningTitle": "Nedostatek místa na disku",
-			"DiskSpaceWarning": "Instalace vyžaduje minimálně %1 kB volného místa, ale na vybrané jednotce je k dispozici pouze %2 kB. %n%nChcete přesto pokračovat?",
-			"DirNameTooLong": "Název složky nebo cesta ke složce jsou příliš dlouhé.",
-			"InvalidDirName": "Název složky není platný.",
-			"BadDirName32": "Názvy složek nesmí obsahovat žádný z následujících znaků:%n%n%1",
-			"DirExistsTitle": "Složka existuje",
-			"DirExists": "Složka:%n%n%1%n%nuž existuje. Chcete přesto provést instalaci do této složky?",
-			"DirDoesntExistTitle": "Složka neexistuje.",
-			"DirDoesntExist": "Složka:%n%n%1%n%neexistuje. Chcete ji vytvořit?",
-			"WizardSelectComponents": "Vybrat součásti",
-			"SelectComponentsDesc": "Které součásti mají být nainstalovány?",
-			"SelectComponentsLabel2": "Vyberte součásti, které chcete nainstalovat. Zrušte zaškrtnutí součástí, které nechcete nainstalovat. Až budete připraveni pokračovat, klikněte na Další.",
-			"FullInstallation": "Úplná instalace",
-			"CompactInstallation": "Kompaktní instalace",
-			"CustomInstallation": "Vlastní instalace",
-			"NoUninstallWarningTitle": "Existující součásti",
-			"NoUninstallWarning": "Instalační program zjistil, že v počítači jsou již nainstalovány následující součásti:%n%n%1%n%nPokud zrušíte výběr těchto součástí, neodinstalují se.%n%nChcete přesto pokračovat?",
-			"ComponentSize1": "%1 kB",
-			"ComponentSize2": "%1 MB",
-			"ComponentsDiskSpaceMBLabel": "Aktuální výběr vyžaduje minimálně [mb] MB volného místa na disku.",
-			"WizardSelectTasks": "Vybrat další úlohy",
-			"SelectTasksDesc": "Jaké další úlohy se mají provést?",
-			"SelectTasksLabel2": "Vyberte další úlohy, které má instalační program provést během instalace aplikace [name], a potom klikněte na Další.",
-			"WizardSelectProgramGroup": "Vybrat složku nabídky Start",
-			"SelectStartMenuFolderDesc": "Kam má instalační program umístit zástupce aplikace?",
-			"SelectStartMenuFolderLabel3": "Instalační program vytvoří zástupce aplikace v následující složce nabídky Start.",
-			"SelectStartMenuFolderBrowseLabel": "Pokračujte kliknutím na Další. Pokud chcete vybrat jinou složku, klikněte na Procházet.",
-			"MustEnterGroupName": "Musíte zadat název složky.",
-			"GroupNameTooLong": "Název složky nebo cesta ke složce jsou příliš dlouhé.",
-			"InvalidGroupName": "Název složky není platný.",
-			"BadGroupName": "Název složky nesmí obsahovat žádný z následujících znaků:%n%n%1",
-			"NoProgramGroupCheck2": "&Nevytvářet složku v nabídce Start",
-			"WizardReady": "Připraveno k instalaci",
-			"ReadyLabel1": "Instalační program je nyní připraven začít instalovat aplikaci [name] do počítače.",
-			"ReadyLabel2a": "Pokud chcete pokračovat v instalaci, klikněte na Nainstalovat. Pokud chcete zkontrolovat nebo změnit některá nastavení, klikněte na Zpět.",
-			"ReadyLabel2b": "Pokud chcete pokračovat v instalaci, klikněte na Nainstalovat.",
-			"ReadyMemoUserInfo": "Informace o uživateli:",
-			"ReadyMemoDir": "Cílové umístění:",
-			"ReadyMemoType": "Typ instalace:",
-			"ReadyMemoComponents": "Vybrané součásti:",
-			"ReadyMemoGroup": "Složka nabídky Start:",
-			"ReadyMemoTasks": "Další úlohy:",
-			"WizardPreparing": "Připravuje se instalace.",
-			"PreparingDesc": "Instalační program připravuje instalaci aplikace [name] do vašeho počítače.",
-			"PreviousInstallNotCompleted": "Nebyla dokončena instalace nebo odinstalace předchozí aplikace. K dokončení této instalace bude nutné restartovat počítač.%n%nPo restartování počítače spusťte instalační program znovu a dokončete instalaci aplikace [name].",
-			"CannotContinue": "Instalační program nemůže pokračovat. Kliknutím na Zrušit instalační program ukončíte.",
-			"ApplicationsFound": "Následující aplikace používají soubory, které musí instalační program aktualizovat. Doporučuje se, abyste instalačnímu programu povolili tyto aplikace automaticky zavřít.",
-			"ApplicationsFound2": "Následující aplikace používají soubory, které musí instalační program aktualizovat. Doporučuje se, abyste instalačnímu programu povolili tyto aplikace automaticky zavřít. Po dokončení instalace se instalační program pokusí aplikace restartovat.",
-			"CloseApplications": "&Automaticky zavřít aplikace",
-			"DontCloseApplications": "&Nezavírat aplikace",
-			"ErrorCloseApplications": "Instalační program nemohl automaticky zavřít všechny aplikace. Před pokračováním doporučujeme zavřít všechny aplikace používající soubory, které musí instalační program aktualizovat.",
-			"WizardInstalling": "Probíhá instalace.",
-			"InstallingLabel": "Počkejte prosím, než instalační program do počítače nainstaluje aplikaci [name].",
-			"FinishedHeadingLabel": "Dokončení průvodce instalací aplikace [name]",
-			"FinishedLabelNoIcons": "Instalační program dokončil instalaci aplikace [name] na vašem počítači.",
-			"FinishedLabel": "Instalační program dokončil instalaci aplikace [name] na vašem počítači. Aplikaci můžete spustit tak, že vyberete nainstalované ikony.",
-			"ClickFinish": "Kliknutím na tlačítko Dokončit ukončíte instalační program.",
-			"FinishedRestartLabel": "Aby bylo možné dokončit instalaci aplikace [name], musí instalační program restartovat počítač. Chcete teď počítač restartovat?",
-			"FinishedRestartMessage": "Aby bylo možné dokončit instalaci aplikace [name], musí instalační program restartovat počítač.%n%nChcete teď počítač restartovat?",
-			"ShowReadmeCheck": "Ano, chci si prohlédnout soubor README",
-			"YesRadio": "&Ano, chci teď restartovat počítač",
-			"NoRadio": "&Ne, počítač restartuji později",
-			"RunEntryExec": "Spustit: %1",
-			"RunEntryShellExec": "Zobrazit: %1",
-			"ChangeDiskTitle": "Instalační program potřebuje další disk",
-			"SelectDiskLabel2": "Vložte prosím disk %1 a klikněte na OK.%n%nPokud se soubory na tomto disku nacházejí v jiné složce než v té, která je zobrazena níže, zadejte správnou cestu nebo klikněte na Procházet.",
-			"PathLabel": "&Cesta:",
-			"FileNotInDir2": "Soubor %1 nebyl v umístění %2 nalezen. Vložte prosím správný disk nebo vyberte jinou složku.",
-			"SelectDirectoryLabel": "Zadejte prosím umístění dalšího disku.",
-			"SetupAborted": "Instalace nebyla dokončena.%n%nOpravte prosím problém a spusťte instalační program znovu.",
-			"EntryAbortRetryIgnore": "Pokud to chcete zkusit znovu, klikněte na Zkusit znovu. Pokud chcete přesto pokračovat, zvolte Ignorovat. Zvolením možnosti Přerušit instalaci zrušíte.",
-			"StatusClosingApplications": "Zavírají se aplikace...",
-			"StatusCreateDirs": "Vytvářejí se adresáře...",
-			"StatusExtractFiles": "Extrahují se soubory...",
-			"StatusCreateIcons": "Vytvářejí se zástupci...",
-			"StatusCreateIniEntries": "Vytvářejí se položky INI...",
-			"StatusCreateRegistryEntries": "Vytvářejí se položky registru...",
-			"StatusRegisterFiles": "Registrují se soubory...",
-			"StatusSavingUninstall": "Ukládají se odinstalační informace...",
-			"StatusRunProgram": "Dokončuje se instalace...",
-			"StatusRestartingApplications": "Restartují se aplikace...",
-			"StatusRollback": "Vracení změn...",
-			"ErrorInternal2": "Vnitřní chyba: %1",
-			"ErrorFunctionFailedNoCode": "Selhalo: %1",
-			"ErrorFunctionFailed": "Selhalo: %1; kód: %2",
-			"ErrorFunctionFailedWithMessage": "Selhalo: %1; kód: %2.%n%3",
-			"ErrorExecutingProgram": "Nelze provést soubor:%n%1",
-			"ErrorRegOpenKey": "Chyba při otevírání klíče registru:%n%1\\%2",
-			"ErrorRegCreateKey": "Chyba při vytváření klíče registru:%n%1\\%2",
-			"ErrorRegWriteKey": "Chyba při zápisu do klíče registru:%n%1\\%2",
-			"ErrorIniEntry": "Při vytváření položky INI v souboru %1 došlo k chybě.",
-			"FileAbortRetryIgnore": "Pokud to chcete zkusit znovu, klikněte na Zkusit znovu. Pokud chcete tento soubor přeskočit (nedoporučuje se), klikněte na Ignorovat. Pokud chcete instalaci zrušit, klikněte na Přerušit.",
-			"FileAbortRetryIgnore2": "Pokud to chcete zkusit znovu, klikněte na Zkusit znovu. Pokud chcete přesto pokračovat (nedoporučuje se), klikněte na Ignorovat. Pokud chcete instalaci zrušit, klikněte na Přerušit.",
-			"SourceIsCorrupted": "Zdrojový soubor je poškozený.",
-			"SourceDoesntExist": "Zdrojový soubor %1 neexistuje.",
-			"ExistingFileReadOnly": "Existující soubor je označen jako jen pro čtení.%n%nPokud chcete odebrat atribut jen pro čtení a zkusit to znovu, klikněte na Zkusit znovu. Pokud chcete tento soubor přeskočit, klikněte na Ignorovat. Pokud chcete instalaci zrušit, klikněte na Přerušit.",
-			"ErrorReadingExistingDest": "Při pokusu o čtení existujícího souboru došlo k chybě:",
-			"FileExists": "Soubor už existuje.%n%nChcete, aby ho instalační program přepsal?",
-			"ExistingFileNewer": "Existující soubor je novější než soubor, který se instalační program pokouší nainstalovat. Doporučujeme zachovat existující soubor.%n%nChcete zachovat existující soubor?",
-			"ErrorChangingAttr": "Při pokusu o změnu atributů existujícího souboru došlo k chybě:",
-			"ErrorCreatingTemp": "Při pokusu o vytvoření souboru v cílovém adresáři došlo k chybě:",
-			"ErrorReadingSource": "Při pokusu o čtení zdrojového souboru došlo k chybě:",
-			"ErrorCopying": "Při pokusu o zkopírování souboru došlo k chybě:",
-			"ErrorReplacingExistingFile": "Při pokusu o nahrazení existujícího souboru došlo k chybě:",
-			"ErrorRestartReplace": "Selhání RestartReplace:",
-			"ErrorRenamingTemp": "Při pokusu o přejmenování souboru v cílovém adresáři došlo k chybě:",
-			"ErrorRegisterServer": "Nepovedlo se zaregistrovat DLL/OCX: %1.",
-			"ErrorRegSvr32Failed": "Selhání RegSvr32 s ukončovacím kódem %1",
-			"ErrorRegisterTypeLib": "Nepovedlo se zaregistrovat knihovnu typů: %1.",
-			"ErrorOpeningReadme": "Při pokusu o otevření souboru README došlo k chybě.",
-			"ErrorRestartingComputer": "Instalačnímu programu se nepovedlo restartovat počítač. Proveďte to prosím ručně.",
-			"UninstallNotFound": "Soubor %1 neexistuje. Nelze provést odinstalaci.",
-			"UninstallOpenError": "Soubor %1 se nepovedlo otevřít. Nelze provést odinstalaci.",
-			"UninstallUnsupportedVer": "Soubor protokolu odinstalace %1 je ve formátu, který tato verze odinstalačního programu nerozpoznala. Nelze provést odinstalaci.",
-			"UninstallUnknownEntry": "V protokolu odinstalace byla zjištěna neznámá položka (%1).",
-			"ConfirmUninstall": "Opravdu chcete úplně odebrat %1? Rozšíření a nastavení se neodeberou.",
-			"UninstallOnlyOnWin64": "Tuto instalaci lze odinstalovat pouze v 64bitovém systému Windows.",
-			"OnlyAdminCanUninstall": "Tuto instalaci může odinstalovat pouze uživatel s oprávněními správce.",
-			"UninstallStatusLabel": "Počkejte prosím, než se aplikace %1 odebere z počítače.",
-			"UninstalledAll": "Aplikace %1 byla úspěšně odebrána z počítače.",
-			"UninstalledMost": "Odinstalace aplikace %1 byla dokončena.%n%nNěkteré prvky se nepovedlo odebrat. Můžete je odebrat ručně.",
-			"UninstalledAndNeedsRestart": "Aby bylo možné dokončit odinstalaci aplikace %1, je nutné restartovat počítač.%n%nChcete ho teď restartovat?",
-			"UninstallDataCorrupted": "Soubor %1 je poškozený. Nelze provést odinstalaci.",
-			"ConfirmDeleteSharedFileTitle": "Chcete odebrat sdílený soubor?",
-			"ConfirmDeleteSharedFile2": "Systém indikuje, že následující sdílený soubor již není používán žádnými aplikacemi. Chcete, aby se při odinstalaci tento sdílený soubor odebral?%n%nPokud některá aplikace tento soubor stále používá a soubor bude odebrán, nemusí pak aplikace fungovat správně. Pokud si nejste jisti, zvolte Ne. Ponechání souboru v systému nebude mít žádný negativní dopad.",
-			"SharedFileNameLabel": "Název souboru:",
-			"SharedFileLocationLabel": "Umístění:",
-			"WizardUninstalling": "Stav odinstalace",
-			"StatusUninstalling": "Odinstalovává se: %1...",
-			"ShutdownBlockReasonInstallingApp": "Instaluje se: %1.",
-			"ShutdownBlockReasonUninstallingApp": "Odinstalovává se: %1.",
-			"NameAndVersion": "%1 verze %2",
-			"AdditionalIcons": "Další ikony:",
-			"CreateDesktopIcon": "Vytvořit ikonu na &ploše",
-			"CreateQuickLaunchIcon": "Vytvořit ikonu &Snadné spuštění",
-			"ProgramOnTheWeb": "%1 na webu",
-			"UninstallProgram": "Odinstalovat aplikaci %1",
-			"LaunchProgram": "Spustit aplikaci %1",
-			"AssocFileExtension": "&Přidružit aplikaci %1 k příponě souborů %2",
-			"AssocingFileExtension": "%1 se přidružuje k příponě souborů %2...",
-			"AutoStartProgramGroupDescription": "Po spuštění:",
-			"AutoStartProgram": "Automaticky spustit %1",
-			"AddonHostProgramNotFound": "%1 se ve složce, kterou jste vybrali, nepovedlo najít.%n%nChcete přesto pokračovat?"
 		}
 	}
 }

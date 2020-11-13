@@ -29,7 +29,8 @@
 			"command.openScript": "開く",
 			"command.runInstall": "インストールを実行",
 			"command.runSelectedScript": "スクリプトを実行",
-			"command.runScriptFromFolder": "フォルダーで NPM スクリプトを実行..."
+			"command.runScriptFromFolder": "フォルダーで NPM スクリプトを実行...",
+			"command.packageManager": "構成されたパッケージ マネージャーの取得"
 		},
 		"dist/tasks": {
 			"npm.parseError": "npm タスク検出: ファイル {0} を解析できませんでした"

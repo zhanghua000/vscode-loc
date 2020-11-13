@@ -40,6 +40,9 @@
 			"date.fromNow.years.singular": "{0} ano",
 			"date.fromNow.years.plural": "{0} anos"
 		},
+		"vs/base/common/actions": {
+			"submenu.empty": "(vazio)"
+		},
 		"vs/base/node/processes": {
 			"TaskRunner.UNC": "Não é possível executar um comando do shell em uma unidade UNC."
 		},
@@ -106,14 +109,19 @@
 			"empty": "Nenhum elemento encontrado",
 			"found": "Foram correspondidos {0} de {1} elementos"
 		},
+		"vs/base/browser/ui/tree/treeDefaults": {
+			"collapse all": "Recolher Tudo"
+		},
 		"vs/base/browser/ui/toolbar/toolbar": {
 			"moreActions": "Mais Ações..."
 		},
 		"vs/base/browser/ui/splitview/paneview": {
 			"viewSection": "{0} Seção"
 		},
-		"vs/base/browser/ui/tree/treeDefaults": {
-			"collapse all": "Recolher Tudo"
+		"vs/base/browser/ui/inputbox/inputBox": {
+			"alertErrorMessage": "Erro: {0}",
+			"alertWarningMessage": "Aviso: {0}",
+			"alertInfoMessage": "Informações: {0}"
 		},
 		"vs/base/parts/quickinput/browser/quickInput": {
 			"quickInput.back": "Voltar",
@@ -126,11 +134,6 @@
 			"ok": "OK",
 			"custom": "Personalizado",
 			"quickInput.backWithKeybinding": "Voltar ({0})"
-		},
-		"vs/base/browser/ui/inputbox/inputBox": {
-			"alertErrorMessage": "Erro: {0}",
-			"alertWarningMessage": "Aviso: {0}",
-			"alertInfoMessage": "Informações: {0}"
 		},
 		"vs/base/browser/ui/findinput/findInput": {
 			"defaultLabel": "entrada"
@@ -237,7 +240,8 @@
 			"suggest.shareSuggestSelections": "Controla se as seleções de sugestão lembradas são compartilhadas entre vários workspaces e janelas (precisa de `#editor.suggestSelection#`).",
 			"suggest.snippetsPreventQuickSuggestions": "Controla se um snippet ativo impede sugestões rápidas.",
 			"suggest.showIcons": "Controla se os ícones em sugestões devem ser mostrados ou ocultados.",
-			"suggest.maxVisibleSuggestions": "Controla a quantidade de sugestões que o IntelliSense mostrará antes de mostrar uma barra de rolagem (máximo de 15).",
+			"suggest.showStatusBar": "Controla a visibilidade da barra de status na parte inferior do widget de sugestão.",
+			"suggest.maxVisibleSuggestions.dep": "Esta configuração foi preterida. Agora, o widget de sugestão pode ser redimensionado.",
 			"deprecated": "Esta configuração foi preterida. Use configurações separadas como 'editor.suggest.showKeywords' ou 'editor.suggest.showSnippets'.",
 			"editor.suggest.showMethods": "Quando habilitado, o IntelliSense mostra sugestões de `method`.",
 			"editor.suggest.showFunctions": "Quando habilitado, o IntelliSense mostra sugestões de `function`.",
@@ -267,7 +271,6 @@
 			"editor.suggest.showSnippets": "Quando habilitado, o IntelliSense mostra sugestões de `snippet`.",
 			"editor.suggest.showUsers": "Quando habilitado, o IntelliSense mostra sugestões de `user`.",
 			"editor.suggest.showIssues": "Quando habilitado, o IntelliSense mostra sugestões de `issues`.",
-			"editor.suggest.statusBar.visible": "Controla a visibilidade da barra de status na parte inferior do widget de sugestão.",
 			"acceptSuggestionOnCommitCharacter": "Controla se as sugestões devem ser aceitas em caracteres de confirmação. Por exemplo, em JavaScript, o ponto e vírgula (`;`) pode ser um caractere de confirmação que aceita uma sugestão e digita esse caractere.",
 			"acceptSuggestionOnEnterSmart": "Somente aceitar uma sugestão com `Enter` quando ela fizer uma alteração textual.",
 			"acceptSuggestionOnEnter": "Controla se as sugestões devem ser aceitas pressionando `Enter`, além de `Tab`. Ajuda a evitar ambiguidade entre a inserção de novas linhas ou a aceitação de sugestões.",
@@ -375,9 +378,9 @@
 			"tabCompletion.off": "Desabilitar as conclusões da tabulação.",
 			"tabCompletion.onlySnippets": "A conclusão da tabulação insere snippets quando o prefixo corresponde. Funciona melhor quando 'quickSuggestions' não está habilitado.",
 			"tabCompletion": "Habilita as conclusões da tabulação.",
+			"unusualLineTerminators.auto": "Terminadores de linha incomuns são removidos automaticamente.",
 			"unusualLineTerminators.off": "Terminadores de linha incomuns são ignorados.",
 			"unusualLineTerminators.prompt": "Terminadores de linha incomuns solicitam ser removidos.",
-			"unusualLineTerminators.auto": "Terminadores de linha incomuns são removidos automaticamente.",
 			"unusualLineTerminators": "Remover terminadores de linha incomuns que possam causar problemas.",
 			"useTabStops": "A inserção e a exclusão de um espaço em branco seguem as paradas da tabulação.",
 			"wordSeparators": "Caracteres que serão usados como separadores de palavras ao fazer operações ou navegações relacionadas a palavras.",
@@ -428,11 +431,11 @@
 		"vs/editor/common/model/editStack": {
 			"edit": "Digitando"
 		},
-		"vs/editor/browser/widget/codeEditorWidget": {
-			"cursors.maximum": "O número de cursores foi limitado a {0}."
-		},
 		"vs/editor/browser/controller/coreCommands": {
 			"stickydesc": "Passe para o fim mesmo quando passar para linhas mais longas"
+		},
+		"vs/editor/browser/widget/codeEditorWidget": {
+			"cursors.maximum": "O número de cursores foi limitado a {0}."
 		},
 		"vs/editor/browser/widget/diffEditorWidget": {
 			"diff.tooLarge": "Não é possível comparar arquivos porque um arquivo é muito grande."
@@ -534,12 +537,6 @@
 			"selectFromAnchorToCursor": "Selecionar da Âncora ao Cursor",
 			"cancelSelectionAnchor": "Cancelar Âncora de Seleção"
 		},
-		"vs/editor/contrib/bracketMatching/bracketMatching": {
-			"overviewRulerBracketMatchForeground": "Cor do marcador da régua de visão geral para os colchetes correspondentes.",
-			"smartSelect.jumpBracket": "Ir para Colchetes",
-			"smartSelect.selectToBracket": "Selecionar para Colchete",
-			"miGoToBracket": "Ir para &&Colchetes"
-		},
 		"vs/editor/contrib/caretOperations/caretOperations": {
 			"caret.moveLeft": "Mover Texto Selecionado para a Esquerda",
 			"caret.moveRight": "Mover Texto Selecionado para a Direita"
@@ -557,6 +554,12 @@
 			"comment.line.remove": "Remover Comentário de Linha",
 			"comment.block": "Ativar/Desativar Comentário de Bloco",
 			"miToggleBlockComment": "Ativar/Desativar &&Comentário de Bloco"
+		},
+		"vs/editor/contrib/bracketMatching/bracketMatching": {
+			"overviewRulerBracketMatchForeground": "Cor do marcador da régua de visão geral para os colchetes correspondentes.",
+			"smartSelect.jumpBracket": "Ir para Colchetes",
+			"smartSelect.selectToBracket": "Selecionar para Colchete",
+			"miGoToBracket": "Ir para &&Colchetes"
 		},
 		"vs/editor/contrib/contextmenu/contextmenu": {
 			"action.showContextMenu.label": "Mostrar Menu de Contexto do Editor"
@@ -648,10 +651,6 @@
 			"markerAction.previousInFiles.label": "Ir para o Problema Anterior em Arquivos (Erro, Aviso, Informações)",
 			"miGotoPreviousProblem": "&&Problema Anterior"
 		},
-		"vs/editor/contrib/hover/hover": {
-			"showHover": "Mostrar Foco",
-			"showDefinitionPreviewHover": "Mostrar Foco de Visualização da Definição"
-		},
 		"vs/editor/contrib/indentation/indentation": {
 			"indentationToSpaces": "Converter Recuo em Espaços",
 			"indentationToTabs": "Converter Recuo em Tabulações",
@@ -663,9 +662,20 @@
 			"editor.reindentlines": "Rerecuar Linhas",
 			"editor.reindentselectedlines": "Rerecuar Linhas Selecionadas"
 		},
-		"vs/editor/contrib/inPlaceReplace/inPlaceReplace": {
-			"InPlaceReplaceAction.previous.label": "Substituir pelo Valor Anterior",
-			"InPlaceReplaceAction.next.label": "Substituir pelo Próximo Valor"
+		"vs/editor/contrib/hover/hover": {
+			"showHover": "Mostrar Foco",
+			"showDefinitionPreviewHover": "Mostrar Foco de Visualização da Definição"
+		},
+		"vs/editor/contrib/links/links": {
+			"links.navigate.executeCmd": "Executar comando",
+			"links.navigate.follow": "Seguir o link",
+			"links.navigate.kb.meta.mac": "cmd + clique",
+			"links.navigate.kb.meta": "ctrl + clique",
+			"links.navigate.kb.alt.mac": "option + clique",
+			"links.navigate.kb.alt": "alt + clique",
+			"invalid.url": "Falha ao abrir este link porque ele não está bem formado: {0}",
+			"missing.url": "Falha ao abrir este link porque seu destino está ausente.",
+			"label": "Abrir o Link"
 		},
 		"vs/editor/contrib/linesOperations/linesOperations": {
 			"lines.copyUp": "Copiar Linha para Cima",
@@ -694,17 +704,6 @@
 			"editor.transformToLowercase": "Transformar em Minúsculas",
 			"editor.transformToTitlecase": "Transformar em Caso de Título"
 		},
-		"vs/editor/contrib/links/links": {
-			"links.navigate.executeCmd": "Executar comando",
-			"links.navigate.follow": "Seguir o link",
-			"links.navigate.kb.meta.mac": "cmd + clique",
-			"links.navigate.kb.meta": "ctrl + clique",
-			"links.navigate.kb.alt.mac": "option + clique",
-			"links.navigate.kb.alt": "alt + clique",
-			"invalid.url": "Falha ao abrir este link porque ele não está bem formado: {0}",
-			"missing.url": "Falha ao abrir este link porque seu destino está ausente.",
-			"label": "Abrir o Link"
-		},
 		"vs/editor/contrib/multicursor/multicursor": {
 			"mutlicursor.insertAbove": "Adicionar Cursor Acima",
 			"miInsertCursorAbove": "&&Adicionar Cursor Acima",
@@ -724,12 +723,12 @@
 			"miSelectHighlights": "Selecionar Todas as &&Ocorrências",
 			"changeAll.label": "Alterar Todas as Ocorrências"
 		},
+		"vs/editor/contrib/inPlaceReplace/inPlaceReplace": {
+			"InPlaceReplaceAction.previous.label": "Substituir pelo Valor Anterior",
+			"InPlaceReplaceAction.next.label": "Substituir pelo Próximo Valor"
+		},
 		"vs/editor/contrib/parameterHints/parameterHints": {
 			"parameterHints.trigger.label": "Disparar Dicas de Parâmetro"
-		},
-		"vs/editor/contrib/rename/onTypeRename": {
-			"onTypeRename.label": "On Type Rename Symbol",
-			"editorOnTypeRenameBackground": "Cor da tela de fundo quando o editor é renomeado automaticamente no tipo."
 		},
 		"vs/editor/contrib/rename/rename": {
 			"no result": "Nenhum resultado.",
@@ -745,17 +744,21 @@
 		"vs/editor/contrib/smartSelect/smartSelect": {
 			"smartSelect.expand": "Expandir Seleção",
 			"miSmartSelectGrow": "&&Expandir a Seleção",
+			"selectLeadingAndTrailingWhitespace": "Se os espaços em branco inicial e final sempre devem ser selecionados.",
 			"smartSelect.shrink": "Reduzir Seleção",
 			"miSmartSelectShrink": "&&Reduzir Seleção"
 		},
 		"vs/editor/contrib/suggest/suggestController": {
 			"aria.alert.snippet": "Aceitar '{0}' fez {1} edições adicionais",
 			"suggest.trigger.label": "Disparar Sugestão",
-			"accept.accept": "{0} para inserir",
-			"accept.insert": "{0} para inserir",
-			"accept.replace": "{0} para substituir",
+			"accept.insert": "Inserir",
+			"accept.replace": "Substituir",
 			"detail.more": "mostrar menos",
 			"detail.less": "mostrar mais"
+		},
+		"vs/editor/contrib/rename/onTypeRename": {
+			"onTypeRename.label": "On Type Rename Symbol",
+			"editorOnTypeRenameBackground": "Cor da tela de fundo quando o editor é renomeado automaticamente no tipo."
 		},
 		"vs/editor/contrib/tokenization/tokenization": {
 			"forceRetokenize": "Desenvolvedor: Forçar Nova Geração de Tokens"
@@ -918,9 +921,6 @@
 			"editorSuggestWidgetForeground": "Cor de primeiro plano do widget de sugestão.",
 			"editorSuggestWidgetSelectedBackground": "Cor da tela de fundo da entrada selecionada no widget de sugestão.",
 			"editorSuggestWidgetHighlightForeground": "Cor dos realces de correspondência no widget de sugestão.",
-			"readMore": "Ler Mais ({0})",
-			"readLess": "Ler Menos ({0})",
-			"loading": "Carregando...",
 			"suggestWidget.loading": "Carregando...",
 			"suggestWidget.noSuggestions": "Nenhuma sugestão.",
 			"ariaCurrenttSuggestionReadDetails": "{0}, documentos: {1}",
@@ -1070,6 +1070,16 @@
 			"noResults": "Nenhum resultado",
 			"peekView.alternateTitle": "Referências"
 		},
+		"vs/editor/contrib/suggest/suggestWidgetDetails": {
+			"details.close": "Fechar",
+			"loading": "Carregando..."
+		},
+		"vs/editor/contrib/suggest/suggestWidgetStatus": {
+			"ddd": "{0} ({1})"
+		},
+		"vs/editor/contrib/suggest/suggestWidgetRenderer": {
+			"readMore": "Leia Mais"
+		},
 		"vs/editor/contrib/codeAction/lightBulbWidget": {
 			"prefferedQuickFixWithKb": "Mostrar Correções. Correção Preferencial Disponível ({0})",
 			"quickFixWithKb": "Mostrar Correções ({0})",
@@ -1096,22 +1106,6 @@
 			"proxySupport": "Usar o suporte a proxy para extensões.",
 			"systemCertificates": "Controla se os certificados de AC devem ser carregados do sistema operacional. (No Windows e no macOS, é necessário recarregar a janela depois de desativar essa opção.)"
 		},
-		"vs/platform/files/node/diskFileSystemProvider": {
-			"fileExists": "O arquivo já existe",
-			"fileNotExists": "O arquivo não existe",
-			"moveError": "Não é possível mover '{0}' para '{1}' ({2}).",
-			"copyError": "Não é possível copiar '{0}' em '{1}' ({2}).",
-			"fileCopyErrorPathCase": "Não foi possível copiar o arquivo no mesmo caminho com a capitalização do caminho diferente",
-			"fileCopyErrorExists": "O arquivo no destino já existe"
-		},
-		"vs/platform/files/common/files": {
-			"unknownError": "Erro Desconhecido",
-			"sizeB": "{0} B",
-			"sizeKB": "{0} KB",
-			"sizeMB": "{0} MB",
-			"sizeGB": "{0} GB",
-			"sizeTB": "{0} TB"
-		},
 		"vs/platform/files/common/fileService": {
 			"invalidPath": "Não é possível resolver o provedor do sistema de arquivos com o caminho de arquivo relativo '{0}'",
 			"noProviderFound": "Nenhum provedor de sistema de arquivos encontrado para o recurso '{0}'",
@@ -1133,6 +1127,22 @@
 			"deleteFailedNotFound": "Não é possível excluir o arquivo '{0}' não existente",
 			"deleteFailedNonEmptyFolder": "Não é possível excluir a pasta '{0}' não vazia.",
 			"err.readonly": "Não é possível modificar o arquivo '{0}' somente leitura"
+		},
+		"vs/platform/files/node/diskFileSystemProvider": {
+			"fileExists": "O arquivo já existe",
+			"fileNotExists": "O arquivo não existe",
+			"moveError": "Não é possível mover '{0}' para '{1}' ({2}).",
+			"copyError": "Não é possível copiar '{0}' em '{1}' ({2}).",
+			"fileCopyErrorPathCase": "Não foi possível copiar o arquivo no mesmo caminho com a capitalização do caminho diferente",
+			"fileCopyErrorExists": "O arquivo no destino já existe"
+		},
+		"vs/platform/files/common/files": {
+			"unknownError": "Erro Desconhecido",
+			"sizeB": "{0} B",
+			"sizeKB": "{0} KB",
+			"sizeMB": "{0} MB",
+			"sizeGB": "{0} GB",
+			"sizeTB": "{0} TB"
 		},
 		"vs/platform/update/common/update.config.contribution": {
 			"updateConfigurationTitle": "Atualizar",
@@ -1214,7 +1224,8 @@
 		},
 		"vs/platform/telemetry/common/telemetryService": {
 			"telemetryConfigurationTitle": "Telemetria",
-			"telemetry.enableTelemetry": "Habilitar dados de uso e erros a serem enviados para um serviço online da Microsoft."
+			"telemetry.enableTelemetry": "Habilitar dados de uso e erros a serem enviados para um serviço online da Microsoft.",
+			"telemetry.enableTelemetryMd": "Permitir que os dados de uso e os erros sejam enviados para um serviço online da Microsoft. Leia nossa política de privacidade [aqui]({0})."
 		},
 		"vs/platform/extensionManagement/node/extensionManagementUtil": {
 			"invalidManifest": "VSIX inválido: package.json não é um arquivo JSON."
@@ -1235,6 +1246,13 @@
 		"vs/platform/userDataSync/common/userDataSyncMachines": {
 			"error incompatible": "Não é possível ler os dados do computador, pois a versão atual é incompatível. Atualize {0} e tente novamente."
 		},
+		"vs/platform/userDataSync/common/userDataAutoSyncService": {
+			"default service changed": "Não é possível sincronizar porque o serviço padrão foi alterado",
+			"service changed": "Não é possível sincronizar porque o serviço de sincronização foi alterado",
+			"turned off": "Não é possível sincronizar porque a sincronização está desativada na nuvem",
+			"session expired": "Não é possível sincronizar porque a sessão atual expirou",
+			"turned off machine": "Não é possível sincronizar porque a sincronização está desativada neste computador usando outro computador."
+		},
 		"vs/platform/workspaces/common/workspaces": {
 			"codeWorkspace": "Workspace do Código"
 		},
@@ -1245,13 +1263,6 @@
 		"vs/platform/dialogs/common/dialogs": {
 			"moreFile": "...1 arquivo adicional não mostrado",
 			"moreFiles": "...{0} arquivos adicionais não mostrados"
-		},
-		"vs/platform/userDataSync/common/userDataAutoSyncService": {
-			"default service changed": "Não é possível sincronizar porque o serviço padrão foi alterado",
-			"service changed": "Não é possível sincronizar porque o serviço de sincronização foi alterado",
-			"turned off": "Não é possível sincronizar porque a sincronização está desativada na nuvem",
-			"session expired": "Não é possível sincronizar porque a sessão atual expirou",
-			"turned off machine": "Não é possível sincronizar porque a sincronização está desativada neste computador usando outro computador."
 		},
 		"vs/platform/theme/common/colorRegistry": {
 			"foreground": "Cor geral de primeiro plano. Essa cor só será usada se não for substituída por um componente.",
@@ -1413,12 +1424,12 @@
 			"problemsInfoIconForeground": "A cor usada para o ícone de informações de problemas.",
 			"chartsForeground": "A cor de primeiro plano usada em gráficos.",
 			"chartsLines": "A cor usada para linhas horizontais em gráficos.",
-			"chartsRed": "Os gráficos de cor vermelha usados.",
-			"chartsBlue": "Os gráficos de cor azul usados.",
-			"chartsYellow": "Os gráficos de cor amarela usados.",
-			"chartsOrange": "Os gráficos de cor laranja usados.",
-			"chartsGreen": "Os gráficos de cor verde usados.",
-			"chartsPurple": "Os gráficos de cor roxa usados."
+			"chartsRed": "A cor vermelha usada nas visualizações do gráfico.",
+			"chartsBlue": "A cor azul usada nas visualizações do gráfico.",
+			"chartsYellow": "A cor amarela usada nas visualizações do gráfico.",
+			"chartsOrange": "A cor laranja usada nas visualizações do gráfico.",
+			"chartsGreen": "A cor verde usada nas visualizações do gráfico.",
+			"chartsPurple": "A cor púrpura usada nas visualizações do gráfico."
 		},
 		"vs/platform/configuration/common/configurationRegistry": {
 			"defaultLanguageConfigurationOverrides.title": "Substituições de Configuração de Idioma Padrão",
@@ -1897,9 +1908,13 @@
 			"alreadyInstalled": "A extensão '{0}' já está instalada.",
 			"forceUpdate": "A extensão '{0}' v{1} já está instalada, mas uma versão {2} mais recente está disponível no marketplace. Use a opção '--force' para atualizar para a versão mais recente.",
 			"updateMessage": "Atualizando a extensão '{0}' para a versão {1}",
-			"forceDowngrade": "Uma versão mais recente da extensão '{0}' v{1} já está instalada. Use a opção '--force' para fazer downgrade para a versão mais antiga.",
+			"installing builtin ": "Instalando extensão interna '{0}' v{1}...",
 			"installing": "Instalando a extensão '{0}' v{1}...",
 			"successInstall": "A extensão '{0}' v{1} foi instalada com êxito.",
+			"cancelInstall": "A instalação da extensão '{0}' foi cancelada.",
+			"forceDowngrade": "Uma versão mais recente da extensão '{0}' v{1} já está instalada. Use a opção '--force' para fazer downgrade para a versão mais antiga.",
+			"builtin": "A extensão '{0}' é uma Extensão interna e não pode ser instalada",
+			"forceUninstall": "A extensão '{0}' está marcada como uma Extensão interna pelo usuário. Use a opção '--force' para desinstalá-la.",
 			"uninstalling": "Desinstalando {0}...",
 			"successUninstall": "A extensão '{0}' foi desinstalada com êxito."
 		},
@@ -2030,6 +2045,7 @@
 			"window.nativeTabs": "Habilita as guias da janela do macOS Sierra. Observe que as alterações exigem uma reinicialização completa para serem aplicadas e as guias nativas desabilitarão um estilo de barra de título personalizada, se configuradas.",
 			"window.nativeFullScreen": "Controla se a tela inteira nativa deve ser usada no macOS. Desabilite esta opção para impedir que o macOS crie um espaço ao passar para a tela inteira.",
 			"window.clickThroughInactive": "Se habilitado, clicar em uma janela inativa ativará a janela e disparará o elemento sob o mouse, se for clicável. Se desabilitado, clicar em qualquer lugar em uma janela inativa fará com que ela seja apenas ativada e um segundo clique será necessário no elemento.",
+			"window.enableExperimentalProxyLoginDialog": "Habilita um novo diálogo de logon para autenticação de proxy. Exige uma reinicialização para entrar em vigor.",
 			"telemetryConfigurationTitle": "Telemetria",
 			"telemetry.enableCrashReporting": "Habilitar que relatórios de pane sejam enviados a um serviço online da Microsoft. \r\nEsta opção exige reinicialização para entrar em vigor.",
 			"keyboardConfigurationTitle": "Teclado",
@@ -2053,6 +2069,13 @@
 			"loaderErrorNative": "Falha ao carregar um arquivo necessário. Reinicie o aplicativo para fazer uma nova tentativa. Detalhes: {0}"
 		},
 		"vs/workbench/electron-sandbox/window": {
+			"proxyAuthRequired": "Autenticação de Proxy Obrigatória",
+			"loginButton": "&&Fazer Logon",
+			"cancelButton": "&&Cancelar",
+			"username": "Nome de usuário",
+			"password": "Senha",
+			"proxyDetail": "O proxy '{0}' requer um nome de usuário e uma senha.",
+			"rememberCredentials": "Lembrar minhas credenciais",
 			"runningAsRoot": "Não é recomendado executar {0} como usuário root.",
 			"mPreferences": "Preferências"
 		},
@@ -2100,11 +2123,11 @@
 			"panelActiveTitleBorder": "A cor da borda do título do painel ativo. Os painéis são mostrados abaixo da área do editor e contêm modos de exibições, como terminal integrado e de saída.",
 			"panelInputBorder": "Borda da caixa de entrada para entradas no painel.",
 			"panelDragAndDropBorder": "Arraste e solte a cor dos comentários para títulos do painel. Os painéis são mostrados abaixo da área do editor e contêm exibições como o terminal integrado e de saída.",
-			"panelSectionDragAndDropBackground": "Arraste e solte a cor dos comentários para as seções do painel. A cor deve ter transparência para que as seções do painel ainda possam brilhar. Os painéis são mostrados abaixo da área do editor e contêm modos de exibição como o terminal integrado e de saída.",
-			"panelSectionHeaderBackground": "Cor da tela de fundo do cabeçalho da seção do painel. Os painéis são mostrados abaixo da área do editor e contêm modos de exibição como terminal integrado e de saída.",
-			"panelSectionHeaderForeground": "Cor de primeiro plano do cabeçalho da seção do painel. Os painéis são mostrados abaixo da área do editor e contêm modos de exibição como terminal integrado e de saída.",
-			"panelSectionHeaderBorder": "Cor da borda do cabeçalho da seção do painel usada quando vários modos de exibição são empilhados verticalmente no painel. Os painéis são mostrados abaixo da área do editor e contêm modos de exibição como terminal integrado e de saída.",
-			"panelSectionBorder": "Cor da borda da seção do painel usada quando vários modos de exibição são empilhados horizontalmente no painel. Os painéis são mostrados abaixo da área do editor e contêm modos de exibição como terminal integrado e de saída.",
+			"panelSectionDragAndDropBackground": "Arraste e solte a cor dos comentários das seções do painel. A cor deve ter transparência para que as seções do painel ainda possam aparecer. Os painéis são mostrados abaixo da área do editor e contêm exibições, como saída e terminal integrado. As seções do painel são exibições aninhadas nos painéis.",
+			"panelSectionHeaderBackground": "A cor da tela de fundo do cabeçalho da seção do painel. Os painéis são mostrados abaixo da área do editor e contêm exibições, como saída e terminal integrado.",
+			"panelSectionHeaderForeground": "A cor de primeiro plano do cabeçalho da seção do painel. Os painéis são mostrados abaixo da área do editor e contêm exibições, como saída e terminal integrado. As seções do painel são exibições aninhadas nos painéis.",
+			"panelSectionHeaderBorder": "A cor da borda do cabeçalho da seção do painel usada quando várias exibições são empilhadas verticalmente no painel. Os painéis são mostrados abaixo da área do editor e contêm exibições, como saída e terminal integrado. As seções do painel são exibições aninhadas nos painéis.",
+			"panelSectionBorder": "A cor da borda da seção do painel usada quando várias exibições são empilhadas horizontalmente no painel. Os painéis são mostrados abaixo da área do editor e contêm exibições, como saída e terminal integrado. As seções do painel são exibições aninhadas nos painéis.",
 			"statusBarForeground": "Cor de primeiro plano da barra de status quando um workspace está aberto. A barra de status é mostrada na parte inferior da janela.",
 			"statusBarNoFolderForeground": "Cor de primeiro plano da barra de status quando nenhuma pasta está aberta. A barra de status é mostrada na parte inferior da janela.",
 			"statusBarBackground": "Cor da tela de fundo da barra de status quando um workspace é aberto. A barra de status é mostrada na parte inferior da janela.",
@@ -2134,10 +2157,10 @@
 			"sideBarForeground": "Cor de primeiro plano da barra lateral. A barra lateral é o contêiner de modos de exibição, como explorador e pesquisa.",
 			"sideBarBorder": "Cor da borda da barra lateral no lado que separa para o editor. A barra lateral é o contêiner de modos de exibição, como explorador e pesquisa.",
 			"sideBarTitleForeground": "Cor de primeiro plano do título da barra lateral. A barra lateral é o contêiner dos modos de exibição, como explorador e pesquisa.",
-			"sideBarDragAndDropBackground": "Arraste e solte a cor dos comentários das seções da barra lateral. A cor deve ter transparência para que as seções da barra lateral ainda possam brilhar. A barra lateral é o contêiner para modos de exibição, como explorador e pesquisa.",
-			"sideBarSectionHeaderBackground": "Cor da tela de fundo do cabeçalho da seção de barra lateral. A barra lateral é o contêiner dos modos de exibição, como explorador e pesquisa.",
-			"sideBarSectionHeaderForeground": "Cor de primeiro plano do cabeçalho da seção da barra lateral. A barra lateral é o contêiner dos modos de exibição, como explorador e pesquisa.",
-			"sideBarSectionHeaderBorder": "Cor da borda do cabeçalho da seção de barra lateral. A barra lateral é o contêiner dos modos de exibição, como explorador e pesquisa.",
+			"sideBarDragAndDropBackground": "Arraste e solte a cor dos comentários das seções da barra lateral. A cor deve ter transparência para que as seções da barra lateral ainda possam aparecer. A barra lateral é o contêiner para exibições, como explorador e pesquisa. As seções de barra lateral são exibições aninhadas na barra lateral.",
+			"sideBarSectionHeaderBackground": "A cor da tela de fundo do cabeçalho da seção de barra lateral. A barra lateral é o contêiner de exibições, como explorador e pesquisa. As seções de barra lateral são exibições aninhadas na barra lateral.",
+			"sideBarSectionHeaderForeground": "A cor de primeiro plano do cabeçalho da seção de barra lateral. A barra lateral é o contêiner de exibições, como explorador e pesquisa. As seções de barra lateral são exibições aninhadas na barra lateral.",
+			"sideBarSectionHeaderBorder": "A cor da borda do cabeçalho da seção de barra lateral. A barra lateral é o contêiner de exibições, como explorador e pesquisa. As seções de barra lateral são exibições aninhadas na barra lateral.",
 			"titleBarActiveForeground": "Primeiro plano da barra de título quando a janela estiver ativa.",
 			"titleBarInactiveForeground": "Primeiro plano da barra de título quando a janela estiver inativa.",
 			"titleBarActiveBackground": "Tela de fundo da barra de título quando a janela estiver ativa.",
@@ -2196,7 +2219,7 @@
 			"workbench.editor.pinnedTabSizing.normal": "Uma guia fixa herda a aparência das guias não fixas.",
 			"workbench.editor.pinnedTabSizing.compact": "Uma guia fixa será mostrada em um formato compacto com apenas o ícone ou a primeira letra do nome do editor.",
 			"workbench.editor.pinnedTabSizing.shrink": "Uma guia fixa é reduzida a um tamanho compacto fixo mostrando partes do nome do editor.",
-			"pinnedTabSizing": "Controla o dimensionamento das guias fixas do editor. As guias fixas são classificadas no início de todas as guias abertas e normalmente não são fechadas até desafixadas. Esse valor é ignorado quando `#workbench.editor.showTabs#` é `false`.",
+			"pinnedTabSizing": "Controla o dimensionamento das guias fixadas do editor. As guias fixadas são classificadas no início de todas as guias abertas e, normalmente, não são fechadas até que sejam desafixadas. Esse valor é ignorado quando `#workbench.editor.showTabs#` é `false`.",
 			"workbench.editor.splitSizingDistribute": "Divide todos os grupos do editor em partes iguais.",
 			"workbench.editor.splitSizingSplit": "Divide o grupo do editor ativo em partes iguais.",
 			"splitSizing": "Controla o dimensionamento dos grupos do editor ao dividi-los.",
@@ -2277,6 +2300,10 @@
 			"window.openFoldersInNewWindow.off": "As pastas substituirão a última janela ativa.",
 			"window.openFoldersInNewWindow.default": "As pastas serão abertas em uma nova janela, a menos que uma pasta seja selecionada de dentro do aplicativo (por exemplo, pelo menu Arquivo).",
 			"openFoldersInNewWindow": "Controla se as pastas devem ser abertas em uma nova janela ou substituir a última janela ativa.\r\nObserve que ainda pode haver casos em que essa configuração é ignorada (por exemplo, ao usar a opção de linha de comando `--new-window` ou `--reuse-window`).",
+			"window.confirmBeforeClose.always": "Sempre tentar a solicitação de confirmação. Observe que os navegadores ainda podem decidir fechar uma guia ou uma janela sem confirmação.",
+			"window.confirmBeforeClose.keyboardOnly": "Solicitar confirmação apenas se uma associação de teclas for detectada. Observe que a detecção talvez não seja possível em alguns casos.",
+			"window.confirmBeforeClose.never": "Nunca solicitar confirmação explicitamente, a menos que a perda de dados seja iminente.",
+			"confirmBeforeCloseWeb": "Controla se um diálogo de confirmação deve ser mostrado antes do fechamento da janela ou da guia do navegador. Observe que, mesmo quando esta configuração está habilitada, os navegadores ainda podem decidir fechar uma guia ou uma janela sem confirmação e que ela é apenas uma dica que pode não funcionar em alguns casos.",
 			"zenModeConfigurationTitle": "Modo Zen",
 			"zenMode.fullScreen": "Controla se a ativação do modo Zen também coloca o workbench no modo de tela inteira.",
 			"zenMode.centerLayout": "Controla se a ativação do modo Zen também centraliza o layout.",
@@ -2369,7 +2396,11 @@
 			"resetFocusedViewLocation": "Redefinir Localização do Modo de Exibição Destaques",
 			"resetFocusedView.error.noFocusedView": "Não há exibição focalizada no momento.",
 			"increaseViewSize": "Aumentar Tamanho da Exibição Atual",
-			"decreaseViewSize": "Diminuir Tamanho do Modo de Exibição Atual"
+			"increaseEditorWidth": "Aumentar a Largura do Editor",
+			"increaseEditorHeight": "Aumentar a Altura do Editor",
+			"decreaseViewSize": "Diminuir Tamanho do Modo de Exibição Atual",
+			"decreaseEditorWidth": "Diminuir a Largura do Editor",
+			"decreaseEditorHeight": "Diminuir a Altura do Editor"
 		},
 		"vs/workbench/browser/actions/navigationActions": {
 			"navigateLeft": "Navegar para o Modo de Exibição à Esquerda",
@@ -2397,7 +2428,9 @@
 			"reloadWindow": "Recarregar a Janela",
 			"about": "Sobre",
 			"newWindow": "Nova Janela",
+			"blur": "Remover o foco do teclado do elemento focalizado",
 			"file": "Arquivo",
+			"miConfirmClose": "Confirmar Antes de Fechar",
 			"miNewWindow": "Nova &&Janela",
 			"miOpenRecent": "Abrir &&Recente",
 			"miMore": "&&Mais...",
@@ -2591,7 +2624,8 @@
 			"homeIndicator": "Página Inicial",
 			"home": "Página Inicial",
 			"manage": "Gerenciar",
-			"accounts": "Contas"
+			"accounts": "Contas",
+			"focusActivityBar": "Barra de Atividades de Foco"
 		},
 		"vs/workbench/browser/parts/sidebar/sidebarPart": {
 			"focusSideBar": "Focar na Barra Lateral"
@@ -3388,14 +3422,14 @@
 			"removeOptimizations": "Habilitar recursos de maneira forçada",
 			"reopenFilePrompt": "Reabra o arquivo para que essa configuração entre em vigor."
 		},
+		"vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens": {
+			"inspectEditorTokens": "Desenvolvedor: Inspecionar Tokens e Escopos do Editor",
+			"inspectTMScopesWidget.loading": "Carregando..."
+		},
 		"vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess": {
 			"gotoLineQuickAccessPlaceholder": "Digite o número de linha e a coluna opcional que deseja acessar (por exemplo, 42:5 para linha 42 e coluna 5).",
 			"gotoLineQuickAccess": "Acessar a Linha/Coluna",
 			"gotoLine": "Acessar a Linha/Coluna..."
-		},
-		"vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens": {
-			"inspectEditorTokens": "Desenvolvedor: Inspecionar Tokens e Escopos do Editor",
-			"inspectTMScopesWidget.loading": "Carregando..."
 		},
 		"vs/workbench/contrib/codeEditor/browser/saveParticipants": {
 			"formatting": "Executando o formatador '{0}' ([configurar](command:workbench.action.openSettings?%5B%22editor.formatOnSave%22%5D)).",
@@ -3635,7 +3669,7 @@
 			"focusedStackFrameLineHighlight": "Cor da tela de fundo para o realce de linha na posição do registro de ativação com foco."
 		},
 		"vs/workbench/contrib/debug/browser/repl": {
-			"workbench.debug.filter.placeholder": "Filtrar (por exemplo, texto, !exclude)",
+			"workbench.debug.filter.placeholder": "Filtrar (por exemplo, text, !exclude)",
 			"debugConsole": "Console do Depurador",
 			"copy": "Copiar",
 			"copyAll": "Copiar Tudo",
@@ -3682,18 +3716,18 @@
 			"breakpoint": "Ponto de interrupção"
 		},
 		"vs/workbench/contrib/debug/browser/callStackView": {
+			"running": "Em execução",
 			"showMoreStackFrames2": "Mostrar Mais Registros de Ativação",
 			"session": "Sessão",
-			"running": "Em execução",
 			"thread": "Thread",
 			"restartFrame": "Reiniciar o Quadro",
 			"loadAllStackFrames": "Carregar Todos os Registros de Ativação",
 			"showMoreAndOrigin": "Mostrar Mais {0}: {1}",
 			"showMoreStackFrames": "Mostrar Mais {0} Registros de Ativação",
 			"callStackAriaLabel": "Depurar Pilha de Chamadas",
-			"threadAriaLabel": "Thread {0}, pilha de chamadas, depuração",
+			"threadAriaLabel": "Thread {0} {1}",
 			"stackFrameAriaLabel": "Registro de Ativação {0}, linha {1}, {2}, pilha de chamadas, depuração",
-			"sessionLabel": "Depurar Sessão {0}"
+			"sessionLabel": "Sessão {0} {1}"
 		},
 		"vs/workbench/contrib/debug/browser/debugActions": {
 			"openLaunchJson": "Abrir {0}",
@@ -3744,11 +3778,11 @@
 			"debugRequesMissing": "O atributo '{0}' está ausente na configuração de depuração escolhida.",
 			"debugTypeNotSupported": "Não há suporte para o tipo de depuração '{0}' configurado.",
 			"debugTypeMissing": "Propriedade 'type' ausente para a configuração de inicialização escolhida.",
-			"installAdditionalDebuggers": "Instalar {0} Extensão",
+			"installAdditionalDebuggers": "Instalar Extensão de {0}",
 			"noFolderWorkspaceDebugError": "O arquivo ativo não pode ser depurado. Certifique-se de que ele está salvo e que você tem uma extensão de depuração instalada para esse tipo de arquivo.",
 			"debugAdapterCrash": "O processo do adaptador de depuração foi terminado inesperadamente ({0})",
 			"cancel": "Cancelar",
-			"debuggingPaused": "{1}:{2}, depuração em pausa {0}, {3}",
+			"debuggingPaused": "{0}:{1}, depuração em pausa {2}, {3}",
 			"breakpointAdded": "Ponto de interrupção, linha {0}, arquivo {1} adicionados",
 			"breakpointRemoved": "Ponto de interrupção, linha {0}, arquivo {1} removidos"
 		},
@@ -4017,8 +4051,8 @@
 			"debugExtensionHost": "Iniciar Host de Extensão de Depuração",
 			"restart1": "Extensões de Perfil",
 			"restart2": "Para analisar as extensões, é necessário reiniciar. Deseja reiniciar '{0}' agora?",
-			"restart3": "Reiniciar",
-			"cancel": "Cancelar",
+			"restart3": "&&Reiniciar",
+			"cancel": "&&Cancelar",
 			"debugExtensionHost.launch.name": "Anexar Host de Extensão",
 			"extensionHostProfileStart": "Iniciar Perfil de Host de Extensão",
 			"stopExtensionHostProfileStart": "Parar Perfil de Host de Extensão",
@@ -4032,8 +4066,8 @@
 			"status.profiler": "Criador de Perfil de Extensão",
 			"restart1": "Extensões de Perfil",
 			"restart2": "Para analisar as extensões, é necessário reiniciar. Deseja reiniciar '{0}' agora?",
-			"restart3": "Reiniciar",
-			"cancel": "Cancelar"
+			"restart3": "&&Reiniciar",
+			"cancel": "&&Cancelar"
 		},
 		"vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsInput": {
 			"extensionsInputName": "Executando Extensões"
@@ -4048,6 +4082,7 @@
 		"vs/workbench/contrib/extensions/browser/extensions.contribution": {
 			"manageExtensionsQuickAccessPlaceholder": "Pressione Enter para gerenciar as extensões.",
 			"manageExtensionsHelp": "Gerenciar Extensões",
+			"installVSIX": "Instalar a Extensão VSIX",
 			"extension": "Extensão",
 			"extensions": "Extensões",
 			"extensionsConfigurationTitle": "Extensões",
@@ -4061,10 +4096,14 @@
 			"workbench.extensions.installExtension.description": "Instalar a extensão fornecida",
 			"workbench.extensions.installExtension.arg.name": "ID da extensão ou URI do recurso do VSIX",
 			"notFound": "Extensão '{0}' não encontrada.",
+			"InstallVSIXAction.successReload": "Recarregue o Visual Studio Code para concluir a instalação da extensão {0}.",
+			"InstallVSIXAction.success": "A instalação da extensão {0} foi concluída.",
+			"InstallVSIXAction.reloadNow": "Recarregar Agora",
 			"workbench.extensions.uninstallExtension.description": "Desinstalar a extensão fornecida",
 			"workbench.extensions.uninstallExtension.arg.name": "ID da extensão a desinstalar",
 			"id required": "ID de extensão necessária.",
 			"notInstalled": "A extensão '{0}' não está instalada. Certifique-se de usar a ID de extensão completa, incluindo o editor, por exemplo: ms-dotnettools.csharp.",
+			"builtin": "A extensão '{0}' é uma Extensão interna e não pode ser instalada",
 			"workbench.extensions.search.description": "Pesquisar por uma extensão específica",
 			"workbench.extensions.search.arg.name": "Consulta a ser usada na pesquisa",
 			"miOpenKeymapExtensions": "&&Mapas de teclas",
@@ -4141,86 +4180,6 @@
 		"vs/workbench/contrib/extensions/common/extensionsInput": {
 			"extensionsInputName": "Extensão: {0}"
 		},
-		"vs/workbench/contrib/extensions/browser/extensionEditor": {
-			"name": "Nome da extensão",
-			"extension id": "Identificador de extensão",
-			"preview": "Visualizar",
-			"builtin": "Interno",
-			"publisher": "Nome do editor",
-			"install count": "Quantidade de instalações",
-			"rating": "Classificação",
-			"repository": "Repositório",
-			"license": "Licença",
-			"version": "Versão",
-			"details": "Detalhes",
-			"detailstooltip": "Detalhes da extensão, renderizados do arquivo 'README.md' da extensão",
-			"contributions": "Contribuições de Recurso",
-			"contributionstooltip": "Lista as contribuições desta extensão para o VS Code",
-			"changelog": "Log de mudanças",
-			"changelogtooltip": "Histórico de atualização de extensão, renderizado do arquivo 'CHANGELOG.md' da extensão",
-			"dependencies": "Dependências",
-			"dependenciestooltip": "Lista as extensões das quais essa extensão depende",
-			"recommendationHasBeenIgnored": "Você optou por não receber recomendações para esta extensão.",
-			"noReadme": "Nenhum LEIAME disponível.",
-			"extension pack": "Pacote de Extensões ({0})",
-			"noChangelog": "Não há log de mudanças disponível.",
-			"noContributions": "Nenhuma Contribuição",
-			"noDependencies": "Sem Dependências",
-			"settings": "Configurações ({0})",
-			"setting name": "Nome",
-			"description": "Descrição",
-			"default": "Padrão",
-			"debuggers": "Depuradores ({0})",
-			"debugger name": "Nome",
-			"debugger type": "Digitar",
-			"viewContainers": "Exibir Contêineres ({0})",
-			"view container id": "ID",
-			"view container title": "Título",
-			"view container location": "Onde",
-			"views": "Modos de Exibição ({0})",
-			"view id": "ID",
-			"view name": "Nome",
-			"view location": "Onde",
-			"localizations": "Localizações ({0})",
-			"localizations language id": "ID de Idioma",
-			"localizations language name": "Nome da Linguagem",
-			"localizations localized language name": "Nome da Linguagem (Localizado)",
-			"customEditors": "Editores Personalizados ({0})",
-			"customEditors view type": "Exibir Tipo",
-			"customEditors priority": "Prioridade",
-			"customEditors filenamePattern": "Padrão de Nome de Arquivo",
-			"codeActions": "Ações de Código ({0})",
-			"codeActions.title": "Título",
-			"codeActions.kind": "Tipo",
-			"codeActions.description": "Descrição",
-			"codeActions.languages": "Linguagens",
-			"authentication": "Autenticação ({0})",
-			"authentication.label": "Rótulo",
-			"authentication.id": "Id",
-			"colorThemes": "Temas de Cores ({0})",
-			"iconThemes": "Temas do Ícone de Arquivo ({0})",
-			"colors": "Cores ({0})",
-			"colorId": "Id",
-			"defaultDark": "Padrão Escuro",
-			"defaultLight": "Claro Padrão",
-			"defaultHC": "Alto Contraste Padrão",
-			"JSON Validation": "Validação JSON ({0})",
-			"fileMatch": "Correspondência de Arquivo",
-			"schema": "Esquema",
-			"commands": "Comandos ({0})",
-			"command name": "Nome",
-			"keyboard shortcuts": "Atalhos de Teclado",
-			"menuContexts": "Contextos de Menu",
-			"languages": "Linguagens ({0})",
-			"language id": "ID",
-			"language name": "Nome",
-			"file extensions": "Extensões de Arquivo",
-			"grammar": "Gramática",
-			"snippets": "Snippets",
-			"find": "Localizar",
-			"find next": "Localizar Próximo",
-			"find previous": "Localizar Anterior"
-		},
 		"vs/workbench/contrib/extensions/browser/extensionsActions": {
 			"download": "Baixar Manualmente",
 			"install vsix": "Após o download, instale manualmente o VSIX baixado de '{0}'.",
@@ -4233,14 +4192,18 @@
 			"noOfHoursAgo": "{0} horas atrás",
 			"one hour ago": "Uma hora atrás",
 			"just now": "Agora mesmo",
-			"install": "Instalar",
-			"installing": "Instalando",
-			"locally": "Localmente",
 			"installExtensionStart": "A instalação da extensão {0} foi iniciada. Um editor está aberto com mais detalhes sobre esta extensão",
 			"installExtensionComplete": "A instalação da extensão {0} foi concluída.",
 			"failedToInstall": "Falha ao instalar '{0}'.",
-			"Install on Server": "Instalar em {0}",
+			"install": "Instalar",
+			"install and do no sync": "Instalar (Não sincronizar)",
+			"install locally and do not sync": "Instalar Localmente (Não sincronizar)",
 			"install locally": "Instalar Localmente",
+			"install on remote and do not sync": "Instalar em {0} (Não sincronizar)",
+			"install on remote": "Instalar em {0}",
+			"install everywhere tooltip": "Instalar esta extensão em todas as instâncias de {0} sincronizadas",
+			"installing": "Instalando",
+			"Install on Server": "Instalar em {0}",
 			"uninstallAction": "Desinstalar",
 			"Uninstalling": "Desinstalando",
 			"uninstallExtensionStart": "A desinstalação da extensão {0} foi iniciada.",
@@ -4351,13 +4314,11 @@
 			"installVSIX": "Instalar do VSIX...",
 			"installFromVSIX": "Instalar do VSIX",
 			"installButton": "&&Instalar",
-			"InstallVSIXAction.successReload": "Recarregue o Visual Studio Code para concluir a instalação da extensão {0}.",
-			"InstallVSIXAction.success": "A instalação da extensão {0} foi concluída.",
-			"InstallVSIXAction.reloadNow": "Recarregar Agora",
 			"reinstall": "Reinstalar Extensão...",
 			"selectExtensionToReinstall": "Selecionar Extensão para Reinstalar",
 			"ReinstallAction.successReload": "Recarregue o Visual Studio Code para concluir a reinstalação da extensão {0}.",
 			"ReinstallAction.success": "A reinstalação da extensão {0} foi concluída.",
+			"InstallVSIXAction.reloadNow": "Recarregar Agora",
 			"install previous version": "Instalar a Versão Específica da Extensão...",
 			"selectExtension": "Selecionar Extensão",
 			"InstallAnotherVersionExtensionAction.successReload": "Recarregue o Visual Studio Code para concluir a instalação da extensão {0}.",
@@ -4373,6 +4334,86 @@
 			"extensionButtonProminentBackground": "Cor da tela de fundo do botão para extensão de ações que se destacam (por exemplo, botão de instalação).",
 			"extensionButtonProminentForeground": "Cor de primeiro plano do botão para a extensão de ações que se destacam (por exemplo, botão de instalação).",
 			"extensionButtonProminentHoverBackground": "Cor de foco da tela de fundo do botão para extensão de ações que se destacam (por exemplo, botão de instalação)."
+		},
+		"vs/workbench/contrib/extensions/browser/extensionEditor": {
+			"name": "Nome da extensão",
+			"extension id": "Identificador de extensão",
+			"preview": "Visualizar",
+			"builtin": "Interno",
+			"publisher": "Nome do editor",
+			"install count": "Quantidade de instalações",
+			"rating": "Classificação",
+			"repository": "Repositório",
+			"license": "Licença",
+			"version": "Versão",
+			"details": "Detalhes",
+			"detailstooltip": "Detalhes da extensão, renderizados do arquivo 'README.md' da extensão",
+			"contributions": "Contribuições de Recurso",
+			"contributionstooltip": "Lista as contribuições desta extensão para o VS Code",
+			"changelog": "Log de mudanças",
+			"changelogtooltip": "Histórico de atualização de extensão, renderizado do arquivo 'CHANGELOG.md' da extensão",
+			"dependencies": "Dependências",
+			"dependenciestooltip": "Lista as extensões das quais essa extensão depende",
+			"recommendationHasBeenIgnored": "Você optou por não receber recomendações para esta extensão.",
+			"noReadme": "Nenhum LEIAME disponível.",
+			"extension pack": "Pacote de Extensões ({0})",
+			"noChangelog": "Não há log de mudanças disponível.",
+			"noContributions": "Nenhuma Contribuição",
+			"noDependencies": "Sem Dependências",
+			"settings": "Configurações ({0})",
+			"setting name": "Nome",
+			"description": "Descrição",
+			"default": "Padrão",
+			"debuggers": "Depuradores ({0})",
+			"debugger name": "Nome",
+			"debugger type": "Digitar",
+			"viewContainers": "Exibir Contêineres ({0})",
+			"view container id": "ID",
+			"view container title": "Título",
+			"view container location": "Onde",
+			"views": "Modos de Exibição ({0})",
+			"view id": "ID",
+			"view name": "Nome",
+			"view location": "Onde",
+			"localizations": "Localizações ({0})",
+			"localizations language id": "ID de Idioma",
+			"localizations language name": "Nome da Linguagem",
+			"localizations localized language name": "Nome da Linguagem (Localizado)",
+			"customEditors": "Editores Personalizados ({0})",
+			"customEditors view type": "Exibir Tipo",
+			"customEditors priority": "Prioridade",
+			"customEditors filenamePattern": "Padrão de Nome de Arquivo",
+			"codeActions": "Ações de Código ({0})",
+			"codeActions.title": "Título",
+			"codeActions.kind": "Tipo",
+			"codeActions.description": "Descrição",
+			"codeActions.languages": "Linguagens",
+			"authentication": "Autenticação ({0})",
+			"authentication.label": "Rótulo",
+			"authentication.id": "Id",
+			"colorThemes": "Temas de Cores ({0})",
+			"iconThemes": "Temas do Ícone de Arquivo ({0})",
+			"colors": "Cores ({0})",
+			"colorId": "Id",
+			"defaultDark": "Padrão Escuro",
+			"defaultLight": "Claro Padrão",
+			"defaultHC": "Alto Contraste Padrão",
+			"JSON Validation": "Validação JSON ({0})",
+			"fileMatch": "Correspondência de Arquivo",
+			"schema": "Esquema",
+			"commands": "Comandos ({0})",
+			"command name": "Nome",
+			"keyboard shortcuts": "Atalhos de Teclado",
+			"menuContexts": "Contextos de Menu",
+			"languages": "Linguagens ({0})",
+			"language id": "ID",
+			"language name": "Nome",
+			"file extensions": "Extensões de Arquivo",
+			"grammar": "Gramática",
+			"snippets": "Snippets",
+			"find": "Localizar",
+			"find next": "Localizar Próximo",
+			"find previous": "Localizar Anterior"
 		},
 		"vs/workbench/contrib/extensions/common/extensionsFileTemplate": {
 			"app.extensions.json.title": "Extensões",
@@ -4422,6 +4463,7 @@
 			"no": "Não",
 			"workspaceRecommended": "Deseja instalar as extensões recomendadas para este repositório?",
 			"install": "Instalar",
+			"install and do no sync": "Instalar (Não sincronizar)",
 			"show recommendations": "Mostrar as Recomendações"
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsViews": {
@@ -4446,11 +4488,11 @@
 			"extension-arialabel": "{0}, {1}, {2}, pressione enter para obter detalhes da extensão.",
 			"extensions": "Extensões"
 		},
-		"vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations": {
-			"dynamicWorkspaceRecommendation": "Esta extensão pode ser de seu interesse porque é popular entre os usuários do repositório {0}."
-		},
 		"vs/workbench/contrib/extensions/browser/exeBasedRecommendations": {
 			"exeBasedRecommendation": "Esta extensão é recomendável porque você tem o {0} instalado."
+		},
+		"vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations": {
+			"dynamicWorkspaceRecommendation": "Esta extensão pode ser de seu interesse porque é popular entre os usuários do repositório {0}."
 		},
 		"vs/workbench/contrib/extensions/browser/workspaceRecommendations": {
 			"workspaceRecommendation": "Esta extensão é recomendada pelos usuários do workspace atual."
@@ -4609,11 +4651,11 @@
 			"files.saveConflictResolution": "Um conflito de salvamento pode ocorrer quando um arquivo é salvo em um disco que foi alterado por outro programa nesse tempo. Para evitar a perda de dados, o usuário é solicitado a comparar as alterações no editor com a versão no disco. Essa configuração só deverá ser alterada se você encontrar frequentemente erros de conflito de salvamento e poderá resultar em perda de dados se usada sem cuidado.",
 			"files.simpleDialog.enable": "Habilita a caixa de diálogo de arquivo simples. A caixa de diálogo de arquivo simples substitui a caixa de diálogo de arquivo do sistema quando habilitada.",
 			"formatOnSave": "Formatar um arquivo ao salvar. Um formatador precisa estar disponível, o arquivo não deve ser salvo após o atraso e o editor não deve estar desligando.",
-			"everything": "Formatar todo o documento.",
-			"modification": "Formatar modificações (exige controle do código-fonte).",
+			"everything": "Formate todo o documento.",
+			"modification": "Formate modificações (exige controle do código-fonte).",
 			"formatOnSaveMode": "Controla se o formato no salvamento formata o arquivo inteiro ou somente as modificações. Aplica-se somente quando `#editor.formatOnSave#` é `true`.",
 			"explorerConfigurationTitle": "Explorador de Arquivos",
-			"openEditorsVisible": "Número de editores mostrados no painel Editores Abertos.",
+			"openEditorsVisible": "Número de editores mostrados no painel Editores Abertos. A configuração desta opção como 0 oculta o painel Editores Abertos.",
 			"autoReveal.on": "Os arquivos serão revelados e selecionados.",
 			"autoReveal.off": "Os arquivos não serão revelados e selecionados.",
 			"autoReveal.focusNoScroll": "Os arquivos não serão rolados no modo de exibição, mas ainda terão foco.",
@@ -4665,7 +4707,7 @@
 			"delete": "Excluir",
 			"copyFile": "Copiar",
 			"pasteFile": "Colar",
-			"download": "Baixar",
+			"download": "Baixar...",
 			"createNewFile": "Novo Arquivo",
 			"createNewFolder": "Nova Pasta",
 			"deleteButtonLabelRecycleBin": "&&Mover para a Lixeira",
@@ -4718,6 +4760,10 @@
 			"compareWithClipboard": "Comparar Arquivo Ativo com Área de Transferência",
 			"clipboardComparisonLabel": "Área de transferência ↔ {0}",
 			"retry": "Fazer uma nova tentativa",
+			"downloadingFiles": "Baixando",
+			"downloadProgressSmallMany": "{0} de {1} arquivos ({2}/s)",
+			"downloadProgressLarge": "{0} ({1} de {2}, {3}/s)",
+			"downloadButton": "Baixar",
 			"downloadFolder": "Baixar Pasta",
 			"downloadFile": "Baixar Arquivo",
 			"fileIsAncestor": "O arquivo a ser colado é um ancestral da pasta de destino",
@@ -4789,8 +4835,9 @@
 			"replaceButtonLabel": "&&Substituir",
 			"confirmManyOverwrites": "Os seguintes {0} arquivos e/ou pastas já existem na pasta de destino. Deseja substituí-los?",
 			"uploadingFiles": "Carregando",
-			"uploadProgress": "{0} de {1} arquivos ({2}/s)",
-			"uploadProgressDetail": "{0} ({1} de {2}, {3}/s)",
+			"copyingFiles": "Copiando",
+			"uploadProgressSmallMany": "{0} de {1} arquivos ({2}/s)",
+			"uploadProgressLarge": "{0} ({1} de {2}, {3}/s)",
 			"copyFolders": "&&Copiar Pastas",
 			"copyFolder": "&&Copiar Pasta",
 			"cancel": "Cancelar",
@@ -4871,9 +4918,9 @@
 		"vs/workbench/contrib/logs/common/logs.contribution": {
 			"userDataSyncLog": "Sincronização de Configurações",
 			"rendererLog": "Janela",
+			"telemetryLog": "Telemetria",
 			"mainLog": "Principal",
-			"sharedLog": "Compartilhado",
-			"telemetryLog": "Telemetria"
+			"sharedLog": "Compartilhado"
 		},
 		"vs/workbench/contrib/logs/electron-sandbox/logsActions": {
 			"openLogsFolder": "Abrir Pasta de Logs",
@@ -5089,7 +5136,8 @@
 		"vs/workbench/contrib/notebook/browser/diff/notebookDiffActions": {
 			"notebook.diff.switchToText": "Abrir Editor de Comparação de Texto",
 			"notebook.diff.cell.revertMetadata": "Reverter Metadados",
-			"notebook.diff.cell.revertOutputs": "Reverter Saídas"
+			"notebook.diff.cell.revertOutputs": "Reverter Saídas",
+			"notebook.diff.cell.revertInput": "Reverter entrada"
 		},
 		"vs/workbench/contrib/notebook/browser/extensionPoint": {
 			"contributes.notebook.provider": "Contribui com o provedor de documento do notebook.",
@@ -5151,9 +5199,9 @@
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/codeCell": {
 			"mimeTypePicker": "Escolha um tipo mime de saída diferente. Tipos mime disponíveis: {0}",
-			"builtinRenderInfo": "interno",
 			"curruentActiveMimeType": "Ativo no Momento",
-			"promptChooseMimeType.placeHolder": "Selecionar tipo mime de saída para renderização para a saída atual"
+			"promptChooseMimeType.placeHolder": "Selecionar tipo mime de saída para renderização para a saída atual",
+			"builtinRenderInfo": "interno"
 		},
 		"vs/workbench/contrib/outline/browser/outline.contribution": {
 			"name": "Estrutura do Código",
@@ -5233,16 +5281,23 @@
 		"vs/workbench/contrib/performance/electron-browser/startupProfiler": {
 			"prof.message": "Perfis criados com êxito.",
 			"prof.detail": "Crie um problema e anexe manualmente os seguintes arquivos:\r\n{0}",
-			"prof.restartAndFileIssue": "Criar Problema e Reiniciar",
-			"prof.restart": "Reiniciar",
+			"prof.restartAndFileIssue": "&&Criar Problema e Reiniciar",
+			"prof.restart": "&&Reiniciar",
 			"prof.thanks": "Agradecemos por nos ajudar.",
-			"prof.detail.restart": "Uma reinicialização final é necessária para continuar a usar '{0}'. Mais uma vez, agradecemos sua contribuição."
+			"prof.detail.restart": "Uma reinicialização final é necessária para continuar a usar '{0}'. Mais uma vez, agradecemos sua contribuição.",
+			"prof.restart.button": "&&Reiniciar"
 		},
 		"vs/workbench/contrib/performance/browser/performance.contribution": {
 			"show.label": "Desempenho de Inicialização"
 		},
 		"vs/workbench/contrib/performance/browser/perfviewEditor": {
 			"name": "Desempenho de Inicialização"
+		},
+		"vs/workbench/contrib/preferences/browser/keybindingsEditorContribution": {
+			"defineKeybinding.start": "Definir Associação de Teclas",
+			"defineKeybinding.kbLayoutErrorMessage": "Não será possível produzir essa combinação de teclas com o layout de teclado atual.",
+			"defineKeybinding.kbLayoutLocalAndUSMessage": "**{0}** para o layout de teclado atual (**{1}** para o padrão dos EUA).",
+			"defineKeybinding.kbLayoutLocalMessage": "**{0}** para o layout de teclado atual."
 		},
 		"vs/workbench/contrib/preferences/browser/preferences.contribution": {
 			"defaultPreferencesEditor": "Editor de Preferências Padrão",
@@ -5284,11 +5339,16 @@
 			"clear": "Limpar os Resultados da Pesquisa",
 			"miPreferences": "&&Preferências"
 		},
-		"vs/workbench/contrib/preferences/browser/keybindingsEditorContribution": {
-			"defineKeybinding.start": "Definir Associação de Teclas",
-			"defineKeybinding.kbLayoutErrorMessage": "Não será possível produzir essa combinação de teclas com o layout de teclado atual.",
-			"defineKeybinding.kbLayoutLocalAndUSMessage": "**{0}** para o layout de teclado atual (**{1}** para o padrão dos EUA).",
-			"defineKeybinding.kbLayoutLocalMessage": "**{0}** para o layout de teclado atual."
+		"vs/workbench/contrib/preferences/browser/keybindingWidgets": {
+			"defineKeybinding.initial": "Pressione a combinação de teclas desejada e pressione ENTER.",
+			"defineKeybinding.oneExists": "Um comando existente tem essa associação de teclas",
+			"defineKeybinding.existing": "{0} comandos existentes têm essa associação de teclas",
+			"defineKeybinding.chordsTo": "pressionar simultaneamente para"
+		},
+		"vs/workbench/contrib/preferences/browser/preferencesActions": {
+			"configureLanguageBasedSettings": "Definir Configurações Específicas de Idioma...",
+			"languageDescriptionConfigured": "({0})",
+			"pickLanguage": "Selecionar Idioma"
 		},
 		"vs/workbench/contrib/preferences/browser/keybindingsEditor": {
 			"recordKeysLabel": "Chaves de Registro",
@@ -5324,11 +5384,6 @@
 			"noKeybinding": "Nenhuma Associação de teclas atribuída.",
 			"noWhen": "Nenhum contexto when."
 		},
-		"vs/workbench/contrib/preferences/browser/preferencesActions": {
-			"configureLanguageBasedSettings": "Definir Configurações Específicas de Idioma...",
-			"languageDescriptionConfigured": "({0})",
-			"pickLanguage": "Selecionar Idioma"
-		},
 		"vs/workbench/contrib/preferences/browser/preferencesEditor": {
 			"SearchSettingsWidget.AriaLabel": "Configurações de pesquisa",
 			"SearchSettingsWidget.Placeholder": "Pesquisar Configurações",
@@ -5362,12 +5417,6 @@
 			"settingsSearchTocBehavior.hide": "Ocultar o Sumário ao pesquisar.",
 			"settingsSearchTocBehavior.filter": "Filtrar o Sumário para apenas as categorias com configurações correspondentes. Ao clicar em uma categoria, os resultados serão filtrados para essa categoria.",
 			"settingsSearchTocBehavior": "Controla o comportamento do Sumário do editor de configurações durante a pesquisa."
-		},
-		"vs/workbench/contrib/preferences/browser/keybindingWidgets": {
-			"defineKeybinding.initial": "Pressione a combinação de teclas desejada e pressione ENTER.",
-			"defineKeybinding.oneExists": "Um comando existente tem essa associação de teclas",
-			"defineKeybinding.existing": "{0} comandos existentes têm essa associação de teclas",
-			"defineKeybinding.chordsTo": "pressionar simultaneamente para"
 		},
 		"vs/workbench/contrib/preferences/browser/preferencesWidgets": {
 			"defaultSettings": "Coloque suas configurações no editor do lado direito para substituir.",
@@ -5457,10 +5506,6 @@
 			"remote": "Remoto",
 			"user": "Usuário"
 		},
-		"vs/workbench/contrib/preferences/browser/tocTree": {
-			"settingsTOC": "Sumário das Configurações",
-			"groupRowAriaLabel": "{0}, grupo"
-		},
 		"vs/workbench/contrib/preferences/browser/settingsWidgets": {
 			"headerForeground": "A cor de primeiro plano para um cabeçalho de seção ou um título ativo.",
 			"modifiedItemForeground": "A cor da borda do indicador modificado.",
@@ -5503,6 +5548,10 @@
 			"objectKeyHeader": "Item",
 			"objectValueHeader": "Valor"
 		},
+		"vs/workbench/contrib/preferences/browser/tocTree": {
+			"settingsTOC": "Sumário das Configurações",
+			"groupRowAriaLabel": "{0}, grupo"
+		},
 		"vs/workbench/contrib/quickaccess/browser/quickAccess.contribution": {
 			"helpQuickAccessPlaceholder": "Digite '{0}' para obter ajuda sobre as ações que você pode tomar aqui.",
 			"helpQuickAccess": "Mostrar Todos os Provedores de Acesso Rápido",
@@ -5543,8 +5592,7 @@
 		},
 		"vs/workbench/contrib/remote/electron-sandbox/remote.contribution": {
 			"remote": "Remoto",
-			"remote.downloadExtensionsLocally": "Quando ativado, as extensões são baixadas localmente e instaladas no local remoto.",
-			"remote.restoreForwardedPorts": "Restaura as portas que você encaminhou em um espaço de trabalho."
+			"remote.downloadExtensionsLocally": "Quando ativado, as extensões são baixadas localmente e instaladas no local remoto."
 		},
 		"vs/workbench/contrib/remote/common/remote.contribution": {
 			"remoteExtensionLog": "Servidor Remoto",
@@ -5552,7 +5600,9 @@
 			"workspace": "Tipo de extensão do Workspace. Em uma janela remota, essas extensões são habilitadas somente quando disponíveis no repositório remoto.",
 			"web": "Tipo de extensão do web worker. Essa extensão pode ser executada em um host de extensão de web worker.",
 			"remote": "Remoto",
-			"remote.extensionKind": "Substituir o tipo de uma extensão. As extensões `ui` são instaladas e executadas no computador local, enquanto as extensões `workspace` são executadas no repositório remoto. Ao substituir o tipo padrão de uma extensão usando essa configuração, você deve especificar se essa extensão deve ser instalada e habilitada local ou remotamente."
+			"remote.extensionKind": "Substituir o tipo de uma extensão. As extensões `ui` são instaladas e executadas no computador local, enquanto as extensões `workspace` são executadas no repositório remoto. Ao substituir o tipo padrão de uma extensão usando essa configuração, você deve especificar se essa extensão deve ser instalada e habilitada local ou remotamente.",
+			"remote.restoreForwardedPorts": "Restaura as portas que você encaminhou em um espaço de trabalho.",
+			"remote.autoForwardPorts": "Quando habilitadas, as URLs com portas (por exemplo, `http://127.0.0.1:3000`) que são impressas em seus terminais são automaticamente encaminhadas."
 		},
 		"vs/workbench/contrib/remote/browser/remote": {
 			"RemoteHelpInformationExtPoint": "Contribui com informações de ajuda para o Remoto",
@@ -5577,8 +5627,15 @@
 			"connectionLost": "Conexão Perdida",
 			"reconnectionRunning": "Tentando reconectar...",
 			"reconnectionPermanentFailure": "Não é possível reconectar. Recarregue a janela.",
-			"cancel": "Cancelar",
-			"remote.tunnelsView.automaticForward": "{0} do repositório remoto foi encaminhado para {1} localmente.",
+			"cancel": "Cancelar"
+		},
+		"vs/workbench/contrib/remote/browser/remoteExplorer": {
+			"status.forwardedPorts": "Portas Encaminhadas",
+			"remote.forwardedPorts.statusbarTextNone": "Nenhuma Porta Disponível",
+			"remote.forwardedPorts.statusbarTextSingle": "1 Porta Disponível",
+			"remote.forwardedPorts.statusbarTextMultiple": "{0} Portas Disponíveis",
+			"remote.forwardedPorts.statusbarTooltip": "Portas Disponíveis: {0}",
+			"remote.tunnelsView.automaticForward": "Seu serviço em execução na porta {0} está disponível.",
 			"remote.tunnelsView.showView": "Mostrar as Portas Encaminhadas"
 		},
 		"vs/workbench/contrib/remote/browser/explorerViewItems": {
@@ -5606,12 +5663,10 @@
 			"remote.tunnelsView.candidates": "Não Encaminhado",
 			"remote.tunnelsView.input": "Pressione Enter para confirmar ou Escape para cancelar.",
 			"remote.tunnelsView.forwardedPortLabel0": "{0}",
-			"remote.tunnelsView.forwardedPortLabel2": "{0}:{1} → {2}",
-			"remote.tunnelsView.forwardedPortLabel3": "{0} → {1}",
-			"remote.tunnelsView.forwardedPortLabel4": "{0}:{1}",
-			"remote.tunnelsView.forwardedPortLabel5": "{0}",
-			"remote.tunnelsView.forwardedPortDescription0": "{0} a {1}",
-			"remote.tunnel": "Portas Encaminhadas",
+			"remote.tunnelsView.forwardedPortLabel1": "{0} → {1}",
+			"remote.tunnelsView.forwardedPortLabel2": "{0}",
+			"remote.tunnelsView.forwardedPortDescription0": "{0} → {1}",
+			"remote.tunnel": "Portas",
 			"remote.tunnel.ariaLabelForwarded": "Porta remota {0}:{1} encaminhada para o endereço local {2}",
 			"remote.tunnel.ariaLabelCandidate": "Porta remota {0}:{1} não encaminhada",
 			"tunnelView": "Modo de Exibição de Túnel",
@@ -5672,6 +5727,8 @@
 			"providersVisible": "Controla quantos repositórios são visíveis na seção Repositórios de Controle do Código-fonte. Defina como `0` para poder redimensionar manualmente o modo de exibição.",
 			"miViewSCM": "S&&CM",
 			"scm accept": "SCM: Aceitar Entrada",
+			"scm view next commit": "SCM: Exibir o Próximo Commit",
+			"scm view previous commit": "SCM: Exibir a Próxima Confirmação",
 			"open in terminal": "Abrir no Terminal"
 		},
 		"vs/workbench/contrib/scm/browser/dirtydiffDecorator": {
@@ -5856,10 +5913,10 @@
 			"search.action.replaceAll.disabled.label": "Substituir Tudo (Enviar Pesquisa para Habilitar)",
 			"search.action.replaceAll.enabled.label": "Substituir Tudo",
 			"search.replace.toggle.button.title": "Ativar/Desativar Substituição",
-			"label.Search": "Pesquisar: digite o termo de pesquisa e pressione Enter para pesquisar ou Escape para cancelar",
+			"label.Search": "Pesquisar: digite o termo de pesquisa e pressione Enter para pesquisar",
 			"search.placeHolder": "Pesquisar",
 			"showContext": "Mostrar Contexto",
-			"label.Replace": "Substituir: digite o termo de substituição e pressione Enter para visualizar ou Escape para cancelar",
+			"label.Replace": "Substituir: digite o termo de substituição e pressione Enter para visualizar",
 			"search.replace.placeHolder": "Substituir"
 		},
 		"vs/workbench/contrib/search/browser/symbolsQuickAccess": {
@@ -5913,9 +5970,6 @@
 			"search.rerunSearchInEditor": "Pesquisar Novamente",
 			"search.action.focusQueryEditorWidget": "Focar na Entrada do Editor de Pesquisa"
 		},
-		"vs/workbench/contrib/searchEditor/browser/searchEditorActions": {
-			"search.openNewEditor": "Abrir Novo Editor de Pesquisa"
-		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditor": {
 			"moreSearch": "Ativar/Desativar os Detalhes da Pesquisa",
 			"searchScope.includes": "arquivos a serem incluídos",
@@ -5926,6 +5980,9 @@
 			"searchResultItem": "Foram correspondidos {0} em {1} no arquivo {2}",
 			"searchEditor": "Pesquisar",
 			"textInputBoxBorder": "Borda da caixa de entrada de texto do editor de pesquisa."
+		},
+		"vs/workbench/contrib/searchEditor/browser/searchEditorActions": {
+			"search.openNewEditor": "Abrir Novo Editor de Pesquisa"
 		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditorInput": {
 			"searchTitle.withQuery": "Pesquisar: {0}",
@@ -5993,15 +6050,15 @@
 			"detail.snippet": "{0} ({1})",
 			"snippetSuggest.longLabel": "{0}, {1}"
 		},
-		"vs/workbench/contrib/surveys/browser/languageSurveys.contribution": {
-			"helpUs": "Ajude-nos a melhorar nosso suporte para {0}",
-			"takeShortSurvey": "Participe de uma Pesquisa Breve",
-			"remindLater": "Lembrar Mais Tarde",
-			"neverAgain": "Não Mostrar Novamente"
-		},
 		"vs/workbench/contrib/surveys/browser/nps.contribution": {
 			"surveyQuestion": "Você poderia participar de uma pesquisa de opinião rápida?",
 			"takeSurvey": "Responder Pesquisa",
+			"remindLater": "Lembrar Mais Tarde",
+			"neverAgain": "Não Mostrar Novamente"
+		},
+		"vs/workbench/contrib/surveys/browser/languageSurveys.contribution": {
+			"helpUs": "Ajude-nos a melhorar nosso suporte para {0}",
+			"takeShortSurvey": "Participe de uma Pesquisa Breve",
 			"remindLater": "Lembrar Mais Tarde",
 			"neverAgain": "Não Mostrar Novamente"
 		},
@@ -6295,7 +6352,7 @@
 		"vs/workbench/contrib/tasks/common/jsonSchema_v1": {
 			"JsonSchema.version.deprecated": "A versão de tarefa 0.1.0 foi preterida. Use 2.0.0",
 			"JsonSchema.version": "O número de versão da configuração",
-			"JsonSchema._runner": "O executor foi graduado. Usar a propriedade de executor oficial",
+			"JsonSchema._runner": "O executor foi graduado. Usar a propriedade do executor oficial",
 			"JsonSchema.runner": "Define se a tarefa é executada como um processo e a saída é mostrada na janela de saída ou dentro do terminal.",
 			"JsonSchema.windows": "Configuração de comando específica do Windows",
 			"JsonSchema.mac": "Configuração de comando específica do Mac",
@@ -6481,6 +6538,10 @@
 			"terminal.integrated.unicodeVersion.eleven": "Versão 11 do Unicode. Esta versão fornece um suporte melhor em sistemas modernos que usam versões modernas do Unicode.",
 			"terminal.integrated.unicodeVersion": "Controla qual versão do unicode será usada ao avaliar a largura dos caracteres no terminal. Se um emoji ou outros caracteres largos não ocupar a quantidade correta de espaço ou backspace, excluindo demais ou muito pouco, talvez seja necessário tentar ajustar essa configuração.",
 			"terminal.integrated.experimentalLinkProvider": "Uma configuração experimental que visa melhorar a detecção de links no terminal ao melhorar o momento em que os links são detectados e ao habilitar a detecção de link compartilhado com o editor. Atualmente, isso dá suporte apenas a links da Web.",
+			"terminal.integrated.localEchoLatencyThreshold": "Experimental: duração da espera da rede, em milissegundos, em que as edições locais serão ecoadas no terminal sem aguardar a confirmação do servidor. Se esta configuração for '0', o eco local estará sempre ativo e se for '-1', ele será desabilitado.",
+			"terminal.integrated.localEchoStyle": "Experimental: o estilo do texto ecoado localmente do terminal. Pode ser um estilo da fonte ou uma cor RGB.",
+			"terminal.integrated.serverSpawn": "Experimental: gerar terminais remotos do processo de agente remoto em vez do host de extensão remota",
+			"terminal.integrated.enablePersistentSessions": "Experimental: persistir as sessões do terminal no workspace durante os recarregamentos de janela. No momento, só há suporte para esta configuração nos workspaces Remotos do VS Code.",
 			"terminal.integrated.shell.linux": "O caminho do shell que o terminal usa no Linux (padrão: {0}). [Leia mais sobre a configuração do shell] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
 			"terminal.integrated.shell.linux.noDefault": "O caminho do shell que o terminal usa no Linux. [Leia mais sobre a configuração do shell] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
 			"terminal.integrated.shell.osx": "O caminho do shell que o terminal usa no macOS (padrão: {0}). [Leia mais sobre a configuração do shell] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
@@ -6504,6 +6565,9 @@
 			"terminal.useMonospace": "Usar 'monospace'",
 			"terminal.monospaceOnly": "O terminal só dá suporte a fontes com espaçamento uniforme. Não se esqueça de reiniciar o VS Code se esta for uma fonte recém-instalada."
 		},
+		"vs/workbench/contrib/terminal/browser/remoteTerminalService": {
+			"terminal.integrated.starting": "Iniciando..."
+		},
 		"vs/workbench/contrib/terminal/node/terminalProcess": {
 			"launchFail.cwdNotDirectory": "O diretório inicial (cwd) \"{0}\" não é um diretório",
 			"launchFail.cwdDoesNotExist": "O diretório inicial (cwd) \"{0}\" não existe",
@@ -6512,6 +6576,15 @@
 		},
 		"vs/workbench/contrib/terminal/electron-browser/terminalRemote": {
 			"workbench.action.terminal.newLocal": "Criar Terminal Integrado (Local)"
+		},
+		"vs/workbench/contrib/terminal/common/terminalColorRegistry": {
+			"terminal.background": "A cor da tela de fundo do terminal. Isso permite colorir o terminal de modo diferente para o painel.",
+			"terminal.foreground": "A cor de primeiro plano do terminal.",
+			"terminalCursor.foreground": "A cor de primeiro plano do cursor do terminal.",
+			"terminalCursor.background": "A cor da tela de fundo do cursor do terminal. Permite personalizar a cor de um caractere sobreposto por um cursor de bloco.",
+			"terminal.selectionBackground": "A cor da tela de fundo da seleção do terminal.",
+			"terminal.border": "A cor da borda que separa os painéis divididos no terminal. O padrão é panel.border.",
+			"terminal.ansiColor": "'{0}' cor ANSI no terminal."
 		},
 		"vs/workbench/contrib/terminal/browser/terminalActions": {
 			"workbench.action.terminal.newWorkspacePlaceholder": "Selecionar diretório de trabalho atual para o novo terminal",
@@ -6561,6 +6634,7 @@
 			"workbench.action.terminal.rename.prompt": "Inserir nome do terminal",
 			"workbench.action.terminal.focusFind": "Focar Localização",
 			"workbench.action.terminal.hideFind": "Ocultar Localização",
+			"workbench.action.terminal.attachToRemote": "Anexar à Sessão",
 			"quickAccessTerminal": "Alternar Terminal Ativo",
 			"workbench.action.terminal.scrollToPreviousCommand": "Rolar para o Comando Anterior",
 			"workbench.action.terminal.scrollToNextCommand": "Rolar para o Próximo Comando",
@@ -6584,26 +6658,12 @@
 			"workbench.action.terminal.relaunch": "Reiniciar Terminal Ativo",
 			"workbench.action.terminal.showEnvironmentInformation": "Mostrar Informações do Ambiente"
 		},
-		"vs/workbench/contrib/terminal/common/terminalColorRegistry": {
-			"terminal.background": "A cor da tela de fundo do terminal. Isso permite colorir o terminal de modo diferente para o painel.",
-			"terminal.foreground": "A cor de primeiro plano do terminal.",
-			"terminalCursor.foreground": "A cor de primeiro plano do cursor do terminal.",
-			"terminalCursor.background": "A cor da tela de fundo do cursor do terminal. Permite personalizar a cor de um caractere sobreposto por um cursor de bloco.",
-			"terminal.selectionBackground": "A cor da tela de fundo da seleção do terminal.",
-			"terminal.border": "A cor da borda que separa os painéis divididos no terminal. O padrão é panel.border.",
-			"terminal.ansiColor": "'{0}' cor ANSI no terminal."
-		},
 		"vs/workbench/contrib/terminal/common/terminalMenu": {
 			"miToggleIntegratedTerminal": "&&Terminal",
 			"miNewTerminal": "&&Novo Terminal",
 			"miSplitTerminal": "&&Dividir o Terminal",
 			"miRunActiveFile": "Executar &&Arquivo Ativo",
 			"miRunSelectedText": "Executar Texto &&Selecionado"
-		},
-		"vs/workbench/contrib/terminal/browser/terminalQuickAccess": {
-			"renameTerminal": "Renomear Terminal",
-			"killTerminal": "Encerrar Instância de Terminal",
-			"workbench.action.terminal.newplus": "Criar um Terminal Integrado"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalService": {
 			"workbench.action.terminal.allowWorkspaceShell": "Permitir Configuração do Shell do Workspace",
@@ -6612,12 +6672,20 @@
 			"terminalService.terminalCloseConfirmationPlural": "Há {0} sessões de terminal ativas. Deseja encerrá-las?",
 			"terminal.integrated.chooseWindowsShell": "Selecione o shell de terminal preferencial. Você poderá alterar isso mais tarde em suas configurações"
 		},
+		"vs/workbench/contrib/terminal/browser/terminalQuickAccess": {
+			"renameTerminal": "Renomear Terminal",
+			"killTerminal": "Encerrar Instância de Terminal",
+			"workbench.action.terminal.newplus": "Criar um Terminal Integrado"
+		},
 		"vs/workbench/contrib/terminal/browser/terminalConfigHelper": {
 			"terminal.integrated.allowWorkspaceShell": "Você permite que este workspace modifique o shell do seu terminal? {0}",
 			"allow": "Permitir",
 			"disallow": "Rejeitar",
 			"useWslExtension.title": "A extensão '{0}' é recomendada para abrir um terminal no WSL.",
 			"install": "Instalar"
+		},
+		"vs/workbench/contrib/terminal/browser/terminalTab": {
+			"terminal.integrated.starting": "Iniciando..."
 		},
 		"vs/workbench/contrib/terminal/browser/terminalInstance": {
 			"terminal.integrated.a11yPromptLabel": "Entrada de terminal",
@@ -6646,14 +6714,14 @@
 		"vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider": {
 			"searchWorkspace": "Pesquisar workspace"
 		},
+		"vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy": {
+			"terminal.integrated.starting": "Iniciando..."
+		},
 		"vs/workbench/contrib/terminal/browser/environmentVariableInfo": {
 			"extensionEnvironmentContributionChanges": "As extensões desejam fazer as seguintes alterações no ambiente do terminal:",
 			"extensionEnvironmentContributionRemoval": "As extensões desejam remover essas alterações existentes do ambiente do terminal:",
 			"relaunchTerminalLabel": "Reiniciar Terminal",
 			"extensionEnvironmentContributionInfo": "As extensões fizeram alterações no ambiente deste terminal"
-		},
-		"vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy": {
-			"terminal.integrated.starting": "Iniciando..."
 		},
 		"vs/workbench/contrib/terminal/browser/links/terminalLink": {
 			"openFile": "Abrir arquivo no editor",
@@ -6747,6 +6815,7 @@
 		"vs/workbench/contrib/url/browser/trustedDomains": {
 			"trustedDomain.manageTrustedDomain": "Gerenciar Domínios Confiáveis",
 			"trustedDomain.trustDomain": "Confiar em {0}",
+			"trustedDomain.trustAllPorts": "Confiar {0} em todas as portas",
 			"trustedDomain.trustSubDomain": "Confiar em {0} e em todos os subdomínios",
 			"trustedDomain.trustAllDomains": "Confiar em todos os domínios (desabilita a proteção de link)",
 			"trustedDomain.manageTrustedDomains": "Gerenciar Domínios Confiáveis",
@@ -6818,7 +6887,7 @@
 			"configure sync placeholder": "Escolha o que sincronizar",
 			"turn off sync confirmation": "Deseja desligar a sincronização?",
 			"turn off sync detail": "Suas configurações, associações de teclas, extensões, snippets e estado de interface do usuário não serão mais sincronizados.",
-			"turn off": "Desligar",
+			"turn off": "&&Desligar",
 			"turn off sync everywhere": "Desligue a sincronização em todos os dispositivos e limpe os dados da nuvem.",
 			"leftResourceName": "{0} (Remoto)",
 			"merges": "{0} (Mesclagens)",
@@ -6840,6 +6909,8 @@
 			"turn off failed": "Erro ao desligar a sincronização: {0}",
 			"show sync log title": "{0}: Mostrar o Log",
 			"accept merges": "Aceitar Mesclagens",
+			"accept remote button": "Aceitar &&Remoto",
+			"accept merges button": "Aceitar &&Mesclagens",
 			"Sync accept remote": "{0}: {1}",
 			"Sync accept merges": "{0}: {1}",
 			"confirm replace and overwrite local": "Deseja aceitar o {0} remoto e substituir o {1} local?",
@@ -6868,7 +6939,7 @@
 			"no machines": "Nenhum Computador",
 			"not found": "computador não encontrado com a ID: {0}",
 			"turn off sync on machine": "Tem certeza de que deseja desligar a sincronização em {0}?",
-			"turn off": "Desligar",
+			"turn off": "&&Desligar",
 			"placeholder": "Inserir o nome do computador",
 			"valid message": "O nome do computador deve ser exclusivo e não vazio"
 		},
@@ -7003,9 +7074,9 @@
 			"ViewsWelcomeExtensionPoint.proposedAPI": "A contribuição do viewsWelcome em '{0}' requer que 'enableProposedApi' esteja habilitado."
 		},
 		"vs/workbench/contrib/welcome/common/viewsWelcomeExtensionPoint": {
-			"contributes.viewsWelcome": "Conteúdo de boas-vindas dos modos de exibição contribuídos. O conteúdo de boas-vindas será renderizado em modos de exibição sempre que não houver conteúdo significativo para exibir, por exemplo, o Explorador de Arquivos quando nenhuma pasta está aberta. Esse tipo de conteúdo é útil como uma documentação sobre o produto para orientar os usuários a usar determinados recursos antes que eles estejam disponíveis. Um bom exemplo seria um botão de `Clonar o Repositório` no modo de exibição de boas-vindas do Explorador de Arquivos.",
+			"contributes.viewsWelcome": "Conteúdo de boas-vindas das exibições de contribuição. O conteúdo de boas-vindas será renderizado em exibições baseadas em árvore sempre que não houver um conteúdo significativo a ser exibido. Por exemplo, o Explorador de Arquivos quando nenhuma pasta está aberta. Esse tipo de conteúdo é útil como uma documentação dentro do produto para orientar os usuários a usar determinados recursos antes que eles estejam disponíveis. Um bom exemplo seria um botão `Clonar o Repositório` na exibição de boas-vindas do Explorador de Arquivos.",
 			"contributes.viewsWelcome.view": "Conteúdo de boas-vindas contribuído para um modo de exibição específico.",
-			"contributes.viewsWelcome.view.view": "Identificador de modo de exibição de destino para este conteúdo de boas-vindas.",
+			"contributes.viewsWelcome.view.view": "Identificador de exibição de destino para este conteúdo de boas-vindas. Há suporte somente para as exibições baseadas em árvore.",
 			"contributes.viewsWelcome.view.contents": "Conteúdo de boas-vindas a ser exibido. O formato do conteúdo é um subconjunto de Markdown, com suporte somente para links.",
 			"contributes.viewsWelcome.view.when": "Condição de quando o conteúdo de boas-vindas deve ser exibido.",
 			"contributes.viewsWelcome.view.group": "Grupo ao qual este conteúdo de boas-vindas pertence."
@@ -7055,6 +7126,13 @@
 			"welcomePage.interfaceOverviewDescription": "Obter uma sobreposição visual realçando os principais componentes da interface do usuário",
 			"welcomePage.interactivePlayground": "Playground Interativo",
 			"welcomePage.interactivePlaygroundDescription": "Experimente os recursos essenciais do editor em uma breve explicação passo a passo"
+		},
+		"vs/workbench/contrib/workspaces/browser/workspaces.contribution": {
+			"workspaceFound": "Esta pasta contém um arquivo de workspace '{0}'. Deseja abri-lo? [Saiba mais]({1}) sobre arquivos de workspace.",
+			"openWorkspace": "Abrir o Workspace",
+			"workspacesFound": "Esta pasta contém vários arquivos de workspace. Deseja abrir um? [Saiba mais] ({0}) sobre arquivos de workspace.",
+			"selectWorkspace": "Selecionar Workspace",
+			"selectToOpen": "Selecionar um workspace para abrir"
 		},
 		"vs/workbench/services/authentication/browser/authenticationService": {
 			"authentication.id": "A ID do provedor de autenticação.",
@@ -7233,7 +7311,9 @@
 		"vs/workbench/services/extensionManagement/common/webExtensionsScannerService": {
 			"cannot be installed": "Não é possível instalar '{0}' porque essa extensão não é uma extensão da Web."
 		},
-		"vs/workbench/services/extensionManagement/common/extensionEnablementService": {
+		"vs/workbench/services/extensionManagement/browser/extensionEnablementService": {
+			"extensionsDisabled": "Todas as extensões instaladas estão temporariamente desabilitadas. Recarregue a janela para retornar ao estado anterior.",
+			"Reload": "Recarregar",
 			"cannot disable language pack extension": "Não é possível desabilitar a extensão {0} porque ela contribui com pacotes de idiomas.",
 			"cannot disable auth extension": "Não é possível desabilitar a extensão {0} porque a Sincronização das Configurações depende dela.",
 			"noWorkspace": "Nenhum workspace.",
@@ -7245,11 +7325,16 @@
 			"multipleDependentsError": "Não é possível desinstalar a extensão '{0}'. As extensões '{1}', '{2}' e outras dependem disso.",
 			"Manifest is not found": "Falha ao instalar a Extensão {0}: o manifesto não foi encontrado.",
 			"cannot be installed": "Não é possível instalar '{0}' porque essa extensão definiu que ela não pode ser executada no servidor remoto.",
-			"cannot be installed on web": "Não é possível instalar '{0}' porque essa extensão definiu que ela não pode ser executada no servidor Web."
+			"cannot be installed on web": "Não é possível instalar '{0}' porque essa extensão definiu que ela não pode ser executada no servidor Web.",
+			"install extension": "Instalar a Extensão",
+			"install extensions": "Instalar as Extensões",
+			"install": "Instalar",
+			"install and do no sync": "Instalar (Não sincronizar)",
+			"cancel": "Cancelar",
+			"install single extension": "Deseja instalar a extensão '{0}' e sincronizá-la com seus dispositivos?",
+			"install multiple extensions": "Deseja instalar as extensões e sincronizá-las com seus dispositivos?"
 		},
 		"vs/workbench/services/extensions/electron-browser/extensionService": {
-			"extensionsDisabled": "Todas as extensões instaladas estão temporariamente desabilitadas. Recarregue a janela para retornar ao estado anterior.",
-			"Reload": "Recarregar",
 			"extensionService.versionMismatchCrash": "O host de extensão não pode iniciar: incompatibilidade de versão.",
 			"relaunch": "Reiniciar VS Code",
 			"extensionService.crash": "O host de extensão terminou inesperadamente.",
@@ -7354,6 +7439,7 @@
 			"vscode.extension.icon": "O caminho para um ícone de pixels 128x128."
 		},
 		"vs/workbench/services/extensions/node/extensionPoints": {
+			"jsonParseInvalidType": "Arquivo de manifesto inválido {0}: não é um objeto JSON.",
 			"jsonParseFail": "Falha ao analisar {0}: [{1}, {2}] {3}.",
 			"fileReadFail": "Não é possível ler o arquivo {0}: {1}.",
 			"jsonsParseReportErrors": "Falha ao analisar {0}: {1}.",
@@ -7688,7 +7774,7 @@
 			"colorTheme": "Especifica o tema de cores usado no workbench.",
 			"colorThemeError": "O tema é desconhecido ou não está instalado.",
 			"preferredDarkColorTheme": "Especifica o tema de cores preferencial para a aparência escura do sistema operacional quando '{0}' está habilitado.",
-			"preferredLightColorTheme": "Especifica o tema de cores preferencial para a aparência clara do sistema operacional quando '{0}' está habilitado.",
+			"preferredLightColorTheme": "Especifica o tema de cores preferencial para a aparência clara do sistema operacional quando `#{0}#` está habilitado.",
 			"preferredHCColorTheme": "Especifica o tema de cor preferencial usado no modo de alto contraste quando '{0}' está habilitado.",
 			"detectColorScheme": "Se definido, alterna automaticamente para o tema de cor preferencial com base na aparência do sistema operacional.",
 			"workbenchColors": "Substitui cores do tema de cores selecionado no momento.",
@@ -7754,8 +7840,8 @@
 			"sync turned on": "{0} está ativado",
 			"sync in progress": "A Sincronização de Configurações está sendo ativada. Deseja cancelá-la?",
 			"settings sync": "Sincronização de Configurações",
-			"yes": "Sim",
-			"no": "Não",
+			"yes": "&&Sim",
+			"no": "&&Não",
 			"turning on": "Ativando...",
 			"syncing resource": "Sincronizando {0}...",
 			"conflicts detected": "Conflitos Detectados",
@@ -7768,7 +7854,7 @@
 			"first time sync detail": "Parece que a última sincronização foi de outro computador.\r\nDeseja mesclar ou substituir com seus dados na nuvem?",
 			"reset": "Isso limpará seus dados na nuvem e interromperá a sincronização em todos os dispositivos.",
 			"reset title": "Limpar",
-			"reset button": "Redefinir",
+			"resetButton": "&&Redefinir",
 			"choose account placeholder": "Selecionar uma conta",
 			"signed in": "Entrou",
 			"last used": "Último Uso com a Sincronização",

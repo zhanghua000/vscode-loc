@@ -29,7 +29,8 @@
 			"command.openScript": "Ouvrir ",
 			"command.runInstall": "Exécuter Install",
 			"command.runSelectedScript": "Exécuter le script",
-			"command.runScriptFromFolder": "Exécuter le script NPM dans un dossier..."
+			"command.runScriptFromFolder": "Exécuter le script NPM dans un dossier...",
+			"command.packageManager": "Obtenir le Gestionnaire de package configuré"
 		},
 		"dist/tasks": {
 			"npm.parseError": "Détection de tâche npm : échec de l'analyse du fichier {0}"

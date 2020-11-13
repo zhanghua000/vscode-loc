@@ -29,7 +29,8 @@
 			"command.openScript": "Otwórz",
 			"command.runInstall": "Uruchom instalację",
 			"command.runSelectedScript": "Uruchom skrypt",
-			"command.runScriptFromFolder": "Uruchom skrypt menedżera NPM w folderze..."
+			"command.runScriptFromFolder": "Uruchom skrypt menedżera NPM w folderze...",
+			"command.packageManager": "Pobierz skonfigurowanego menedżera pakietów"
 		},
 		"dist/tasks": {
 			"npm.parseError": "Wykrywanie zadań menedżera npm: nie udało się przeanalizować pliku {0}"

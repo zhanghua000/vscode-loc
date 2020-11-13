@@ -29,7 +29,8 @@
 			"command.openScript": "Otevřít",
 			"command.runInstall": "Spustit instalaci",
 			"command.runSelectedScript": "Spustit skript",
-			"command.runScriptFromFolder": "Spustit skript NPM ve složce..."
+			"command.runScriptFromFolder": "Spustit skript NPM ve složce...",
+			"command.packageManager": "Získat nakonfigurovaného správce balíčků"
 		},
 		"dist/tasks": {
 			"npm.parseError": "Zjištění úlohy npm: Nepovedlo se parsovat soubor {0}."

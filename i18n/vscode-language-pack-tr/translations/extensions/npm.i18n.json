@@ -29,7 +29,8 @@
 			"command.openScript": "Aç",
 			"command.runInstall": "Yüklemeyi Çalıştır",
 			"command.runSelectedScript": "Betiği Çalıştır",
-			"command.runScriptFromFolder": "NPM Betiğini Klasörde Çalıştır..."
+			"command.runScriptFromFolder": "NPM Betiğini Klasörde Çalıştır...",
+			"command.packageManager": "Yapılandırılan Paket Yöneticisi'ni Al"
 		},
 		"dist/tasks": {
 			"npm.parseError": "NPM görevi algılama: dosya ayrıştırılamadı {0}"
