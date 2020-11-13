@@ -50,3 +50,5 @@ contact [**opencode@microsoft.com**](mailto:opencode@microsoft.com) with any add
 
 ## Why this project exists?
 I am using VSCodium for some reasons, but VSCodium don't use Microsoft's Marketplace due possible to legal problems. So I forked this project and ported into a VSCodium Extension. I don't do any modification, even this file, I just add the lines to explain why I do this, it is just for having a localized user interface when I using VSCodium to create this project. Thanks to Microsoft and other people's kindness work can I use such a good IDE. I send my truely thanks to them.
+## Notice: 
+Microsoft  has updated a official version([Here](https://open-vsx.org/extension/MS-CEINTL/vscode-language-pack-zh-hans)), I recommend you use this one instead mine.
