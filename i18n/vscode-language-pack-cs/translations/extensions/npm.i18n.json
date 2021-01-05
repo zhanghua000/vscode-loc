@@ -14,6 +14,10 @@
 			"config.npm.autoDetect": "Určuje, jestli mají být automaticky rozpoznány skripty npm.",
 			"config.npm.runSilent": "Spouštět příkazy npm s parametrem --silent",
 			"config.npm.packageManager": "Správce balíčků, který se používá ke spouštění skriptů",
+			"config.npm.packageManager.npm": "Použít ke spouštění skriptů jako správce balíčků npm",
+			"config.npm.packageManager.yarn": "Použít ke spouštění skriptů jako správce balíčků yarn",
+			"config.npm.packageManager.pnpm": "Použít ke spouštění skriptů jako správce balíčků pnpm",
+			"config.npm.packageManager.auto": "Podle souborů zámků a nainstalovaných správců balíčků automaticky zjišťovat, který správce balíčků se má použít ke spouštění skriptů",
 			"config.npm.exclude": "Nakonfigurovat vzory glob pro složky, které se mají vyloučit z automatického zjišťování skriptů",
 			"config.npm.enableScriptExplorer": "Povolit zobrazení průzkumníka pro skripty npm, pokud není k dispozici žádný soubor package.json nejvyšší úrovně",
 			"config.npm.scriptExplorerAction": "Výchozí akce kliknutí, která se používá v průzkumníkovi skriptů npm: open nebo run. Výchozí nastavení je open.",
@@ -33,6 +37,9 @@
 			"command.packageManager": "Získat nakonfigurovaného správce balíčků"
 		},
 		"dist/tasks": {
+			"npm.multiplePMWarning": "{0} se použije jako preferovaný správce balíčků. Pro {1} se našlo několik lockfiles.",
+			"npm.multiplePMWarning.doNotShow": "Už nezobrazovat",
+			"npm.multiplePMWarning.learnMore": "Další informace",
 			"npm.parseError": "Zjištění úlohy npm: Nepovedlo se parsovat soubor {0}."
 		},
 		"dist/features/bowerJSONContribution": {

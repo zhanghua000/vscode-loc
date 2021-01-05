@@ -23,7 +23,7 @@
 			"browser.env.description": "Diccionario opcional de pares clave/valor de entorno para el explorador.",
 			"browser.file.description": "Archivo HTML local para abrirlo en el explorador",
 			"browser.includeDefaultArgs.description": "Si los argumentos predeterminados de inicio del explorador (para deshabilitar las características que pueden dificultar la depuración) se incluirán en el lanzamiento.",
-			"browser.inspectUri.description": "Formato que se va a utilizar para reescribir el valor inspectUri: Es una cadena de plantilla que interpola las claves en ''{curlyBraces}\". Las teclas disponibles son:\n - \"url.*\" es la dirección analizada de la aplicación en ejecución. Por ejemplo, ''{url.port}\", \"{url.hostname}''\n - \"port\" es el puerto de depuración en que Chrome está escuchando.\n - \"browserInspectUri\" es el URI del inspector en el navegador iniciado\n - \"wsProtocol\" es el protocolo websocket sugerido. Se establece en \"wss\" si la dirección URL original es \"https\", o \"ws\" en caso contrario.",
+			"browser.inspectUri.description": "Formato que se va a usar para reescribir el valor inspectUri: es una cadena de plantilla que interpola las claves en ''{curlyBraces}\". Las claves disponibles son:\r\n - \"url.*\" es la dirección analizada de la aplicación en ejecución. Por ejemplo, ''{url.port}\", \"{url.hostname}''.\r\n - \"port\" es el puerto de depuración en el que Chrome está escuchando.\r\n - \"browserInspectUri\" es el URI del inspector en el explorador iniciado.\r\n - \"browserInspectUriPath\" es la parte de la ruta de acceso del URI del inspector en el explorador iniciado (por ejemplo, \"/devtools/browser/e9ec0098-306e-472a-8133-5e42488929c2\").\r\n - \"wsProtocol\" es el protocolo websocket sugerido. Se establece en \"wss\" si la dirección URL original es \"https\"o en \"ws\" en caso contrario.\r\n",
 			"browser.launch.port.description": "Puerto en que escucha el explorador. Se establece de manera predeterminada en \"0\", lo que provoca que el explorador se depure mediante canalizaciones. Esto suele ser más seguro y debe elegirse a menos que tenga que adjuntar el explorador desde otra herramienta.",
 			"browser.pathMapping.description": "Asignación de direcciones URL/rutas a carpetas locales, para resolver scripts en el navegador a scripts en disco",
 			"browser.perScriptSourcemaps.description": "Especifica si los scripts se cargan de forma individual con mapas de origen únicos que contengan el nombre base del archivo de código fuente. Puede establecerse para optimizar el tratamiento de los mapas de origen cuando se trabaja con un gran volumen de scripts pequeños. Si se establece en \"Automático\", se detectarán casos conocidos en los que esta operación sea adecuada.",
@@ -60,6 +60,7 @@
 			"configuration.automaticallyTunnelRemoteServer": "Al depurar una aplicación web remota, se establece si se debe hacer un túnel automático del servidor remoto al equipo local.",
 			"configuration.breakOnConditionalError": "Indica si debe detenerse cuando los puntos de interrupción condicionales producen un error. Nota: El elemento \"type\" de launch.json debe tener el prefijo \"pwa-\" para usarlo, por ejemplo, \"pwa-node\".",
 			"configuration.debugByLinkOptions": "Opciones utilizadas al depurar vínculos abiertos en los que se ha hecho clic desde dentro del terminal de depuración. Se puede establecer en \"false\" para deshabilitar este comportamiento.",
+			"configuration.defaultRuntimeExecutables": "Valor predeterminado de \"runtimeExecutable\" que se usa para las configuraciones de inicio, si no se especifica un valor. Se puede usar para configurar rutas de acceso personalizadas a Node.js o a las instalaciones del explorador.",
 			"configuration.npmScriptLensLocation": "Lugar en que se debe mostrar una lente de código \"Ejecutar\" y \"Depurar\" en los scripts npm. Puede estar en todos, en scripts, sobre la sección del script o bien no mostrarse nunca.",
 			"configuration.pickAndAttachOptions": "Opciones predeterminadas que se usan al depurar un proceso mediante el comando \"Debug: Attach to Node.js Process\"",
 			"configuration.suggestPrettyPrinting": "Si se sugiere bastante imprimir código JavaScript que se ve minimizado cuando se entra en él.",
@@ -68,6 +69,7 @@
 			"configuration.usePreview": "Utilice el nuevo depurador de JavaScript en versión preliminar para Node.js y Chrome.",
 			"createDiagnostics.label": "Crear información de diagnóstico para la sesión actual",
 			"customDescriptionGenerator.description": "Personaliza la descripción de texto que el depurador muestra para los objetos (variables locales, etc...). Ejemplos:\r\n      1. this.toString() // Llama a toString para imprimir todos los objetos.\r\n      2. this.customDescription ? this.customDescription() : defaultValue // Usa el método customDescription si está disponible, si no devuelve defaultValue.\r\n      3. function (def) { return this.customDescription ? this.customDescription() : def } // Usa el método customDescription si está disponible, si no devuelve defaultValue.\r\n      ",
+			"customPropertiesGenerator.description": "Personalice las propiedades que se muestran para un objeto en el depurador (variables locales, etc.). Ejemplos:\r\n    1. { ...this, extraProperty: '12345' } // Agregue una propiedad extraproperty 12345 a todos los objetos.\r\n    2. this.customProperties ? this.customProperties() : this // Use el método customProperties, si está disponible; en caso contrario, use las propiedades de este (las propiedades predeterminadas).\r\n    3. function () { return this.customProperties ? this.customProperties() : this } // Use el método customDescription, si está disponible; en caso contrario, se devuelven las propiedades predeterminadas.\r\n\r\n    En desuso: esta es una implementación temporal de esta característica hasta que tengamos tiempo para implementarla de la forma aquí descrita: https://github.com/microsoft/vscode/issues/102181",
 			"debug.npm.edit": "Editar package.json",
 			"debug.npm.noScripts": "No se han encontrado scripts npm en su package.json",
 			"debug.npm.noWorkspaceFolder": "Debe abrir una carpeta de área de trabajo para depurar scripts npm.",
@@ -78,7 +80,8 @@
 			"debug.terminal.program.description": "Comando para ejecutar en el terminal iniciado. Si no se proporciona, el terminal se abrirá sin iniciar un programa.",
 			"debug.terminal.snippet.label": "Ejecute \"npm start\" en un terminal de depuración",
 			"debug.terminal.toggleAuto": "Alternar la asociación automática de Node.js del terminal",
-			"debug.terminal.welcome": "[Terminal de depuración de JavaScript](command:extension.pwa-node-debug.createDebuggerTerminal)\r\n\r\nPuede usar el terminal de depuración de JavaScript para depurar los procesos de Node.js que se ejecutan en la línea de comandos.\r\n\r\n[Dirección URL de depuración](command:extension.js-debug.debugLink)",
+			"debug.terminal.welcome": "[Terminal de depuración de JavaScript](command:extension.pwa-node-debug.createDebuggerTerminal)\r\n\r\nPuede usar el terminal de depuración de JavaScript para depurar los procesos de Node.js que se ejecutan en la línea de comandos.",
+			"debug.terminal.welcomeWithLink": "[Terminal de depuración de JavaScript](command:extension.pwa-node-debug.createDebuggerTerminal)\r\n\r\nPuede usar el terminal de depuración de JavaScript para depurar los procesos de Node.js que se ejecutan en la línea de comandos.\r\n\r\n[Dirección URL de depuración](command:extension.js-debug.debugLink)",
 			"debugLink.label": "Abrir vínculo",
 			"edge.address.description": "Al depurar vistas web, la dirección IP o el nombre de host en que está escuchando la vista web. Se detectará automáticamente si no se establece.",
 			"edge.attach.description": "Adjuntar a una instancia de Microsoft Edge ya en modo de depuración",
@@ -115,6 +118,7 @@
 			"node.attachSimplePort.description": "Si se establece, se asocia al proceso a través del puerto especificado. Esto generalmente ya no es necesario en programas de Node.js y pierde la capacidad de depurar los procesos secundarios. Sin embargo, puede ser útil en escenarios más esotéricos, como en los lanzamientos de Deno y Docker. Si se establece en 0, se elegirá un puerto aleatorio y se agregará --inspect-brk a los argumentos de inicio de forma automática.",
 			"node.console.title": "Consola de depuración de Node",
 			"node.disableOptimisticBPs.description": "No establezca puntos de interrupción en ningún archivo hasta que se haya cargado un mapa de origen para el archivo.",
+			"node.killBehavior.description": "Configura el modo en que se termina el proceso de depuración al detener la sesión. Puede ser:\r\n\r\n- forceful (predeterminado): anula de manera forzosa el árbol de procesos. Envía SIGKILL en posix o \"taskkill.exe /F\" en Windows.\r\n- polite: anula correctamente el árbol de procesos. Es posible que los procesos con un comportamiento erróneo se sigan ejecutando después de apagar de esta forma. Envía SIGTERM en posix o \"taskkill.exe\" sin la marca \"/F\" (forzar) en Windows.\r\n- none: no se producirá ninguna terminación.",
 			"node.label": "Node.js (versión preliminar)",
 			"node.launch.args.description": "Argumentos de la línea de comandos que se pasan al programa.",
 			"node.launch.autoAttachChildProcesses.description": "Asociar automáticamente el depurador a los procesos secundarios nuevos.",
@@ -287,6 +291,7 @@
 			"error.invalidExpression": "Expresión no válida",
 			"error.setVariableDidFail": "No se puede establecer el valor de la variable",
 			"error.unknown": "Error desconocido",
+			"error.failedToCustomizeObjectProperties": "Error de personalización de las propiedades",
 			"error.customValueDescriptionGeneratorFailed": "{0} (no se puede describir: {1})"
 		},
 		"/src/dap/errors": {
@@ -330,9 +335,6 @@
 		},
 		"/src/ui/debugTerminalUI": {
 			"terminal.cwdpick": "Seleccione el directorio de trabajo actual para el nuevo terminal"
-		},
-		"/src/ui/diagnosticsUI": {
-			"createDiagnostics.copied": "La ruta de acceso al informe de diagnóstico se ha copiado en el portapapeles."
 		},
 		"/src/ui/disableSourceMapUI": {
 			"always": "Siempre",
