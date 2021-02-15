@@ -18,11 +18,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    - run: cd ./i18n/vscode-language-pack-zh-hans
-    - run: sed "2s/vscode-language-pack-zh-hans/vscodium-language-pack-zh-cn/" -i package.json
-    - run: sed "3s/Code/Codium/" -i package.json
-    - run: sed "6s/MS-CEINTL/zhanghua/" -i package.json
-    - run: sed "9s_https://github.com/Microsoft/vscode-loc_https://github.com/zhanghua000/vscode-loc_" -i package.json
+    - name: Patch publisher info
+      run: |
+        cd ./i18n/vscode-language-pack-zh-hans
+        sed "2s/vscode-language-pack-zh-hans/vscodium-language-pack-zh-cn/" -i package.json
+        sed "3s/Code/Codium/" -i package.json
+        sed "6s/MS-CEINTL/zhanghua/" -i package.json
+        sed "9s_https://github.com/Microsoft/vscode-loc_https://github.com/zhanghua000/vscode-loc_" -i package.json
     - name: Publish to Open-vsx.org
       uses: HaaLeo/publish-vscode-extension@v0
       with:
